@@ -1,0 +1,997 @@
+{
+  "verified_at": "2026-10-18T01:32:37.724175+00:00",
+  "canonical_url": "https://cisnenegro.mx/",
+  "method": "Solicitudes HTTPS de solo lectura ejecutadas desde 31.220.63.211 con verificación TLS. Los fragmentos # se verifican contra el código del cliente; el servidor recibe solo la ruta base.",
+  "urls": [
+    {
+      "label": "Página principal",
+      "url": "https://cisnenegro.mx/",
+      "group": "Producción",
+      "access": "Público",
+      "description": "Sitio definitivo; versión v2 en raíz.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Menú",
+      "url": "https://cisnenegro.mx/menu/",
+      "group": "Producción",
+      "access": "Público",
+      "description": "Carta y preparación de pedidos.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/menu/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Pasaporte",
+      "url": "https://cisnenegro.mx/menu/#pasaporte",
+      "group": "Producción",
+      "access": "Cliente: teléfono + PIN de 4 dígitos",
+      "description": "Modal dentro del menú; registro y fidelización.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/menu/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Ranking público",
+      "url": "https://cisnenegro.mx/menu/#ranking",
+      "group": "Producción",
+      "access": "Público",
+      "description": "Clasificación pública del Pasaporte.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/menu/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Wi-Fi del menú",
+      "url": "https://cisnenegro.mx/menu/#wifi",
+      "group": "Producción",
+      "access": "Depende de la visibilidad configurada",
+      "description": "Datos o acceso a la red de invitados.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/menu/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Aviso de privacidad",
+      "url": "https://cisnenegro.mx/privacidad/",
+      "group": "Producción",
+      "access": "Público",
+      "description": "Texto de privacidad; su aprobación por el negocio continúa documentada como pendiente.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/privacidad/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Administración del Pasaporte",
+      "url": "https://cisnenegro.mx/admin/",
+      "group": "Producción",
+      "access": "Propietario CMS",
+      "description": "Sin sesión redirige al acceso del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Equipo",
+      "url": "https://cisnenegro.mx/equipo/",
+      "group": "Producción",
+      "access": "Equipo: usuario + PIN de 6 dígitos",
+      "description": "Pedidos, cuentas, cobros e historial.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Acceso al CMS",
+      "url": "https://cisnenegro.mx/cms/",
+      "group": "CMS",
+      "access": "Usuario y contraseña CMS",
+      "description": "Pantalla de acceso; al entrar abre el espacio de trabajo. El acceso a Administración requiere Propietario.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Inicio CMS",
+      "url": "https://cisnenegro.mx/cms/#inicio",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Editor visual",
+      "url": "https://cisnenegro.mx/cms/#editor",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Menú y cervezas",
+      "url": "https://cisnenegro.mx/cms/#menu",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "MediaHub",
+      "url": "https://cisnenegro.mx/cms/#media",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Eventos y galería",
+      "url": "https://cisnenegro.mx/cms/#eventos",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Datos del negocio",
+      "url": "https://cisnenegro.mx/cms/#negocio",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Publicaciones",
+      "url": "https://cisnenegro.mx/cms/#publicaciones",
+      "group": "CMS",
+      "access": "Consulta: ambos; publicar/restaurar: Propietario",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Usuarios CMS",
+      "url": "https://cisnenegro.mx/cms/#usuarios",
+      "group": "CMS",
+      "access": "Propietario",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Hoy y código del día",
+      "url": "https://cisnenegro.mx/admin/#hoy",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Estadísticas del Pasaporte",
+      "url": "https://cisnenegro.mx/admin/#estadisticas",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "NPS y seguimiento",
+      "url": "https://cisnenegro.mx/admin/#nps",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Miembros",
+      "url": "https://cisnenegro.mx/admin/#miembros",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Ranking interno",
+      "url": "https://cisnenegro.mx/admin/#ranking",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Wi-Fi y ajustes",
+      "url": "https://cisnenegro.mx/admin/#ajustes",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Inicio del turno",
+      "url": "https://cisnenegro.mx/equipo/#inicio",
+      "group": "Equipo",
+      "access": "Mesero / Administrador",
+      "description": "Pantalla operativa; usuario y PIN independientes del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Historial de cuentas",
+      "url": "https://cisnenegro.mx/equipo/#historial",
+      "group": "Equipo",
+      "access": "Mesero: propias; Administrador: equipo",
+      "description": "Pantalla operativa; usuario y PIN independientes del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Mi corte",
+      "url": "https://cisnenegro.mx/equipo/#corte",
+      "group": "Equipo",
+      "access": "Mesero / Administrador",
+      "description": "Pantalla operativa; usuario y PIN independientes del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Cierre del día",
+      "url": "https://cisnenegro.mx/equipo/#cierre",
+      "group": "Equipo",
+      "access": "Administrador de Equipo",
+      "description": "Pantalla operativa; usuario y PIN independientes del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Usuarios operativos",
+      "url": "https://cisnenegro.mx/equipo/#equipo",
+      "group": "Equipo",
+      "access": "Administrador de Equipo",
+      "description": "Pantalla operativa; usuario y PIN independientes del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Alias www",
+      "url": "https://www.cisnenegro.mx/",
+      "group": "Dominio",
+      "access": "Público",
+      "description": "Redirige al dominio principal sin www.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Portada temporal",
+      "url": "https://cisne.softvibes.art/",
+      "group": "Temporal",
+      "access": "Mismos permisos que producción",
+      "description": "Misma instalación y datos; no es un respaldo. Preferir el dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Menú temporal",
+      "url": "https://cisne.softvibes.art/menu/",
+      "group": "Temporal",
+      "access": "Mismos permisos que producción",
+      "description": "Misma instalación y datos; no es un respaldo. Preferir el dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/menu/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "CMS temporal",
+      "url": "https://cisne.softvibes.art/cms/",
+      "group": "Temporal",
+      "access": "Mismos permisos que producción",
+      "description": "Misma instalación y datos; no es un respaldo. Preferir el dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/cms/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Administración temporal",
+      "url": "https://cisne.softvibes.art/admin/",
+      "group": "Temporal",
+      "access": "Mismos permisos que producción",
+      "description": "Misma instalación y datos; no es un respaldo. Preferir el dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Equipo temporal",
+      "url": "https://cisne.softvibes.art/equipo/",
+      "group": "Temporal",
+      "access": "Mismos permisos que producción",
+      "description": "Misma instalación y datos; no es un respaldo. Preferir el dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/equipo/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Sitio anterior",
+      "url": "https://cisnenegro.softvibes.art/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Instalación anterior con datos separados.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Menú anterior",
+      "url": "https://cisnenegro.softvibes.art/menu/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Menú anterior; no usar para la operación vigente.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/menu/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "CMS anterior",
+      "url": "https://cisnenegro.softvibes.art/cms/",
+      "group": "Legado / referencia",
+      "access": "Usuario CMS legado",
+      "description": "Edita otra base; no sincroniza con cisnenegro.mx.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/cms/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Administración anterior",
+      "url": "https://cisnenegro.softvibes.art/admin/",
+      "group": "Legado / referencia",
+      "access": "Propietario legado",
+      "description": "Base de Pasaporte anterior.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Análisis digital",
+      "url": "https://cisnenegro.softvibes.art/analisis/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Informe de referencia.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/analisis/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Propuesta económica",
+      "url": "https://cisnenegro.softvibes.art/propuesta/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Propuesta comercial de referencia.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/propuesta/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Consultoría Beervibes",
+      "url": "https://cisnenegro.softvibes.art/propuesta/beervibes/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Plan de consultoría de referencia.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/propuesta/beervibes/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Estrategia de contenido",
+      "url": "https://cisnenegro.softvibes.art/estrategia/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Tablero de lectura; no es el editor de Content Hub.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/estrategia/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Hub del proyecto",
+      "url": "https://cisnenegro.softvibes.art/proyecto/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Documentación y artefactos de referencia.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/proyecto/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Versión v2 anterior",
+      "url": "https://cisnenegro.softvibes.art/v2/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Origen anterior; producción actual ya está en la raíz del dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/v2/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Menú v2 anterior",
+      "url": "https://cisnenegro.softvibes.art/v2/menu/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Base v2 anterior e independiente.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/v2/menu/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Administración v2 anterior",
+      "url": "https://cisnenegro.softvibes.art/v2/admin/",
+      "group": "Legado / referencia",
+      "access": "Autenticación del servicio legado",
+      "description": "Devuelve 401 sin credenciales; no es un enlace de trabajo recomendado.",
+      "status": 401,
+      "final_url": "https://cisnenegro.softvibes.art/v2/admin/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Equipo v2 anterior",
+      "url": "https://cisnenegro.softvibes.art/v2/equipo/",
+      "group": "Legado / referencia",
+      "access": "Usuario y PIN v2 legado",
+      "description": "Base operativa anterior e independiente.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/v2/equipo/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Robots",
+      "url": "https://cisnenegro.mx/robots.txt",
+      "group": "Técnico",
+      "access": "Público",
+      "description": "Diagnóstico o descubrimiento; no es un panel de usuario.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/robots.txt",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Sitemap",
+      "url": "https://cisnenegro.mx/sitemap.xml",
+      "group": "Técnico",
+      "access": "Público",
+      "description": "Diagnóstico o descubrimiento; no es un panel de usuario.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/sitemap.xml",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Estado del servicio",
+      "url": "https://cisnenegro.mx/healthz",
+      "group": "Técnico",
+      "access": "Público",
+      "description": "Diagnóstico o descubrimiento; no es un panel de usuario.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/healthz",
+      "verification": "HTTPS desde VPS"
+    }
+  ],
+  "http_checks": [
+    {
+      "url": "https://cisnenegro.mx/",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.mx/menu/",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/menu/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.mx/cms/",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.mx/admin/",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.mx/equipo/",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.mx/privacidad/",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/privacidad/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.mx/pasaporte/",
+      "status": 404,
+      "final_url": "https://cisnenegro.mx/pasaporte/"
+    },
+    {
+      "url": "https://cisnenegro.mx/analisis/",
+      "status": 404,
+      "final_url": "https://cisnenegro.mx/analisis/"
+    },
+    {
+      "url": "https://cisnenegro.mx/propuesta/",
+      "status": 404,
+      "final_url": "https://cisnenegro.mx/propuesta/"
+    },
+    {
+      "url": "https://cisnenegro.mx/propuesta/beervibes/",
+      "status": 404,
+      "final_url": "https://cisnenegro.mx/propuesta/beervibes/"
+    },
+    {
+      "url": "https://cisnenegro.mx/estrategia/",
+      "status": 404,
+      "final_url": "https://cisnenegro.mx/estrategia/"
+    },
+    {
+      "url": "https://cisnenegro.mx/proyecto/",
+      "status": 404,
+      "final_url": "https://cisnenegro.mx/proyecto/"
+    },
+    {
+      "url": "https://cisnenegro.mx/v2/",
+      "status": 404,
+      "final_url": "https://cisnenegro.mx/v2/"
+    },
+    {
+      "url": "https://cisnenegro.mx/robots.txt",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/robots.txt",
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.mx/sitemap.xml",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/sitemap.xml",
+      "content_type": "application/xml; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.mx/healthz",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/healthz",
+      "content_type": "application/json"
+    },
+    {
+      "url": "https://cisne.softvibes.art/",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisne.softvibes.art/menu/",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/menu/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisne.softvibes.art/cms/",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/cms/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisne.softvibes.art/admin/",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/cms/?next=/admin/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisne.softvibes.art/equipo/",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/equipo/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.cisnenegro.mx/",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/menu/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/menu/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/cms/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/cms/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/admin/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/cms/?next=/admin/",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/analisis/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/analisis/",
+      "content_type": "text/html"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/propuesta/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/propuesta/",
+      "content_type": "text/html"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/propuesta/beervibes/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/propuesta/beervibes/",
+      "content_type": "text/html"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/estrategia/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/estrategia/",
+      "content_type": "text/html"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/proyecto/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/proyecto/",
+      "content_type": "text/html"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/v2/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/v2/",
+      "content_type": "text/html"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/v2/menu/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/v2/menu/",
+      "content_type": "text/html"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/v2/admin/",
+      "status": 401,
+      "final_url": "https://cisnenegro.softvibes.art/v2/admin/"
+    },
+    {
+      "url": "https://cisnenegro.softvibes.art/v2/equipo/",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/v2/equipo/",
+      "content_type": "text/html"
+    }
+  ],
+  "source_files": [
+    "README.md",
+    "07-guia-cms.md",
+    "hosting-independiente/README.md",
+    "hosting-independiente/DESPLIEGUE.md",
+    "hosting-independiente/sitio/cms/cms.js",
+    "hosting-independiente/sitio/cms/index.html",
+    "hosting-independiente/sitio/equipo/index.html",
+    "hosting-independiente/sitio/admin/index.html",
+    "hosting-independiente/sitio/menu/index.html",
+    "hosting-independiente/sitio/assets/js/equipo.js",
+    "hosting-independiente/sitio/assets/js/menu.js",
+    "hosting-independiente/sitio/assets/js/pedido.js",
+    "hosting-independiente/backend/cms_server.py",
+    "hosting-independiente/backend/cms_media.py",
+    "hosting-independiente/backend/club_server.py",
+    "hosting-independiente/deploy/backup.py",
+    "hosting-independiente/deploy/cisne-independent-backup.timer",
+    "hosting-independiente/scripts/prepare_import.py"
+  ],
+  "server_code_comparison": {
+    "file": "sitio/cms/cms.js",
+    "local_equals_server": true,
+    "sha256": "34ec0d02d25e92fa26e8dd1ec14bd025ef0527ab040043c12603667740178251"
+  },
+  "limitations": [
+    {
+      "finding": "No existe /pasaporte/; responde 404. El acceso correcto es /menu/#pasaporte.",
+      "evidence": [
+        "HTTPS /pasaporte/",
+        "sitio/assets/js/menu.js:1939"
+      ]
+    },
+    {
+      "finding": "Las rutas de propuesta, análisis, estrategia, proyecto y /v2/ no se migraron al dominio final; allí responden 404. Están disponibles en el legado.",
+      "evidence": [
+        "http_checks"
+      ]
+    },
+    {
+      "finding": "La guía 07 describe punto focal, pero el CMS publicado no muestra campos de encuadre focal. El backend sí tiene soporte. Se documenta revisión en vista previa y apoyo técnico, no un control inexistente.",
+      "evidence": [
+        "sitio/cms/cms.js:296",
+        "backend/cms_media.py:59",
+        "07-guia-cms.md"
+      ]
+    },
+    {
+      "finding": "El formulario del CMS ofrece presentaciones para barril; no expone edición general de variantes de cocina o bebidas, aunque la importación preserva las variantes existentes.",
+      "evidence": [
+        "sitio/cms/cms.js:198",
+        "scripts/prepare_import.py"
+      ]
+    },
+    {
+      "finding": "El texto visible del carrito dice que el pedido no se envía; el comportamiento implementado lo registra al pulsar Mostrar al mesero cuando hay conexión. El manual describe el comportamiento real.",
+      "evidence": [
+        "sitio/menu/index.html:172",
+        "sitio/assets/js/pedido.js:4",
+        "sitio/assets/js/menu.js"
+      ]
+    },
+    {
+      "finding": "Las cuentas y parte de los datos operativos se importaron desde demostración v2. No se presentan como usuarios definitivos del negocio.",
+      "evidence": [
+        "DESPLIEGUE.md:Importación y comprobación"
+      ]
+    },
+    {
+      "finding": "El aviso de privacidad tiene aprobación del cliente pendiente en la documentación. No se certifica su validez legal.",
+      "evidence": [
+        "README.md",
+        "BACKLOG.md"
+      ]
+    },
+    {
+      "finding": "No hay automatización de publicaciones sociales, montaje de videos, generación IA ni editor Content Hub en esta entrega.",
+      "evidence": [
+        "07-guia-cms.md",
+        "hosting-independiente/README.md"
+      ]
+    },
+    {
+      "finding": "La captura de cobros registra métodos y montos; no integra una pasarela bancaria ni emite facturación fiscal.",
+      "evidence": [
+        "sitio/assets/js/equipo.js:904"
+      ]
+    },
+    {
+      "finding": "Respaldo diario activo y última ejecución del 17 de octubre verificada en registros: success, exit0 y restore_verified=true. Copia externa inicial verificada por SHA-256. No se ejecutó un respaldo ni una restauración real durante esta revisión. No se documenta réplica externa periódica.",
+      "evidence": [
+        "operational_verification",
+        "hosting-independiente/DESPLIEGUE.md:Respaldos"
+      ]
+    },
+    {
+      "finding": "El enlace DNS privado de Squarespace requiere sesión y no es accesible con el lector web. La cuenta del proveedor y el estado administrativo de la transferencia no se verificaron de nuevo; no se afirma que el trámite esté concluido.",
+      "evidence": [
+        "providers",
+        "DNS autoritativo actual"
+      ]
+    }
+  ],
+  "screenshots": {
+    "origin": "https://cisne.softvibes.art/",
+    "type": "Capturas reales del alias temporal de la misma instalación",
+    "reason": "El navegador local conservaba caché DNS del sitio anterior en el dominio final al preparar el manual. Las instrucciones y enlaces usan cisnenegro.mx.",
+    "demo_data": "Las capturas pueden mostrar cuentas y operaciones importadas de demostración; no representan resultados verificados del negocio."
+  },
+  "providers": [
+    {
+      "name": "Hostinger · hPanel",
+      "url": "https://hpanel.hostinger.com/",
+      "purpose": "Cuenta de hosting y administración del VPS. El acceso al proveedor es independiente del CMS.",
+      "authentication": "Cuenta Hostinger; verificación adicional si está activada.",
+      "verification": "Página oficial accesible; requiere JavaScript e inicio de sesión para operar."
+    },
+    {
+      "name": "Squarespace · DNS de cisnenegro.mx",
+      "url": "https://account.squarespace.com/domains/managed/cisnenegro.mx/dns/dns-settings",
+      "purpose": "Panel utilizado para cambiar los registros DNS del dominio.",
+      "authentication": "Cuenta Squarespace con permisos sobre el dominio; segundo factor cuando corresponda.",
+      "verification": "Enlace del panel proporcionado por el usuario y utilizado en la migración. El contenido privado requiere sesión; no se volvió a iniciar sesión para elaborar este informe."
+    }
+  ],
+  "technical_summary": {
+    "title": "Estado técnico comprobado",
+    "verified_at": "2026-10-18T01:35:52.109988+00:00",
+    "items": [
+      {
+        "label": "Dominio principal",
+        "value": "https://cisnenegro.mx/",
+        "detail": "Sitio v2 en la raíz, con menú, CMS, Administración, Equipo y privacidad."
+      },
+      {
+        "label": "Servidor",
+        "value": "31.220.63.211",
+        "detail": "Aplicación y datos separados dentro del mismo VPS; no es un servidor físico exclusivo."
+      },
+      {
+        "label": "Servicio",
+        "value": "Activo y saludable",
+        "detail": "Contenedor cisne-independent-app-1 con reinicio unless-stopped; Nginx publica la aplicación del puerto interno 8888."
+      },
+      {
+        "label": "DNS web",
+        "value": "A @ y A www → 31.220.63.211 · TTL 300",
+        "detail": "Los cuatro servidores autoritativos confirman ambos registros; el resolutor 1.1.1.1 coincide y no devuelve AAAA web."
+      },
+      {
+        "label": "Redirecciones",
+        "value": "HTTP y www → https://cisnenegro.mx",
+        "detail": "Conservan ruta y parámetros; comprobado con /menu/?mesa=1."
+      },
+      {
+        "label": "HTTPS",
+        "value": "Certificado Let’s Encrypt válido",
+        "detail": "Cubre cisnenegro.mx y www.cisnenegro.mx; vence el 16 de enero de 2027 a las 00:27 UTC. Temporizador Certbot activo."
+      },
+      {
+        "label": "Dominio temporal",
+        "value": "https://cisne.softvibes.art/",
+        "detail": "Mismo servicio y datos que el dominio definitivo. No es una copia de seguridad; las sesiones son independientes por dominio."
+      },
+      {
+        "label": "Instalación anterior",
+        "value": "https://cisnenegro.softvibes.art/",
+        "detail": "Conserva servicios y bases separados. No sincroniza cambios con producción; usar únicamente como referencia."
+      },
+      {
+        "label": "Respaldos",
+        "value": "Diarios · 03:55 CDMX · retención 14",
+        "detail": "Última ejecución comprobada: 17 de octubre, exit0 y restauración de verificación registrada. Hay ocho archivos; el más reciente valida 1,442 archivos y 477 medios."
+      },
+      {
+        "label": "Copia fuera del VPS",
+        "value": "Copia inicial del 10 de octubre verificada",
+        "detail": "El archivo local conserva el tamaño y SHA-256 esperados. No se documenta una réplica externa periódica."
+      },
+      {
+        "label": "Correo y transferencia",
+        "value": "Registros de correo conservados según bitácora",
+        "detail": "Este informe no cambia DNS ni correo. La conclusión administrativa de la transferencia del registrador no se verificó en la cuenta del proveedor."
+      }
+    ],
+    "dns_records": [
+      {
+        "type": "A",
+        "name": "@",
+        "value": "31.220.63.211",
+        "ttl": 300
+      },
+      {
+        "type": "A",
+        "name": "www",
+        "value": "31.220.63.211",
+        "ttl": 300
+      }
+    ],
+    "nameservers": [
+      "ns-cloud-b1.googledomains.com",
+      "ns-cloud-b2.googledomains.com",
+      "ns-cloud-b3.googledomains.com",
+      "ns-cloud-b4.googledomains.com"
+    ],
+    "backup": {
+      "timer_active": true,
+      "schedule": "03:55 America/Mexico_City",
+      "retention": 14,
+      "files_available": 8,
+      "last_run_utc": "2026-10-17T09:55:01Z",
+      "last_completed_utc": "2026-10-17T09:55:34Z",
+      "last_result": "success",
+      "exit_code": 0,
+      "restore_verified": true,
+      "files_verified": 1442,
+      "ready_media": 477,
+      "latest_archive": "cisne-20261017T095502575820Z.tar.gz",
+      "latest_bytes": 451684334,
+      "external_initial_verified": true
+    },
+    "validation_scope": "Consultas HTTPS, DNS, certificado TLS, estado de servicios y registros de respaldo de solo lectura. No se guardaron contenidos, cobraron cuentas ni ejecutaron restauraciones reales para preparar el informe."
+  },
+  "editorial_review_at": "2026-10-18T01:35:52.109988+00:00",
+  "operational_verification": {
+    "method": "SSH de solo lectura; systemctl show/cat, journalctl del respaldo, consulta dig, handshake TLS verificado, inspección Docker y proxy de ambos vhosts. Comprobación SHA-256 del archivo local de respaldo.",
+    "backup": {
+      "timer_active": true,
+      "schedule": "03:55 America/Mexico_City",
+      "retention": 14,
+      "files_available": 8,
+      "last_run_utc": "2026-10-17T09:55:01Z",
+      "last_completed_utc": "2026-10-17T09:55:34Z",
+      "last_result": "success",
+      "exit_code": 0,
+      "restore_verified": true,
+      "files_verified": 1442,
+      "ready_media": 477,
+      "latest_archive": "cisne-20261017T095502575820Z.tar.gz",
+      "latest_bytes": 451684334,
+      "external_initial_verified": true
+    },
+    "local_initial_backup": {
+      "bytes": 451685053,
+      "sha256": "71de51d55c4bdb660bc87ded30fee465d8916fe386de5323b4ab849f0039c3a1",
+      "matches_verified_archive": true
+    },
+    "tls": {
+      "final_domains": [
+        "cisnenegro.mx",
+        "www.cisnenegro.mx"
+      ],
+      "final_not_after_utc": "2027-01-16T00:27:14Z",
+      "temporary_domain": "cisne.softvibes.art",
+      "temporary_not_after_utc": "2027-01-08T12:47:12Z",
+      "issuer": "Let’s Encrypt",
+      "certbot_timer_active": true
+    },
+    "proxy": {
+      "final": "http://127.0.0.1:8888",
+      "temporary": "http://127.0.0.1:8888"
+    },
+    "dns_authoritative_verified": true,
+    "dns_resolver": "1.1.1.1",
+    "dns_records": [
+      {
+        "type": "A",
+        "name": "@",
+        "value": "31.220.63.211",
+        "ttl": 300
+      },
+      {
+        "type": "A",
+        "name": "www",
+        "value": "31.220.63.211",
+        "ttl": 300
+      }
+    ],
+    "dns_aaaa": [],
+    "container": {
+      "name": "cisne-independent-app-1",
+      "health": "healthy",
+      "restart": "unless-stopped"
+    },
+    "http_redirects_preserve_path_and_query": true
+  }
+}

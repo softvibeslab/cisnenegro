@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cisne Equipo · Cervecería Cisne Negro</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0E0D0B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Cisne Equipo">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="manifest" href="/equipo/equipo.webmanifest?v=20261007a">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/marca/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/marca/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=JetBrains+Mono:wght@500&family=Manrope:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/equipo.css?v=20261007a">
+  <script src="/assets/js/equipo.js?v=20261007a" defer></script>
+</head>
+<body class="eq">
+  <a class="skip" href="#vista">Saltar al contenido</a>
+
+  <header class="ebar">
+    <div class="ebar__in">
+      <a class="ebar__brand" href="#inicio" aria-label="Cisne Equipo, ir al inicio">
+        <span class="sticker ebar__sticker"><img src="/assets/img/marca/favicon-192.png" alt="" width="192" height="192"></span>
+        <span class="ebar__title">Cisne <span class="ebar__title2">Equipo</span></span>
+      </a>
+      <div class="ebar__acc" id="ebar-acc" hidden>
+        <button type="button" class="icon-btn ebar__scan" id="top-escanear" aria-label="Escanear pedido">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 12h10"/></svg>
+        </button>
+        <span class="ebar__quien" id="quien"></span>
+        <button type="button" class="btn btn--ghost btn--sm" id="salir">Salir</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="vista" class="eq-main" tabindex="-1">
+    <p class="aviso" id="aviso" role="alert" hidden></p>
+
+    <!-- ── Cargando ─────────────────────────────── -->
+    <section class="vista" id="v-cargando" aria-busy="true">
+      <p class="cargando">Cargando…</p>
+    </section>
+
+    <!-- ── Login ─────────────────────────────────── -->
+    <section class="vista vista--login" id="v-login" aria-labelledby="t-login" hidden>
+      <div class="login">
+        <span class="sticker login__sticker"><img src="/assets/img/marca/favicon-192.png" alt="" width="192" height="192"></span>
+        <h1 class="h1" id="t-login" tabindex="-1">Entrar al turno</h1>
+        <p class="login__sub" id="login-sub">Usa tu usuario y tu PIN de 6 números.</p>
+        <form class="login__form" id="f-login" novalidate>
+          <div class="campo">
+            <label for="l-usuario">Usuario</label>
+            <input id="l-usuario" name="usuario" type="text" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required maxlength="30" enterkeyhint="next">
+          </div>
+          <div class="campo">
+            <label for="l-pin">PIN</label>
+            <input id="l-pin" class="pin" name="pin" type="password" inputmode="numeric" autocomplete="current-password" pattern="[0-9]{6}" maxlength="6" required aria-describedby="login-error">
+          </div>
+          <div class="teclado" id="teclado" role="group" aria-label="Teclado numérico para el PIN">
+            <button type="button" data-n="1">1</button><button type="button" data-n="2">2</button><button type="button" data-n="3">3</button>
+            <button type="button" data-n="4">4</button><button type="button" data-n="5">5</button><button type="button" data-n="6">6</button>
+            <button type="button" data-n="7">7</button><button type="button" data-n="8">8</button><button type="button" data-n="9">9</button>
+            <button type="button" data-n="borrar" aria-label="Borrar un número" class="teclado__fn">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 5H9l-6 7 6 7h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM17 9l-6 6M11 9l6 6"/></svg>
+            </button>
+            <button type="button" data-n="0">0</button>
+            <button type="submit" class="teclado__ok">Entrar</button>
+          </div>
+          <p class="error" id="login-error" role="alert"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ── Inicio ────────────────────────────────── -->
+    <section class="vista" id="v-inicio" aria-labelledby="t-inicio" hidden>
+      <div class="saludo">
+        <h1 class="h1" id="t-inicio" tabindex="-1">Hola</h1>
+        <p class="saludo__dia" id="inicio-dia"></p>
+      </div>
+      <button type="button" class="btn btn--primary btn--xl btn--block" id="escanear">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 12h10"/></svg>
+        Escanear pedido
+      </button>
+      <form class="codigo" id="f-codigo" novalidate>
+        <label for="codigo-input">o escribe el código del pedido</label>
+        <div class="codigo__fila">
+          <input id="codigo-input" type="text" inputmode="text" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="120" placeholder="K7M2-Q9XA" aria-describedby="codigo-error">
+          <button type="submit" class="btn btn--ghost">Abrir</button>
+        </div>
+        <p class="error" id="codigo-error" role="alert"></p>
+      </form>
+      <section class="bloque" aria-labelledby="t-mias">
+        <div class="bloque__top">
+          <h2 class="h2" id="t-mias">Mis cuentas abiertas</h2>
+          <button type="button" class="btn btn--ghost btn--xs" id="inicio-actualizar">Actualizar</button>
+        </div>
+        <div id="lista-mias" aria-live="polite"></div>
+      </section>
+      <section class="bloque" aria-labelledby="t-todas" id="bloque-todas" hidden>
+        <h2 class="h2" id="t-todas">Cuentas abiertas del equipo</h2>
+        <div id="lista-todas"></div>
+      </section>
+    </section>
+
+    <!-- ── Pedido escaneado ──────────────────────── -->
+    <section class="vista" id="v-pedido" aria-labelledby="t-pedido" hidden>
+      <div id="pedido-cont"></div>
+    </section>
+
+    <!-- ── Cuenta ────────────────────────────────── -->
+    <section class="vista" id="v-cuenta" aria-labelledby="t-cuenta" hidden>
+      <div id="cuenta-cont"></div>
+    </section>
+
+    <!-- ── Cobro ─────────────────────────────────── -->
+    <section class="vista" id="v-cobro" aria-labelledby="t-cobro" hidden>
+      <a class="volver" id="cobro-volver" href="#inicio">← Volver a la cuenta</a>
+      <h1 class="h1" id="t-cobro" tabindex="-1">Cerrar cuenta</h1>
+      <p class="sub" id="cobro-sub"></p>
+      <form id="f-cobro" novalidate>
+        <div class="card cobro__cuenta">
+          <span class="k">Cuenta</span><span class="mono v" id="cobro-cuenta">$0.00</span>
+        </div>
+        <fieldset class="card">
+          <legend class="h3">Propina</legend>
+          <div class="seg seg--4" id="propina-seg" role="group" aria-label="Propina">
+            <button type="button" data-p="0" aria-pressed="true">Sin</button>
+            <button type="button" data-p="10" aria-pressed="false">10%</button>
+            <button type="button" data-p="15" aria-pressed="false">15%</button>
+            <button type="button" data-p="20" aria-pressed="false">20%</button>
+          </div>
+          <div class="campo campo--fila">
+            <label for="propina-otra">Otra cantidad</label>
+            <input id="propina-otra" type="text" inputmode="decimal" autocomplete="off" placeholder="$0.00">
+          </div>
+          <p class="sub" id="propina-txt"></p>
+        </fieldset>
+        <fieldset class="card">
+          <legend class="h3">Pagos</legend>
+          <p class="sub">Cobrar de un toque:</p>
+          <div class="rapidos" id="rapidos"></div>
+          <ol class="pagos" id="pagos"></ol>
+          <button type="button" class="btn btn--ghost btn--sm" id="pago-agregar">＋ Agregar pago</button>
+        </fieldset>
+        <div class="resta" id="resta" aria-live="polite">
+          <div class="resta__fila"><span>Total a cobrar</span><span class="mono" id="cobro-total">$0.00</span></div>
+          <div class="resta__fila resta__fila--grande"><span id="resta-k">Resta por cobrar</span><span class="mono" id="resta-v">$0.00</span></div>
+        </div>
+        <p class="error" id="cobro-error" role="alert"></p>
+        <div class="accbar">
+          <button type="submit" class="btn btn--primary btn--lg btn--block" id="cobrar" disabled>Cobrar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ── Historial ─────────────────────────────── -->
+    <section class="vista" id="v-historial" aria-labelledby="t-historial" hidden>
+      <h1 class="h1" id="t-historial" tabindex="-1">Historial</h1>
+      <div class="chips" id="rango-chips" role="group" aria-label="Rango de fechas">
+        <button type="button" data-r="hoy" aria-pressed="true">Hoy</button>
+        <button type="button" data-r="ayer" aria-pressed="false">Ayer</button>
+        <button type="button" data-r="semana" aria-pressed="false">Semana</button>
+        <button type="button" data-r="mes" aria-pressed="false">Mes</button>
+        <button type="button" data-r="personalizado" aria-pressed="false">Personalizado</button>
+      </div>
+      <form class="filtros" id="f-filtros" novalidate>
+        <div class="filtros__rango" id="rango-personal" hidden>
+          <div class="campo"><label for="h-desde">Desde</label><input id="h-desde" type="date"></div>
+          <div class="campo campo--hora" hidden><label for="h-desde-hora">Hora</label><input id="h-desde-hora" type="time" value="00:00"></div>
+          <div class="campo"><label for="h-hasta">Hasta</label><input id="h-hasta" type="date"></div>
+          <div class="campo campo--hora" hidden><label for="h-hasta-hora">Hora</label><input id="h-hasta-hora" type="time" value="23:59"></div>
+          <label class="check"><input type="checkbox" id="h-hora"> Hora exacta</label>
+          <p class="sub filtros__nota">Sin hora, cada fecha es un día operativo (de 05:00 a 05:00).</p>
+        </div>
+        <div class="filtros__fila">
+          <div class="campo"><label for="h-estado">Estado</label>
+            <select id="h-estado">
+              <option value="cerrada">Cerradas</option>
+              <option value="cancelada">Canceladas</option>
+              <option value="abierta">Abiertas</option>
+              <option value="todas">Todas</option>
+            </select>
+          </div>
+          <div class="campo"><label for="h-metodo">Forma de pago</label>
+            <select id="h-metodo">
+              <option value="">Todas</option>
+              <option value="efectivo">Efectivo</option>
+              <option value="tarjeta_credito">Tarjeta de crédito</option>
+              <option value="tarjeta_debito">Tarjeta de débito</option>
+            </select>
+          </div>
+          <div class="campo"><label for="h-mesa">Mesa</label><input id="h-mesa" type="text" inputmode="text" maxlength="10" autocomplete="off"></div>
+          <div class="campo" id="h-mesero-campo" hidden><label for="h-mesero">Mesero</label>
+            <select id="h-mesero"><option value="">Todos</option></select>
+          </div>
+        </div>
+        <div class="filtros__acc">
+          <button type="submit" class="btn btn--ghost btn--sm">Aplicar</button>
+          <a class="btn btn--ghost btn--sm" id="h-csv" href="#" download>Descargar CSV</a>
+        </div>
+      </form>
+      <p class="sub" id="h-rango-txt" aria-live="polite"></p>
+      <div id="h-indicadores"></div>
+      <section class="bloque" aria-labelledby="t-hlista">
+        <h2 class="h2" id="t-hlista">Cuentas</h2>
+        <div id="h-lista"></div>
+        <div class="paginas" id="h-paginas"></div>
+      </section>
+    </section>
+
+    <!-- ── Mi corte ──────────────────────────────── -->
+    <section class="vista" id="v-corte" aria-labelledby="t-corte" hidden>
+      <h1 class="h1" id="t-corte" tabindex="-1">Mi corte</h1>
+      <div id="corte-cont"></div>
+    </section>
+
+    <!-- ── Cierre del día (admin) ────────────────── -->
+    <section class="vista vista--ancha" id="v-cierre" aria-labelledby="t-cierre" hidden>
+      <nav class="subnav" aria-label="Administración">
+        <a href="#cierre" aria-current="page">Cierre del día</a>
+        <a href="#equipo">Equipo</a>
+      </nav>
+      <div class="vista__top">
+        <h1 class="h1" id="t-cierre" tabindex="-1">Cierre del día</h1>
+        <div class="campo campo--dia"><label for="cierre-dia">Día operativo</label><input id="cierre-dia" type="date"></div>
+      </div>
+      <div id="cierre-cont"></div>
+    </section>
+
+    <!-- ── Equipo (admin) ────────────────────────── -->
+    <section class="vista vista--ancha" id="v-equipo" aria-labelledby="t-equipo" hidden>
+      <nav class="subnav" aria-label="Administración">
+        <a href="#cierre">Cierre del día</a>
+        <a href="#equipo" aria-current="page">Equipo</a>
+      </nav>
+      <h1 class="h1" id="t-equipo" tabindex="-1">Equipo</h1>
+      <div class="equipo-grid">
+        <form class="card" id="f-alta" novalidate>
+          <h2 class="h2">Agregar a alguien</h2>
+          <div class="campo"><label for="a-nombre">Nombre</label><input id="a-nombre" type="text" maxlength="60" autocomplete="off" required></div>
+          <div class="campo"><label for="a-usuario">Usuario</label><input id="a-usuario" type="text" maxlength="30" autocapitalize="none" autocorrect="off" spellcheck="false" autocomplete="off" required aria-describedby="a-usuario-ayuda"><small class="sub" id="a-usuario-ayuda">Minúsculas, números, punto o guion. Ej.: luis.p</small></div>
+          <div class="campo"><label for="a-rol">Rol</label>
+            <select id="a-rol"><option value="mesero">Mesero</option><option value="admin">Administrador</option></select>
+          </div>
+          <div class="campo"><label for="a-pin">PIN (opcional)</label><input id="a-pin" type="text" inputmode="numeric" maxlength="6" pattern="[0-9]{6}" autocomplete="off" aria-describedby="a-pin-ayuda"><small class="sub" id="a-pin-ayuda">Déjalo vacío y se genera uno al azar.</small></div>
+          <p class="error" id="alta-error" role="alert"></p>
+          <button type="submit" class="btn btn--primary">Dar de alta</button>
+        </form>
+        <section class="card" aria-labelledby="t-staff">
+          <h2 class="h2" id="t-staff">Cuentas del equipo</h2>
+          <ul class="staff" id="staff-lista" aria-live="polite"></ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bnav" id="bnav" aria-label="Secciones" hidden>
+    <a href="#inicio" data-v="inicio">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+      <span>Inicio</span>
+    </a>
+    <a href="#historial" data-v="historial">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+      <span>Historial</span>
+    </a>
+    <a href="#corte" data-v="corte">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6M9 16h3"/></svg>
+      <span>Corte</span>
+    </a>
+    <a href="#cierre" data-v="admin" id="nav-admin" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+      <span>Admin</span>
+    </a>
+  </nav>
+
+  <p class="toast" id="toast" role="status" aria-live="polite"></p>
+
+  <!-- Escáner a pantalla completa -->
+  <dialog class="escaner" id="dlg-escaner" aria-labelledby="t-escaner">
+    <div class="escaner__video">
+      <video id="esc-video" playsinline muted autoplay aria-hidden="true"></video>
+      <div class="escaner__mira" aria-hidden="true"></div>
+    </div>
+    <div class="escaner__pie">
+      <h2 class="escaner__t" id="t-escaner">Escanear pedido</h2>
+      <p class="escaner__estado" id="esc-estado" aria-live="assertive">Abriendo la cámara…</p>
+      <form class="escaner__manual" id="esc-manual" novalidate>
+        <p class="escaner__ayuda" id="esc-ayuda"></p>
+        <label for="esc-codigo">Código del pedido</label>
+        <div class="codigo__fila">
+          <input id="esc-codigo" type="text" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="120" placeholder="K7M2-Q9XA">
+          <button type="submit" class="btn btn--primary">Abrir</button>
+        </div>
+      </form>
+      <button type="button" class="btn btn--ghost btn--block" id="esc-cerrar">Cerrar</button>
+    </div>
+  </dialog>
+
+  <!-- Diálogo genérico (confirmar, motivo, PIN…) -->
+  <dialog class="modal" id="dlg" aria-labelledby="dlg-t"></dialog>
+</body>
+</html>

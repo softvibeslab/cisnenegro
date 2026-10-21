@@ -1,0 +1,843 @@
+{
+  "_meta": {
+    "fuente": "cisnenegro.mx/menu transcrito el 2026-10-05",
+    "moneda": "MXN",
+    "notas": "Las 'notas' de barril describen el perfil típico del estilo, salvo ¿A poco sí pa'? (notas oficiales de la marca, IG 2025-04-30). 'historia' queda vacía hasta que el cliente cuente el origen de cada nombre. Maridajes: 'marida_oficial' = sugerencia publicada por Cisne Negro (IG 2026-01-20); el resto, propuesta pendiente de validar. Imágenes: ilustraciones en assets/img/cervezas (herramientas/ilustrar-cervezas.cjs) y arte oficial de etiqueta en assets/img/cervezas/etiquetas. Pendiente: Henry IX aparece como Munich Helles en IG (dic 2025) y como IPA en el menú; ¿A poco sí pa'? 6.8% ABV en IG y 6.9% en el menú."
+  },
+  "barril": [
+    {
+      "abv": 7.0,
+      "disponible": true,
+      "estilo": "Red IPA",
+      "etiqueta": "etiquetas/alarma.jpg",
+      "historia": "",
+      "id": "alarma",
+      "img": "alarma.jpg",
+      "marida_con": [
+        "hamburguesa-costilla",
+        "tlayuda"
+      ],
+      "nombre": "¡Alarma!",
+      "notas": "Malta caramelo y tostada con amargor firme de lúpulo.",
+      "perfil": "lupulada",
+      "precios": [
+        {
+          "medida": "12 oz",
+          "precio": 100
+        },
+        {
+          "medida": "4 oz",
+          "precio": 35
+        }
+      ],
+      "visible": true
+    },
+    {
+      "abv": 6.9,
+      "disponible": true,
+      "estilo": "IPA",
+      "etiqueta": "etiquetas/a-poco-si-pa.jpg",
+      "historia": "",
+      "ibu": 62,
+      "id": "a-poco-si-pa",
+      "img": "a-poco-si-pa.jpg",
+      "marida_con": [
+        "palomitas-coliflor",
+        "hamburguesa-suadero"
+      ],
+      "marida_oficial": [
+        "palomitas-coliflor"
+      ],
+      "nombre": "¿A poco sí pa'?",
+      "notas": "Intensa y aromática, de perfil tropical y cítrico: piña, mango, papaya, melón y un ligero toque resinoso.",
+      "perfil": "lupulada",
+      "precios": [
+        {
+          "medida": "12 oz",
+          "precio": 100
+        },
+        {
+          "medida": "4 oz",
+          "precio": 35
+        }
+      ],
+      "visible": true
+    },
+    {
+      "abv": 5.0,
+      "disponible": true,
+      "estilo": "IPA",
+      "historia": "",
+      "id": "henry-ix",
+      "img": "henry-ix.jpg",
+      "marida_con": [
+        "taco-pescado",
+        "camarones-piedra"
+      ],
+      "nombre": "Henry IX",
+      "notas": "Dorada, ligera y fácil de tomar, con final seco.",
+      "perfil": "lupulada",
+      "precios": [
+        {
+          "medida": "14 oz",
+          "precio": 110
+        },
+        {
+          "medida": "4 oz",
+          "precio": 35
+        }
+      ],
+      "visible": true
+    },
+    {
+      "abv": 8.9,
+      "disponible": true,
+      "estilo": "Imperial Stout",
+      "historia": "Su nombre nació de una plática en la barra del Cisne.",
+      "id": "agua-puerca",
+      "img": "agua-puerca.jpg",
+      "marida_con": [
+        "tlayuda",
+        "dona-tocino"
+      ],
+      "marida_oficial": [
+        "tlayuda"
+      ],
+      "nombre": "Agua Puerca",
+      "notas": "Densa y tostada: chocolate amargo, café y un final cálido.",
+      "perfil": "oscura",
+      "precios": [
+        {
+          "medida": "12 oz",
+          "precio": 100
+        },
+        {
+          "medida": "4 oz",
+          "precio": 35
+        }
+      ],
+      "visible": true
+    },
+    {
+      "abv": 4.5,
+      "disponible": true,
+      "estilo": "Kölsch",
+      "historia": "",
+      "id": "colchita",
+      "img": "/assets/img/publicado/5ba627a63a7e482899f8880d696bf6f5.webp",
+      "marida_con": [],
+      "nombre": "Colchita",
+      "notas": "",
+      "perfil": "ligera",
+      "precios": [
+        {
+          "medida": "12 oz",
+          "precio": 100
+        },
+        {
+          "medida": "4 oz",
+          "precio": 35
+        }
+      ],
+      "visible": true
+    },
+    {
+      "abv": 6.1,
+      "disponible": true,
+      "estilo": "Hazy IPA",
+      "etiqueta": "etiquetas/barrilete-cosmico.jpg",
+      "historia": "",
+      "id": "barrilete-cosmico",
+      "img": "barrilete-cosmico.jpg",
+      "marida_con": [
+        "hamburguesa-manchego",
+        "tartar-cecina"
+      ],
+      "nombre": "Barrilete Cósmico",
+      "notas": "Turbia y jugosa: fruta tropical, amargor suave.",
+      "perfil": "lupulada",
+      "precios": [
+        {
+          "medida": "12 oz",
+          "precio": 100
+        },
+        {
+          "medida": "4 oz",
+          "precio": 35
+        }
+      ],
+      "visible": true
+    },
+    {
+      "abv": 4,
+      "cerveceria": "Cuatro Palos",
+      "disponible": true,
+      "estilo": "Sour de guayaba y jamaica",
+      "historia": "",
+      "id": "guamaica",
+      "img": "guamaica.jpg",
+      "marida_con": [
+        "aguachile-ny",
+        "ceviche-atun",
+        "palomitas-coliflor"
+      ],
+      "nombre": "Guamaica",
+      "notas": "Ácida y frutal: guayaba y jamaica, muy refrescante.",
+      "perfil": "acida",
+      "precios": [
+        {
+          "medida": "12 oz",
+          "precio": 110
+        },
+        {
+          "medida": "4 oz",
+          "precio": 40
+        }
+      ],
+      "visible": false
+    }
+  ],
+  "comida": [
+    {
+      "id": "categoria-de-temporada",
+      "items": [
+        {
+          "descripcion": "Con relish de pepino y chips.",
+          "disponible": true,
+          "id": "chamorro-adobado",
+          "img": "/assets/img/publicado/3b93840e613643f69379db0cba55a230.webp",
+          "nombre": "Chamorro Adobado",
+          "nombre_completo": "Chamorro Adobado",
+          "precio": 280,
+          "variantes": [
+            {
+              "id": "solo",
+              "nombre": "Chamorro",
+              "precio": 280
+            },
+            {
+              "id": "con-cervezas",
+              "nombre": "Con 2 cervezas Henry IX o Colchita",
+              "precio": 400
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "seccion": "De temporada",
+      "visible": true
+    },
+    {
+      "id": "categoria-entradas",
+      "items": [
+        {
+          "descripcion": "Capeado con tinta de calamar y aderezo de sriracha",
+          "disponible": true,
+          "id": "camarones-piedra",
+          "img": "camarones_piedra.jpg",
+          "nombre": "Camarones Piedra",
+          "nombre_completo": "Camarones Piedra",
+          "precio": 135,
+          "visible": true
+        },
+        {
+          "descripcion": "Capeadas con picante de arándano",
+          "disponible": true,
+          "id": "palomitas-coliflor",
+          "img": "palomitas.jpg",
+          "nombre": "Palomitas de Coliflor",
+          "nombre_completo": "Palomitas de Coliflor",
+          "precio": 80,
+          "visible": true
+        },
+        {
+          "descripcion": "Sofrito de res, papas cambray y queso parmesano",
+          "disponible": true,
+          "id": "guisado-res",
+          "img": "guisado_res.jpg",
+          "nombre": "Guisado de Res",
+          "nombre_completo": "Guisado de Res",
+          "precio": 95,
+          "visible": true
+        },
+        {
+          "descripcion": "Vinagreta de soya, aguacate, cebolla morada, pepino y chile verde",
+          "disponible": true,
+          "id": "aguachile-ny",
+          "img": "aguachile_ny.jpg",
+          "nombre": "Aguachile de New York",
+          "nombre_completo": "Aguachile de New York",
+          "precio": 290,
+          "visible": true
+        },
+        {
+          "descripcion": "Jitomate, cebolla morada, cilantro, aderezo de macha verde y papas fritas",
+          "disponible": true,
+          "id": "tartar-cecina",
+          "img": "tartar_cecina.jpg",
+          "nombre": "Tartar de Cecina",
+          "nombre_completo": "Tartar de Cecina",
+          "precio": 125,
+          "visible": true
+        },
+        {
+          "descripcion": "Bañadas con salsa de queso",
+          "disponible": true,
+          "id": "papas-cisne",
+          "img": "papas_cisne_negro.jpg",
+          "nombre": "Papas Cisne Negro",
+          "nombre_completo": "Papas Cisne Negro",
+          "precio": 75,
+          "visible": true
+        },
+        {
+          "descripcion": "Con aderezo de ajo rostizado",
+          "disponible": true,
+          "id": "chips-camote",
+          "img": "chips_de_camote.jpg",
+          "nombre": "Chips de Camote",
+          "nombre_completo": "Chips de Camote",
+          "precio": 75,
+          "variantes": [
+            {
+              "id": "55g",
+              "nombre": "55 g",
+              "precio": 75
+            },
+            {
+              "id": "110g",
+              "nombre": "110 g",
+              "precio": 135
+            }
+          ],
+          "visible": true
+        }
+      ],
+      "seccion": "Entradas",
+      "visible": true
+    },
+    {
+      "id": "categoria-hamburguesas-y-sandwiches",
+      "items": [
+        {
+          "descripcion": "Pan de caja, suadero, queso mozzarella, cebolla caramelizada con cerveza, aguacate, pepinillos y arúgula",
+          "disponible": true,
+          "id": "hamburguesa-suadero",
+          "img": "san_suadero.jpg",
+          "nombre": "De Suadero",
+          "nombre_completo": "Sándwich de Suadero",
+          "precio": 150,
+          "visible": true
+        },
+        {
+          "descripcion": "Baguette con carne de res, cebolla asada, queso mozzarella y aderezo de ajo",
+          "disponible": true,
+          "id": "philly-special",
+          "img": "philly_special.jpg",
+          "nombre": "Philly Special",
+          "nombre_completo": "Philly Special",
+          "precio": 135,
+          "visible": true
+        },
+        {
+          "descripcion": "Carne de res, tocino, cebolla caramelizada con balsámico, queso de cabra y arúgula.",
+          "disponible": true,
+          "id": "hamburguesa-res",
+          "img": "hamburgesa_de_res.jpg",
+          "nombre": "De Res",
+          "nombre_completo": "Hamburguesa de Res",
+          "precio": 135,
+          "visible": true
+        },
+        {
+          "descripcion": "Carne de res, queso manchego, champiñones salteados, pepino, guacamole y hojas",
+          "disponible": true,
+          "id": "hamburguesa-cisne",
+          "img": "hamburguesa_cisne2.jpg",
+          "nombre": "Cisne",
+          "nombre_completo": "Cisne",
+          "precio": 145,
+          "visible": true
+        },
+        {
+          "descripcion": "Aderezo de chile tatemado, costra de queso ahumado, pepinos encurtidos y arugula.",
+          "disponible": true,
+          "id": "hamburguesa-costilla",
+          "img": "hamburguesa_de_costilla.jpg",
+          "nombre": "De Costilla de Res",
+          "nombre_completo": "Hamburguesa de Costilla de Res",
+          "precio": 145,
+          "visible": true
+        },
+        {
+          "descripcion": "Queso manchego frito, champiñones salteados, pesto y hojas.",
+          "disponible": true,
+          "id": "hamburguesa-manchego",
+          "img": "hamburguesa_manchego.jpg",
+          "nombre": "De Manchego Frito",
+          "nombre_completo": "Hamburguesa de Manchego Frito",
+          "precio": 160,
+          "visible": true
+        }
+      ],
+      "seccion": "Hamburguesas y sándwiches",
+      "visible": true
+    },
+    {
+      "id": "categoria-maiz-y-harina",
+      "items": [
+        {
+          "descripcion": "Tortilla de maíz, carne asada, costra de queso y guacamole",
+          "disponible": true,
+          "id": "taco-asada",
+          "img": "taco_asada.jpg",
+          "nombre": "Taco de Asada",
+          "nombre_completo": "Taco de Asada",
+          "precio": 80,
+          "visible": true
+        },
+        {
+          "descripcion": "Tortilla de maíz, pescado capeado con col, pico de gallo y aderezo de macha verde",
+          "disponible": true,
+          "id": "taco-pescado",
+          "img": "taco_pescado.jpg",
+          "nombre": "Taco de Pescado con Capa",
+          "nombre_completo": "Taco de Pescado con Capa",
+          "precio": 60,
+          "visible": true
+        },
+        {
+          "descripcion": "Burrito de pechuga de pollo, cebolla asada, ensalada de trigo, lechuga y aderezo de ajo.",
+          "disponible": true,
+          "id": "burro-alas",
+          "img": "burro_con_alas.jpg",
+          "nombre": "Burro con Alas",
+          "nombre_completo": "Burro con Alas",
+          "precio": 115,
+          "visible": true
+        },
+        {
+          "descripcion": "Picaña adobada, frijoles, quesillo, aguacate, cebolla morada y cilantro.",
+          "disponible": true,
+          "id": "tlayuda",
+          "img": "tlayuda.jpg",
+          "nombre": "Tlayuda de Picaña Adobada",
+          "nombre_completo": "Tlayuda de Picaña Adobada",
+          "precio": 210,
+          "visible": true
+        }
+      ],
+      "seccion": "Maíz y harina",
+      "visible": true
+    },
+    {
+      "id": "categoria-especiales",
+      "items": [
+        {
+          "descripcion": "Atún, pepino, cebolla morada, aguacate, chile serrano, cilantro, salsa de chiles secos.",
+          "disponible": true,
+          "id": "ceviche-atun",
+          "img": "ceviche_de_atun.jpg",
+          "nombre": "Ceviche de Atún",
+          "nombre_completo": "Ceviche de Atún",
+          "precio": 130,
+          "visible": true
+        }
+      ],
+      "seccion": "Especiales",
+      "visible": true
+    },
+    {
+      "id": "categoria-postres",
+      "items": [
+        {
+          "descripcion": "Con helado de cookies & cream",
+          "disponible": true,
+          "id": "dona-tocino",
+          "img": "dona_con_tocino.jpg",
+          "nombre": "Dona Glaseada con Maple y Tocino",
+          "nombre_completo": "Dona Glaseada con Maple y Tocino",
+          "precio": 80,
+          "visible": true
+        },
+        {
+          "descripcion": "Con helado de vainilla, cajeta y nuez.",
+          "disponible": true,
+          "id": "pastel-campechanas",
+          "img": "pastel_helado_de_campechanas.jpg",
+          "nombre": "Pastel Helado de Campechanas",
+          "nombre_completo": "Pastel Helado de Campechanas",
+          "precio": 100,
+          "visible": true
+        }
+      ],
+      "seccion": "Postres",
+      "visible": true
+    }
+  ],
+  "latas": [
+    {
+      "abv": 10.5,
+      "cerveceria": "Border Psycho",
+      "detalle": "Botella 355 ml",
+      "disponible": true,
+      "estilo": "Imperial Stout",
+      "id": "lata-border-psycho-brutal",
+      "nombre": "Brutal",
+      "origen": "Tijuana",
+      "perfil": "oscura",
+      "precio": 120,
+      "visible": true
+    },
+    {
+      "abv": 5.5,
+      "cerveceria": "Principia",
+      "detalle": "Botella 355 ml",
+      "disponible": true,
+      "estilo": "Peanut Butter Stout",
+      "id": "lata-principia-asimetria",
+      "nombre": "Asimetría",
+      "origen": "Monterrey",
+      "perfil": "oscura",
+      "precio": 130,
+      "visible": true
+    },
+    {
+      "abv": 5.2,
+      "cerveceria": "93 Beer",
+      "detalle": "Lata 12 oz",
+      "disponible": true,
+      "estilo": "American Pale Ale",
+      "id": "lata-93-beer-dog-n-beer",
+      "nombre": "Dog N' Beer",
+      "origen": "Tijuana",
+      "perfil": "lupulada",
+      "precio": 110,
+      "visible": true
+    },
+    {
+      "abv": 5.0,
+      "cerveceria": "93 Beer",
+      "detalle": "Lata 12 oz",
+      "disponible": true,
+      "estilo": "West Coast Pilsner",
+      "id": "lata-93-beer-hard-to-explain",
+      "nombre": "Hard To Explain",
+      "origen": "Tijuana",
+      "perfil": "ligera",
+      "precio": 110,
+      "visible": true
+    },
+    {
+      "abv": 7.2,
+      "cerveceria": "Paulaner",
+      "detalle": "Botella 500 ml",
+      "disponible": true,
+      "estilo": "Festbier",
+      "id": "lata-paulaner-oktoberfest-bier",
+      "nombre": "Oktoberfest Bier",
+      "origen": "Alemania",
+      "perfil": "ligera",
+      "precio": 170,
+      "visible": true
+    },
+    {
+      "abv": 5.5,
+      "cerveceria": "Loba",
+      "detalle": "Lata 12 oz",
+      "disponible": true,
+      "estilo": "American Porter",
+      "id": "lata-loba-negra",
+      "nombre": "Negra",
+      "origen": "Guadalajara",
+      "perfil": "oscura",
+      "precio": 110,
+      "visible": true
+    },
+    {
+      "abv": 5.4,
+      "cerveceria": "Blue Moon",
+      "detalle": "Botella 355 ml",
+      "disponible": true,
+      "estilo": "Belgian Style Wheat Ale",
+      "id": "lata-blue-moon-blue-moon",
+      "nombre": "Blue Moon",
+      "origen": "Colorado, EUA",
+      "perfil": "ligera",
+      "precio": 120,
+      "visible": true
+    },
+    {
+      "abv": 5.2,
+      "cerveceria": "Hércules",
+      "detalle": "Lata 473 ml",
+      "disponible": true,
+      "estilo": "Pale Ale",
+      "id": "lata-hercules-caballo-blanco",
+      "nombre": "Caballo Blanco",
+      "origen": "Querétaro",
+      "perfil": "lupulada",
+      "precio": 130,
+      "visible": true
+    },
+    {
+      "abv": 4.5,
+      "cerveceria": "Hércules",
+      "detalle": "Lata 16 oz",
+      "disponible": true,
+      "estilo": "Rye Lager",
+      "id": "lata-hercules-hombre-pajaro",
+      "nombre": "Hombre Pájaro",
+      "origen": "Querétaro",
+      "perfil": "ligera",
+      "precio": 130,
+      "visible": true
+    },
+    {
+      "abv": 7.2,
+      "cerveceria": "Santa Sabina",
+      "detalle": "Botella 355 ml",
+      "disponible": true,
+      "estilo": "Stout con Plátano y Chocolate",
+      "id": "lata-santa-sabina-chocobanana-de-olla",
+      "nombre": "Chocobanana de Olla",
+      "origen": "Guadalajara",
+      "perfil": "oscura",
+      "precio": 140,
+      "visible": true
+    },
+    {
+      "abv": 4.2,
+      "cerveceria": "Tal Cual",
+      "detalle": "Lata 12 oz",
+      "disponible": true,
+      "estilo": "Hard Seltzer",
+      "id": "lata-tal-cual-hard-seltzer-toronja",
+      "nombre": "Hard Seltzer Toronja",
+      "origen": "Sonora",
+      "perfil": "acida",
+      "precio": 80,
+      "visible": true
+    },
+    {
+      "abv": 4.2,
+      "cerveceria": "Tal Cual",
+      "detalle": "Lata 12 oz",
+      "disponible": true,
+      "estilo": "Hard Seltzer",
+      "id": "lata-tal-cual-hard-seltzer-jamaica",
+      "nombre": "Hard Seltzer Jamaica",
+      "origen": "Sonora",
+      "perfil": "acida",
+      "precio": 80,
+      "visible": true
+    },
+    {
+      "abv": 5.0,
+      "cerveceria": "Hércules",
+      "detalle": "Lata 473 ml",
+      "disponible": true,
+      "estilo": "Witbier",
+      "id": "lata-hercules-buen-chofer",
+      "nombre": "Buen Chofer",
+      "origen": "Querétaro",
+      "perfil": "ligera",
+      "precio": 120,
+      "visible": true
+    },
+    {
+      "abv": 3.8,
+      "cerveceria": "Hércules",
+      "detalle": "Lata 473 ml",
+      "disponible": true,
+      "estilo": "Best Bitter",
+      "id": "lata-hercules-hooligan",
+      "nombre": "Hooligan",
+      "origen": "Querétaro",
+      "perfil": "ligera",
+      "precio": 120,
+      "visible": true
+    },
+    {
+      "abv": 5.0,
+      "cerveceria": "Hércules",
+      "detalle": "Lata 473 ml",
+      "disponible": true,
+      "estilo": "Pale Ale",
+      "id": "lata-hercules-rafaga",
+      "nombre": "Ráfaga",
+      "origen": "Querétaro",
+      "perfil": "lupulada",
+      "precio": 130,
+      "visible": true
+    },
+    {
+      "abv": 5.2,
+      "cerveceria": "Hércules",
+      "detalle": "Lata 473 ml",
+      "disponible": true,
+      "estilo": "Brown Ale",
+      "id": "lata-hercules-macanuda",
+      "nombre": "Macanuda",
+      "origen": "Querétaro",
+      "perfil": "oscura",
+      "precio": 120,
+      "visible": true
+    },
+    {
+      "abv": 5.0,
+      "cerveceria": "Madueño",
+      "detalle": "Lata 473 ml",
+      "disponible": true,
+      "estilo": "Hazy Pale Ale",
+      "id": "lata-madueno-juicebag",
+      "nombre": "Juicebag",
+      "origen": "Tijuana",
+      "perfil": "lupulada",
+      "precio": 160,
+      "visible": true
+    },
+    {
+      "abv": 4.7,
+      "cerveceria": "Wendlandt",
+      "detalle": "Lata 355 ml",
+      "disponible": true,
+      "estilo": "Blonde Ale",
+      "id": "lata-wendlandt-gol-de-oro",
+      "nombre": "Gol de Oro",
+      "origen": "Ensenada",
+      "perfil": "ligera",
+      "precio": 130,
+      "visible": true
+    },
+    {
+      "abv": 7.2,
+      "cerveceria": "93 Beer",
+      "disponible": true,
+      "estilo": "Mocha Stout",
+      "id": "lata-93-beer-different-breakfast",
+      "nombre": "Different Breakfast",
+      "origen": "Tijuana",
+      "perfil": "oscura",
+      "precio": 120,
+      "visible": false
+    },
+    {
+      "abv": 4.8,
+      "cerveceria": "Hércules",
+      "disponible": true,
+      "estilo": "Helles Original",
+      "id": "lata-hercules-faro",
+      "nombre": "Faro",
+      "origen": "Querétaro",
+      "perfil": "ligera",
+      "precio": 120,
+      "visible": false
+    }
+  ],
+  "negocio": {
+    "descriptor": "Cervecería independiente · Barril y comedor · Pachuca",
+    "direccion": "Rafael Vega Sánchez 110, Col. Periodistas, Pachuca, Hgo. CP 42060",
+    "email": "contacto@cisnenegro.mx",
+    "eslogan": "¡Cuéntalo en el Cisne!",
+    "facebook_url": "https://www.facebook.com/cerveceriacisnenegro.mx",
+    "geo": {
+      "lat": 20.1178579,
+      "lng": -98.7390612
+    },
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Cervecer%C3%ADa%20Cisne%20Negro%20Pachuca&query_place_id=ChIJ-ed8Ic0J0YURa34980-5WC0",
+    "google_review_url": "https://search.google.com/local/writereview?placeid=ChIJ-ed8Ic0J0YURa34980-5WC0",
+    "horario": [
+      {
+        "dias": "Lunes",
+        "horas": "Cerrado · día de producción"
+      },
+      {
+        "dias": "Martes a jueves",
+        "horas": "16:00 – 22:00"
+      },
+      {
+        "dias": "Viernes y sábado",
+        "horas": "16:00 – 23:30"
+      },
+      {
+        "dias": "Domingo",
+        "horas": "14:00 – 19:00"
+      }
+    ],
+    "instagram_url": "https://www.instagram.com/cisnenegro.mx/",
+    "nombre": "Cervecería Cisne Negro",
+    "telefono": "+527712442025",
+    "telefono_display": "(771) 244-2025",
+    "tiktok_url": "https://www.tiktok.com/@cisnenegro.mx",
+    "uber_eats_url": "https://www.ubereats.com/mx/store/cisne-negro/X9zfczfQTXa_HXNbLzJEsw",
+    "whatsapp_url": "https://wa.me/message/M766JUHYWQYYC1"
+  },
+  "perfiles": {
+    "acida": "Frutal, refrescante, ácida",
+    "ligera": "Fácil de tomar, limpia",
+    "lupulada": "Amarga, cítrica, resinosa",
+    "oscura": "Tostada, chocolate, café"
+  },
+  "sin_alcohol": [
+    {
+      "detalle": "Lata 355 ml",
+      "disponible": true,
+      "id": "bebida-refresco",
+      "nombre": "Refresco",
+      "precio": 35,
+      "visible": true
+    },
+    {
+      "detalle": "Botella 600 ml · Rusa +$10",
+      "disponible": true,
+      "id": "bebida-agua-mineral",
+      "nombre": "Agua mineral",
+      "precio": 35,
+      "variantes": [
+        {
+          "id": "natural",
+          "nombre": "Natural",
+          "precio": 35
+        },
+        {
+          "id": "rusa",
+          "nombre": "Preparada (rusa)",
+          "precio": 45
+        }
+      ],
+      "visible": true
+    },
+    {
+      "detalle": "330 ml natural o mineral",
+      "disponible": true,
+      "id": "bebida-naranjada",
+      "nombre": "Naranjada",
+      "precio": 45,
+      "visible": true
+    },
+    {
+      "detalle": "330 ml natural o mineral",
+      "disponible": true,
+      "id": "bebida-limonada",
+      "nombre": "Limonada",
+      "precio": 45,
+      "visible": true
+    },
+    {
+      "detalle": "Prensa Francesa 350 ml",
+      "disponible": true,
+      "id": "bebida-cafe",
+      "nombre": "Café",
+      "precio": 50,
+      "visible": true
+    }
+  ],
+  "vuelo": {
+    "descripcion": "Elige 4 cervezas de barril en 4 oz y encuentra tu favorita.",
+    "nombre": "Vuelo del Cisne",
+    "nota": "Precio = suma de las 4 oz elegidas ($35 c/u).",
+    "precio_desde": 140,
+    "visible": false
+  }
+}

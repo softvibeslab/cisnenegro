@@ -1,0 +1,10 @@
+[Unit]
+Description=Respaldo diario del CMS Cisne Negro
+
+[Timer]
+OnCalendar=*-*-* 03:40:00 America/Mexico_City
+Persistent=true
+RandomizedDelaySec=120
+
+[Install]
+WantedBy=timers.target

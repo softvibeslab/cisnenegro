@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Menú · Cervecería Cisne Negro</title>
+  <meta name="description" content="Menú de la Cervecería Cisne Negro en Pachuca: cerveza de barril, Vuelo del Cisne, latas, comida con maridaje y el Pasaporte Cisne.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0E0D0B">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/marca/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/marca/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=JetBrains+Mono:wght@500&family=Manrope:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/menu.css">
+  <script src="/assets/js/menu.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#barril">Saltar al menú</a>
+
+  <!-- Símbolo de la pluma, reutilizado en sellos y separadores -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="pluma" viewBox="0 0 24 48"><path d="M12 2c6 6 9 15 7 25-1 6-4 11-6 13l-1 6-1-6c-3-3-6-8-6-15C5 15 8 7 12 2z" fill="currentColor"/><path d="M12 6v40" style="stroke:var(--pluma-veta,#0E0D0B)" stroke-width="1.4" fill="none"/></symbol>
+  </svg>
+
+  <header class="mbar">
+    <div class="mbar__in">
+      <a class="mbar__brand" href="/" aria-label="Cervecería Cisne Negro, ir al sitio">
+        <span class="sticker mbar__sticker"><img src="/assets/img/marca/favicon-192.png" alt="" width="192" height="192"></span>
+        <span class="mbar__title">Menú</span>
+      </a>
+      <a class="btn btn--primary btn--sm mbar__pass" href="#pasaporte" id="abrir-pasaporte" aria-haspopup="dialog">
+        <svg class="mbar__pass-ico" aria-hidden="true" focusable="false"><use href="#pluma"/></svg>
+        <span>Pasaporte</span>
+        <span class="mbar__count mono" id="pase-sellos" hidden></span>
+      </a>
+    </div>
+    <nav class="tabs" aria-label="Secciones del menú">
+      <ul class="tabs__in">
+        <li><a href="#barril">Barril</a></li>
+        <li><a href="#vuelo">Vuelo</a></li>
+        <li><a href="#latas">Latas</a></li>
+        <li><a href="#comida">Comida</a></li>
+        <li><a href="#sin-alcohol">Sin alcohol</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <p class="loading" id="cargando" role="status">Sirviendo el menú…</p>
+
+    <!-- BARRIL -->
+    <section class="msec" id="barril" aria-labelledby="t-barril" hidden>
+      <div class="msec__head">
+        <p class="eyebrow">Hecha aquí · servida de barril</p>
+        <h2 id="t-barril">Barril</h2>
+      </div>
+      <div class="filtro" data-filtro role="group" aria-label="Filtrar cervezas por perfil"></div>
+      <div class="taps" id="lista-barril"></div>
+    </section>
+
+    <!-- VUELO -->
+    <section class="msec msec--line" id="vuelo" aria-labelledby="t-vuelo" hidden>
+      <div class="msec__head">
+        <p class="eyebrow">Prueba cuatro</p>
+        <h2 id="t-vuelo">Vuelo del Cisne</h2>
+        <p class="msec__lead" id="vuelo-desc"></p>
+      </div>
+      <div class="vuelo">
+        <ol class="vuelo__vasos" id="vuelo-vasos" aria-label="Tu vuelo"></ol>
+        <p class="vuelo__estado" id="vuelo-estado" aria-live="polite"></p>
+        <ul class="vuelo__opciones" id="vuelo-opciones" aria-label="Cervezas de barril en 4 oz"></ul>
+        <div class="vuelo__pie">
+          <p class="vuelo__total"><span class="mono">Total</span> <b id="vuelo-total">$0</b></p>
+          <div class="vuelo__acciones">
+            <button type="button" class="btn btn--ghost btn--sm" id="vuelo-vaciar" disabled>Vaciar</button>
+            <button type="button" class="btn btn--primary" id="vuelo-mostrar" disabled>Muéstraselo a tu mesero</button>
+          </div>
+        </div>
+        <p class="fine" id="vuelo-nota"></p>
+      </div>
+    </section>
+
+    <!-- LATAS -->
+    <section class="msec msec--line" id="latas" aria-labelledby="t-latas" hidden>
+      <div class="msec__head">
+        <p class="eyebrow">Invitadas de otras cervecerías</p>
+        <h2 id="t-latas">Latas y botellas</h2>
+      </div>
+      <div class="filtro" data-filtro role="group" aria-label="Filtrar latas por perfil"></div>
+      <div id="lista-latas"></div>
+    </section>
+
+    <!-- COMIDA -->
+    <section class="msec msec--line" id="comida" aria-labelledby="t-comida" hidden>
+      <div class="msec__head">
+        <p class="eyebrow">Del comedor</p>
+        <h2 id="t-comida">Comida</h2>
+        <p class="msec__lead">Cada platillo te dice con qué cerveza de barril se lleva mejor.</p>
+      </div>
+      <div id="lista-comida"></div>
+    </section>
+
+    <!-- SIN ALCOHOL -->
+    <section class="msec msec--line" id="sin-alcohol" aria-labelledby="t-sin" hidden>
+      <div class="msec__head">
+        <h2 id="t-sin">Sin alcohol</h2>
+      </div>
+      <ul class="rows" id="lista-sin"></ul>
+    </section>
+  </main>
+
+  <footer class="mfoot" id="pie" hidden>
+    <div class="mfoot__in">
+      <p class="mfoot__note"><b>Precios en MXN.</b> Los barriles rotan: pregunta en la barra qué hay hoy.</p>
+      <h2 class="mfoot__h">Horario</h2>
+      <table class="hours" id="horario"><caption class="sr-only">Horario de la cervecería</caption><tbody></tbody></table>
+      <address class="mfoot__addr" id="direccion"></address>
+      <div class="mfoot__ctas">
+        <a class="btn btn--primary" id="pie-wa" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--ghost" id="pie-mapa" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="btn btn--ghost" href="/">Ver sitio</a>
+      </div>
+      <p class="mfoot__legal">Cervecería Cisne Negro · Disfruta con moderación. <a href="/privacidad/">Aviso de privacidad</a></p>
+    </div>
+  </footer>
+
+  <!-- VUELO: tarjeta para el mesero -->
+  <dialog class="vcard" id="vuelo-tarjeta" aria-labelledby="vcard-t">
+    <div class="vcard__in">
+      <p class="eyebrow">Para tu mesero</p>
+      <h2 class="vcard__t" id="vcard-t">Vuelo del Cisne</h2>
+      <ol class="vcard__lista" id="vcard-lista"></ol>
+      <p class="vcard__total"><span class="mono">4 × 4 oz · Total</span> <b id="vcard-total"></b></p>
+      <button type="button" class="btn btn--ghost vcard__cerrar" data-cerrar>Cerrar</button>
+    </div>
+  </dialog>
+
+  <!-- ARTE OFICIAL DE ETIQUETA -->
+  <dialog class="etq" id="etiqueta" aria-labelledby="etq-t">
+    <div class="etq__in">
+      <p class="eyebrow">Arte oficial de la etiqueta</p>
+      <h2 class="etq__t" id="etq-t"></h2>
+      <img class="etq__img" id="etq-img" src="" alt="" width="1000" height="1000">
+      <button type="button" class="btn btn--ghost etq__cerrar" data-cerrar>Cerrar</button>
+    </div>
+  </dialog>
+
+  <!-- PASAPORTE CISNE -->
+  <dialog class="pase" id="pasaporte" aria-labelledby="pase-t">
+    <div class="pase__top">
+      <h2 class="pase__t" id="pase-t">Pasaporte Cisne</h2>
+      <button type="button" class="icon-btn" data-cerrar aria-label="Cerrar Pasaporte">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="pase__tabs">
+      <div class="seg seg--pase" role="tablist" aria-label="Pasaporte y ranking">
+        <button type="button" role="tab" id="ptab-pase" aria-controls="ppanel-pase" aria-selected="true">Mi Pasaporte</button>
+        <button type="button" role="tab" id="ptab-ranking" aria-controls="ppanel-ranking" aria-selected="false" tabindex="-1">Ranking</button>
+      </div>
+    </div>
+    <div class="pase__body">
+      <p class="pase__red" id="pase-red" role="status" aria-live="polite" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0M3 3l18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span id="pase-red-t">Sin conexión. Te mostramos tu Pasaporte guardado y reintentamos solos.</span>
+      </p>
+      <p class="pase__msg" id="pase-msg" role="status" aria-live="polite"></p>
+      <p class="pase__err" id="pase-err" role="alert" aria-live="assertive"></p>
+
+      <div id="ppanel-pase" role="tabpanel" aria-labelledby="ptab-pase">
+      <p class="pase__cargando" id="pase-cargando" hidden>Revisando tu Pasaporte…</p>
+
+      <!-- Sin sesión -->
+      <div id="pase-invitado" hidden>
+        <div class="pase__intro">
+          <p>Junta un sello por cada visita. Pídele el <b>código del día</b> al equipo en la barra y regístralo aquí.</p>
+          <ul class="premios">
+            <li><span class="premios__n">5ª</span><span><b>Visita 5:</b> cerveza de barril de 4 oz de cortesía.</span></li>
+            <li><span class="premios__n premios__n--big">10ª</span><span><b>Visita 10:</b> cerveza de barril de 12 oz de cortesía.</span></li>
+          </ul>
+          <p class="fine">Una visita por día. Las cortesías duran 30 días.</p>
+        </div>
+
+        <div class="seg" role="tablist" aria-label="Crear o entrar a tu Pasaporte">
+          <button type="button" role="tab" id="tab-registro" aria-controls="form-registro" aria-selected="true">Crear Pasaporte</button>
+          <button type="button" role="tab" id="tab-entrar" aria-controls="form-entrar" aria-selected="false" tabindex="-1">Ya tengo</button>
+        </div>
+
+        <form class="form" id="form-registro" role="tabpanel" aria-labelledby="tab-registro" novalidate>
+          <div class="field">
+            <label for="r-nombre">Tu nombre</label>
+            <input id="r-nombre" name="nombre" autocomplete="given-name" maxlength="60" required>
+          </div>
+          <div class="field">
+            <label for="r-tel">Teléfono (10 dígitos)</label>
+            <input id="r-tel" name="telefono" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="14" placeholder="771 000 0000" required aria-describedby="r-tel-h">
+            <small id="r-tel-h">Con él entras desde cualquier celular.</small>
+          </div>
+          <div class="field">
+            <label for="r-pin">Crea un PIN de 4 números</label>
+            <input id="r-pin" name="pin" type="password" inputmode="numeric" autocomplete="new-password" maxlength="4" pattern="\d{4}" required class="pin">
+          </div>
+          <label class="check">
+            <input type="checkbox" name="acepta_privacidad" id="r-priv" required>
+            <span>Acepto el <a href="/privacidad/" target="_blank" rel="noopener">aviso de privacidad</a>.</span>
+          </label>
+          <label class="check">
+            <input type="checkbox" name="acepta_whatsapp">
+            <span>Quiero enterarme por WhatsApp cuando entre un barril nuevo.</span>
+          </label>
+          <button class="btn btn--primary btn--block" type="submit">Crear mi Pasaporte</button>
+        </form>
+
+        <form class="form" id="form-entrar" role="tabpanel" aria-labelledby="tab-entrar" novalidate hidden>
+          <div class="field">
+            <label for="l-tel">Teléfono</label>
+            <input id="l-tel" name="telefono" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="14" required>
+          </div>
+          <div class="field">
+            <label for="l-pin">PIN</label>
+            <input id="l-pin" name="pin" type="password" inputmode="numeric" autocomplete="current-password" maxlength="4" pattern="\d{4}" required class="pin">
+          </div>
+          <button class="btn btn--primary btn--block" type="submit">Entrar</button>
+        </form>
+      </div>
+
+      <!-- Con sesión -->
+      <div id="pase-socio" hidden>
+        <div class="pase__saludo">
+          <p class="pase__hola" id="pase-hola"></p>
+          <button type="button" class="rank-chip mono" id="pase-rank" hidden></button>
+        </div>
+
+        <div class="libreta">
+          <ol class="sellos" id="sellos" aria-label="Sellos de este ciclo"></ol>
+          <p class="libreta__prog" id="pase-prog"></p>
+        </div>
+
+        <!-- Registrar visita -->
+        <div class="bloque" id="checkin-inicio" hidden>
+          <button type="button" class="btn btn--primary btn--block btn--lg" id="checkin-abrir">Registrar mi visita de hoy</button>
+        </div>
+        <form class="bloque form" id="checkin-form" novalidate hidden>
+          <label for="checkin-codigo" class="codigo__label">Código del día</label>
+          <p class="fine" id="checkin-h">Pídeselo al equipo en la barra. Son 4 números.</p>
+          <input id="checkin-codigo" class="codigo" type="text" inputmode="numeric" pattern="\d{4}" maxlength="4" autocomplete="one-time-code" aria-describedby="checkin-h" required>
+          <div class="fila">
+            <button type="button" class="btn btn--ghost" id="checkin-cancelar">Cancelar</button>
+            <button type="submit" class="btn btn--primary">Sellar visita</button>
+          </div>
+        </form>
+        <p class="bloque hecho" id="checkin-hecho" hidden>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Tu visita de hoy ya tiene sello. ¡Salud!</span>
+        </p>
+
+        <!-- Recompensa recién ganada -->
+        <div class="bloque premio" id="premio" hidden tabindex="-1">
+          <p class="premio__k">¡Ganaste una cortesía!</p>
+          <p class="premio__nombre" id="premio-nombre"></p>
+          <p class="premio__codigo mono" id="premio-codigo"></p>
+          <p class="premio__inst">Muéstrale este código al equipo.</p>
+          <p class="premio__vence mono" id="premio-vence"></p>
+          <button type="button" class="btn btn--primary btn--block" id="premio-seguir">Listo</button>
+        </div>
+
+        <!-- NPS -->
+        <form class="bloque nps" id="nps" novalidate hidden tabindex="-1">
+          <fieldset>
+            <legend class="nps__q">¿Qué tan probable es que recomiendes el Cisne a un amigo?</legend>
+            <div class="nps__escala" id="nps-escala"></div>
+            <div class="nps__ejes" aria-hidden="true"><span>Nada probable</span><span>Muy probable</span></div>
+          </fieldset>
+          <div class="field">
+            <label for="nps-comentario">¿Qué fue lo mejor o qué mejorarías? <span class="opc">(opcional)</span></label>
+            <textarea id="nps-comentario" rows="3" maxlength="1000"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" id="nps-enviar" disabled>Enviar</button>
+        </form>
+        <div class="bloque gracias" id="nps-gracias" hidden tabindex="-1">
+          <p class="gracias__t" id="gracias-t"></p>
+          <p id="gracias-p"></p>
+          <a class="btn btn--primary btn--block" id="resena" target="_blank" rel="noopener" hidden><span id="resena-t">Contarlo en Google</span><span class="sr-only"> (se abre en otra pestaña)</span></a>
+        </div>
+
+        <div class="bloque" id="cortesias-bloque" hidden>
+          <h3 class="bloque__h">Tus cortesías vigentes</h3>
+          <ul class="cortesias" id="cortesias"></ul>
+        </div>
+
+        <button type="button" class="btn btn--ghost btn--block salir" id="salir">Salir</button>
+      </div>
+      </div>
+
+      <!-- Ranking (se ve con o sin sesión) -->
+      <div id="ppanel-ranking" role="tabpanel" aria-labelledby="ptab-ranking" hidden>
+        <h3 class="rank__h" id="rank-h" tabindex="-1">Ranking del Cisne</h3>
+        <p class="fine">Quién ha venido más veces. En la lista pública solo aparece tu nombre y la inicial de tu apellido.</p>
+        <div class="seg seg--3" role="group" aria-label="Periodo del ranking">
+          <button type="button" data-periodo="semana" aria-pressed="false">Semana</button>
+          <button type="button" data-periodo="mes" aria-pressed="true">Mes</button>
+          <button type="button" data-periodo="total" aria-pressed="false">Total</button>
+        </div>
+        <div class="rank__yo" id="rank-yo" hidden></div>
+        <p class="rank__estado" id="rank-estado" role="status" aria-live="polite"></p>
+        <ol class="rank" id="rank-lista" aria-labelledby="rank-h"></ol>
+        <div class="rank__pref" id="rank-pref" hidden>
+          <button type="button" class="switch" role="switch" id="rank-switch" aria-checked="true" aria-describedby="rank-switch-h">
+            <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+            <span class="switch__label">Aparecer en el ranking público (solo nombre e inicial)</span>
+          </button>
+          <p class="fine" id="rank-switch-h"></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

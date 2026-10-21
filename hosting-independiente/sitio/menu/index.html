@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Menú · Cervecería Cisne Negro</title>
+  <meta name="description" content="Menú de la Cervecería Cisne Negro en Pachuca: cerveza de barril, latas, botellas y comida con maridaje.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0E0D0B">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/marca/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/assets/img/marca/icono-192.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Cisne Negro">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=JetBrains+Mono:wght@500&family=Manrope:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/menu.css?v=cms-20261017-pedido">
+  <script src="/assets/js/pedido.js?v=cms-20261017-carta" defer></script>
+  <script src="/assets/js/menu.js?v=cms-20261017-pedido" defer></script>
+  <script>
+    /* App instalable: service worker solo en https o localhost (ver /sw.js). */
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname))) {
+      window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(function () {}); });
+    }
+  </script>
+</head>
+<body data-wifi="false" data-pasaporte="false" data-pedido-qr="false">
+  <a class="skip" href="#barril">Saltar al menú</a>
+
+  <!-- Símbolo de la pluma, reutilizado en sellos y separadores -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="pluma" viewBox="0 0 24 48"><path d="M12 2c6 6 9 15 7 25-1 6-4 11-6 13l-1 6-1-6c-3-3-6-8-6-15C5 15 8 7 12 2z" fill="currentColor"/><path d="M12 6v40" style="stroke:var(--pluma-veta,#0E0D0B)" stroke-width="1.4" fill="none"/></symbol>
+  </svg>
+
+  <header class="mbar">
+    <div class="mbar__in">
+      <a class="mbar__brand" href="/" aria-label="Cervecería Cisne Negro, ir al sitio">
+        <span class="sticker mbar__sticker"><img src="/assets/img/marca/favicon-192.png" alt="" width="192" height="192"></span>
+        <span class="mbar__title">Menú</span>
+      </a>
+      <!-- Instalar la app: discreto, solo con sesión y fuera de la app instalada -->
+      <button type="button" class="btn btn--ghost btn--sm mbar__app" id="abrir-instalar" aria-haspopup="dialog" aria-label="Instalar app" hidden>
+        <svg class="mbar__app-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="2.5" width="12" height="19" rx="2.6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7.5v7M9 11.8l3 3 3-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.5 18.5h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="mbar__app-t"><span class="mbar__app-largo">Instalar app</span><span class="mbar__app-corto">App</span></span>
+      </button>
+      <button type="button" class="btn btn--ghost btn--sm mbar__wifi" id="abrir-wifi" aria-haspopup="dialog" aria-label="Wi-Fi" hidden>
+        <svg class="mbar__wifi-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.5 9a14 14 0 0 1 19 0M5.8 12.6a9.2 9.2 0 0 1 12.4 0M9.2 16.1a4.4 4.4 0 0 1 5.6 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="19.4" r="1.7" fill="currentColor"/></svg>
+        <span class="mbar__wifi-t">Wi-Fi</span>
+      </button>
+      <a class="btn btn--primary btn--sm mbar__pass" href="#pasaporte" id="abrir-pasaporte" aria-haspopup="dialog" hidden>
+        <svg class="mbar__pass-ico" aria-hidden="true" focusable="false"><use href="#pluma"/></svg>
+        <span>Pasaporte</span>
+        <span class="mbar__count mono" id="pase-sellos" hidden></span>
+      </a>
+    </div>
+    <nav class="tabs" aria-label="Secciones del menú">
+      <ul class="tabs__in">
+        <li><a href="#barril">Barril</a></li>
+        <li><a href="#vuelo">Vuelo</a></li>
+        <li><a href="#latas">Latas</a></li>
+        <li><a href="#comida">Comida</a></li>
+        <li><a href="#sin-alcohol">Sin alcohol</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <p class="loading" id="cargando" role="status">Sirviendo el menú…</p>
+
+    <!-- BARRIL -->
+    <section class="msec" id="barril" aria-labelledby="t-barril" hidden>
+      <div class="msec__head">
+        <p class="eyebrow">Hecha aquí · servida de barril</p>
+        <h2 id="t-barril">Barril</h2>
+      </div>
+      <div class="filtro" data-filtro role="group" aria-label="Filtrar cervezas por perfil"></div>
+      <div class="taps" id="lista-barril"></div>
+    </section>
+
+    <!-- VUELO -->
+    <section class="msec msec--line" id="vuelo" aria-labelledby="t-vuelo" hidden>
+      <div class="msec__head">
+        <p class="eyebrow">Prueba cuatro</p>
+        <h2 id="t-vuelo">Vuelo del Cisne</h2>
+        <p class="msec__lead" id="vuelo-desc"></p>
+      </div>
+      <div class="vuelo">
+        <ol class="vuelo__vasos" id="vuelo-vasos" aria-label="Tu vuelo"></ol>
+        <p class="vuelo__estado" id="vuelo-estado" aria-live="polite"></p>
+        <ul class="vuelo__opciones" id="vuelo-opciones" aria-label="Cervezas de barril en 4 oz"></ul>
+        <div class="vuelo__pie">
+          <p class="vuelo__total"><span class="mono">Total</span> <b id="vuelo-total">$0</b></p>
+          <div class="vuelo__acciones">
+            <button type="button" class="btn btn--ghost btn--sm" id="vuelo-vaciar" disabled>Vaciar</button>
+            <button type="button" class="btn btn--ghost" id="vuelo-agregar" disabled>＋ Agregar vuelo al pedido</button>
+            <button type="button" class="btn btn--primary" id="vuelo-mostrar" disabled>Muéstraselo a tu mesero</button>
+          </div>
+        </div>
+        <p class="fine" id="vuelo-nota"></p>
+      </div>
+    </section>
+
+    <!-- LATAS -->
+    <section class="msec msec--line" id="latas" aria-labelledby="t-latas" hidden>
+      <div class="msec__head">
+        <p class="eyebrow">Invitadas de otras cervecerías</p>
+        <h2 id="t-latas">Latas y botellas</h2>
+      </div>
+      <div class="filtro" data-filtro role="group" aria-label="Filtrar latas por perfil"></div>
+      <div id="lista-latas"></div>
+    </section>
+
+    <!-- COMIDA -->
+    <section class="msec msec--line" id="comida" aria-labelledby="t-comida" hidden>
+      <div class="msec__head">
+        <p class="eyebrow">Del comedor</p>
+        <h2 id="t-comida">Comida</h2>
+        <p class="msec__lead">Cada platillo te dice con qué cerveza de barril se lleva mejor.</p>
+      </div>
+      <div id="lista-comida"></div>
+    </section>
+
+    <!-- SIN ALCOHOL -->
+    <section class="msec msec--line" id="sin-alcohol" aria-labelledby="t-sin" hidden>
+      <div class="msec__head">
+        <h2 id="t-sin">Sin alcohol</h2>
+      </div>
+      <ul class="rows" id="lista-sin"></ul>
+    </section>
+  </main>
+
+  <footer class="mfoot" id="pie" hidden>
+    <div class="mfoot__in">
+      <p class="mfoot__note"><b>Precios en MXN.</b> Los barriles rotan: pregunta en la barra qué hay hoy.</p>
+      <h2 class="mfoot__h">Horario</h2>
+      <table class="hours" id="horario"><caption class="sr-only">Horario de la cervecería</caption><tbody></tbody></table>
+      <address class="mfoot__addr" id="direccion"></address>
+      <div class="mfoot__ctas">
+        <a class="btn btn--primary" id="pie-wa" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--ghost" id="pie-mapa" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="btn btn--ghost" id="pie-wifi" href="#wifi" aria-haspopup="dialog" hidden>Wi-Fi</a>
+        <a class="btn btn--ghost" href="/">Ver sitio</a>
+      </div>
+      <p class="mfoot__legal">Cervecería Cisne Negro · Disfruta con moderación. <a href="/privacidad/">Aviso de privacidad</a></p>
+    </div>
+  </footer>
+
+  <!-- MI PEDIDO: barra flotante y avisos -->
+  <div class="pbar" id="pedido-barra" hidden>
+    <button type="button" class="pbar__btn" id="abrir-pedido" aria-haspopup="dialog">
+      <span class="pbar__t">Mi pedido</span>
+      <span class="pbar__n mono" id="pbar-n" aria-hidden="true">0</span>
+      <span class="pbar__total mono" id="pbar-total" aria-hidden="true">$0</span>
+    </button>
+  </div>
+  <p class="toast" id="pedido-aviso" role="status" aria-live="polite"></p>
+
+  <!-- MI PEDIDO: panel -->
+  <dialog class="pase pedido" id="pedido" aria-labelledby="pedido-t">
+    <div class="pase__top">
+      <h2 class="pase__t" id="pedido-t" tabindex="-1">Mi pedido</h2>
+      <button type="button" class="icon-btn" data-cerrar aria-label="Cerrar Mi pedido">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="pase__body">
+      <p class="fine pedido__intro">Arma tu pedido y muéstraselo a tu mesero. No se envía a ningún lado: se queda en tu teléfono.</p>
+      <p class="sr-only" id="pedido-estado" role="status" aria-live="polite"></p>
+      <p class="pase__err" id="pedido-err" role="alert"></p>
+      <p class="pedido__vacio" id="pedido-vacio">Tu pedido está vacío. Toca «＋ Agregar» en cualquier producto del menú.</p>
+      <ul class="plineas" id="pedido-lineas" aria-label="Productos de tu pedido"></ul>
+      <div class="pedido__pie" id="pedido-pie">
+        <div class="field pedido__mesa">
+          <label for="pedido-mesa">Número de mesa <span class="opc">(opcional)</span></label>
+          <input id="pedido-mesa" name="mesa" maxlength="10" autocomplete="off" enterkeyhint="done">
+        </div>
+        <p class="pedido__total"><span class="mono">Total estimado</span> <b class="mono" id="pedido-total">$0</b></p>
+        <p class="fine">El total final lo confirma tu mesero.</p>
+        <button type="button" class="btn btn--primary btn--block btn--lg" id="pedido-mostrar">Mostrar al mesero</button>
+        <button type="button" class="btn btn--ghost btn--block pedido__vaciar" id="pedido-vaciar">Vaciar pedido</button>
+        <div class="confirma" id="pedido-confirma" role="group" aria-labelledby="pedido-confirma-t" hidden>
+          <p id="pedido-confirma-t"><b>¿Vaciar tu pedido?</b> Se quitan todos los productos.</p>
+          <div class="fila">
+            <button type="button" class="btn btn--ghost" id="pedido-confirma-no">Cancelar</button>
+            <button type="button" class="btn btn--primary" id="pedido-confirma-si">Sí, vaciar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- MI PEDIDO: tarjeta para el mesero (pantalla completa) -->
+  <dialog class="vcard vcard--pedido" id="pedido-tarjeta" aria-labelledby="ptar-t">
+    <div class="vcard__in">
+      <p class="eyebrow">Para tu mesero</p>
+      <div class="ptar__cab">
+        <h2 class="vcard__t" id="ptar-t">Mi pedido</h2>
+        <p class="ptar__mesa" id="ptar-mesa" hidden></p>
+      </div>
+      <div class="ptar__cuerpo">
+        <section class="ptar__qr" id="ptar-qr" data-modo="cargando" aria-labelledby="ptar-qr-t" hidden>
+          <h3 class="ptar__qr-t" id="ptar-qr-t">Muéstrale este código a tu mesero</h3>
+          <div class="ptar__qr-img" id="ptar-qr-img"><span class="ptar__qr-msg">Generando código…</span></div>
+          <p class="ptar__codigo mono" id="ptar-codigo" hidden></p>
+          <p class="ptar__qr-nota" id="ptar-qr-nota">Tu mesero lo escanea con la app del equipo.</p>
+          <p class="ptar__qr-aviso" id="ptar-qr-aviso" hidden></p>
+          <button type="button" class="btn btn--ink ptar__nuevo" id="ptar-nuevo" hidden>Generar un código nuevo</button>
+          <div class="ptar__tomado" id="ptar-tomado" tabindex="-1" hidden>
+            <p class="ptar__tomado-t"><span class="ptar__check" aria-hidden="true">✓</span> <span id="ptar-tomado-t">Pedido tomado</span></p>
+            <p class="ptar__tomado-p">Ya no necesitas mostrar esta pantalla.</p>
+          </div>
+          <p class="sr-only" id="ptar-qr-estado" role="status" aria-live="polite"></p>
+        </section>
+        <div class="ptar__pedido">
+          <div id="ptar-secciones"></div>
+          <p class="vcard__total"><span class="mono">Total estimado</span> <b id="ptar-total"></b></p>
+          <p class="ptar__fine">El total final lo confirma tu mesero.</p>
+        </div>
+      </div>
+      <div class="ptar__acc">
+        <button type="button" class="btn btn--ghost vcard__cerrar" data-cerrar>Volver</button>
+        <button type="button" class="btn btn--primary" id="ptar-listo">Ya lo pedí</button>
+        <button type="button" class="btn btn--primary ptar__ok" id="ptar-ok" hidden>Listo</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- WI-FI -->
+  <dialog class="vcard wifi" id="wifi-dlg" aria-labelledby="wifi-t">
+    <div class="vcard__in">
+      <p class="eyebrow">Wi-Fi del Cisne</p>
+      <h2 class="vcard__t" id="wifi-t">Conéctate</h2>
+      <p class="wifi__estado" id="wifi-cargando">Buscando los datos del Wi-Fi…</p>
+      <div id="wifi-datos" hidden>
+        <dl class="wifi__dl">
+          <div class="wifi__fila">
+            <dt>Red</dt>
+            <dd><span class="wifi__v mono" id="wifi-ssid"></span><button type="button" class="btn btn--ink btn--sm" data-copiar="ssid" aria-label="Copiar nombre de la red">Copiar</button></dd>
+          </div>
+          <div class="wifi__fila" id="wifi-fila-pass">
+            <dt>Contraseña</dt>
+            <dd><span class="wifi__v mono" id="wifi-pass"></span><button type="button" class="btn btn--ink btn--sm" data-copiar="password" aria-label="Copiar contraseña">Copiar</button></dd>
+          </div>
+        </dl>
+        <p class="wifi__abierta" id="wifi-abierta" hidden>Red abierta: no necesita contraseña.</p>
+        <figure class="wifi__qr">
+          <div class="wifi__qr-img" id="wifi-qr"></div>
+          <figcaption>Abre la cámara de tu celular y apunta al código para conectarte.</figcaption>
+        </figure>
+      </div>
+      <div class="wifi__socios" id="wifi-socios" hidden>
+        <p><b>La contraseña del Wi-Fi es para socios del Pasaporte.</b> Crea el tuyo gratis o entra con tu teléfono y PIN.</p>
+        <button type="button" class="btn btn--primary btn--block" id="wifi-pasaporte">Abrir mi Pasaporte</button>
+      </div>
+      <div class="wifi__error" id="wifi-error" hidden>
+        <p>No pudimos revisar los datos del Wi-Fi. Pregunta la contraseña en la barra.</p>
+        <button type="button" class="linkbtn" id="wifi-reintentar">Reintentar</button>
+      </div>
+      <p class="wifi__copiado" id="wifi-copiado" role="status" aria-live="polite"></p>
+      <button type="button" class="btn btn--ghost vcard__cerrar" data-cerrar>Cerrar</button>
+    </div>
+  </dialog>
+
+  <!-- Instalar la app: guía por dispositivo cuando el navegador no ofrece la instalación nativa -->
+  <dialog class="vcard instalar-dlg" id="instalar-dlg" aria-labelledby="inst-t">
+    <div class="vcard__in">
+      <p class="eyebrow">App del Cisne</p>
+      <h2 class="vcard__t" id="inst-t">Instálala</h2>
+      <div class="instalar__cab">
+        <img src="/assets/img/marca/icono-192.png" alt="" width="56" height="56">
+        <p>Tu Pasaporte, el menú y el Wi-Fi con un toque desde tu pantalla de inicio, a pantalla completa.</p>
+      </div>
+      <p class="inst__disp" id="inst-disp"></p>
+      <ol class="pasos inst__pasos" id="inst-pasos"></ol>
+      <p class="fine inst__nota" id="inst-nota" hidden></p>
+      <details class="inst__otros">
+        <summary>¿Usas otro dispositivo?</summary>
+        <div id="inst-otros"></div>
+      </details>
+      <button type="button" class="btn btn--primary btn--block" data-cerrar>Listo</button>
+      <button type="button" class="linkbtn inst__hecho" id="inst-hecho">Ya la instalé</button>
+    </div>
+  </dialog>
+
+  <!-- VUELO: tarjeta para el mesero -->
+  <dialog class="vcard" id="vuelo-tarjeta" aria-labelledby="vcard-t">
+    <div class="vcard__in">
+      <p class="eyebrow">Para tu mesero</p>
+      <h2 class="vcard__t" id="vcard-t">Vuelo del Cisne</h2>
+      <ol class="vcard__lista" id="vcard-lista"></ol>
+      <p class="vcard__total"><span class="mono">4 × 4 oz · Total</span> <b id="vcard-total"></b></p>
+      <button type="button" class="btn btn--ghost vcard__cerrar" data-cerrar>Cerrar</button>
+    </div>
+  </dialog>
+
+  <!-- ARTE OFICIAL DE ETIQUETA -->
+  <dialog class="etq" id="etiqueta" aria-labelledby="etq-t">
+    <div class="etq__in">
+      <p class="eyebrow">Arte oficial de la etiqueta</p>
+      <h2 class="etq__t" id="etq-t"></h2>
+      <img class="etq__img" id="etq-img" src="" alt="" width="1000" height="1000">
+      <button type="button" class="btn btn--ghost etq__cerrar" data-cerrar>Cerrar</button>
+    </div>
+  </dialog>
+
+  <!-- PASAPORTE CISNE -->
+  <dialog class="pase" id="pasaporte" aria-labelledby="pase-t">
+    <div class="pase__top">
+      <h2 class="pase__t" id="pase-t">Pasaporte Cisne</h2>
+      <button type="button" class="icon-btn" data-cerrar aria-label="Cerrar Pasaporte">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="pase__tabs">
+      <div class="seg seg--pase" role="tablist" aria-label="Pasaporte y ranking">
+        <button type="button" role="tab" id="ptab-pase" aria-controls="ppanel-pase" aria-selected="true">Mi Pasaporte</button>
+        <button type="button" role="tab" id="ptab-ranking" aria-controls="ppanel-ranking" aria-selected="false" tabindex="-1">Ranking</button>
+      </div>
+    </div>
+    <div class="pase__body">
+      <p class="pase__red" id="pase-red" role="status" aria-live="polite" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12a10 10 0 0 1 13 0M9 15.5a5 5 0 0 1 6 0M3 3l18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span id="pase-red-t">Sin conexión. Te mostramos tu Pasaporte guardado y reintentamos solos.</span>
+      </p>
+      <p class="pase__msg" id="pase-msg" role="status" aria-live="polite"></p>
+      <p class="pase__err" id="pase-err" role="alert" aria-live="assertive"></p>
+
+      <div id="ppanel-pase" role="tabpanel" aria-labelledby="ptab-pase">
+      <p class="pase__cargando" id="pase-cargando" hidden>Revisando tu Pasaporte…</p>
+
+      <!-- Sin sesión -->
+      <div id="pase-invitado" hidden>
+        <div class="pase__intro">
+          <p>Junta un sello por cada visita. Pídele el <b>código del día</b> al equipo en la barra y regístralo aquí.</p>
+          <ul class="premios">
+            <li><span class="premios__n">5ª</span><span><b>Visita 5:</b> cerveza de barril de 4 oz de cortesía.</span></li>
+            <li><span class="premios__n premios__n--big">10ª</span><span><b>Visita 10:</b> cerveza de barril de 12 oz de cortesía.</span></li>
+          </ul>
+          <p class="fine">Una visita por día. Las cortesías duran 30 días.</p>
+        </div>
+
+        <div class="seg" role="tablist" aria-label="Crear o entrar a tu Pasaporte">
+          <button type="button" role="tab" id="tab-registro" aria-controls="form-registro" aria-selected="true">Crear Pasaporte</button>
+          <button type="button" role="tab" id="tab-entrar" aria-controls="form-entrar" aria-selected="false" tabindex="-1">Ya tengo</button>
+        </div>
+
+        <form class="form" id="form-registro" role="tabpanel" aria-labelledby="tab-registro" novalidate>
+          <div class="field">
+            <label for="r-nombre">Tu nombre</label>
+            <input id="r-nombre" name="nombre" autocomplete="given-name" maxlength="60" required>
+          </div>
+          <div class="field">
+            <label for="r-tel">Teléfono (10 dígitos)</label>
+            <input id="r-tel" name="telefono" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="14" placeholder="771 000 0000" required aria-describedby="r-tel-h">
+            <small id="r-tel-h">Con él entras desde cualquier celular.</small>
+          </div>
+          <div class="field">
+            <label for="r-pin">Crea un PIN de 4 números</label>
+            <input id="r-pin" name="pin" type="password" inputmode="numeric" autocomplete="new-password" maxlength="4" pattern="\d{4}" required class="pin">
+          </div>
+          <label class="check">
+            <input type="checkbox" name="acepta_privacidad" id="r-priv" required>
+            <span>Acepto el <a href="/privacidad/" target="_blank" rel="noopener">aviso de privacidad</a>.</span>
+          </label>
+          <label class="check">
+            <input type="checkbox" name="acepta_whatsapp">
+            <span>Quiero enterarme por WhatsApp cuando entre un barril nuevo.</span>
+          </label>
+          <button class="btn btn--primary btn--block" type="submit">Crear mi Pasaporte</button>
+        </form>
+
+        <form class="form" id="form-entrar" role="tabpanel" aria-labelledby="tab-entrar" novalidate hidden>
+          <div class="field">
+            <label for="l-tel">Teléfono</label>
+            <input id="l-tel" name="telefono" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="14" required>
+          </div>
+          <div class="field">
+            <label for="l-pin">PIN</label>
+            <input id="l-pin" name="pin" type="password" inputmode="numeric" autocomplete="current-password" maxlength="4" pattern="\d{4}" required class="pin">
+          </div>
+          <button class="btn btn--primary btn--block" type="submit">Entrar</button>
+        </form>
+      </div>
+
+      <!-- Con sesión -->
+      <div id="pase-socio" hidden>
+        <div class="pase__saludo">
+          <p class="pase__hola" id="pase-hola"></p>
+          <button type="button" class="rank-chip mono" id="pase-rank" hidden></button>
+        </div>
+
+        <div class="libreta">
+          <ol class="sellos" id="sellos" aria-label="Sellos de este ciclo"></ol>
+          <p class="libreta__prog" id="pase-prog"></p>
+        </div>
+
+        <!-- Registrar visita -->
+        <div class="bloque" id="checkin-inicio" hidden>
+          <button type="button" class="btn btn--primary btn--block btn--lg" id="checkin-abrir">Registrar mi visita de hoy</button>
+        </div>
+        <form class="bloque form" id="checkin-form" novalidate hidden>
+          <label for="checkin-codigo" class="codigo__label">Código del día</label>
+          <p class="fine" id="checkin-h">Pídeselo al equipo en la barra. Son 4 números.</p>
+          <input id="checkin-codigo" class="codigo" type="text" inputmode="numeric" pattern="\d{4}" maxlength="4" autocomplete="one-time-code" aria-describedby="checkin-h" required>
+          <div class="fila">
+            <button type="button" class="btn btn--ghost" id="checkin-cancelar">Cancelar</button>
+            <button type="submit" class="btn btn--primary">Sellar visita</button>
+          </div>
+        </form>
+        <p class="bloque hecho" id="checkin-hecho" hidden>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Tu visita de hoy ya tiene sello. ¡Salud!</span>
+        </p>
+
+        <!-- Recompensa recién ganada -->
+        <div class="bloque premio" id="premio" hidden tabindex="-1">
+          <p class="premio__k">¡Ganaste una cortesía!</p>
+          <p class="premio__nombre" id="premio-nombre"></p>
+          <p class="premio__codigo mono" id="premio-codigo"></p>
+          <p class="premio__inst">Muéstrale este código al equipo.</p>
+          <p class="premio__vence mono" id="premio-vence"></p>
+          <button type="button" class="btn btn--primary btn--block" id="premio-seguir">Listo</button>
+        </div>
+
+        <!-- NPS -->
+        <form class="bloque nps" id="nps" novalidate hidden tabindex="-1">
+          <fieldset>
+            <legend class="nps__q">¿Qué tan probable es que recomiendes el Cisne a un amigo?</legend>
+            <div class="nps__escala" id="nps-escala"></div>
+            <div class="nps__ejes" aria-hidden="true"><span>Nada probable</span><span>Muy probable</span></div>
+          </fieldset>
+          <div class="field">
+            <label for="nps-comentario">¿Qué fue lo mejor o qué mejorarías? <span class="opc">(opcional)</span></label>
+            <textarea id="nps-comentario" rows="3" maxlength="1000"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" id="nps-enviar" disabled>Enviar</button>
+        </form>
+        <div class="bloque gracias" id="nps-gracias" hidden tabindex="-1">
+          <p class="gracias__t" id="gracias-t"></p>
+          <p id="gracias-p"></p>
+          <a class="btn btn--primary btn--block" id="resena" target="_blank" rel="noopener" hidden><span id="resena-t">Contarlo en Google</span><span class="sr-only"> (se abre en otra pestaña)</span></a>
+        </div>
+
+        <div class="bloque" id="cortesias-bloque" hidden>
+          <h3 class="bloque__h">Tus cortesías vigentes</h3>
+          <ul class="cortesias" id="cortesias"></ul>
+        </div>
+
+        <!-- App instalable: solo para socios con sesión que no la tienen ya abierta como app -->
+        <div class="bloque instalar" id="instalar" hidden>
+          <div class="instalar__cab">
+            <img src="/assets/img/marca/icono-192.png" alt="" width="56" height="56">
+            <div>
+              <h3 class="bloque__h" id="instalar-t">Lleva el Cisne en tu inicio</h3>
+              <p>Tu Pasaporte, el menú y el Wi-Fi a un toque, a pantalla completa.</p>
+            </div>
+          </div>
+          <button type="button" class="btn btn--primary btn--block" id="instalar-btn">Instalar app</button>
+          <button type="button" class="linkbtn" id="instalar-no">Ahora no</button>
+        </div>
+
+        <button type="button" class="btn btn--ghost btn--block salir" id="salir">Salir</button>
+      </div>
+      </div>
+
+      <!-- Ranking (se ve con o sin sesión) -->
+      <div id="ppanel-ranking" role="tabpanel" aria-labelledby="ptab-ranking" hidden>
+        <h3 class="rank__h" id="rank-h" tabindex="-1">Ranking del Cisne</h3>
+        <p class="fine">Quién ha venido más veces. En la lista pública solo aparece tu nombre y la inicial de tu apellido.</p>
+        <div class="seg seg--3" role="group" aria-label="Periodo del ranking">
+          <button type="button" data-periodo="semana" aria-pressed="false">Semana</button>
+          <button type="button" data-periodo="mes" aria-pressed="true">Mes</button>
+          <button type="button" data-periodo="total" aria-pressed="false">Total</button>
+        </div>
+        <div class="rank__yo" id="rank-yo" hidden></div>
+        <p class="rank__estado" id="rank-estado" role="status" aria-live="polite"></p>
+        <ol class="rank" id="rank-lista" aria-labelledby="rank-h"></ol>
+        <div class="rank__pref" id="rank-pref" hidden>
+          <button type="button" class="switch" role="switch" id="rank-switch" aria-checked="true" aria-describedby="rank-switch-h">
+            <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+            <span class="switch__label">Aparecer en el ranking público (solo nombre e inicial)</span>
+          </button>
+          <p class="fine" id="rank-switch-h"></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

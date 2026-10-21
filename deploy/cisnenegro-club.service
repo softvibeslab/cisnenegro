@@ -1,0 +1,22 @@
+# /etc/systemd/system/cisnenegro-club.service
+[Unit]
+Description=Club Cisne Negro (Pasaporte + NPS)
+After=network.target
+
+[Service]
+User=cisneclub
+Group=cisneclub
+EnvironmentFile=/etc/cisnenegro-club.env
+Environment=CLUB_DB=/var/lib/cisnenegro-club/club.db
+Environment=CLUB_PORT=8790
+ExecStart=/usr/bin/python3 /opt/cisnenegro-club/club_server.py
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/cisnenegro-club
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

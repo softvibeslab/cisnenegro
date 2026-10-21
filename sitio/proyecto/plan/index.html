@@ -1,0 +1,226 @@
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0E0D0B"><title>Plan de ejecución · Cisne Negro</title>
+<link rel="icon" href="/assets/img/marca/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Manrope:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--tinta:#0E0D0B;--carbon:#191714;--borde:#2B2823;--hueso:#F3EDE2;--gris:#A39B8E;--neon:#F2C97D;--pico:#FF5A1F}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--tinta);color:var(--hueso);font:16px/1.65 Manrope,system-ui,sans-serif}
+a{color:var(--pico)}a:focus-visible,button:focus-visible{outline:2px solid var(--pico);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 20px 72px}
+.top{display:flex;align-items:center;gap:14px;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid var(--borde);padding-bottom:16px}
+.marca{display:flex;align-items:center;gap:12px;color:var(--hueso);text-decoration:none}
+.marca img{width:46px;height:46px;border-radius:50%;background:var(--hueso);border:3px solid var(--tinta);outline:2px solid var(--hueso);transform:rotate(-6deg)}
+.marca b{font-family:"Big Shoulders Display",Impact,sans-serif;font-size:1.35rem;letter-spacing:.03em;text-transform:uppercase}
+.chip{font:500 .78rem "JetBrains Mono",monospace;color:var(--gris);border:1px solid var(--borde);border-radius:999px;padding:4px 10px}
+h1,h2,h3{font-family:"Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);margin:.6em 0 .2em}
+.hero h1{color:var(--neon);text-shadow:0 0 18px rgba(242,201,125,.45)}
+.lead{color:var(--gris);max-width:62ch;font-size:1.08rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:18px}
+.card{display:flex;flex-direction:column;gap:6px;background:var(--carbon);border:1px solid var(--borde);border-radius:14px;padding:18px;color:var(--hueso);text-decoration:none;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--pico);transform:translateY(-2px)}
+.card h3{margin:0;font-size:1.35rem}.card p{margin:0;color:var(--gris);font-size:.94rem}
+.card .tipo{font:500 .72rem "JetBrains Mono",monospace;color:var(--pico);text-transform:uppercase;letter-spacing:.06em}
+.card.destacada{border-color:#3a352e;background:linear-gradient(160deg,#211d18,#191714)}
+section{margin-top:44px}section>h2{font-size:1.6rem;margin:0;color:var(--hueso)}
+.nota{background:var(--carbon);border:1px solid var(--borde);border-left:4px solid var(--pico);border-radius:8px;padding:12px 16px;color:var(--gris);font-size:.93rem;margin-top:16px}
+.doc{max-width:820px}
+.doc h1{color:var(--neon)}.doc h2{font-size:1.7rem;margin-top:1.8em;border-top:1px solid var(--borde);padding-top:.9em}
+.doc h3{font-size:1.25rem;color:var(--neon);margin-top:1.4em}
+.doc table{width:100%;border-collapse:collapse;font-size:.92rem;display:block;overflow-x:auto}
+.doc th,.doc td{border:1px solid var(--borde);padding:8px 10px;text-align:left;vertical-align:top}
+.doc th{background:var(--carbon);font-weight:700}
+.doc code{font:500 .86em "JetBrains Mono",monospace;background:var(--carbon);border:1px solid var(--borde);border-radius:5px;padding:1px 5px}
+.doc pre{background:var(--carbon);border:1px solid var(--borde);border-radius:10px;padding:14px;overflow-x:auto}
+.doc pre code{border:0;padding:0;background:none}
+.doc blockquote{margin:1em 0;border-left:3px solid var(--neon);padding:.2em 1em;color:var(--gris)}
+.doc hr{border:0;border-top:1px solid var(--borde);margin:2em 0}
+.doc a,.wrap>p>a{overflow-wrap:anywhere}
+.wrap>p>a{display:inline-flex;align-items:center;min-height:44px}
+@media (pointer:coarse){.marca{min-height:44px}}
+@media (forced-colors:active){.card{border:1px solid CanvasText}}
+footer{margin-top:56px;color:var(--gris);font-size:.85rem;border-top:1px solid var(--borde);padding-top:16px}
+</style></head><body><div class="wrap">
+<header class="top"><a class="marca" href="/proyecto/"><img src="/assets/img/marca/cisne-mascota.jpg" alt="" width="46" height="46"><b>Cisne Negro · Proyecto</b></a>
+<span class="chip">Vista previa · Softvibes</span></header><p style="margin-top:20px"><a href="/proyecto/">← Todos los artefactos</a></p><article class="doc"><h1>Cisne Negro — Plan de ejecución</h1>
+<blockquote>
+<p>Seis fases con checkpoints de aprobación (playbook Softvibes / <code>prospecta-mvp</code>). Nada se publica, despliega ni se envía al cliente sin autorización explícita.</p>
+</blockquote>
+<h2>Estructura de la carpeta</h2>
+<pre><code>cisne-negro-cerveceria/
+├── README.md                    # estado y siguiente paso
+├── 01-base-conocimientos.md     # fuente única de verdad (datos + fuentes)
+├── 02-propuesta-marca-digital.md
+├── 03-plan-ejecucion.md         # este archivo
+├── scraping/
+│   ├── raw/                     # JSON crudos por fuente y fecha (no se editan)
+│   └── scripts/                 # scrapers reproducibles
+├── analisis/                    # informe interactivo de presencia digital
+├── landing/                     # sitio (fork de malandra-cerveceria)
+├── menu-digital/                # data del tenant MenuVibes + maridaje
+└── assets/                      # logo, fotos aprobadas, videos
+</code></pre>
+<hr />
+<h2>Fase 0 — Decisiones previas ✅</h2>
+<ul>
+<li>[x] Definir si Cisne Negro es <strong>cliente</strong> (con acceso a sus cuentas) o <strong>prospecto</strong> (solo datos públicos y outreach). Esto cambia el alcance del scraping y del contacto.</li>
+<li>[ ] Corregir de inmediato la landing de Abacus (teléfono y horario) si es nuestra o del cliente.</li>
+<li>[ ] Llevar las preguntas abiertas de la base de conocimientos (§9) a la primera llamada.</li>
+</ul>
+<p><strong>Checkpoint 0:</strong> confirmar alcance y precio.</p>
+<h2>Fase 1 — Scraping de redes y huella digital ✅</h2>
+<p><strong>Regla:</strong> solo datos públicos, ritmo bajo y sin evadir logins ni bloqueos. Si es cliente, preferir la <strong>exportación oficial</strong> (Meta Business Suite e Insights de Google Business), que es más completa y no tiene riesgo de bloqueo.</p>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>Qué extraer</th>
+<th>Herramienta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instagram @cisnenegro.mx</td>
+<td>Últimos 100–150 posts: fecha, tipo (reel/carrusel/foto), caption, hashtags, likes, comentarios, vistas de reel; highlights; bio</td>
+<td>Playwright con sesión propia (precedente: hopepaoo) o Apify <code>instagram-scraper</code></td>
+</tr>
+<tr>
+<td>Facebook</td>
+<td>Posts, eventos, recomendaciones, info de la página</td>
+<td>Apify <code>facebook-pages-scraper</code></td>
+</tr>
+<tr>
+<td>Google Maps</td>
+<td>Rating, reseñas completas (texto, estrellas, fecha, respuesta del dueño), fotos, horario, atributos</td>
+<td>skill <code>google-maps-scraper</code></td>
+</tr>
+<tr>
+<td>Competencia</td>
+<td>Mismos datos de 4–6 cervecerías y bares de Pachuca/Hidalgo (Hacienda, La Vizcaína, La Minera + taprooms de Pachuca)</td>
+<td>Google Maps + IG</td>
+</tr>
+<tr>
+<td>Sitios web</td>
+<td>cisnenegro.mx y landing de Abacus: texto, meta, velocidad, enlaces</td>
+<td>Playwright + Lighthouse</td>
+</tr>
+<tr>
+<td>Agregadores</td>
+<td>Tripadvisor, Restaurant Guru, Uber Eats, Untappd</td>
+<td>Nimble / WebFetch</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Salida:</strong> <code>scraping/raw/&lt;fuente&gt;-&lt;fecha&gt;.json</code> y un <code>scraping/dataset.json</code> normalizado (un esquema común para posts y otro para reseñas).</p>
+<p><strong>Checkpoint 1:</strong> revisar la calidad del dataset antes de analizar.</p>
+<h2>Fase 2 — Análisis interactivo de presencia digital ✅</h2>
+<p>Informe HTML en <code>analisis/index.html</code>, mismo formato que los análisis previos (Mystic Nails, Fabiola, Hopepaoo):
+1. Resumen ejecutivo y score de presencia digital (0–100) por canal.
+2. <strong>Rendimiento de contenido:</strong> qué formatos y temas generan más interacción; frecuencia y horarios.
+3. <strong>Voz del cliente:</strong> análisis de temas y sentimiento de las reseñas (qué aman y qué les molesta).
+4. <strong>Consistencia NAP</strong> (nombre, dirección, teléfono y horario en cada canal).
+5. Benchmark contra la competencia.
+6. SEO local: palabras clave ("cerveza artesanal Pachuca", "bar pet friendly Pachuca") y posición en Maps.
+7. Recomendaciones priorizadas, alineadas con <a href="/proyecto/propuesta/">02-propuesta</a>.</p>
+<p><strong>Checkpoint 2:</strong> aprobación del análisis, que se convierte en el material de venta y en el brief de la landing.</p>
+<h2>Fase 3 — Landing ✅</h2>
+<ul>
+<li><strong>Inventario primero</strong> (regla del workspace): el nicho cervecero ya existe en <strong><code>malandra-cerveceria</code></strong> (Astro + CMS PHP/JSON, desplegado en Hostinger). Se usa como base técnica sin copiar contenido ni assets de Malandra. No hace falta buscar plantillas en Envato salvo que la dirección visual lo pida.</li>
+<li><strong>Dirección visual:</strong> negro profundo + acento de la pluma, tipografía condensada de cartel cervecero y fotos reales del lugar. Presentar 2–3 opciones antes de construir.</li>
+<li><strong>Secciones:</strong> Hero "¡Cuéntalo en el Cisne!" · Barril de hoy (editable desde el CMS) · Comedor · Maridajes destacados · Nuestra historia · Pasaporte Cisne · Eventos y catering (formulario a WhatsApp) · Visítanos (mapa, horario, pet friendly, Lunes de producción) · Footer con redes.</li>
+<li><strong>SEO:</strong> schema <code>Brewery</code>/<code>BarOrPub</code> con <code>openingHours</code>, OG tags, sitemap y <code>noindex</code> mientras esté en revisión.</li>
+<li><strong>Datos:</strong> solo los de la base de conocimientos; nada inventado (sin testimonios falsos ni teléfonos placeholder).</li>
+<li><strong>Deploy:</strong> subdominio temporal de Hostinger, solo con autorización.</li>
+</ul>
+<p><strong>Checkpoint 3:</strong> aprobación del diseño y luego del contenido final.</p>
+<h2>Fase 4 — Menú digital con maridaje ✅</h2>
+<ul>
+<li><strong>Menú propio</strong> en <code>/menu/</code> (HTML estático), alimentado por <code>sitio/data/menu.json</code>: barril primero, filtro por perfil, "Va perfecto con…" y "Pídelo con…" (maridaje en ambos sentidos), constructor del Vuelo del Cisne (4 × 4 oz) y fotos reales de los platillos.</li>
+<li><strong>Decisión de arquitectura (2026-10-06):</strong> el backend de MenuVibes (Supabase en el VPS) está apagado desde el 1 de agosto. Por decisión del usuario se montó un <strong>backend ligero propio</strong> en lugar de reactivarlo.</li>
+<li><strong>Pendiente con el cliente:</strong> validar los maridajes y las notas de cata, y contar la historia de cada nombre (campo <code>historia</code>).</li>
+<li><strong>QR:</strong> imprimir el QR a <code>https://cisnenegro.softvibes.art/menu/</code> en portavasos y mesas (o al dominio final cuando migre).</li>
+</ul>
+<h2>Fase 5 — Pasaporte Cisne y NPS ✅</h2>
+<ul>
+<li><strong>Backend</strong> <code>backend/club_server.py</code>: Python estándar + SQLite, servicio systemd <code>cisnenegro-club</code> detrás de nginx en <code>/api/</code>, con un respaldo diario a las 03:30 (CDMX). Prueba de humo: <code>python3 backend/test_club.py</code> (20 verificaciones).</li>
+<li><strong>Socios:</strong> nombre, teléfono y PIN de 4 dígitos, con aceptación del aviso de privacidad (<code>/privacidad/</code>) y opt-in de WhatsApp.</li>
+<li><strong>Check-in</strong> con el código del día (4 dígitos, cambia diario, lo da el equipo), una visita por día. Cortesías en la visita 5 (4 oz) y la 10 (12 oz) con código <code>CN-XXXXX</code> y vigencia de 30 días.</li>
+<li><strong>NPS</strong> tras cada visita: <strong>todos</strong> reciben la invitación a Google, sin premio y con texto según el score; 0–6 → bandeja de recuperación.</li>
+<li><strong>v2 (2026-10-06):</strong> sesión persistente por cookie HttpOnly de 180 días, CRUD de NPS y de miembros, estadísticas y KPIs, y ranking público (alias «Ana R.», con opción de ocultarse). Pruebas: 48 verificaciones.</li>
+<li><strong>Panel del equipo</strong> <code>/admin/</code> (usuario y contraseña de nginx): código del día, canje de cortesías, métricas de 30 días, bandeja NPS con seguimiento y exportación de socios a CSV.</li>
+<li><strong>Pendiente:</strong> reto "Vacía el barril" y Club del Barril (avisos de barril nuevo por WhatsApp), que se anuncian como "Próximamente". También falta validar el aviso de privacidad con el cliente (razón social y responsable).</li>
+</ul>
+<h2>Fase 6 — Lanzamiento y operación ← SIGUIENTE</h2>
+<p><strong>Semana 1 (con el cliente)</strong>
+- [ ] Recorrido del sitio, el menú y el panel con los dueños; aprobar maridajes, notas de cata, historia de cada nombre y aviso de privacidad (razón social, casilla 18+).
+- [ ] Capacitación del equipo (15 min): código del día, canje de cortesías, alta en barra, bandeja NPS y cómo recuperar a un detractor por WhatsApp.
+- [ ] Imprimir el QR del menú (<code>/assets/qr/menu-qr.svg</code>) en portavasos y mesas, más un cartel "Pasaporte Cisne".
+- [ ] Arreglos rápidos: retirar la landing de Abacus, corregir Tripadvisor, renombrar a "Cervecería Cisne Negro" y agregar la categoría "Cervecería/Brewpub" en Google, crear el perfil de Untappd y enlazar redes y WhatsApp en cisnenegro.mx.
+- [ ] <strong>Responder las 69 reseñas de Google</strong> (empezando por las 9 críticas). Requiere el acceso B3 del backlog.</p>
+<p><strong>Semana 2–4</strong>
+- [ ] Decidir el dominio final: <code>menu.cisnenegro.mx</code> / <code>club.cisnenegro.mx</code> apuntando al VPS, o migrar el sitio completo desde Squarespace. Al migrar, quitar <code>noindex</code> y regenerar el QR.
+- [ ] Calendario editorial de 30 días con los formatos de la propuesta §4.6 (barril de la semana, lunes de producción, maridaje del finde, comunidad y eventos) y reactivar TikTok.
+- [ ] Gamificación G1: plumas y combo «Cuéntalo» (ver <a href="/proyecto/gamificacion/">Plan de gamificación del Pasaporte</a>).
+- [ ] Primera revisión mensual de KPIs en el panel (Estadísticas) contra las metas de la propuesta §5.</p>
+<p><strong>Continuo:</strong> backlog del cliente B1–B4 (exportación de Meta, Business Suite, Google admin, Threads).</p>
+<h2>Cronograma resumido</h2>
+<table>
+<thead>
+<tr>
+<th>Semana</th>
+<th>Entregables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Fase 0 + arreglos rápidos · Scraping · Inicio del análisis</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Análisis aprobado · Diseño de landing · Carga del menú</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Landing en revisión · Módulo de maridaje · Lealtad + NPS en piloto</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Ajustes del piloto · Lanzamiento · Calendario de redes</td>
+</tr>
+</tbody>
+</table>
+<h2>Riesgos</h2>
+<table>
+<thead>
+<tr>
+<th>Riesgo</th>
+<th>Mitigación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bloqueo o violación de ToS al scrapear IG/FB</td>
+<td>Exportaciones oficiales si es cliente; ritmo bajo y solo datos públicos si es prospecto</td>
+</tr>
+<tr>
+<td>Datos del menú desactualizados (los barriles rotan)</td>
+<td>El switch "en barril" en el dashboard y un responsable del cliente</td>
+</tr>
+<tr>
+<td>Supabase de MenuVibes apagado desde ago 2026</td>
+<td>Resuelto con un backend propio del club (decisión del 2026-10-06)</td>
+</tr>
+<tr>
+<td>Maridajes sin validar</td>
+<td>Revisión obligatoria por los cerveceros (checkpoint 4)</td>
+</tr>
+<tr>
+<td>Confusión entre los dos sitios</td>
+<td>Una sola URL canónica; redirigir o retirar la de Abacus</td>
+</tr>
+</tbody>
+</table></article><footer>Proyecto de marca y presencia digital de Cervecería Cisne Negro · Preparado por Softvibes · Actualizado el 2026-10-06.</footer></div></body></html>

@@ -1,0 +1,21 @@
+[Unit]
+Description=Cisne Negro CMS y MediaHub
+After=network.target
+
+[Service]
+User=cisnecms
+Group=cisnecms
+WorkingDirectory=/opt/cisnenegro-cms
+EnvironmentFile=/etc/cisnenegro-cms.env
+ExecStart=/opt/cisnenegro-cms/venv/bin/gunicorn --bind 127.0.0.1:8795 --workers 1 --threads 8 --timeout 180 --access-logfile - cms_server:create_app()
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/cisnenegro-cms
+PrivateTmp=true
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

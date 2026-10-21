@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Informe de presencia digital · Cervecería Cisne Negro</title>
+<meta name="description" content="Análisis de la presencia digital de Cervecería Cisne Negro (Pachuca, Hgo.): Instagram, TikTok, Google, consistencia de datos, benchmark local y recomendaciones.">
+<meta name="theme-color" content="#0E0D0B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=JetBrains+Mono:wght@500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tinta:#0E0D0B; --carbon:#191714; --borde:#2B2823; --hueso:#F3EDE2; --gris:#A39B8E;
+  --neon:#F2C97D; --pico:#FF5A1F; --lupulo:#B7C46A;
+  /* roles de gráfica (validados contra --carbon: contraste ≥ 3:1) */
+  --dato:var(--neon); --enfasis:var(--pico); --contexto:#6E675C; --rejilla:#2B2823;
+  --r:14px; --pad:clamp(18px,4vw,40px);
+  --display:"Big Shoulders Display",Impact,sans-serif; --sans:Manrope,system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;background:var(--tinta);color:var(--hueso);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--neon)} a:hover{color:var(--hueso)}
+:focus-visible{outline:2px solid var(--neon);outline-offset:3px;border-radius:4px}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.02em;line-height:1.02;margin:0}
+h1{font-size:clamp(44px,11vw,96px);font-weight:900;color:var(--neon);text-shadow:0 0 18px rgba(242,201,125,.45)}
+h2{font-size:clamp(34px,7vw,56px);font-weight:900}
+h3{font-size:clamp(22px,4.4vw,28px);font-weight:800}
+p{margin:.6em 0} .lead{font-size:clamp(17px,2.4vw,20px);color:var(--hueso)}
+.muted{color:var(--gris)} .mono{font-family:var(--mono);font-weight:500}
+.num{font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--gris);margin:0 0 10px}
+.eyebrow b{color:var(--pico);font-weight:500}
+
+/* barra superior */
+.top{position:sticky;top:0;z-index:20;background:rgba(14,13,11,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde)}
+.top .wrap{display:flex;align-items:center;gap:14px;min-height:52px}
+.back{font-weight:700;text-decoration:none;color:var(--hueso);white-space:nowrap;font-size:15px}
+.back:hover{color:var(--neon)}
+.top .tag{margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--gris);white-space:nowrap}
+.toc{display:flex;gap:8px;overflow-x:auto;padding:8px var(--pad) 10px;max-width:1120px;margin:0 auto;scrollbar-width:none}
+.toc::-webkit-scrollbar{display:none}
+.toc a{flex:0 0 auto;font-size:13px;font-weight:600;text-decoration:none;color:var(--gris);border:1px solid var(--borde);border-radius:999px;padding:5px 12px}
+.toc a:hover,.toc a.on{color:var(--tinta);background:var(--neon);border-color:var(--neon)}
+
+/* hero */
+.hero{padding:clamp(40px,8vw,90px) 0 clamp(28px,5vw,48px);position:relative;overflow:hidden}
+.hero .grid{display:grid;gap:28px;align-items:center}
+.sticker{width:clamp(120px,30vw,200px);aspect-ratio:1;border-radius:50%;background:var(--hueso);border:3px solid var(--tinta);box-shadow:0 0 0 3px var(--hueso);overflow:hidden;transform:rotate(-6deg);justify-self:start}
+.sticker img{width:100%;height:100%;object-fit:cover}
+@media(min-width:820px){.hero .grid{grid-template-columns:1fr auto}.sticker{justify-self:end}}
+
+section{padding:clamp(48px,8vw,88px) 0;border-top:1px solid var(--borde)}
+section.papel{background:var(--hueso);color:var(--tinta);border-top:0}
+section.papel .muted{color:#5E574D} section.papel a{color:#9A3A10} section.papel .eyebrow{color:#5E574D}
+section.papel .card{background:#fff;border-color:#DDD3C3}
+.sec-head{display:grid;gap:12px;margin-bottom:28px;max-width:780px}
+.sec-head p{margin:0}
+
+/* tarjetas y kpis */
+.card{background:var(--carbon);border:1px solid var(--borde);border-radius:var(--r);padding:clamp(16px,3vw,24px)}
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:760px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.kpi .lbl{font-size:14px;color:var(--gris);margin:0}
+.kpi .val{font:800 clamp(30px,6vw,44px)/1.05 var(--sans);margin:6px 0 4px;letter-spacing:-.01em}
+.kpi .ctx{font-size:13px;color:var(--gris);margin:0}
+.kpi.alerta .val{color:var(--pico)}
+.hallazgos{counter-reset:h;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.hallazgos li{counter-increment:h;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
+.hallazgos li::before{content:counter(h);font:900 30px/1 var(--display);color:var(--pico);min-width:22px}
+.hallazgos b{color:var(--neon)}
+.two{display:grid;gap:16px} @media(min-width:900px){.two{grid-template-columns:1fr 1fr}}
+.three{display:grid;gap:12px} @media(min-width:760px){.three{grid-template-columns:repeat(3,1fr)}}
+.stack{display:grid;gap:16px}
+.stack>*,.two>*,.three>*,.kpis>*,.hero .grid>*{min-width:0}
+
+/* figuras */
+figure{margin:0}
+.fig{background:var(--carbon);border:1px solid var(--borde);border-radius:var(--r);padding:clamp(16px,3vw,24px)}
+.fig h3{font-size:22px;margin-bottom:4px}
+.fig .sub{font-size:14px;color:var(--gris);margin:0 0 16px}
+.fig figcaption{font-size:13px;color:var(--gris);margin-top:12px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--gris);margin:-4px 0 14px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:3px;display:inline-block}
+details.tabla{margin-top:14px;font-size:14px}
+details.tabla summary{cursor:pointer;color:var(--gris);font-weight:600;width:max-content}
+details.tabla summary:hover{color:var(--hueso)}
+.tw{overflow-x:auto;margin-top:10px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--borde);vertical-align:top}
+th{font-weight:700;color:var(--gris);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono);font-weight:500}
+
+/* barras horizontales */
+.hb{display:grid;gap:10px}
+.hb-row{display:grid;grid-template-columns:minmax(92px,32%) 1fr;gap:10px;align-items:center}
+.hb-lbl{font-size:14px;line-height:1.25}
+.hb-lbl small{display:block;color:var(--gris);font-size:12px}
+.hb-track{position:relative;height:24px;display:flex;align-items:center}
+.hb-bar{height:18px;border-radius:0 4px 4px 0;background:var(--dato);min-width:2px;transition:filter .15s}
+.hb-bar.em{background:var(--enfasis)} .hb-bar.ctx{background:var(--contexto)}
+.hb-val{font:500 13px var(--mono);margin-left:4px;padding:0 4px;white-space:nowrap;color:var(--hueso);position:relative;z-index:1;background:var(--carbon);border-radius:4px}
+.hb-ref{position:absolute;top:-4px;bottom:-4px;width:1px;background:var(--gris);z-index:0}
+.hb-hit{cursor:default;outline-offset:2px}
+.hb-hit:hover .hb-bar,.hb-hit:focus .hb-bar{filter:brightness(1.15)}
+
+/* columnas (frecuencia, tiktok) */
+.cols{position:relative}
+.cols svg{display:block;width:100%;height:auto;overflow:visible}
+.cols{min-height:120px}
+.cols .colhit{cursor:default}
+.cols .colhit:hover rect.m,.cols .colhit:focus rect.m{filter:brightness(1.2)}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--gris)}
+svg .ann{fill:var(--hueso);font-family:var(--sans);font-size:12px;font-weight:600}
+
+/* heatmap */
+.hm{display:grid;grid-template-columns:44px repeat(4,minmax(0,1fr));gap:4px;font-size:12px;max-width:620px}
+.hm .h{color:var(--gris);text-align:center;font-family:var(--mono);align-self:end;padding-bottom:4px}
+.hm .rl{color:var(--gris);display:flex;align-items:center;font-size:12px}
+.hm .c{min-height:48px;border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;font:500 13px var(--mono);line-height:1.15}
+.hm .c small{font-size:10px;opacity:.75}
+.hm .c.poco{background:repeating-linear-gradient(45deg,#1f1c18 0 4px,#24211c 4px 8px)!important;color:var(--gris)}
+.hm .c.vacio{background:transparent;border:1px dashed var(--borde)}
+.scale{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--gris);margin-top:12px;flex-wrap:wrap}
+.scale .ramp{display:flex;border-radius:4px;overflow:hidden}
+.scale .ramp i{width:26px;height:10px;display:block}
+
+/* top 10 */
+.top10{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:700px){.top10{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1000px){.top10{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.post{background:var(--carbon);border:1px solid var(--borde);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--hueso);display:flex;flex-direction:column}
+.post:hover{border-color:var(--neon)}
+.post .ph{position:relative;aspect-ratio:1;background:#000}
+.post .ph img{width:100%;height:100%;object-fit:cover}
+.post .rk{position:absolute;top:8px;left:8px;background:var(--tinta);color:var(--neon);font:900 18px/1 var(--display);padding:5px 8px;border-radius:8px}
+.post .bd{padding:10px 12px 12px;display:grid;gap:4px;font-size:13px}
+.post .bd .m{font:500 12px var(--mono);color:var(--gris)}
+.post .bd .i{font-weight:800;font-size:16px}
+.post .bd p{margin:0;color:var(--gris);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.chip{display:inline-block;font:600 11px var(--sans);border:1px solid var(--borde);border-radius:999px;padding:2px 8px;color:var(--gris);width:max-content}
+.chip.ev{border-color:var(--pico);color:var(--pico)}
+
+/* insignias de estado: siempre icono + texto */
+.st{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;white-space:nowrap;border-radius:999px;padding:2px 10px 2px 6px}
+.st::before{font-family:var(--mono);font-weight:700;width:18px;height:18px;border-radius:50%;display:inline-grid;place-items:center;font-size:12px}
+.st.ok{background:#E7ECCB;color:#2F3A0A}.st.ok::before{content:"✓";background:#2F3A0A;color:#E7ECCB}
+.st.aviso{background:#F6E3BF;color:#5A3D05}.st.aviso::before{content:"!";background:#5A3D05;color:#F6E3BF}
+.st.error{background:var(--pico);color:var(--tinta)}.st.error::before{content:"✕";background:var(--tinta);color:var(--pico)}
+.bad{color:#B4380C;font-weight:700}
+
+/* score */
+.score-hero{display:grid;gap:18px;align-items:center}
+@media(min-width:760px){.score-hero{grid-template-columns:auto 1fr}}
+.gauge{font:800 clamp(64px,14vw,104px)/1 var(--sans);letter-spacing:-.03em}
+.gauge small{font-size:.32em;color:var(--gris);font-weight:600;letter-spacing:0}
+.meter{height:10px;border-radius:999px;background:#3A2A1F;overflow:hidden;margin-top:8px}
+.meter i{display:block;height:100%;background:var(--pico);border-radius:999px}
+details.rub{border-top:1px solid var(--borde);padding:10px 0}
+details.rub summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:minmax(110px,30%) 1fr;gap:10px;align-items:center}
+details.rub summary::-webkit-details-marker{display:none}
+details.rub summary .nm{font-weight:700;font-size:15px;line-height:1.2}
+details.rub summary .nm small{display:block;overflow-wrap:anywhere;color:var(--gris);font-weight:400;font-size:12px}
+details.rub summary .nm::after{content:"＋ ver rúbrica";display:block;font:500 11px var(--mono);color:var(--gris);margin-top:2px}
+details.rub[open] summary .nm::after{content:"－ ocultar"}
+.rub-list{display:grid;gap:6px;margin:12px 0 4px;font-size:14px}
+.rub-list div{display:grid;grid-template-columns:96px 54px 1fr;gap:8px;align-items:baseline}
+.rub-list .p{font-family:var(--mono);text-align:right}
+.pts20{color:var(--lupulo)} .pts10{color:var(--neon)} .pts0{color:var(--pico)}
+
+/* citas */
+.quotes{display:grid;gap:12px} @media(min-width:760px){.quotes{grid-template-columns:repeat(2,1fr)}}
+blockquote{margin:0;padding:16px 18px;border-left:3px solid var(--neon);background:var(--carbon);border-radius:0 12px 12px 0;font-size:15px}
+blockquote.crit{border-left-color:var(--pico)}
+blockquote footer{font:500 12px var(--mono);color:var(--gris);margin-top:8px}
+
+/* matriz impacto × esfuerzo */
+.matrix{display:grid;grid-template-columns:28px 1fr 1fr;grid-template-rows:1fr 1fr 28px;gap:6px;min-height:340px}
+@media(min-width:900px){.matrix{align-self:start;position:sticky;top:130px;height:400px}}
+.matrix .q{border-radius:12px;padding:12px;display:flex;flex-wrap:wrap;align-content:flex-start;gap:8px;position:relative;border:1px solid #DDD3C3;background:#fff}
+.matrix .q h4{width:100%;margin:0 0 4px;font:800 12px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:#5E574D}
+.matrix .q.win{background:#FFE9DF;border-color:#F6B79C}
+.matrix .ax{font:600 11px var(--mono);color:#5E574D;display:flex;align-items:center;justify-content:center;text-transform:uppercase;letter-spacing:.06em}
+.matrix .ax.y{writing-mode:vertical-rl;transform:rotate(180deg)}
+.matrix a.dot{width:30px;height:30px;border-radius:50%;background:var(--tinta);color:var(--hueso);display:grid;place-items:center;font:800 13px var(--sans);text-decoration:none}
+.matrix .win a.dot{background:var(--pico);color:var(--tinta)}
+.recs{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.recs li{display:grid;grid-template-columns:34px 1fr;gap:12px;background:#fff;border:1px solid #DDD3C3;border-radius:12px;padding:14px}
+.recs .no{width:30px;height:30px;border-radius:50%;background:var(--tinta);color:var(--hueso);display:grid;place-items:center;font-weight:800;font-size:13px}
+.recs li.win .no{background:var(--pico);color:var(--tinta)}
+.recs h4{margin:0 0 4px;font-size:16px}
+.recs p{margin:0;font-size:14px}
+.recs .meta{font:500 12px var(--mono);color:#5E574D;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--pico);color:var(--tinta)!important;font-weight:800;text-decoration:none;border-radius:999px;padding:12px 22px}
+.btn:hover{filter:brightness(1.08)}
+
+/* tooltip */
+#tip{position:fixed;z-index:50;pointer-events:none;background:#000;border:1px solid var(--borde);color:var(--hueso);padding:8px 10px;border-radius:8px;font-size:13px;line-height:1.35;max-width:260px;opacity:0;transform:translateY(4px);transition:opacity .12s,transform .12s;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+#tip.on{opacity:1;transform:none}
+#tip b{display:block;font:500 15px var(--mono);color:var(--hueso)}
+#tip span{color:var(--gris)}
+
+footer.pie{padding:48px 0 64px;border-top:1px solid var(--borde);font-size:14px;color:var(--gris)}
+footer.pie h3{color:var(--hueso);margin-bottom:10px}
+footer.pie ul{padding-left:18px;margin:8px 0}
+.callout{border:1px solid var(--borde);border-left:3px solid var(--pico);border-radius:0 12px 12px 0;padding:14px 16px;background:var(--carbon);font-size:15px}
+section.papel .callout{background:#fff;border-color:#DDD3C3;border-left-color:var(--pico)}
+.kw{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.kw span{background:var(--tinta);color:var(--hueso);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:600}
+@media (max-width:700px){
+  table.cardtable thead{display:none}
+  table.cardtable,table.cardtable tbody{display:block}
+  table.cardtable tr{display:grid;gap:6px;padding:14px 0;border-bottom:1px solid var(--borde)}
+  section.papel table.cardtable tr{border-color:#DDD3C3}
+  table.cardtable td{display:grid;grid-template-columns:96px 1fr;gap:10px;border:0;padding:0;text-align:left!important;font-family:var(--sans)!important;font-weight:400}
+  table.cardtable td::before{content:attr(data-label);font:600 11px var(--sans);text-transform:uppercase;letter-spacing:.04em;color:var(--gris);padding-top:3px}
+  section.papel table.cardtable td::before{color:#5E574D}
+  table.cardtable td:first-child{grid-template-columns:1fr;font-size:17px}
+  table.cardtable td:first-child::before{display:none}
+  table.cardtable tr.cliente{background:rgba(242,201,125,.06);border-radius:10px;padding:14px 12px}
+  table.cardtable tr.cliente td{background:none}
+}
+tr.cliente td{background:rgba(242,201,125,.06)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media print{.top,.toc{display:none}section{break-inside:avoid}}
+
+/* Ajustes multi-dispositivo (auditoría responsiva 2026-10-06) */
+@media (max-width:400px){.top .tag{display:none}}
+@media (pointer:coarse){
+  .toc a{min-height:40px;display:inline-flex;align-items:center;padding:8px 14px}
+  .back{display:inline-flex;align-items:center;min-height:44px}
+  details.tabla summary{padding:10px 0}
+  details.rub summary{min-height:44px}
+  .matrix a.dot{width:40px;height:40px}
+  table a,.viral a,a.ext,#tt-caso a{display:inline-block;padding:10px 0}
+}
+@media (forced-colors:active){.toc a,.matrix a.dot{border:1px solid ButtonText}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="back" href="/proyecto/">← Volver al proyecto</a>
+    <span class="tag">Informe · corte 2026-10-06</span>
+  </div>
+  <nav class="toc" aria-label="Secciones del informe">
+    <a href="#resumen">Resumen</a><a href="#instagram">Instagram</a><a href="#tiktok">TikTok</a><a href="#google">Google</a>
+    <a href="#nap">Datos (NAP)</a><a href="#benchmark">Benchmark</a><a href="#seo">SEO local</a><a href="#recomendaciones">Recomendaciones</a><a href="#metodologia">Metodología</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Fase 2 · <b>Informe de presencia digital</b> · Pachuca, Hgo.</p>
+      <h1>Cervecería<br>Cisne Negro</h1>
+      <p class="lead" style="max-width:640px;margin-top:18px">La reputación es muy buena (<b data-k="kpis.google_rating"></b> ★ en Google) y el contenido de eventos funciona. Lo que falla es todo lo que rodea a la marca: datos que se contradicen entre canales, ninguna reseña respondida y canales abandonados. Este informe mide cada canal con datos públicos y prioriza qué corregir primero.</p>
+    </div>
+    <div class="sticker"><img src="img/mascota.jpg" width="320" height="320" alt="Mascota de Cisne Negro: un cisne negro estilo tatuaje con pico naranja y un tarro de cerveza"></div>
+  </div>
+</div>
+
+<!-- 1 · RESUMEN -->
+<section id="resumen">
+  <div class="wrap stack">
+    <div class="sec-head">
+      <p class="eyebrow">01 · Resumen ejecutivo</p>
+      <h2>Buena cerveza, señal débil</h2>
+    </div>
+    <div class="kpis" id="kpis"></div>
+
+    <div class="card">
+      <h3 style="margin-bottom:14px">Los 5 hallazgos más fuertes</h3>
+      <ol class="hallazgos" id="hallazgos"></ol>
+    </div>
+
+    <figure class="fig" id="fig-score">
+      <div class="score-hero">
+        <div>
+          <p class="eyebrow" style="margin:0">Score de presencia digital</p>
+          <div class="gauge"><span data-k="kpis.score_global"></span><small> / 100</small></div>
+          <div class="meter" aria-hidden="true"><i id="meter-global"></i></div>
+        </div>
+        <p class="muted" style="margin:0">Promedio simple de los seis canales. Cada canal se califica de 0 a 100 en cinco dimensiones de 20 puntos: <b>20</b> = cumple, <b>10</b> = parcial, <b>0</b> = no cumple o <b>no es verificable sin iniciar sesión</b> (lo que un cliente no puede ver no cuenta). Toca un canal para ver de dónde sale cada punto.</p>
+      </div>
+      <div id="score-canales" style="margin-top:18px"></div>
+      <details class="tabla"><summary>Ver la rúbrica completa</summary><div class="tw"><table id="t-rubrica"></table></div></details>
+    </figure>
+  </div>
+</section>
+
+<!-- 2 · INSTAGRAM -->
+<section id="instagram">
+  <div class="wrap stack">
+    <div class="sec-head">
+      <p class="eyebrow">02 · Rendimiento de contenido en Instagram</p>
+      <h2>Los eventos mueven la cuenta</h2>
+      <p class="muted">Se analizaron <b data-k="kpis.ig_analizados"></b> de <b data-k="kpis.ig_posts"></b> publicaciones (nov 2023 – sep 2026). La interacción es likes + comentarios, porque Instagram no publica alcance, guardados ni compartidos sin acceso a Insights.</p>
+    </div>
+
+    <div class="two">
+      <figure class="fig">
+        <h3>Interacción por formato</h3>
+        <p class="sub">Mediana de likes + comentarios por publicación</p>
+        <div id="ch-formato" class="hb"></div>
+        <figcaption id="cap-formato"></figcaption>
+        <details class="tabla"><summary>Ver datos en tabla</summary><div class="tw"><table id="t-formato"></table></div></details>
+      </figure>
+      <figure class="fig">
+        <h3>Interacción por tema</h3>
+        <p class="sub">Interacción relativa al post típico de su año (×1.0 = la mediana del año)</p>
+        <div id="ch-temas" class="hb"></div>
+        <figcaption>Cada caption se clasificó con reglas de palabras clave explícitas (en <span class="mono">build_data.py</span>). Se compara contra la mediana de su año porque la cuenta creció: un post de 2025 no se puede comparar en bruto con uno de 2023.</figcaption>
+        <details class="tabla"><summary>Ver datos en tabla</summary><div class="tw"><table id="t-temas"></table></div></details>
+      </figure>
+    </div>
+
+    <figure class="fig">
+      <h3>Publicaciones por mes</h3>
+      <p class="sub">Noviembre 2023 a septiembre 2026 · los meses en cero se muestran</p>
+      <div id="ch-frecuencia" class="cols"></div>
+      <figcaption id="cap-frecuencia"></figcaption>
+      <details class="tabla"><summary>Ver datos en tabla</summary><div class="tw"><table id="t-frecuencia"></table></div></details>
+    </figure>
+
+    <figure class="fig">
+      <h3>Mejor día y hora para publicar</h3>
+      <p class="sub">Hora de CDMX (UTC−6) · cada celda: interacción relativa mediana y número de posts</p>
+      <div id="ch-heatmap" class="hm" role="img" aria-label="Mapa de calor de interacción por día y franja horaria"></div>
+      <div class="scale"><span>menos</span><span class="ramp" id="ramp"></span><span>más interacción</span><span style="margin-left:12px;display:inline-flex;align-items:center;gap:6px"><i style="width:18px;height:12px;display:inline-block;border-radius:3px;background:repeating-linear-gradient(45deg,#1f1c18 0 4px,#2c2822 4px 8px)"></i> menos de <span data-k="instagram.mejor.min_n"></span> posts: muestra insuficiente</span></div>
+      <figcaption id="cap-heatmap"></figcaption>
+      <details class="tabla"><summary>Ver datos en tabla</summary><div class="tw"><table id="t-heatmap"></table></div></details>
+    </figure>
+
+    <div>
+      <h3 style="margin-bottom:6px">Top 10 publicaciones</h3>
+      <p class="muted" style="margin:0 0 16px" id="cap-top"></p>
+      <div class="top10" id="top10"></div>
+    </div>
+
+    <div class="callout" id="callout-ht"></div>
+  </div>
+</section>
+
+<!-- 3 · TIKTOK -->
+<section id="tiktok">
+  <div class="wrap stack">
+    <div class="sec-head">
+      <p class="eyebrow">03 · TikTok</p>
+      <h2>Un viral y luego silencio</h2>
+      <p class="muted" id="tt-intro"></p>
+    </div>
+    <div class="kpis" id="tt-kpis"></div>
+    <figure class="fig">
+      <h3>Vistas por video</h3>
+      <p class="sub">Las 14 publicaciones de la cuenta, en orden cronológico</p>
+      <div class="legend"><span><i style="background:var(--enfasis)"></i>Video viral</span><span><i style="background:var(--contexto)"></i>Resto de publicaciones</span></div>
+      <div id="ch-tiktok" class="cols"></div>
+      <figcaption id="cap-tiktok"></figcaption>
+      <details class="tabla"><summary>Ver datos en tabla</summary><div class="tw"><table id="t-tiktok"></table></div></details>
+    </figure>
+    <div class="callout" id="tt-caso"></div>
+  </div>
+</section>
+
+<!-- 4 · GOOGLE -->
+<section id="google">
+  <div class="wrap stack">
+    <div class="sec-head">
+      <p class="eyebrow">04 · Voz del cliente en Google</p>
+      <h2>Les gusta, y nadie les contesta</h2>
+      <p class="muted" id="g-intro"></p>
+    </div>
+    <div class="kpis" id="g-kpis"></div>
+    <div class="two">
+      <figure class="fig">
+        <h3>Distribución de estrellas</h3>
+        <p class="sub">Reseñas de Google por calificación</p>
+        <div id="ch-estrellas" class="hb"></div>
+        <details class="tabla"><summary>Ver datos en tabla</summary><div class="tw"><table id="t-estrellas"></table></div></details>
+      </figure>
+      <figure class="fig">
+        <h3>Evolución por año</h3>
+        <p class="sub">Promedio de estrellas de las reseñas publicadas cada año</p>
+        <div id="ch-anio" class="hb"></div>
+        <figcaption id="cap-anio"></figcaption>
+        <details class="tabla"><summary>Ver datos en tabla</summary><div class="tw"><table id="t-anio"></table></div></details>
+      </figure>
+    </div>
+    <div class="two">
+      <figure class="fig">
+        <h3>Lo que elogian</h3>
+        <p class="sub">Menciones positivas en las <span data-k="google.n_clasificadas"></span> reseñas con texto</p>
+        <div id="ch-pos" class="hb"></div>
+      </figure>
+      <figure class="fig">
+        <h3>De qué se quejan</h3>
+        <p class="sub">Menciones negativas en las mismas reseñas</p>
+        <div id="ch-neg" class="hb"></div>
+        <figcaption>Temas clasificados a mano leyendo cada reseña (la tabla de clasificación está en <span class="mono">build_data.py</span>). Una reseña puede tocar varios temas.</figcaption>
+      </figure>
+    </div>
+    <div class="quotes" id="citas"></div>
+    <div class="callout" id="g-pico"></div>
+  </div>
+</section>
+
+<!-- 5 · NAP -->
+<section id="nap" class="papel">
+  <div class="wrap stack">
+    <div class="sec-head">
+      <p class="eyebrow">05 · Consistencia de datos (NAP)</p>
+      <h2>Siete canales, cuatro versiones</h2>
+      <p>NAP es nombre, dirección y teléfono, más el horario. Si los canales se contradicen, Google pierde confianza en la ficha y el cliente llega en lunes o marca un número que no existe. El horario correcto es <b class="mono">Mar–Jue 16–22 · Vie–Sáb 16–23:30 · Dom 14–19 · Lun cerrado</b> y el teléfono, <b class="mono">(771) 244-2025</b>.</p>
+    </div>
+    <div class="card"><div class="tw"><table id="t-nap" class="cardtable"></table></div></div>
+  </div>
+</section>
+
+<!-- 6 · BENCHMARK -->
+<section id="benchmark">
+  <div class="wrap stack">
+    <div class="sec-head">
+      <p class="eyebrow">06 · Benchmark local</p>
+      <h2>Contra las cervecerías de Hidalgo</h2>
+      <p class="muted">Las tres que La Silla Rota destacó junto a Cisne Negro en junio de 2026. Solo datos públicos verificables. Cuando un dato no se pudo confirmar se marca <b class="mono">s/d</b>.</p>
+    </div>
+    <div class="card"><div class="tw"><table id="t-bench" class="cardtable"></table></div></div>
+    <div id="bench-notas" class="muted" style="font-size:14px"></div>
+  </div>
+</section>
+
+<!-- 7 · SEO -->
+<section id="seo" class="papel">
+  <div class="wrap stack">
+    <div class="sec-head">
+      <p class="eyebrow">07 · SEO local</p>
+      <h2>"Cisne negro" ya tiene dueño</h2>
+      <p>Buscar "cisne negro" es competir con una película ganadora del Óscar, una teoría económica famosa y un ave. La marca no puede ganar esa búsqueda y tampoco lo necesita: tiene que ganar las búsquedas de <b>intención local</b>, las de alguien que quiere tomarse una cerveza en Pachuca.</p>
+    </div>
+    <div class="two">
+      <div class="card">
+        <h3 style="font-size:20px;margin-bottom:8px">Prueba 1 · "<span data-k="seo.busqueda_generica.consulta"></span>"</h3>
+        <p style="margin:0 0 8px">La cervecería <b class="bad">no aparece</b>. Los resultados son:</p>
+        <ul id="seo-gen" style="margin:0;padding-left:18px"></ul>
+      </div>
+      <div class="card">
+        <h3 style="font-size:20px;margin-bottom:8px">Prueba 2 · "<span data-k="seo.busqueda_local.consulta"></span>"</h3>
+        <p style="margin:0 0 8px">El sitio propio <b class="bad">no aparece</b>; la marca solo sale citada en notas de prensa. Los resultados son:</p>
+        <ul id="seo-loc" style="margin:0;padding-left:18px"></ul>
+      </div>
+    </div>
+    <p class="muted" style="font-size:14px;margin:0" data-k="seo.limitacion"></p>
+    <div class="two">
+      <div class="card">
+        <h3 style="font-size:20px;margin-bottom:8px">Palabras clave objetivo</h3>
+        <p style="margin:0">Siempre unidas a la ciudad. Hay que validar el volumen en Search Console cuando el cliente dé acceso.</p>
+        <div class="kw"><span>cervecería en Pachuca</span><span>cerveza artesanal Pachuca</span><span>taproom Pachuca</span><span>Cervecería Cisne Negro Pachuca</span><span>brewpub Hidalgo</span><span>bar pet friendly Pachuca</span><span>hamburguesas y cerveza Pachuca</span><span>dónde ver el futbol en Pachuca</span></div>
+      </div>
+      <div class="card">
+        <h3 style="font-size:20px;margin-bottom:8px">Ficha y sitio</h3>
+        <ul style="margin:0;padding-left:18px">
+          <li><b>Categoría de Google:</b> hoy es solo "<span data-k="google.categorias.0"></span>". Conviene una categoría principal de cervecería o brewpub y dejar Restaurante y Bar como secundarias (validar el nombre exacto en el selector del Perfil de Empresa).</li>
+          <li><b>Nombre:</b> la ficha dice "<span data-k="google.titulo_ficha"></span>". Debe decir "Cervecería Cisne Negro", que es el nombre real del negocio y el que usa Instagram.</li>
+          <li><b>Sitio:</b> el título es "<span data-k="seo.titulo_sitio"></span>" y la meta description está vacía. Propuesta: <span class="mono">Cervecería Cisne Negro | Cerveza artesanal en Pachuca</span>, más schema <span class="mono">Brewery</span> y <span class="mono">Restaurant</span> con horario estructurado.</li>
+          <li><b>Untappd:</b> en la prueba 2, el primer resultado es un perfil de Untappd de otra cervecería. Un perfil propio es la vía más barata de aparecer.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · RECOMENDACIONES -->
+<section id="recomendaciones" class="papel" style="border-top:1px solid #DDD3C3">
+  <div class="wrap stack">
+    <div class="sec-head">
+      <p class="eyebrow">08 · Recomendaciones priorizadas</p>
+      <h2>Qué hacer primero</h2>
+      <p>Ordenadas por impacto entre esfuerzo. Las naranjas son ganancias rápidas: alto impacto, poco esfuerzo y casi todas sin costo. Están alineadas con la <a href="/proyecto/#propuesta">propuesta de marca y presencia digital</a>.</p>
+    </div>
+    <div class="two">
+      <div class="matrix" id="matrix" aria-label="Matriz de impacto por esfuerzo">
+        <div class="ax y">Impacto alto</div>
+        <div class="q win" data-q="aa"><h4>Ganancias rápidas</h4></div>
+        <div class="q" data-q="ab"><h4>Proyectos clave</h4></div>
+        <div class="ax y">Impacto medio</div>
+        <div class="q" data-q="ba"><h4>Complementos</h4></div>
+        <div class="q" data-q="bb"><h4>Cuando haya tiempo</h4></div>
+        <div></div><div class="ax">Esfuerzo bajo</div><div class="ax">Esfuerzo alto</div>
+      </div>
+      <ol class="recs" id="recs"></ol>
+    </div>
+    <p><a class="btn" href="/proyecto/#propuesta">Ver la propuesta completa →</a></p>
+  </div>
+</section>
+</main>
+
+<!-- 9 · METODOLOGÍA -->
+<footer class="pie" id="metodologia">
+  <div class="wrap">
+    <h3>Metodología y limitaciones</h3>
+    <p><b>Fecha de corte:</b> 2026-10-06. <b>Fuentes:</b> scraping de datos públicos de Instagram (perfil + <span data-k="kpis.ig_analizados"></span> posts), TikTok (14 de 14 publicaciones), Google Maps (ficha y <span data-k="kpis.google_resenas"></span> reseñas) y el sitio cisnenegro.mx; consulta directa de la landing de Abacus; investigación del 2026-10-05 para Tripadvisor, Uber Eats y Facebook; búsquedas web para el benchmark y el SEO. Todas las cifras salen de <span class="mono">build_data.py</span>, que lee <span class="mono">scraping/dataset.json</span> y escribe <span class="mono">data.json</span> (embebido en esta página).</p>
+    <p><b>Limitaciones:</b></p>
+    <ul>
+      <li>Instagram muestra <span data-k="kpis.ig_posts"></span> publicaciones, pero sin sesión solo se recuperaron <span data-k="kpis.ig_analizados"></span>. Las otras 45 no se analizaron.</li>
+      <li>No hay datos de Insights (alcance, guardados, compartidos, público) ni del Perfil de Empresa de Google (búsquedas, llamadas, rutas). La interacción se mide con likes + comentarios.</li>
+      <li>Facebook bloquea el acceso sin sesión, probablemente por la restricción de edad para alcohol, así que no se pudo analizar.</li>
+      <li>Google no publica horas pico para esta ficha (<span class="mono">popularTimesHistogram</span> vacío).</li>
+      <li>Las muestras por día y hora son pequeñas: las celdas con menos de <span data-k="instagram.mejor.min_n"></span> posts no se usan para recomendar.</li>
+      <li>La clasificación por temas es una aproximación. En Instagram se hizo con reglas de palabras clave y en Google, a mano.</li>
+    </ul>
+    <p>Lo que falta se desbloquea con las tareas del backlog: la exportación oficial de Meta (B1), el acceso de socio a Business Suite (B2), el acceso al Perfil de Empresa de Google (B3) y confirmar si existe cuenta de Threads (B4).</p>
+    <p style="margin-top:20px">Preparado por Softvibes para Cervecería Cisne Negro · Vista previa privada · <a href="/proyecto/">← Volver al proyecto</a></p>
+  </div>
+</footer>
+
+<div id="tip" role="tooltip"></div>
+
+<script id="datos" type="application/json">{"generado":"2026-10-06","fuente_scraping":"20261006","kpis":{"ig_seguidores":3513,"ig_posts":245,"ig_analizados":200,"google_rating":4.5,"google_resenas":69,"google_respondidas":0,"tiktok_viral_vistas":50900,"posts_por_semana":1.2,"score_global":37,"ig_tasa_interaccion":0.83},"rubrica":{"Presencia":"Existe, está reclamado y completo (20) · existe con huecos (10) · no existe o no se puede ver (0)","Exactitud":"Nombre, teléfono y horario correctos (20) · correctos pero incompletos (10) · erróneos o no verificables (0)","Actividad":"Actualizado en los últimos 30 días y con ritmo ≥ 2 por semana (20) · actualizado en 90 días (10) · sin actividad (0)","Tracción":"Audiencia o prueba social sobre el umbral del canal (20) · intermedia (10) · baja o nula (0)","Conversión":"Lleva a visitar, llamar o escribir y responde (20) · parcial (10) · sin ruta (0)"},"canales":[{"canal":"Sitio web","detalle":"cisnenegro.mx","puntos":[{"dimension":"Presencia","pts":20,"motivo":"Dominio propio activo con Inicio, Menú y Contacto"},{"dimension":"Exactitud","pts":20,"motivo":"Dirección, teléfono (771) 244-2025 y horario correctos"},{"dimension":"Actividad","pts":10,"motivo":"Menú vigente, pero foto de stock y sin eventos ni novedades"},{"dimension":"Tracción","pts":0,"motivo":"SEO básico ausente: título 'Cisne Negro' sin ciudad ni giro y meta description vacía"},{"dimension":"Conversión","pts":10,"motivo":"Muestra teléfono y correo, pero no enlaza IG, FB ni WhatsApp y tiene un carrito vacío"}],"score":60},{"canal":"Instagram","detalle":"@cisnenegro.mx","puntos":[{"dimension":"Presencia","pts":20,"motivo":"Cuenta de empresa con bio, highlights (Menú, Horario) y enlace"},{"dimension":"Exactitud","pts":10,"motivo":"Nombre correcto; la bio no dice dirección, horario ni 'lunes cerrado'"},{"dimension":"Actividad","pts":10,"motivo":"15 posts en 90 días (1.2 por semana)"},{"dimension":"Tracción","pts":0,"motivo":"3,513 seguidores; interacción mediana de 0.83% por post (últimos 12 meses)"},{"dimension":"Conversión","pts":20,"motivo":"La bio enlaza al sitio y a WhatsApp Business"}],"score":60},{"canal":"TikTok","detalle":"@cisnenegro.mx","puntos":[{"dimension":"Presencia","pts":10,"motivo":"Perfil con bio, sin enlace en la bio"},{"dimension":"Exactitud","pts":10,"motivo":"Nombre correcto; sin dirección ni horario"},{"dimension":"Actividad","pts":0,"motivo":"Último video: 2024-08-22 (774 días sin publicar)"},{"dimension":"Tracción","pts":10,"motivo":"189 seguidores, pero un video llegó a 50,900 vistas"},{"dimension":"Conversión","pts":0,"motivo":"Sin enlace ni llamada a la acción vigente"}],"score":30},{"canal":"Facebook","detalle":"/cerveceriacisnenegro.mx","puntos":[{"dimension":"Presencia","pts":10,"motivo":"La página existe, pero no se puede ver sin iniciar sesión"},{"dimension":"Exactitud","pts":0,"motivo":"No verificable sin sesión"},{"dimension":"Actividad","pts":0,"motivo":"No verificable sin sesión"},{"dimension":"Tracción","pts":0,"motivo":"Sin calificación pública ('Not yet rated', 2 reseñas)"},{"dimension":"Conversión","pts":0,"motivo":"Un visitante sin cuenta no ve datos de contacto"}],"score":10},{"canal":"Google","detalle":"Perfil de Empresa","puntos":[{"dimension":"Presencia","pts":10,"motivo":"Ficha reclamada con 74 fotos, pero sin menú, reservas ni publicaciones"},{"dimension":"Exactitud","pts":10,"motivo":"Teléfono y horario correctos; categoría solo 'Restaurante' y nombre 'Cisne Negro'"},{"dimension":"Actividad","pts":10,"motivo":"Recibe reseñas cada mes, pero el dueño no publica nada"},{"dimension":"Tracción","pts":10,"motivo":"4.5 ★ es alto, pero 69 reseñas es poco volumen (umbral: 100)"},{"dimension":"Conversión","pts":10,"motivo":"Enlaza web y teléfono, pero 0 de 69 reseñas tienen respuesta"}],"score":50},{"canal":"Tripadvisor / Untappd","detalle":"fichas de terceros","puntos":[{"dimension":"Presencia","pts":10,"motivo":"Hay ficha en Tripadvisor; en Untappd no existe perfil"},{"dimension":"Exactitud","pts":0,"motivo":"Tripadvisor la marca como 'temporalmente cerrado'"},{"dimension":"Actividad","pts":0,"motivo":"0 reseñas en Tripadvisor y 0 check-ins en Untappd"},{"dimension":"Tracción","pts":0,"motivo":"Sin prueba social en los canales del turista y del público cervecero"},{"dimension":"Conversión","pts":0,"motivo":"Un turista que la encuentra la descarta por 'cerrado'"}],"score":10}],"instagram":{"formato":[{"formato":"carrusel","n":26,"mediana":70.0,"promedio":75.0},{"formato":"reel","n":44,"mediana":27.0,"promedio":35.7,"mediana_vistas":279.0},{"formato":"foto","n":130,"mediana":20.5,"promedio":37.3}],"frecuencia":[{"mes":"2023-11","posts":9,"mediana_inter":11},{"mes":"2023-12","posts":12,"mediana_inter":20.5},{"mes":"2024-01","posts":12,"mediana_inter":16.5},{"mes":"2024-02","posts":11,"mediana_inter":20},{"mes":"2024-03","posts":11,"mediana_inter":16},{"mes":"2024-04","posts":10,"mediana_inter":10.0},{"mes":"2024-05","posts":6,"mediana_inter":19.0},{"mes":"2024-06","posts":9,"mediana_inter":15},{"mes":"2024-07","posts":2,"mediana_inter":13.0},{"mes":"2024-08","posts":0,"mediana_inter":null},{"mes":"2024-09","posts":3,"mediana_inter":58},{"mes":"2024-10","posts":9,"mediana_inter":85},{"mes":"2024-11","posts":5,"mediana_inter":53},{"mes":"2024-12","posts":5,"mediana_inter":24},{"mes":"2025-01","posts":4,"mediana_inter":41.5},{"mes":"2025-02","posts":4,"mediana_inter":62.5},{"mes":"2025-03","posts":3,"mediana_inter":104},{"mes":"2025-04","posts":5,"mediana_inter":49},{"mes":"2025-05","posts":3,"mediana_inter":31},{"mes":"2025-06","posts":4,"mediana_inter":48.5},{"mes":"2025-07","posts":2,"mediana_inter":25.0},{"mes":"2025-08","posts":3,"mediana_inter":17},{"mes":"2025-09","posts":4,"mediana_inter":78.5},{"mes":"2025-10","posts":4,"mediana_inter":34.0},{"mes":"2025-11","posts":8,"mediana_inter":47.5},{"mes":"2025-12","posts":5,"mediana_inter":57},{"mes":"2026-01","posts":6,"mediana_inter":23.0},{"mes":"2026-02","posts":4,"mediana_inter":31.5},{"mes":"2026-03","posts":6,"mediana_inter":22.0},{"mes":"2026-04","posts":6,"mediana_inter":18.5},{"mes":"2026-05","posts":6,"mediana_inter":29.0},{"mes":"2026-06","posts":4,"mediana_inter":31.5},{"mes":"2026-07","posts":4,"mediana_inter":22.0},{"mes":"2026-08","posts":5,"mediana_inter":41},{"mes":"2026-09","posts":6,"mediana_inter":70.0}],"meses_cero":["2024-08"],"frec_actual":{"posts_ult_90_dias":15,"posts_por_semana_ult_90":1.2,"prom_mensual_2024_s1":9.8,"prom_mensual_2025":4.1,"prom_mensual_2026":5.2,"ultimo_post":"2026-09-29"},"heatmap":[{"dia":"Lun","franja":"Mañana","n":0,"indice":null},{"dia":"Lun","franja":"Mediodía","n":0,"indice":null},{"dia":"Lun","franja":"Tarde","n":5,"indice":2.6},{"dia":"Lun","franja":"Noche","n":4,"indice":1.46},{"dia":"Lun","franja":"Madrugada","n":0,"indice":null},{"dia":"Mar","franja":"Mañana","n":0,"indice":null},{"dia":"Mar","franja":"Mediodía","n":11,"indice":1.33},{"dia":"Mar","franja":"Tarde","n":13,"indice":0.81},{"dia":"Mar","franja":"Noche","n":1,"indice":2.11},{"dia":"Mar","franja":"Madrugada","n":0,"indice":null},{"dia":"Mié","franja":"Mañana","n":0,"indice":null},{"dia":"Mié","franja":"Mediodía","n":12,"indice":0.94},{"dia":"Mié","franja":"Tarde","n":14,"indice":1.12},{"dia":"Mié","franja":"Noche","n":3,"indice":1.19},{"dia":"Mié","franja":"Madrugada","n":0,"indice":null},{"dia":"Jue","franja":"Mañana","n":0,"indice":null},{"dia":"Jue","franja":"Mediodía","n":10,"indice":1.23},{"dia":"Jue","franja":"Tarde","n":14,"indice":1.25},{"dia":"Jue","franja":"Noche","n":1,"indice":1.07},{"dia":"Jue","franja":"Madrugada","n":0,"indice":null},{"dia":"Vie","franja":"Mañana","n":2,"indice":1.15},{"dia":"Vie","franja":"Mediodía","n":12,"indice":0.9},{"dia":"Vie","franja":"Tarde","n":25,"indice":0.9},{"dia":"Vie","franja":"Noche","n":3,"indice":0.89},{"dia":"Vie","franja":"Madrugada","n":0,"indice":null},{"dia":"Sáb","franja":"Mañana","n":0,"indice":null},{"dia":"Sáb","franja":"Mediodía","n":26,"indice":0.65},{"dia":"Sáb","franja":"Tarde","n":17,"indice":1.15},{"dia":"Sáb","franja":"Noche","n":3,"indice":1.33},{"dia":"Sáb","franja":"Madrugada","n":0,"indice":null},{"dia":"Dom","franja":"Mañana","n":5,"indice":0.75},{"dia":"Dom","franja":"Mediodía","n":13,"indice":0.9},{"dia":"Dom","franja":"Tarde","n":4,"indice":3.58},{"dia":"Dom","franja":"Noche","n":2,"indice":6.88},{"dia":"Dom","franja":"Madrugada","n":0,"indice":null}],"dias":[{"dia":"Lun","n":9,"indice":2.17},{"dia":"Mar","n":25,"indice":1.25},{"dia":"Mié","n":29,"indice":1.15},{"dia":"Jue","n":25,"indice":1.1},{"dia":"Vie","n":42,"indice":0.89},{"dia":"Sáb","n":46,"indice":0.79},{"dia":"Dom","n":24,"indice":0.88}],"franjas":[{"franja":"Mañana","n":7,"indice":0.8},{"franja":"Mediodía","n":84,"indice":0.91},{"franja":"Tarde","n":92,"indice":1.07},{"franja":"Noche","n":17,"indice":1.19},{"franja":"Madrugada","n":0,"indice":null}],"mejor":{"dia":{"dia":"Mar","n":25,"indice":1.25},"franja":{"franja":"Noche","n":17,"indice":1.19},"celda":{"dia":"Mar","franja":"Mediodía","n":11,"indice":1.33},"min_n":10,"mediana_por_anio":{"2023":17,"2024":20,"2025":48,"2026":27}},"top10":[{"id":"Db9oH3gufho","url":"https://www.instagram.com/p/Db9oH3gufho/","fecha":"2026-08-12","formato":"foto","likes":773,"comentarios":29,"inter":802,"texto":"OKTOBERFEST LA JABONERA 2026 🍻🇩🇪 ¡Pachuca, ya se armó el plan! Este 3 y 4 de octubre nos vemos en La Jabonera para echar chela de a montones","img":"img/Db9oH3gufho.jpg","tema":"Eventos y colaboraciones"},{"id":"DCNluwyRYs4","url":"https://www.instagram.com/p/DCNluwyRYs4/","fecha":"2024-11-10","formato":"carrusel","likes":200,"comentarios":1,"inter":201,"texto":"Tarde de 𝗰𝗲𝗿𝘃𝗲𝘇𝗮𝘀 🍻, 𝗮𝗺𝗶𝗴𝗼𝘀 🙂 𝘆 𝘂𝗻𝗮 𝗯𝘂𝗲𝗻𝗮 𝗰𝗼𝗺𝗶𝗱𝗮 🍽️ a cargo de @elvalerioavila 🙌🏻 en el 𝗖𝗶𝘀𝗻𝗲 𝗡𝗲𝗴𝗿𝗼 🪶 #kitchentakeover #chef #beers #tap #ce","img":"img/DCNluwyRYs4.jpg","tema":"Eventos y colaboraciones"},{"id":"DC0A35vRH9-","url":"https://www.instagram.com/p/DC0A35vRH9-/","fecha":"2024-11-25","formato":"carrusel","likes":188,"comentarios":3,"inter":191,"texto":"𝗚𝗥𝗔𝗖𝗜𝗔𝗦 por acompañarnos a festejar nuestro 𝟭𝗘𝗥 𝗖𝗨𝗠𝗣𝗟𝗘 🍺🪶🎈 #anniversary #beer #tap #friends","img":"img/DC0A35vRH9-.jpg","tema":"Eventos y colaboraciones"},{"id":"DQk1REsDF_W","url":"https://www.instagram.com/p/DQk1REsDF_W/","fecha":"2025-11-02","formato":"foto","likes":170,"comentarios":8,"inter":178,"texto":"🎨🍻 ¡Les presentamos al expositor de noviembre en nuestro Circuito Arte & Chela en @masiosare_tragosmexas ! Este mes tenemos a nuestro artist","img":"img/DQk1REsDF_W.jpg","tema":"Eventos y colaboraciones"},{"id":"DdATNslu44m","url":"https://www.instagram.com/p/DdATNslu44m/","fecha":"2026-09-07","formato":"foto","likes":166,"comentarios":7,"inter":173,"texto":"🕯️Noche de Velas 🕯️ y Pizza 🍕 con 𝗣𝗮𝘀𝗮𝗱𝗼 𝗱𝗲 𝗠𝗮𝘀𝗮. @gabyig y @josegaja nos presentan su nuevo proyecto, este 18 de Septiembre en Cisne Negro ","img":"img/DdATNslu44m.jpg","tema":"Eventos y colaboraciones"},{"id":"DHC6KYxu35h","url":"https://www.instagram.com/p/DHC6KYxu35h/","fecha":"2025-03-10","formato":"foto","likes":116,"comentarios":10,"inter":126,"texto":"🪽MATRIA🪽Les comparto la ilustración que trabajé para @cisnenegro.mx en el marco del #8M. El proyecto consistió en reunir a un grupo de mujer","img":"img/DHC6KYxu35h.jpg","tema":"Eventos y colaboraciones"},{"id":"DBFOVjyxm2m","url":"https://www.instagram.com/p/DBFOVjyxm2m/","fecha":"2024-10-13","formato":"carrusel","likes":112,"comentarios":2,"inter":114,"texto":"No podríamos estar más zen después de una sesión de 𝘆𝗼𝗴𝗮 𝘆 𝗱𝗲 𝗰𝗲𝗿𝘃𝗲𝘇𝗮 con @iza.isla 🧘‍♀️🍺 ¡nos vemos en la próxima! #yoga #beer #zen #photos","img":"img/DBFOVjyxm2m.jpg","tema":"Eventos y colaboraciones"},{"id":"C3LZn-XOui7","url":"https://www.instagram.com/p/C3LZn-XOui7/","fecha":"2024-02-10","formato":"reel","likes":113,"comentarios":0,"inter":113,"texto":"🍻🖤 ¡Descubre el sabor único de la Cervecería Cisne Negro! 🖤🍴 Prueba nuestros exquisitos platillos diseñados para maridar a la perfección con","img":"img/C3LZn-XOui7.jpg","tema":"Comida"},{"id":"DBpOUz4Rxf4","url":"https://www.instagram.com/p/DBpOUz4Rxf4/","fecha":"2024-10-27","formato":"carrusel","likes":108,"comentarios":1,"inter":109,"texto":"Chelitas del cisne negro 🍺 + hamburguesas de mamón 🍔= el sábado perfecto 👌🏻 #burger #beer #cisnenegro #mamon #takeover #popup #photo","img":"img/DBpOUz4Rxf4.jpg","tema":"Eventos y colaboraciones"},{"id":"DHm_wHeu-vm","url":"https://www.instagram.com/p/DHm_wHeu-vm/","fecha":"2025-03-24","formato":"carrusel","likes":99,"comentarios":5,"inter":104,"texto":"Ride n chelas, ft. @cisnenegro.mx 🔥 Después de un buen ride, nada como llegar a comer una buenas burgers y chelas 🤌😮‍💨","img":"img/DHm_wHeu-vm.jpg","tema":"Eventos y colaboraciones"}],"temas":[{"tema":"Eventos y colaboraciones","n":27,"mediana":82,"indice":1.85},{"tema":"Avisos y horarios","n":18,"mediana":11.5,"indice":0.62},{"tema":"Comida","n":69,"mediana":19,"indice":0.8},{"tema":"Cerveza","n":43,"mediana":36,"indice":1.04},{"tema":"Ambiente y comunidad","n":43,"mediana":25,"indice":1.15}],"hashtags":{"top":[["beer",53],["cisnenegro",30],["cerveza",29],["pachuca",25],["tap",16],["taproom",13],["cervezaartesanal",10],["burger",9],["photo",8],["reel",6],["ipa",6],["cervezamexicana",5]],"posts_con_hashtag_pachuca":25,"posts_que_mencionan_pachuca":28,"posts_con_cuentalo_en_el_cisne":1,"posts_sin_hashtags":74},"hueco":{"dias":70,"desde":"2024-07-06","hasta":"2024-09-15"},"reglas_temas":{"Eventos y colaboraciones":25,"Avisos y horarios":14,"Comida":31,"Cerveza":34}},"tiktok":{"seguidores":189,"likes_totales":1249,"videos":14,"bio_link":null,"primer_post":"2024-07-10","ultimo_post":"2024-08-22","dias_sin_publicar":774,"vistas_totales":65238,"mediana_vistas_resto":889,"viral":{"fecha":"2024-08-17","vistas":50900,"likes":1021,"compartidos":653,"guardados":533,"comentarios":16,"duracion_s":31,"url":"https://www.tiktok.com/@cisnenegro.mx/video/7404243380341099782","texto":"somos el único taproom en Pachuca con cerveza independiente 🍻 no dudes en visitarnos 🤩","pct_vistas_totales":78.0,"veces_mediana_resto":57.3,"dias_hasta_abandono":4},"posts":[{"fecha":"2024-07-10","formato":"video","vistas":1367,"likes":7},{"fecha":"2024-07-11","formato":"video","vistas":480,"likes":3},{"fecha":"2024-07-13","formato":"carrusel","vistas":681,"likes":6},{"fecha":"2024-07-17","formato":"video","vistas":698,"likes":14},{"fecha":"2024-07-18","formato":"video","vistas":919,"likes":41},{"fecha":"2024-07-22","formato":"video","vistas":456,"likes":14},{"fecha":"2024-07-26","formato":"video","vistas":891,"likes":20},{"fecha":"2024-07-27","formato":"video","vistas":1156,"likes":36},{"fecha":"2024-08-01","formato":"carrusel","vistas":971,"likes":6},{"fecha":"2024-08-06","formato":"carrusel","vistas":632,"likes":8},{"fecha":"2024-08-13","formato":"video","vistas":4462,"likes":36},{"fecha":"2024-08-17","formato":"video","vistas":50900,"likes":1021},{"fecha":"2024-08-19","formato":"video","vistas":889,"likes":30},{"fecha":"2024-08-22","formato":"video","vistas":736,"likes":7}]},"google":{"titulo_ficha":"Cisne Negro","categorias":["Restaurante"],"rating":4.5,"resenas":69,"fotos":74,"reclamada":true,"respondidas":0,"con_texto":45,"estrellas":[{"estrellas":5,"n":51},{"estrellas":4,"n":9},{"estrellas":3,"n":6},{"estrellas":2,"n":0},{"estrellas":1,"n":3}],"por_anio":[{"anio":"2023","n":3,"promedio":5.0,"pct_5":100,"bajas":0},{"anio":"2024","n":30,"promedio":4.57,"pct_5":70,"bajas":4},{"anio":"2025","n":22,"promedio":4.27,"pct_5":73,"bajas":4},{"anio":"2026","n":14,"promedio":4.71,"pct_5":79,"bajas":1}],"subcalificaciones":[{"aspecto":"Comida","n":53,"promedio":4.6},{"aspecto":"Servicio","n":55,"promedio":4.67},{"aspecto":"Ambiente","n":55,"promedio":4.62}],"precio_por_persona":[["100-200 $",3],["200-300 $",18],["300-400 $",2],["400-500 $",4],["500-600 $",3]],"positivos":[["Comida",27],["Cerveza",25],["Ambiente y lugar",18],["Servicio y atención",18],["Concepto único en Pachuca",5]],"negativos":[["Actitud del servicio",6],["Comida (grasa, pan, porción)",4],["Precio",4],["Carta o tap list limitados",3],["Calidad o frescura de la cerveza",3],["Información y orden (precios, horario)",2],["Limpieza",1]],"n_clasificadas":45,"n_bajas_con_texto":9,"citas":[{"texto":"Pocas veces en taprooms, la comida y la bebidas están tan espectacularmente equilibradas. Parada obligada en Pachuca","estrellas":5,"tono":"positiva"},{"texto":"el personal se toma el tiempo de explicar cada una de ellos; eso se agradece demasiado","estrellas":5,"tono":"positiva"},{"texto":"Me encantó es un concepto diferente en Pachuca","estrellas":5,"tono":"positiva"},{"texto":"casi cada semana puedes encontrar algo nuevo","estrellas":5,"tono":"positiva"},{"texto":"Los precios son un poco elevados","estrellas":4,"tono":"crítica"},{"texto":"cuando quieres ver el menú de cheves en la pared, te los dicen de memoria. Si pusieran el precio de cada una, mucho ayudaría","estrellas":3,"tono":"crítica"},{"texto":"Una mesera nos hablaba de manera hostíl, cero amable","estrellas":3,"tono":"crítica"},{"texto":"la cerveza no esta fresca","estrellas":3,"tono":"crítica"}],"horas_pico":{},"menu":null,"reservas":null,"publicaciones":0,"preguntas":0,"etiquetas_resenas":[["cerveza artesanal",8],["hamburguesas",8],["ambiente",6],["música",4],["concepto",4],["ceviche",3],["cara",2],["variedad de cervezas",2],["negocio",2],["mesa",2]],"horario":[{"day":"lunes","hours":"Cerrado"},{"day":"martes","hours":"4 to 10 PM"},{"day":"miércoles","hours":"4 to 10 PM"},{"day":"jueves","hours":"4 to 10 PM"},{"day":"viernes","hours":"4 to 11:30 PM"},{"day":"sábado","hours":"4 to 11:30 PM"},{"day":"domingo","hours":"2 to 7 PM"}],"telefono":"+52 771 244 2025"},"nap":[{"canal":"Sitio cisnenegro.mx","nombre":"Cisne Negro","telefono":"(771) 244-2025","horario":"Mar–Jue 16–22 · Vie–Sáb 16–23:30 · Dom 14–19 (lunes no aparece)","estado":"Activo","nivel":"ok","nota":"Datos correctos; no enlaza redes ni WhatsApp","fuente":"HTML descargado el 2026-10-06 (contenido/sitio-web/)"},{"canal":"Landing Abacus","nombre":"Cisne Negro — Cervecería Mexicana Independiente","telefono":"(771) 123-4567","horario":"Lun–Jue 14–23 · Vie–Sáb 13–24 · Dom 13–21","estado":"Publicada","nivel":"error","nota":"Teléfono falso; abre en lunes y los tres rangos de horario son incorrectos","fuente":"cisne-negro-landing-a2w76y.abacusai.app, consultada el 2026-10-06"},{"canal":"Google","nombre":"Cisne Negro","telefono":"(771) 244-2025","horario":"Mar–Jue 16–22 · Vie–Sáb 16–23:30 · Dom 14–19 · Lun cerrado","estado":"Abierto","nivel":"aviso","nota":"Datos correctos, pero la categoría es solo 'Restaurante' y el nombre no dice 'Cervecería'","fuente":"Ficha de Google Maps, scraping del 2026-10-06"},{"canal":"Instagram","nombre":"Cervecería Cisne Negro","telefono":"No visible (enlace a WhatsApp Business)","horario":"Solo en la historia destacada 'Horario'","estado":"Activo","nivel":"aviso","nota":"Ni la bio ni el perfil muestran dirección u horario","fuente":"Perfil @cisnenegro.mx, scraping del 2026-10-06"},{"canal":"Facebook","nombre":"s/d","telefono":"s/d","horario":"s/d","estado":"Bloqueado sin sesión","nivel":"aviso","nota":"Sin calificación pública ('Not yet rated', 2 reseñas)","fuente":"facebook.com/cerveceriacisnenegro.mx (2026-10-05/06)"},{"canal":"Tripadvisor","nombre":"Cisne Negro","telefono":"s/d","horario":"s/d","estado":"Temporalmente cerrado","nivel":"error","nota":"Clasificado como 'American, Brew Pub', con 0 reseñas","fuente":"Tripadvisor, revisión del 2026-10-05 (el 2026-10-06 bloqueó la consulta automática)"},{"canal":"Uber Eats","nombre":"Cisne Negro","telefono":"s/d","horario":"s/d","estado":"Activo","nivel":"aviso","nota":"Tienda activa; revisar fotos y descripción","fuente":"Uber Eats, revisión del 2026-10-05 (el 2026-10-06 bloqueó la consulta automática)"}],"seo":{"busqueda_generica":{"consulta":"cisne negro","fecha":"2026-10-06","aparece_la_cerveceria":false,"que_aparece":["La película El cisne negro (2010)","La teoría del cisne negro de Nassim Taleb","Un libro titulado Cisne Negro","El ave (Cygnus atratus)"]},"busqueda_local":{"consulta":"cerveza artesanal Pachuca taproom","fecha":"2026-10-06","aparece_sitio_propio":false,"que_aparece":["Perfil en Untappd de Cervecería Pachuca (primer resultado)","Notas de prensa locales (La Silla Rota, El Universal Hidalgo, Criterio Hidalgo)","Sitios propios de competidores en Pachuca (Buesjo Brewer Co., Cervecería Pamplona)","Páginas de Facebook de otras cervecerías locales"]},"limitacion":"La herramienta de búsqueda usa resultados de EE. UU.; una búsqueda desde Pachuca con ubicación activa mostraría el mapa local. No hay datos de volumen de búsqueda: validar con Search Console.","titulo_sitio":"Cisne Negro","meta_description":""},"benchmark":{"fecha":"2026-10-06","filas":[{"nombre":"Cervecería Cisne Negro","ubicacion":"Pachuca","google_rating":"4.5","google_resenas":"69","google_categoria":"Restaurante","google_fuente":"https://www.google.com/maps/search/?api=1&query=Cisne+Negro+Pachuca","ig":"3,513 (@cisnenegro.mx)","ig_fuente":"https://www.instagram.com/cisnenegro.mx/","untappd":"Sin perfil","untappd_fuente":null,"sitio":"Sí (cisnenegro.mx)","otros":"Tripadvisor la marca como 'temporalmente cerrado'","es_cliente":true},{"nombre":"La Vizcaína","ubicacion":"Mineral del Monte (Real del Monte)","google_rating":"4.8","google_resenas":"458","google_categoria":"Cervecería artesanal, Cervecería","google_fuente":"https://www.google.com/maps/search/?api=1&query=La+Vizca%C3%ADna+Cervecer%C3%ADa+Artesanal+de+Real+del+Monte","ig":"3,139 (@lavizcainabrew)","ig_fuente":"https://www.instagram.com/lavizcainabrew/","untappd":"3.58 · 154 calificaciones","untappd_fuente":"https://untappd.com/w/la-vizcaina/331532","sitio":"No (Facebook como sitio)","otros":"Tripadvisor: 5.0 con 1 y 3 opiniones (solo visto en resultados de búsqueda)"},{"nombre":"Cervecería Hacienda","ubicacion":"Zempoala","google_rating":"5.0","google_resenas":"3","google_categoria":"Fábrica (el recinto, Hacienda San Juan Pueblilla, tiene 4.6 ★ con 219 reseñas)","google_fuente":"https://www.google.com/maps/search/?api=1&query=Cerveceria+Hacienda+Zempoala","ig":"2,107 (@cerveceriahacienda, probable)","ig_fuente":"https://www.instagram.com/cerveceriahacienda/","untappd":"3.08 · 1,427 calificaciones · 1,705 check-ins","untappd_fuente":"https://untappd.com/w/cerveceria-hacienda/6143","sitio":"Caído (cerveceriahacienda.com no resuelve)","otros":"Sin ficha en Tripadvisor"},{"nombre":"La Minera","ubicacion":"Zimapán","google_rating":"4.8","google_resenas":"5","google_categoria":"Bar","google_fuente":"https://www.google.com/maps/search/?api=1&query=Cerveceria+La+Minera+Zimapan","ig":"833 (@cerveceriaartesanallaminera, probable)","ig_fuente":"https://www.instagram.com/cerveceriaartesanallaminera/","untappd":"Sin perfil","untappd_fuente":null,"sitio":"No","otros":"Facebook: 1,894 seguidores y 208 check-ins (la única página sin restricción de edad)"}],"notas":["La Vizcaína es la referencia: tiene 6.6 veces las reseñas de Google de Cisne Negro (458 contra 69), mejor calificación y su categoría de Google es 'Cervecería artesanal'. Cisne Negro le gana en seguidores de Instagram y es la única de las cuatro con un sitio propio funcionando.","El caso de Cervecería Hacienda muestra el peso de Untappd: casi no tiene reseñas de Google, pero acumula 1,705 check-ins ahí. Cisne Negro no tiene perfil.","Las cuentas marcadas 'probable' coinciden en nombre, pero no se pudo ver su bio por la restricción de edad. Los seguidores de Facebook de Hacienda y La Vizcaína quedan s/d por la misma razón."],"fuentes":[{"titulo":"La Silla Rota (jun 2026)","url":"https://lasillarota.com/hidalgo/vida/2026/6/25/hidalgo-tambien-se-bebe-conoce-la-cerveza-artesanal-del-estado-517466.html"},{"titulo":"Google Maps: La Vizcaína","url":"https://www.google.com/maps/search/?api=1&query=La+Vizca%C3%ADna+Cervecer%C3%ADa+Artesanal+de+Real+del+Monte"},{"titulo":"Google Maps: Cervecería Hacienda","url":"https://www.google.com/maps/search/?api=1&query=Cerveceria+Hacienda+Zempoala"},{"titulo":"Google Maps: Hacienda San Juan Pueblilla","url":"https://www.google.com/maps/search/?api=1&query=Hacienda+San+Juan+Pueblilla+Zempoala"},{"titulo":"Google Maps: La Minera","url":"https://www.google.com/maps/search/?api=1&query=Cerveceria+La+Minera+Zimapan"},{"titulo":"Instagram @lavizcainabrew","url":"https://www.instagram.com/lavizcainabrew/"},{"titulo":"Instagram @cerveceriahacienda","url":"https://www.instagram.com/cerveceriahacienda/"},{"titulo":"Instagram @cerveceriaartesanallaminera","url":"https://www.instagram.com/cerveceriaartesanallaminera/"},{"titulo":"Facebook La Minera","url":"https://www.facebook.com/cerveceriaalaminera.zim/"},{"titulo":"Untappd Hacienda","url":"https://untappd.com/w/cerveceria-hacienda/6143"},{"titulo":"Untappd La Vizcaína","url":"https://untappd.com/w/la-vizcaina/331532"},{"titulo":"Wanderlog (La Vizcaína)","url":"https://wanderlog.com/place/details/630878/la-vizca%C3%ADna-cervecer%C3%ADa-artesanal-de-real-del-monte"}]}}</script>
+<script>
+(function(){
+"use strict";
+const D = JSON.parse(document.getElementById("datos").textContent);
+const $ = (s, r=document) => r.querySelector(s);
+const el = (tag, attrs={}, ...kids) => { const e=document.createElement(tag); for(const [k,v] of Object.entries(attrs)){ if(k==="class") e.className=v; else if(k==="text") e.textContent=v; else if(k==="html") e.innerHTML=v; else e.setAttribute(k,v);} for(const k of kids) if(k!=null) e.append(k); return e; };
+const nf = new Intl.NumberFormat("es-MX");
+const fmt = v => typeof v==="number" ? nf.format(v) : v;
+const get = p => p.split(".").reduce((o,k)=>o==null?o:o[k], D);
+const MESES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+const mesLbl = m => { const [y,mm]=m.split("-"); return MESES[+mm-1]+" "+y; };
+const fecha = s => { const [y,m,d]=s.split("-"); return (+d)+" "+MESES[+m-1]+" "+y; };
+
+// enlaza cifras del texto con data.json
+document.querySelectorAll("[data-k]").forEach(n => { const v=get(n.dataset.k); n.textContent = v==null ? "s/d" : fmt(v); });
+
+// tooltip compartido (texto vía textContent)
+const tip = $("#tip");
+function bindTip(node, value, label){
+  node.tabIndex = 0;
+  node.setAttribute("aria-label", label+": "+value);
+  const show = ev => {
+    tip.replaceChildren(el("b",{text:value}), el("span",{text:label}));
+    tip.classList.add("on");
+    let x, y;
+    if (ev && ev.clientX!=null && ev.type!=="focus"){ x=ev.clientX; y=ev.clientY; }
+    else { const r=node.getBoundingClientRect(); x=r.left+r.width/2; y=r.top; }
+    const w=tip.offsetWidth, h=tip.offsetHeight;
+    tip.style.left = Math.min(Math.max(8, x-w/2), innerWidth-w-8)+"px";
+    tip.style.top = Math.max(8, y-h-12)+"px";
+  };
+  node.addEventListener("pointermove", show); node.addEventListener("focus", show);
+  node.addEventListener("pointerleave", ()=>tip.classList.remove("on")); node.addEventListener("blur", ()=>tip.classList.remove("on"));
+}
+
+function table(id, head, rows, numCols=[]){
+  const t = document.getElementById(id); if(!t) return;
+  const thead = el("thead",{}, el("tr",{}, ...head.map((h,i)=>el("th",{class:numCols.includes(i)?"n":"",text:h}))));
+  const tbody = el("tbody",{}, ...rows.map(r=>el("tr",{}, ...r.map((c,i)=>{ const td=el("td",{class:numCols.includes(i)?"n":"","data-label":head[i]}); if(c instanceof Node) td.append(c); else td.textContent = c==null?"s/d":fmt(c); return td; }))));
+  t.replaceChildren(thead, tbody);
+}
+
+// barras horizontales: rows [{label, sub, value, display, cls, tip}]
+function hbars(id, rows, {max, ref, refLabel}={}){
+  const box = document.getElementById(id); const m = max || Math.max(...rows.map(r=>r.value));
+  box.replaceChildren(...rows.map(r=>{
+    const bar = el("div",{class:"hb-bar "+(r.cls||"")}); bar.style.width = Math.max(0.4, 100*r.value/m*0.82)+"%";
+    const track = el("div",{class:"hb-track hb-hit"}, bar, el("span",{class:"hb-val",text:r.display ?? fmt(r.value)}));
+    if (ref!=null){ const l=el("i",{class:"hb-ref"}); l.style.left=(100*ref/m*0.82)+"%"; l.title=refLabel||""; track.append(l); }
+    bindTip(track, r.display ?? fmt(r.value), r.tip || r.label);
+    const lbl = el("div",{class:"hb-lbl"}, r.label); if (r.sub) lbl.append(el("small",{text:r.sub}));
+    return el("div",{class:"hb-row"}, lbl, track);
+  }));
+}
+
+// columnas SVG: items [{label, value, cls, tip, tick}]
+function columns(id, items, opts={}){
+  const {h=180, annotate=[], yTicks} = opts;
+  if (!columns.reg){ columns.reg = new Map(); let tm, lastW = innerWidth; addEventListener("resize", ()=>{ if (innerWidth===lastW) return; lastW = innerWidth; clearTimeout(tm); tm = setTimeout(()=>columns.reg.forEach(a=>columns(...a)), 150); }); }
+  columns.reg.set(id, [id, items, opts]);
+  const box = document.getElementById(id);
+  const W = Math.max(300, box.clientWidth || 600), padL = 44, padB = 26, padT = 30, n = items.length;
+  const max = Math.max(...items.map(i=>i.value)); const top = yTicks ? yTicks[yTicks.length-1] : max;
+  const band = (W-padL)/n, bw = Math.min(24, band*0.7);
+  const y = v => padT + (h-padT-padB)*(1 - v/top);
+  const ns = "http://www.w3.org/2000/svg"; const s = (t,a={})=>{const e=document.createElementNS(ns,t); for(const[k,v] of Object.entries(a)) e.setAttribute(k,v); return e;};
+  const svg = s("svg",{viewBox:`0 0 ${W} ${h}`, role:"img", "aria-label": box.dataset.label||""});
+  (yTicks||[0,top]).forEach(t=>{ svg.append(s("line",{x1:padL,x2:W,y1:y(t),y2:y(t),stroke:"#2B2823","stroke-width":1})); const tx=s("text",{x:padL-8,y:y(t)+4,"text-anchor":"end"}); tx.textContent=fmt(t); svg.append(tx); });
+  annotate.forEach(a=>{ const x0=padL+band*a.from, x1=padL+band*(a.to+1); svg.append(s("rect",{x:x0,y:padT-6,width:x1-x0,height:h-padT-padB+6,fill:"rgba(255,90,31,.14)"})); const tx=s("text",{x:Math.min(x0, W-130),y:padT-12,class:"ann"}); tx.textContent=a.text; svg.append(tx); });
+  items.forEach((it,i)=>{
+    const cx = padL + band*i + band/2, x = cx - bw/2, top0 = y(it.value), bh = Math.max(it.value>0?2:0, y(0)-top0);
+    const g = s("g",{class:"colhit"});
+    g.append(s("rect",{x:padL+band*i, y:padT-6, width:band, height:h-padT-padB+6, fill:"transparent"}));
+    if (bh>0){ const r=Math.min(4,bh); g.append(s("path",{class:"m", d:`M${x},${y(0)} V${top0+r} Q${x},${top0} ${x+r},${top0} H${x+bw-r} Q${x+bw},${top0} ${x+bw},${top0+r} V${y(0)} Z`, fill: it.cls==="em"?"#FF5A1F": it.cls==="ctx"?"#6E675C":"#F2C97D"})); }
+    if (it.tick){ const tx=s("text",{x:cx,y:h-8,"text-anchor":"middle"}); tx.textContent=it.tick; svg.append(tx); }
+    if (it.label2){ const tx=s("text",{x:cx,y:top0-6,"text-anchor":"middle",class:"ann"}); tx.textContent=it.label2; g.append(tx); }
+    bindTip(g, it.display ?? fmt(it.value), it.tip);
+    svg.append(g);
+  });
+  svg.append(s("line",{x1:padL,x2:W,y1:y(0),y2:y(0),stroke:"#3a362f","stroke-width":1}));
+  box.replaceChildren(svg);
+}
+
+const K = D.kpis, IG = D.instagram, TT = D.tiktok, G = D.google;
+const fmtObj = Object.fromEntries(IG.formato.map(f=>[f.formato,f]));
+const ratioCarr = (fmtObj.carrusel.mediana / fmtObj.foto.mediana).toFixed(1);
+const ev = IG.temas.find(t=>t.tema.startsWith("Eventos"));
+const evTop = IG.top10.filter(t=>t.tema.startsWith("Eventos")).length;
+
+// ---------- 1 · KPIs
+const kpis = [
+  ["Seguidores en Instagram", fmt(K.ig_seguidores), `interacción mediana de ${String(K.ig_tasa_interaccion)}% por post en los últimos 12 meses`],
+  ["Publicaciones en Instagram", fmt(K.ig_posts), `${K.ig_analizados} analizadas en este informe`],
+  ["Calificación en Google", K.google_rating+" ★", `${K.google_resenas} reseñas`],
+  ["Reseñas respondidas", `${K.google_respondidas} de ${K.google_resenas}`, "ninguna respuesta del dueño", true],
+  ["Vistas del video viral de TikTok", fmt(K.tiktok_viral_vistas), `la cuenta lleva ${fmt(TT.dias_sin_publicar)} días sin publicar`],
+  ["Frecuencia actual en Instagram", String(K.posts_por_semana)+" por semana", `${IG.frec_actual.posts_ult_90_dias} posts en 90 días; a inicios de 2024 eran ${String(IG.frec_actual.prom_mensual_2024_s1)} al mes`, true],
+];
+$("#kpis").replaceChildren(...kpis.map(([l,v,c,a])=>el("div",{class:"card kpi"+(a?" alerta":"")}, el("p",{class:"lbl",text:l}), el("p",{class:"val",text:v}), el("p",{class:"ctx",text:c}))));
+
+const hall = [
+  `<b>${K.google_respondidas} de ${K.google_resenas}</b> reseñas de Google tienen respuesta, incluidas las ${G.n_bajas_con_texto} críticas con texto (3★ o menos). Es la corrección más barata y la de más impacto.`,
+  `<b>${evTop} de los 10</b> posts con más interacción son eventos o colaboraciones. Ese tema rinde <b>×${String(ev.indice)}</b> sobre el post típico de su año, pero solo es el ${Math.round(100*ev.n/K.ig_analizados)} % de lo publicado.`,
+  `Dos datos públicos ahuyentan clientes: la landing de Abacus publica un <b>teléfono falso</b> y abre en lunes, y Tripadvisor marca el lugar como <b>"temporalmente cerrado"</b>.`,
+  `El video de TikTok que dice "somos el único taproom en Pachuca con cerveza independiente" sumó <b>${fmt(TT.viral.vistas)} vistas</b>, ${String(TT.viral.veces_mediana_resto)} veces la mediana del resto. La cuenta dejó de publicar <b>${TT.viral.dias_hasta_abandono} días después</b>.`,
+  `Los carruseles tienen <b>${ratioCarr} veces</b> más interacción mediana que las fotos (${fmtObj.carrusel.mediana} contra ${fmtObj.foto.mediana}), pero son solo ${fmtObj.carrusel.n} de ${K.ig_analizados} posts.`,
+];
+$("#hallazgos").replaceChildren(...hall.map(h=>el("li",{}, el("div",{html:h}))));
+
+// ---------- score por canal
+$("#meter-global").style.width = K.score_global+"%";
+const sc = $("#score-canales");
+D.canales.forEach(c=>{
+  const bar = el("div",{class:"hb-bar "+(c.score<=30?"em":"")}); bar.style.width = (c.score*0.85)+"%";
+  const track = el("div",{class:"hb-track"}, bar, el("span",{class:"hb-val",text:c.score+" / 100"}));
+  const sum = el("summary",{}, el("div",{class:"nm"}, c.canal, el("small",{text:c.detalle})), track);
+  const list = el("div",{class:"rub-list"}, ...c.puntos.map(p=>el("div",{}, el("b",{text:p.dimension}), el("span",{class:"p pts"+p.pts,text:p.pts+" pts"}), el("span",{text:p.motivo}))));
+  sc.append(el("details",{class:"rub"}, sum, list));
+});
+table("t-rubrica", ["Dimensión","Cómo se puntúa"], Object.entries(D.rubrica));
+
+// ---------- 2 · Instagram
+const nombresFmt = {carrusel:"Carrusel", reel:"Reel", foto:"Foto"};
+hbars("ch-formato", IG.formato.map(f=>({label:nombresFmt[f.formato], sub:`${f.n} posts`, value:f.mediana, cls:f.formato==="carrusel"?"em":"ctx", tip:`${nombresFmt[f.formato]} · mediana de interacción (${f.n} posts)`})));
+$("#cap-formato").textContent = `El carrusel gana con ${ratioCarr} veces la mediana de la foto. Los reels tienen una mediana de ${fmt(fmtObj.reel.mediana_vistas)} vistas: llegan a gente, pero esa gente interactúa poco.`;
+table("t-formato", ["Formato","Posts","Mediana","Promedio","Mediana de vistas"], IG.formato.map(f=>[nombresFmt[f.formato], f.n, f.mediana, f.promedio, f.mediana_vistas ?? "—"]), [1,2,3,4]);
+
+const maxIdx = Math.max(...IG.temas.map(t=>t.indice));
+hbars("ch-temas", IG.temas.map(t=>({label:t.tema, sub:`${t.n} posts`, value:t.indice, display:"×"+String(t.indice), cls:t.tema.startsWith("Eventos")?"em":"ctx", tip:`${t.tema} · mediana bruta ${t.mediana} interacciones`})), {max:maxIdx, ref:1, refLabel:"post típico"});
+table("t-temas", ["Tema","Posts","Mediana de interacción","Índice vs. su año"], IG.temas.map(t=>[t.tema,t.n,t.mediana,"×"+t.indice]), [1,2,3]);
+
+const fr = IG.frecuencia;
+const iJul = fr.findIndex(f=>f.mes==="2024-07"), iAgo = fr.findIndex(f=>f.mes==="2024-08");
+columns("ch-frecuencia", fr.map((f,i)=>({value:f.posts, tip:`${mesLbl(f.mes)} · publicaciones`, display:f.posts+" posts", tick: f.mes.endsWith("-01") ? f.mes.slice(0,4) : "", cls: f.posts===0?"em":""})), {h:200, yTicks:[0,5,10,15], annotate:[{from:iJul,to:iAgo,text:"Empuje en TikTok"}]});
+$("#cap-frecuencia").textContent = `En el primer semestre de 2024 publicaban ${String(IG.frec_actual.prom_mensual_2024_s1)} posts al mes; en 2025 bajaron a ${String(IG.frec_actual.prom_mensual_2025)} y en 2026 van ${String(IG.frec_actual.prom_mensual_2026)}. Entre el ${fecha(IG.hueco.desde)} y el ${fecha(IG.hueco.hasta)} Instagram estuvo ${IG.hueco.dias} días sin publicar, justo cuando el esfuerzo se fue a TikTok.`;
+table("t-frecuencia", ["Mes","Posts","Mediana de interacción"], fr.map(f=>[mesLbl(f.mes), f.posts, f.mediana_inter ?? "—"]), [1,2]);
+
+// heatmap (rampa secuencial de un solo tono: ámbar del letrero)
+const RAMP = ["#3A2F1E","#5E4A2A","#8A6B38","#B98F4C","#F2C97D"];
+$("#ramp").replaceChildren(...RAMP.map(c=>{const i=el("i"); i.style.background=c; return i;}));
+const DIAS = ["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"], FR = ["Mañana","Mediodía","Tarde","Noche"], FRH = {"Mañana":"6–12 h","Mediodía":"12–15 h","Tarde":"15–19 h","Noche":"19–24 h"};
+const hm = $("#ch-heatmap"); const minN = IG.mejor.min_n;
+const valid = IG.heatmap.filter(c=>c.indice!=null && c.n>=minN);
+const lo = Math.min(...valid.map(c=>c.indice)), hi = Math.max(...valid.map(c=>c.indice));
+hm.append(el("div"), ...FR.map(f=>el("div",{class:"h",html:`${f}<br><small>${FRH[f]}</small>`})));
+DIAS.forEach(d=>{
+  hm.append(el("div",{class:"rl",text:d}));
+  FR.forEach(f=>{
+    const c = IG.heatmap.find(x=>x.dia===d && x.franja===f);
+    const cell = el("div",{class:"c"});
+    if (!c || !c.n){ cell.classList.add("vacio"); cell.setAttribute("aria-label",`${d} · ${f}: sin publicaciones`); hm.append(cell); return; }
+    const t = Math.max(0, Math.min(1, (c.indice-lo)/(hi-lo||1))), col = RAMP[Math.min(4, Math.floor(t*5))];
+    if (c.n < minN) cell.classList.add("poco"); else { cell.style.background = col; cell.style.color = t>0.55 ? "#0E0D0B" : "#F3EDE2"; }
+    cell.append(el("span",{text:"×"+c.indice}), el("small",{text:"n="+c.n}));
+    bindTip(cell, "×"+c.indice, `${d} · ${f} · ${c.n} posts${c.n<minN?" (muestra insuficiente)":""}`);
+    hm.append(cell);
+  });
+});
+const mj = IG.mejor;
+const lun = IG.dias.find(d=>d.dia==="Lun");
+const finde = IG.dias.filter(d=>d.dia==="Vie"||d.dia==="Sáb").reduce((a,d)=>a+d.n,0);
+const validCells = IG.heatmap.filter(c=>c.n>=minN);
+const masUsada = validCells.reduce((a,c)=>c.n>a.n?c:a), peor = validCells.reduce((a,c)=>c.indice<a.indice?c:a);
+const diaLargo = {Lun:"lunes",Mar:"martes","Mié":"miércoles",Jue:"jueves",Vie:"viernes","Sáb":"sábado",Dom:"domingo"};
+$("#cap-heatmap").textContent = `Con al menos ${minN} posts por grupo, el mejor día es el ${diaLargo[mj.dia.dia]} (×${String(mj.dia.indice)}, ${mj.dia.n} posts) y la mejor franja, la ${mj.franja.franja.toLowerCase()} (×${String(mj.franja.indice)}, ${mj.franja.n} posts). Viernes y sábado concentran ${finde} de ${K.ig_analizados} posts, y la combinación más usada (${diaLargo[masUsada.dia]}, ${masUsada.franja.toLowerCase()}: ${masUsada.n} posts) ${masUsada===peor ? "es también la que peor rinde" : "rinde ×"+masUsada.indice} (×${peor.indice}). El lunes, día de producción y de cierre, marca ×${String(lun.indice)}, pero con solo ${lun.n} posts: vale la pena probarlo (por ejemplo, contenido del "Lunes de producción").`;
+table("t-heatmap", ["Día","Franja","Posts","Índice"], IG.heatmap.filter(c=>c.n).map(c=>[c.dia,c.franja,c.n,"×"+c.indice]), [2,3]);
+
+// top 10
+$("#cap-top").textContent = `${evTop} de 10 son eventos o colaboraciones con otras cuentas. Interacción = likes + comentarios.`;
+$("#top10").replaceChildren(...IG.top10.map((p,i)=>{
+  const img = el("img",{src:p.img, alt:`Publicación de Instagram del ${fecha(p.fecha)}: ${p.texto.slice(0,80)}`, loading:"lazy", width:"480", height:"480"});
+  return el("a",{class:"post", href:p.url, target:"_blank", rel:"noopener"},
+    el("div",{class:"ph"}, img, el("span",{class:"rk",text:"#"+(i+1)})),
+    el("div",{class:"bd"}, el("span",{class:"i",text:fmt(p.inter)+" interacciones"}), el("span",{class:"m",text:`${fecha(p.fecha)} · ${p.formato}`}), el("span",{class:"chip"+(p.tema.startsWith("Eventos")?" ev":""),text:p.tema}), el("p",{text:p.texto})));
+}));
+
+const ht = IG.hashtags;
+$("#callout-ht").innerHTML = "";
+$("#callout-ht").append(el("b",{text:"Hashtags y eslogan. "}), document.createTextNode(`El hashtag más usado es #${ht.top[0][0]} (${ht.top[0][1]} posts), genérico y en inglés. Solo ${ht.posts_con_hashtag_pachuca} de ${K.ig_analizados} posts llevan #pachuca y ${ht.posts_sin_hashtags} no llevan ningún hashtag. "¡Cuéntalo en el Cisne!", el eslogan más fuerte de la marca, aparece en ${ht.posts_con_cuentalo_en_el_cisne} de ${K.ig_analizados} publicaciones.`));
+
+// ---------- 3 · TikTok
+$("#tt-intro").textContent = `La cuenta publicó ${TT.videos} veces entre el ${fecha(TT.primer_post)} y el ${fecha(TT.ultimo_post)}. Desde entonces no ha publicado: lleva ${fmt(TT.dias_sin_publicar)} días inactiva y la bio no tiene enlace.`;
+$("#tt-kpis").replaceChildren(...[
+  ["Seguidores", fmt(TT.seguidores), `${fmt(TT.likes_totales)} likes acumulados`],
+  ["Vistas totales", fmt(TT.vistas_totales), `${String(TT.viral.pct_vistas_totales)} % vienen de un solo video`],
+  ["Último video", fecha(TT.ultimo_post), `${fmt(TT.dias_sin_publicar)} días sin publicar`, true],
+].map(([l,v,c,a])=>el("div",{class:"card kpi"+(a?" alerta":"")}, el("p",{class:"lbl",text:l}), el("p",{class:"val",text:v}), el("p",{class:"ctx",text:c}))));
+columns("ch-tiktok", TT.posts.map(p=>({value:p.vistas, cls: p.vistas===TT.viral.vistas?"em":"ctx", tip:`${fecha(p.fecha)} · ${p.formato} · vistas`, display:fmt(p.vistas)+" vistas", tick: p.vistas===TT.viral.vistas ? fecha(p.fecha).replace(" 2024","") : "", label2: p.vistas===TT.viral.vistas ? fmt(p.vistas) : ""})), {h:200, yTicks:[0,20000,40000,60000]});
+$("#cap-tiktok").textContent = `Sin contar el viral, la mediana es de ${fmt(TT.mediana_vistas_resto)} vistas por video.`;
+table("t-tiktok", ["Fecha","Formato","Vistas","Likes"], TT.posts.map(p=>[fecha(p.fecha),p.formato,p.vistas,p.likes]), [2,3]);
+const v = TT.viral;
+$("#tt-caso").replaceChildren(el("b",{text:"El caso del viral. "}), document.createTextNode(`El ${fecha(v.fecha)} un video de ${v.duracion_s}\u00a0s con el mensaje "${v.texto}" llegó a ${fmt(v.vistas)} vistas, ${fmt(v.likes)} likes, ${fmt(v.compartidos)} compartidos y ${fmt(v.guardados)} guardados. Tantos guardados y compartidos son una señal de intención de visita. Cuatro días después la cuenta publicó su último video. La lección es que el diferenciador (microcervecería y taproom en Pachuca) funciona cuando se dice directo, y que hacía falta un plan para darle seguimiento. `), el("a",{href:v.url,target:"_blank",rel:"noopener",text:"Ver el video →"}));
+
+// ---------- 4 · Google
+$("#g-intro").textContent = `${G.resenas} reseñas, ${G.con_texto} con texto. La ficha está reclamada y tiene ${G.fotos} fotos, pero no tiene menú, reservas, publicaciones ni preguntas y respuestas.`;
+const sub = Object.fromEntries(G.subcalificaciones.map(s=>[s.aspecto,s]));
+const pr = G.precio_por_persona; const prTot = pr.reduce((a,b)=>a+b[1],0); const prTop = pr.reduce((a,b)=>b[1]>a[1]?b:a);
+$("#g-kpis").replaceChildren(...[
+  ["Calificación", G.rating+" ★", `${G.estrellas[0].n} de ${G.resenas} reseñas son de 5★`],
+  ["Respuestas del dueño", `${G.respondidas} de ${G.resenas}`, "ni una reseña contestada", true],
+  ["Comida · Servicio · Ambiente", [sub.Comida,sub.Servicio,sub.Ambiente].map(s=>s.promedio.toFixed(1)).join(" · "), `subcalificaciones de Google (${sub.Servicio.n} reseñas las incluyen)`],
+  ["Gasto por persona", "$"+prTop[0].replace(" $","").replace("-","–"), `${prTop[1]} de ${prTot} reseñas que lo reportan`],
+].map(([l,v,c,a])=>el("div",{class:"card kpi"+(a?" alerta":"")}, el("p",{class:"lbl",text:l}), el("p",{class:"val",text:v}), el("p",{class:"ctx",text:c}))));
+hbars("ch-estrellas", G.estrellas.map(e=>({label:"★".repeat(e.estrellas), value:e.n, tip:`${e.estrellas} estrellas · reseñas`, display: e.n+" ("+Math.round(100*e.n/G.resenas)+" %)"})));
+table("t-estrellas", ["Estrellas","Reseñas","%"], G.estrellas.map(e=>[e.estrellas, e.n, Math.round(100*e.n/G.resenas)+" %"]), [1,2]);
+hbars("ch-anio", G.por_anio.map(a=>({label:a.anio, sub:`${a.n} reseñas`, value:a.promedio, display:String(a.promedio)+" ★", cls: a.promedio===Math.min(...G.por_anio.map(x=>x.promedio))?"em":"", tip:`${a.anio} · promedio de estrellas (${a.bajas} de 3★ o menos)`})), {max:5});
+const y25 = G.por_anio.find(a=>a.anio==="2025"), y26 = G.por_anio.find(a=>a.anio==="2026");
+$("#cap-anio").textContent = `2025 fue el año más flojo (${String(y25.promedio)} ★, ${y25.bajas} reseñas de 3★ o menos en ${y25.n}). En 2026 se recupera a ${String(y26.promedio)} ★, pero con solo ${y26.n} reseñas en nueve meses: el volumen es bajo.`;
+table("t-anio", ["Año","Reseñas","Promedio","% de 5★","3★ o menos"], G.por_anio.map(a=>[a.anio,a.n,a.promedio,a.pct_5+" %",a.bajas]), [1,2,3,4]);
+hbars("ch-pos", G.positivos.map(([t,n])=>({label:t, value:n, tip:`${t} · menciones positivas`})));
+hbars("ch-neg", G.negativos.map(([t,n],i)=>({label:t, value:n, cls:i===0?"em":"ctx", tip:`${t} · menciones negativas`})), {max: Math.max(...G.positivos.map(p=>p[1]))});
+$("#citas").replaceChildren(...G.citas.map(c=>el("blockquote",{class:c.tono==="crítica"?"crit":""}, el("span",{text:"“"+c.texto+"”"}), el("footer",{text:`${"★".repeat(c.estrellas)} · reseña anónima en Google`}))));
+const pico = G.horas_pico && Object.keys(G.horas_pico).length;
+$("#g-pico").replaceChildren(el("b",{text: pico ? "Horas pico. " : "Sin horas pico. "}), document.createTextNode(pico ? "" : `Google no muestra el gráfico de horas concurridas para esta ficha. Suele pasar cuando hay pocas visitas registradas. Más reseñas, fotos y uso de "Cómo llegar" ayudan a que aparezca. La queja más repetida es la actitud del servicio (${G.negativos[0][1]} menciones), y nadie la ha contestado en público.`));
+
+// ---------- 5 · NAP
+const ST = {ok:"Correcto", aviso:"Revisar", error:"Error"};
+table("t-nap", ["Canal","Nombre","Teléfono","Horario","Estado","Observación"], D.nap.map(r=>{
+  const tel = el("span",{text:r.telefono}); if (r.telefono.includes("123-4567")) tel.className="bad";
+  const hor = el("span",{text:r.horario}); if (r.horario.startsWith("Lun–")) hor.className="bad";
+  const est = el("div",{}, el("span",{class:"st "+r.nivel,text:ST[r.nivel]}), el("div",{class:"muted",style:"font-size:12px;margin-top:4px",text:r.estado}));
+  const obs = el("div",{}, el("span",{text:r.nota}), el("div",{class:"muted",style:"font-size:12px;margin-top:4px",text:"Fuente: "+r.fuente}));
+  return [el("b",{text:r.canal}), r.nombre, tel, hor, est, obs];
+}));
+
+// ---------- 6 · Benchmark
+const B = D.benchmark;
+if (B && B.filas){
+  const link = (txt, url) => url ? el("a",{href:url,target:"_blank",rel:"noopener",text:txt}) : el("span",{text:txt});
+  table("t-bench", ["Cervecería","Google ★","Reseñas en Google","Categoría en Google","Seguidores en IG","Untappd","Sitio propio","Otros"], B.filas.map(f=>[
+    el("div",{}, el("b",{text:f.nombre}), el("div",{class:"muted",style:"font-size:12px",text:f.ubicacion + (f.es_cliente?" · cliente":"")})),
+    link(f.google_rating, f.google_fuente), link(f.google_resenas, f.google_fuente), f.google_categoria, link(f.ig, f.ig_fuente), link(f.untappd, f.untappd_fuente), f.sitio, f.otros
+  ]), [1,2]);
+  document.querySelectorAll("#t-bench tbody tr").forEach((tr,i)=>{ if (B.filas[i].es_cliente) tr.classList.add("cliente"); });
+  $("#bench-notas").replaceChildren(...(B.notas||[]).map(n=>el("p",{text:n})), el("p",{}, el("b",{text:"Fuentes: "}), ...B.fuentes.flatMap((f,i)=>[i?document.createTextNode(" · "):null, el("a",{href:f.url,target:"_blank",rel:"noopener",text:f.titulo})]).filter(Boolean)));
+}
+
+// ---------- 7 · SEO
+$("#seo-gen").replaceChildren(...D.seo.busqueda_generica.que_aparece.map(t=>el("li",{text:t})));
+$("#seo-loc").replaceChildren(...D.seo.busqueda_local.que_aparece.map(t=>el("li",{text:t})));
+
+// ---------- 8 · Recomendaciones (q: aa = impacto alto/esfuerzo bajo, ab = alto/alto, ba = medio/bajo, bb = medio/alto)
+const REC = [
+  {t:"Corregir o despublicar la landing de Abacus", d:"Tiene el teléfono falso (771) 123-4567 y abre en lunes. Es lo primero que hay que hacer.", q:"aa", c:"Semana 1 · sin costo · propuesta §4.1"},
+  {t:"Quitar el \"temporalmente cerrado\" de Tripadvisor", d:"Reclamar la ficha, corregir horario y categoría y subir fotos reales.", q:"aa", c:"Semana 1 · sin costo · propuesta §4.1"},
+  {t:`Responder las ${G.resenas} reseñas de Google y arreglar la ficha`, d:`Primero las ${G.n_bajas_con_texto} críticas. Cambiar la categoría a cervecería, renombrar a "Cervecería Cisne Negro" y agregar el menú y publicaciones semanales.`, q:"aa", c:"Semana 1–2 · requiere acceso B3 · propuesta §4.1 y §4.5"},
+  {t:"Lo básico del sitio cisnenegro.mx", d:"Meta title y description, enlaces a IG, WhatsApp y Maps, y ocultar el carrito vacío.", q:"aa", c:"Semana 1 · sin costo · propuesta §4.1"},
+  {t:"Crear el perfil en Untappd", d:"Dar de alta los barriles actuales. Es donde busca el público cervecero y ya aparece en Google para \"cerveza artesanal Pachuca\".", q:"aa", c:"Semana 1–2 · sin costo · propuesta §4.1"},
+  {t:"Calendario de Instagram basado en datos", d:`Tres posts por semana, uno de cada tres de evento o colaboración, más carruseles, publicados el martes al mediodía y el jueves (mediodía o tarde), con #pachuca y probando la noche. Hoy publican ${String(K.posts_por_semana)} por semana.`, q:"ab", c:"Mes 1 en adelante · propuesta §4.6"},
+  {t:"NPS en mesa y reseñas guiadas", d:"Un QR con NPS: quien pone 9–10 recibe la invitación a dejar reseña en Google y quien pone 0–6 genera una alerta privada. Meta: 150 reseñas.", q:"ab", c:"Mes 1–3 · MenuVibes · propuesta §4.5"},
+  {t:"Nueva landing con SEO local", d:"Debe sustituir a Abacus e incluir schema Brewery + Restaurant, \"Barril de hoy\", la historia de la marca y WhatsApp.", q:"ab", c:"Fase 3 · propuesta §4.2"},
+  {t:"\"¡Cuéntalo en el Cisne!\" como formato fijo", d:`Fichas de barril con la historia del nombre, como ya hicieron con Alarma y Matador. Hoy el eslogan aparece en ${IG.hashtags.posts_con_cuentalo_en_el_cisne} de ${K.ig_analizados} posts.`, q:"ba", c:"Continuo · propuesta §3"},
+  {t:"Reactivar TikTok con el mensaje que ya funcionó", d:"Reciclar los reels de Instagram más el formato \"Barril de la semana\", con enlace en la bio.", q:"bb", c:"Mes 2 en adelante · propuesta §4.6"},
+];
+const qOrder = {aa:0,ab:1,ba:2,bb:3};
+REC.sort((a,b)=>qOrder[a.q]-qOrder[b.q]);
+$("#recs").replaceChildren(...REC.map((r,i)=>el("li",{id:"rec-"+(i+1), class:r.q==="aa"?"win":""}, el("span",{class:"no",text:i+1}), el("div",{}, el("h4",{text:r.t}), el("p",{text:r.d}), el("div",{class:"meta",text:r.c})))));
+REC.forEach((r,i)=>{ const a=el("a",{class:"dot",href:"#rec-"+(i+1),text:i+1,title:r.t}); $(`#matrix [data-q="${r.q}"]`).append(a); });
+
+// índice activo
+const links = [...document.querySelectorAll(".toc a")];
+const obs = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ links.forEach(l=>l.classList.toggle("on", l.getAttribute("href")==="#"+e.target.id)); } }), {rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("main section[id], footer[id]").forEach(s=>obs.observe(s));
+})();
+</script>
+</body>
+</html>

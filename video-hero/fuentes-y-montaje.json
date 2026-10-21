@@ -1,0 +1,195 @@
+{
+  "duration": 28.0,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "codec": "h264",
+  "audio": false,
+  "bytes": 9736864,
+  "transition_seconds": 0.375,
+  "shots": [
+    {
+      "name": "El neón",
+      "source": "sitio/assets/img/lugar/neon.jpg",
+      "frames": 84,
+      "crop": [
+        0,
+        40,
+        1600,
+        900
+      ],
+      "zoom": [
+        1,
+        1.035
+      ],
+      "timeline_start": 0.0
+    },
+    {
+      "name": "Aquí se hace",
+      "source": "contenido/instagram/posts/2024-09-15_C_8yxLeRwwx/01.jpg",
+      "frames": 60,
+      "crop": [
+        0,
+        170,
+        1440,
+        810
+      ],
+      "zoom": [
+        1.025,
+        1.055
+      ],
+      "timeline_start": 3.125,
+      "source_url": "https://www.instagram.com/p/C_8yxLeRwwx/"
+    },
+    {
+      "name": "Del barril al vaso",
+      "source": "contenido/tiktok/20240727_7396425455320009989.mp4",
+      "frames": 72,
+      "crop": [
+        0,
+        340,
+        576,
+        324
+      ],
+      "start": 25.65,
+      "speed": 1,
+      "timeline_start": 5.25,
+      "source_url": "https://www.tiktok.com/@cisnenegro.mx/video/7396425455320009989"
+    },
+    {
+      "name": "La cocina",
+      "source": "contenido/instagram/posts/2026-03-10_DVuFSixkTkt/01.mp4",
+      "frames": 66,
+      "crop": [
+        0,
+        350,
+        524,
+        294
+      ],
+      "start": 7.2,
+      "speed": 1,
+      "timeline_start": 7.875,
+      "source_url": "https://www.instagram.com/p/DVuFSixkTkt/"
+    },
+    {
+      "name": "El maridaje",
+      "source": "sitio/assets/img/lugar/burger-cerveza.jpg",
+      "frames": 60,
+      "crop": [
+        0,
+        120,
+        1600,
+        900
+      ],
+      "zoom": [
+        1.025,
+        1.06
+      ],
+      "timeline_start": 10.25
+    },
+    {
+      "name": "Arte en compañía",
+      "source": "contenido/tiktok/20240813_7402418630731910405.mp4",
+      "frames": 66,
+      "crop": [
+        0,
+        380,
+        720,
+        404
+      ],
+      "start": 11.2,
+      "speed": 0.72,
+      "interpolate": true,
+      "timeline_start": 12.375,
+      "source_url": "https://www.tiktok.com/@cisnenegro.mx/video/7402418630731910405"
+    },
+    {
+      "name": "Todos bienvenidos",
+      "source": "contenido/instagram/posts/2024-12-28_DEJBXgTxJIH/01.jpg",
+      "frames": 54,
+      "crop": [
+        0,
+        500,
+        1440,
+        810
+      ],
+      "zoom": [
+        1.035,
+        1.005
+      ],
+      "timeline_start": 14.75,
+      "source_url": "https://www.instagram.com/p/DEJBXgTxJIH/"
+    },
+    {
+      "name": "Las noches de vinilos",
+      "source": "contenido/instagram/posts/2026-09-19_DdfHsx4FApF/04.jpg",
+      "frames": 60,
+      "crop": [
+        0,
+        1100,
+        1600,
+        900
+      ],
+      "zoom": [
+        1.02,
+        1.055
+      ],
+      "saturation": 0.82,
+      "timeline_start": 16.625,
+      "source_url": "https://www.instagram.com/p/DdfHsx4FApF/"
+    },
+    {
+      "name": "El brindis",
+      "source": "contenido/instagram/posts/2025-02-16_DGHi1ozxMd8/02.jpg",
+      "frames": 66,
+      "crop": [
+        0,
+        250,
+        1440,
+        810
+      ],
+      "zoom": [
+        1.01,
+        1.04
+      ],
+      "timeline_start": 18.75,
+      "source_url": "https://www.instagram.com/p/DGHi1ozxMd8/"
+    },
+    {
+      "name": "La gente del Cisne",
+      "source": "contenido/instagram/posts/2026-09-19_DdfHsx4FApF/02.jpg",
+      "frames": 84,
+      "crop": [
+        0,
+        45,
+        1600,
+        900
+      ],
+      "zoom": [
+        1.04,
+        1.005
+      ],
+      "timeline_start": 21.125,
+      "source_url": "https://www.instagram.com/p/DdfHsx4FApF/"
+    },
+    {
+      "name": "Volver al neón",
+      "source": "sitio/assets/img/lugar/neon.jpg",
+      "frames": 90,
+      "crop": [
+        0,
+        40,
+        1600,
+        900
+      ],
+      "zoom": [
+        1.035,
+        1
+      ],
+      "timeline_start": 24.25
+    }
+  ],
+  "verification": "Dimensiones, cuadros, duración, ausencia de audio y decodificación completa: OK",
+  "loop_endpoint_mean_absolute_error": 0.528,
+  "faststart_verified": true
+}

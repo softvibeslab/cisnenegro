@@ -1,0 +1,57 @@
+{
+	on_demand_tls {
+		ask http://127.0.0.1:9123/allow-domain
+	}
+	servers {
+		timeouts {
+			read_header 15s
+			read_body 240s
+			write 240s
+			idle 2m
+		}
+	}
+}
+
+# Solo escucha dentro del contenedor; no publica 9123 ni la API de Caddy.
+# La lista exacta evita solicitar certificados para dominios arbitrarios.
+http://127.0.0.1:9123 {
+	bind 127.0.0.1
+	@allowed {
+		path /allow-domain
+		query domain=cisne.softvibes.art domain=www.cisnenegro.mx domain=cisnenegro.mx
+	}
+	respond @allowed 200
+	respond 403
+}
+
+cisne.softvibes.art, cisnenegro.mx {
+	tls {
+		on_demand
+	}
+	request_body {
+		max_size 110100480
+	}
+	encode zstd gzip
+	reverse_proxy app:8080 {
+		header_up Host {host}
+		header_up X-Forwarded-Host {host}
+		header_up X-Forwarded-Proto {scheme}
+		header_up X-Forwarded-For {remote_host}
+		header_up X-Real-IP {remote_host}
+		header_up -Forwarded
+		header_up -X-Cisne-Staff-Token
+		transport http {
+			dial_timeout 5s
+			response_header_timeout 240s
+			read_timeout 240s
+			write_timeout 240s
+		}
+	}
+}
+
+www.cisnenegro.mx {
+	tls {
+		on_demand
+	}
+	redir https://cisnenegro.mx{uri} permanent
+}

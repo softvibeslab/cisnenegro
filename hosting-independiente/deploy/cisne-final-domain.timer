@@ -1,0 +1,12 @@
+[Unit]
+Description=Comprobar cada cinco minutos el DNS final de Cisne Negro
+
+[Timer]
+OnBootSec=90s
+OnUnitActiveSec=5min
+AccuracySec=15s
+Persistent=true
+Unit=cisne-final-domain.service
+
+[Install]
+WantedBy=timers.target

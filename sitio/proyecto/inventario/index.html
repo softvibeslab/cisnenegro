@@ -1,0 +1,171 @@
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0E0D0B"><title>Inventario de contenido (scraping) · Cisne Negro</title>
+<link rel="icon" href="/assets/img/marca/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Manrope:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--tinta:#0E0D0B;--carbon:#191714;--borde:#2B2823;--hueso:#F3EDE2;--gris:#A39B8E;--neon:#F2C97D;--pico:#FF5A1F}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--tinta);color:var(--hueso);font:16px/1.65 Manrope,system-ui,sans-serif}
+a{color:var(--pico)}a:focus-visible,button:focus-visible{outline:2px solid var(--pico);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 20px 72px}
+.top{display:flex;align-items:center;gap:14px;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid var(--borde);padding-bottom:16px}
+.marca{display:flex;align-items:center;gap:12px;color:var(--hueso);text-decoration:none}
+.marca img{width:46px;height:46px;border-radius:50%;background:var(--hueso);border:3px solid var(--tinta);outline:2px solid var(--hueso);transform:rotate(-6deg)}
+.marca b{font-family:"Big Shoulders Display",Impact,sans-serif;font-size:1.35rem;letter-spacing:.03em;text-transform:uppercase}
+.chip{font:500 .78rem "JetBrains Mono",monospace;color:var(--gris);border:1px solid var(--borde);border-radius:999px;padding:4px 10px}
+h1,h2,h3{font-family:"Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);margin:.6em 0 .2em}
+.hero h1{color:var(--neon);text-shadow:0 0 18px rgba(242,201,125,.45)}
+.lead{color:var(--gris);max-width:62ch;font-size:1.08rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:18px}
+.card{display:flex;flex-direction:column;gap:6px;background:var(--carbon);border:1px solid var(--borde);border-radius:14px;padding:18px;color:var(--hueso);text-decoration:none;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--pico);transform:translateY(-2px)}
+.card h3{margin:0;font-size:1.35rem}.card p{margin:0;color:var(--gris);font-size:.94rem}
+.card .tipo{font:500 .72rem "JetBrains Mono",monospace;color:var(--pico);text-transform:uppercase;letter-spacing:.06em}
+.card.destacada{border-color:#3a352e;background:linear-gradient(160deg,#211d18,#191714)}
+section{margin-top:44px}section>h2{font-size:1.6rem;margin:0;color:var(--hueso)}
+.nota{background:var(--carbon);border:1px solid var(--borde);border-left:4px solid var(--pico);border-radius:8px;padding:12px 16px;color:var(--gris);font-size:.93rem;margin-top:16px}
+.doc{max-width:820px}
+.doc h1{color:var(--neon)}.doc h2{font-size:1.7rem;margin-top:1.8em;border-top:1px solid var(--borde);padding-top:.9em}
+.doc h3{font-size:1.25rem;color:var(--neon);margin-top:1.4em}
+.doc table{width:100%;border-collapse:collapse;font-size:.92rem;display:block;overflow-x:auto}
+.doc th,.doc td{border:1px solid var(--borde);padding:8px 10px;text-align:left;vertical-align:top}
+.doc th{background:var(--carbon);font-weight:700}
+.doc code{font:500 .86em "JetBrains Mono",monospace;background:var(--carbon);border:1px solid var(--borde);border-radius:5px;padding:1px 5px}
+.doc pre{background:var(--carbon);border:1px solid var(--borde);border-radius:10px;padding:14px;overflow-x:auto}
+.doc pre code{border:0;padding:0;background:none}
+.doc blockquote{margin:1em 0;border-left:3px solid var(--neon);padding:.2em 1em;color:var(--gris)}
+.doc hr{border:0;border-top:1px solid var(--borde);margin:2em 0}
+.doc a,.wrap>p>a{overflow-wrap:anywhere}
+.wrap>p>a{display:inline-flex;align-items:center;min-height:44px}
+@media (pointer:coarse){.marca{min-height:44px}}
+@media (forced-colors:active){.card{border:1px solid CanvasText}}
+footer{margin-top:56px;color:var(--gris);font-size:.85rem;border-top:1px solid var(--borde);padding-top:16px}
+</style></head><body><div class="wrap">
+<header class="top"><a class="marca" href="/proyecto/"><img src="/assets/img/marca/cisne-mascota.jpg" alt="" width="46" height="46"><b>Cisne Negro · Proyecto</b></a>
+<span class="chip">Vista previa · Softvibes</span></header><p style="margin-top:20px"><a href="/proyecto/">← Todos los artefactos</a></p><article class="doc"><h1>Scraping — Cervecería Cisne Negro (Fase 1)</h1>
+<p>Ejecutado el 2026-10-06 (hora UTC). Cliente confirmado. Solo se usaron datos públicos.</p>
+<h2>Inventario descargado → <code>../contenido/</code> (255 MB, fuera de git)</h2>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>Qué se bajó</th>
+<th>Cobertura</th>
+<th>Herramienta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instagram @cisnenegro.mx</td>
+<td><strong>200 posts</strong> (130 fotos, 44 reels, 26 carruseles) en una carpeta por post, con imágenes, video, <code>caption.txt</code> y <code>meta.json</code> (likes, comentarios, hashtags, menciones, últimos comentarios). Incluye perfil y avatar HD</td>
+<td>200 de 245 (de nov 2023 a sep 2026)</td>
+<td>Apify <code>instagram-scraper</code> + <code>instagram-post-scraper</code></td>
+</tr>
+<tr>
+<td>TikTok @cisnenegro.mx</td>
+<td><strong>14 publicaciones</strong>: 11 videos MP4 y 3 carruseles (8 fotos + audio), con <code>.info.json</code> y descripción</td>
+<td>14 de 14 ✅</td>
+<td><code>yt-dlp</code> + Apify <code>clockworks/tiktok-scraper</code></td>
+</tr>
+<tr>
+<td>Google Maps</td>
+<td>Ficha completa (<code>ficha.json</code>), <strong>69 reseñas</strong> (<code>resenas.csv</code>) y <strong>70 fotos</strong></td>
+<td>69 de 69 reseñas ✅, 70 de 74 fotos</td>
+<td>Apify <code>compass/crawler-google-places</code></td>
+</tr>
+<tr>
+<td>cisnenegro.mx</td>
+<td>HTML de Inicio, Menú y Contacto, y <strong>46 imágenes</strong> (incluye fotos de platillos)</td>
+<td>Completo ✅</td>
+<td>curl</td>
+</tr>
+<tr>
+<td>Facebook</td>
+<td>❌ Nada</td>
+<td>0</td>
+<td>Apify <code>facebook-posts-scraper</code> / <code>facebook-pages-scraper</code> → "Empty or private"</td>
+</tr>
+</tbody>
+</table>
+<p>Datos estructurados: <code>dataset.json</code> (214 posts de IG + TikTok y 69 reseñas, con un esquema común) y los crudos en <code>raw/</code>.</p>
+<h2>Lo que falta y cómo conseguirlo</h2>
+<table>
+<thead>
+<tr>
+<th>Hueco</th>
+<th>Por qué</th>
+<th>Solución (requiere al cliente)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Facebook completo</td>
+<td>La página bloquea el acceso sin sesión (probable restricción de edad por alcohol)</td>
+<td><strong>Exportación oficial de Meta</strong>: Centro de cuentas → Tu información → Descargar tu información (Página de FB + IG, formato JSON, calidad alta)</td>
+</tr>
+<tr>
+<td>45 posts de IG anteriores a nov 2023</td>
+<td>Instagram limita a 200 posts sin sesión</td>
+<td>La misma exportación de Meta</td>
+</tr>
+<tr>
+<td>Historias destacadas (Menú, Horario, #vacióbarril)</td>
+<td>Requieren sesión</td>
+<td>Exportación de Meta, o acceso de colaborador a la cuenta</td>
+</tr>
+<tr>
+<td>Métricas reales (alcance, guardados, compartidos, demografía)</td>
+<td>Solo existen en Insights</td>
+<td>Acceso a <strong>Meta Business Suite</strong> como socio/colaborador, o capturas de Insights de 90 días</td>
+</tr>
+<tr>
+<td>Rendimiento de Google (búsquedas, llamadas, rutas)</td>
+<td>Es privado</td>
+<td>Acceso de administrador al <strong>Perfil de Empresa de Google</strong></td>
+</tr>
+<tr>
+<td>Threads</td>
+<td>Pide inicio de sesión; no se pudo verificar si existe</td>
+<td>Preguntar al cliente</td>
+</tr>
+<tr>
+<td>Untappd</td>
+<td>No existe perfil de cervecería</td>
+<td>Crearlo (propuesta §4.1)</td>
+</tr>
+</tbody>
+</table>
+<h2>Costo</h2>
+<p>Apify (plan FREE, 5 USD/mes): ≈ <strong>1.25 USD</strong> en total (IG 1.09 · Maps 0.08 · TikTok 0.05 · FB 0.02). Docker no estaba activo, así que la skill <code>google-maps-scraper</code> (Docker) se sustituyó por su equivalente en Apify.</p>
+<h2>Reproducir</h2>
+<pre><code class="language-bash">cd scraping
+# 1) Actores (la CLI 1.9 no devuelve JSON: usar `apify runs ls &lt;actor&gt; --desc --json` para obtener el datasetId)
+apify call apify/instagram-scraper -f inputs/ig-posts.json -s
+apify datasets get-items &lt;datasetId&gt; --format json &gt; raw/ig-posts-AAAAMMDD.json
+# 2) Medios (los enlaces del CDN caducan en horas: correr enseguida)
+python3 scripts/download_media.py AAAAMMDD
+yt-dlp --write-info-json --write-thumbnail -o &quot;../contenido/tiktok/%(upload_date)s_%(id)s.%(ext)s&quot; https://www.tiktok.com/@cisnenegro.mx
+# 3) Dataset normalizado
+python3 scripts/normalize.py AAAAMMDD
+</code></pre>
+<h2>Hallazgos preliminares (sirven de insumo para la Fase 2)</h2>
+<p><strong>Instagram</strong>
+- Los carruseles tienen ~3.4× más interacción que las fotos (mediana de 70 vs. 20.5 likes+comentarios). Los reels quedan en 27, con una mediana de 279 vistas.
+- La frecuencia cayó de 10–12 posts al mes (inicio de 2024) a 3–6 al mes desde mediados de 2024.
+- <strong>Los eventos y colaboraciones son el contenido ganador.</strong> El top 10 es casi solo eventos: Oktoberfest La Jabonera (773 likes), 1er aniversario, Circuito Arte &amp; Chela, Noche de Velas y Pizza con Pasado de Masa, yoga y cerveza, y la ilustración del 8M.
+- Los hashtags son genéricos en inglés (#beer, #tap, #photo). Casi no usan hashtags locales.</p>
+<p><strong>TikTok</strong>
+- Abandonado desde el 22 de agosto de 2024 (14 videos, 189 seguidores).
+- Un video llegó a <strong>50,900 vistas y 1,021 likes</strong>: "somos el único taproom en Pachuca con cerveza independiente". El diferenciador funciona.</p>
+<p><strong>Google</strong>
+- 4.5 ★ con 69 reseñas (51 de cinco estrellas, 9 de cuatro, 6 de tres y 3 de una).
+- <strong>0 respuestas del dueño.</strong>
+- La categoría es solo "Restaurante": falta "Cervecería" o "Brewpub".
+- No tiene menú, enlace de reservas, publicaciones ni preguntas y respuestas.
+- Quejas recurrentes en las reseñas de 3 estrellas o menos: actitud del servicio, precio de la cerveza de la casa y su frescura o calidad, y limpieza.</p>
+<p><strong>Sitio web</strong>
+- Usa una foto de stock (Unsplash).
+- La bio de IG sí enlaza WhatsApp: <code>wa.me/message/M766JUHYWQYYC1</code>.</p></article><footer>Proyecto de marca y presencia digital de Cervecería Cisne Negro · Preparado por Softvibes · Actualizado el 2026-10-06.</footer></div></body></html>

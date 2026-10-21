@@ -1,0 +1,15 @@
+[Unit]
+Description=Respaldo verificado del CMS Cisne Negro
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/cisnenegro-cms/backup-cms.py
+ExecStart=/usr/bin/python3 /opt/cisnenegro-cms/backup-cms.py --verify
+UMask=0077
+Nice=10
+IOSchedulingClass=idle
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/backups/cisnenegro-cms /var/lib/cisnenegro-cms
+PrivateTmp=true

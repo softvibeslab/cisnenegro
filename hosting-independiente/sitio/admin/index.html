@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel del equipo · Cervecería Cisne Negro</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0E0D0B">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/marca/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/marca/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=JetBrains+Mono:wght@500&family=Manrope:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/menu.css?v=20261006b">
+  <link rel="stylesheet" href="/assets/css/admin.css?v=20261006c">
+  <script src="/assets/js/lib/qrcode.js?v=20261006c" defer></script>
+  <script src="/assets/js/admin.js?v=20261006c" defer></script>
+</head>
+<body class="admin">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="mbar">
+    <div class="mbar__in">
+      <span class="mbar__brand">
+        <span class="sticker mbar__sticker"><img src="/assets/img/marca/favicon-192.png" alt="" width="192" height="192"></span>
+        <span class="mbar__title">Panel del equipo</span>
+      </span>
+      <!-- App del equipo (meseros: escanear y tomar pedidos). Reusa el botón compacto del Wi-Fi del menú: en teléfonos queda solo el ícono. -->
+      <a class="btn btn--ghost btn--sm mbar__wifi" href="/equipo/" id="ir-equipo" aria-label="App del equipo">
+        <svg class="mbar__wifi-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="2.5" width="12" height="19" rx="2.6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9.5 6.5h5M10.5 18h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="mbar__wifi-t">App del equipo</span>
+      </a>
+      <button type="button" class="btn btn--ghost btn--sm mbar__pass" id="actualizar">Actualizar</button>
+    </div>
+    <nav class="tabs" aria-label="Secciones del panel">
+      <div class="tabs__in" role="tablist" aria-label="Secciones del panel">
+        <a role="tab" id="tab-hoy" href="#hoy" aria-controls="panel-hoy" aria-selected="true">Hoy</a>
+        <a role="tab" id="tab-estadisticas" href="#estadisticas" aria-controls="panel-estadisticas" aria-selected="false" tabindex="-1">Estadísticas</a>
+        <a role="tab" id="tab-nps" href="#nps" aria-controls="panel-nps" aria-selected="false" tabindex="-1">NPS</a>
+        <a role="tab" id="tab-miembros" href="#miembros" aria-controls="panel-miembros" aria-selected="false" tabindex="-1">Miembros</a>
+        <a role="tab" id="tab-ranking" href="#ranking" aria-controls="panel-ranking" aria-selected="false" tabindex="-1">Ranking</a>
+        <a role="tab" id="tab-ajustes" href="#ajustes" aria-controls="panel-ajustes" aria-selected="false" tabindex="-1">Ajustes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido" class="panel">
+    <p class="aviso" id="aviso" role="alert" hidden></p>
+    <p class="toast" id="toast" role="status" aria-live="polite"></p>
+
+    <!-- ── HOY ─────────────────────────────────────────────── -->
+    <section class="tabpanel" id="panel-hoy" role="tabpanel" aria-labelledby="tab-hoy" tabindex="-1">
+      <div class="panel__grid">
+        <section class="card card--codigo" aria-labelledby="t-codigo">
+          <h1 class="card__h" id="t-codigo">Código del día</h1>
+          <p class="codigo-dia mono" id="codigo" aria-live="polite">····</p>
+          <p class="codigo-dia__fecha" id="codigo-fecha"></p>
+          <p class="codigo-dia__inst">Dáselo a quien quiera registrar su visita.</p>
+        </section>
+
+        <section class="card" aria-labelledby="t-canje">
+          <h2 class="card__h" id="t-canje">Canjear cortesía</h2>
+          <form class="canje" id="canje" novalidate>
+            <label for="canje-codigo" class="sr-only">Código de la cortesía</label>
+            <input id="canje-codigo" class="canje__input mono" placeholder="CN-XXXXX" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="8" required aria-describedby="canje-h">
+            <button class="btn btn--primary" type="submit">Canjear</button>
+          </form>
+          <p class="fine" id="canje-h">Escribe el código que te muestra el cliente en su Pasaporte.</p>
+          <div class="resultado" id="canje-res" role="status" aria-live="polite"></div>
+        </section>
+      </div>
+
+      <section class="card" aria-labelledby="t-metricas">
+        <div class="card__fila">
+          <h2 class="card__h" id="t-metricas">Últimos 30 días</h2>
+        </div>
+        <div class="metricas" id="metricas" aria-busy="true"></div>
+      </section>
+    </section>
+
+    <!-- ── ESTADÍSTICAS ─────────────────────────────────────── -->
+    <section class="tabpanel" id="panel-estadisticas" role="tabpanel" aria-labelledby="tab-estadisticas" tabindex="-1" hidden>
+      <section class="card" aria-labelledby="t-kpis">
+        <div class="card__fila">
+          <h2 class="card__h" id="t-kpis">Indicadores</h2>
+          <p class="fine card__nota">Desde que arrancó el Pasaporte.</p>
+        </div>
+        <div class="kpis" id="kpis" aria-busy="true"></div>
+      </section>
+
+      <section class="card" aria-labelledby="t-semanal">
+        <div class="card__fila">
+          <h2 class="card__h" id="t-semanal">Por semana</h2>
+          <div class="seg seg--dark" role="group" aria-label="Semanas a mostrar">
+            <button type="button" data-semanas="8" aria-pressed="false">8 semanas</button>
+            <button type="button" data-semanas="12" aria-pressed="true">12 semanas</button>
+            <button type="button" data-semanas="26" aria-pressed="false">26 semanas</button>
+          </div>
+        </div>
+        <div class="graficas" id="graf-semanal"></div>
+      </section>
+
+      <section class="card" aria-labelledby="t-historico">
+        <div class="card__fila">
+          <h2 class="card__h" id="t-historico">Desde el inicio</h2>
+        </div>
+        <div class="graficas graficas--2" id="graf-historico"></div>
+      </section>
+    </section>
+
+    <!-- ── NPS ──────────────────────────────────────────────── -->
+    <section class="tabpanel" id="panel-nps" role="tabpanel" aria-labelledby="tab-nps" tabindex="-1" hidden>
+      <section class="card" aria-labelledby="t-nps">
+        <div class="card__fila">
+          <h2 class="card__h" id="t-nps">Respuestas NPS</h2>
+          <div class="acciones">
+            <button type="button" class="btn btn--primary btn--sm" id="nps-nuevo">Capturar NPS en papel</button>
+            <a class="btn btn--ghost btn--sm" href="/api/admin/nps.csv" download="nps-cisne-negro.csv">Descargar nps.csv</a>
+          </div>
+        </div>
+        <div class="barra">
+          <div class="barra__buscar">
+            <label for="nps-q">Buscar</label>
+            <input id="nps-q" class="ainput" type="search" placeholder="Nombre, teléfono o comentario" autocomplete="off">
+          </div>
+          <div class="seg seg--dark seg--filtros" role="group" aria-label="Filtrar respuestas">
+            <button type="button" data-nps-filtro="todos" aria-pressed="true">Todos</button>
+            <button type="button" data-nps-filtro="pendientes" aria-pressed="false">Pendientes</button>
+            <button type="button" data-nps-filtro="detractores" aria-pressed="false">Detractores</button>
+            <button type="button" data-nps-filtro="pasivos" aria-pressed="false">Pasivos</button>
+            <button type="button" data-nps-filtro="promotores" aria-pressed="false">Promotores</button>
+          </div>
+        </div>
+        <p class="fine" id="nps-ayuda"></p>
+        <p class="lista-estado" id="nps-estado" role="status" aria-live="polite"></p>
+        <div class="tabla-wrap">
+          <table class="tabla" id="nps-tabla" aria-labelledby="t-nps" aria-describedby="nps-estado">
+            <thead><tr><th scope="col">Fecha</th><th scope="col">Socio</th><th scope="col">Score</th><th scope="col">Comentario</th><th scope="col">Seguimiento</th><th scope="col"><span class="sr-only">Acciones</span></th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <nav class="pager" id="nps-pager" aria-label="Páginas de respuestas NPS"></nav>
+      </section>
+    </section>
+
+    <!-- ── MIEMBROS ─────────────────────────────────────────── -->
+    <section class="tabpanel" id="panel-miembros" role="tabpanel" aria-labelledby="tab-miembros" tabindex="-1" hidden>
+      <section class="card" aria-labelledby="t-alta">
+        <h2 class="card__h" id="t-alta">Alta en barra</h2>
+        <form class="alta" id="alta" novalidate>
+          <div class="afield">
+            <label for="a-nombre">Nombre</label>
+            <input id="a-nombre" name="nombre" class="ainput" maxlength="60" autocomplete="off" required>
+          </div>
+          <div class="afield">
+            <label for="a-tel">Teléfono (10 dígitos)</label>
+            <input id="a-tel" name="telefono" class="ainput mono" type="tel" inputmode="numeric" maxlength="14" autocomplete="off" required>
+          </div>
+          <div class="afield afield--pin">
+            <label for="a-pin">PIN <span class="opc">(opcional)</span></label>
+            <input id="a-pin" name="pin" class="ainput mono" inputmode="numeric" maxlength="4" pattern="\d{4}" autocomplete="off" aria-describedby="a-pin-h">
+            <small id="a-pin-h">Si lo dejas vacío se genera uno.</small>
+          </div>
+          <div class="alta__checks">
+            <label class="check check--dark">
+              <input type="checkbox" name="acepta_privacidad" id="a-priv" required>
+              <span>El cliente aceptó el <a href="/privacidad/" target="_blank" rel="noopener">aviso de privacidad</a>.</span>
+            </label>
+            <label class="check check--dark">
+              <input type="checkbox" name="acepta_whatsapp">
+              <span>Acepta avisos por WhatsApp.</span>
+            </label>
+            <label class="check check--dark">
+              <input type="checkbox" name="mostrar_ranking" checked>
+              <span>Aparece en el ranking público (nombre e inicial).</span>
+            </label>
+          </div>
+          <button class="btn btn--primary alta__btn" type="submit">Dar de alta</button>
+        </form>
+        <p class="form-err" id="alta-err" role="alert"></p>
+        <div class="pin-once" id="alta-pin" tabindex="-1" hidden>
+          <p class="pin-once__k" id="alta-pin-k"></p>
+          <p class="pin-once__v mono" id="alta-pin-v"></p>
+          <p class="pin-once__i">Dáselo al cliente ahora: <b>no se volverá a mostrar</b>. Entra al Pasaporte del menú con su teléfono y este PIN.</p>
+          <button type="button" class="btn btn--primary" id="alta-pin-ok">Listo, ya se lo di</button>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="t-socios">
+        <div class="card__fila">
+          <h2 class="card__h" id="t-socios">Miembros</h2>
+          <a class="btn btn--ghost btn--sm" href="/api/admin/socios.csv" download="socios-cisne-negro.csv">Descargar socios.csv</a>
+        </div>
+        <div class="barra">
+          <div class="barra__buscar">
+            <label for="socios-q">Buscar</label>
+            <input id="socios-q" class="ainput" type="search" placeholder="Nombre o teléfono" autocomplete="off">
+          </div>
+          <div class="barra__orden">
+            <label for="socios-orden">Ordenar por</label>
+            <select id="socios-orden" class="ainput">
+              <option value="recientes">Alta más reciente</option>
+              <option value="visitas">Más visitas</option>
+              <option value="ultima">Última visita</option>
+              <option value="nombre">Nombre (A–Z)</option>
+            </select>
+          </div>
+        </div>
+        <p class="lista-estado" id="socios-estado" role="status" aria-live="polite"></p>
+        <div class="tabla-wrap">
+          <table class="tabla" id="socios-tabla" aria-labelledby="t-socios" aria-describedby="socios-estado">
+            <thead><tr><th scope="col">Nombre</th><th scope="col">Teléfono</th><th scope="col" class="num">Visitas</th><th scope="col">Última visita</th><th scope="col" class="num">NPS prom.</th><th scope="col" class="num">Cortesías vigentes</th><th scope="col"><span class="sr-only">Acciones</span></th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <nav class="pager" id="socios-pager" aria-label="Páginas de miembros"></nav>
+      </section>
+    </section>
+
+    <!-- ── RANKING ──────────────────────────────────────────── -->
+    <section class="tabpanel" id="panel-ranking" role="tabpanel" aria-labelledby="tab-ranking" tabindex="-1" hidden>
+      <section class="card" aria-labelledby="t-ranking">
+        <div class="card__fila">
+          <h2 class="card__h" id="t-ranking">Ranking por visitas</h2>
+          <div class="seg seg--dark" role="group" aria-label="Periodo del ranking">
+            <button type="button" data-rank="semana" aria-pressed="false">Semana</button>
+            <button type="button" data-rank="mes" aria-pressed="true">Mes</button>
+            <button type="button" data-rank="total" aria-pressed="false">Total</button>
+          </div>
+        </div>
+        <p class="fine">Con nombre completo e incluye a quien eligió no salir en el ranking público del menú. Empate: gana quien llegó primero a ese número de visitas.</p>
+        <p class="lista-estado" id="rank-estado" role="status" aria-live="polite"></p>
+        <div class="tabla-wrap">
+          <table class="tabla tabla--rank" id="rank-tabla" aria-labelledby="t-ranking">
+            <thead><tr><th scope="col" class="num">Lugar</th><th scope="col">Nombre</th><th scope="col" class="num">Visitas</th><th scope="col"><span class="sr-only">Acciones</span></th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+    <!-- ── AJUSTES ──────────────────────────────────────────── -->
+    <section class="tabpanel" id="panel-ajustes" role="tabpanel" aria-labelledby="tab-ajustes" tabindex="-1" hidden>
+      <section class="card" aria-labelledby="t-wifi" aria-describedby="wifi-intro">
+        <div class="card__fila">
+          <h2 class="card__h" id="t-wifi">Wi-Fi del menú</h2>
+          <p class="fine card__nota" id="wifi-actualizado">Última actualización: …</p>
+        </div>
+        <p class="fine wifi__intro" id="wifi-intro">La red que ven los clientes en el menú, con un QR para conectarse con la cámara.</p>
+        <p class="wifi-ejemplo" id="wifi-ejemplo" hidden><b>Estos son datos de ejemplo.</b> Escribe la red real y guarda.</p>
+
+        <div class="wifi" aria-busy="true" id="wifi">
+          <form class="wifi__form" id="wifi-form" novalidate>
+            <div class="afield">
+              <label for="w-ssid">Nombre de la red (SSID)</label>
+              <input id="w-ssid" name="ssid" class="ainput" maxlength="32" autocomplete="off" autocapitalize="off" spellcheck="false" required aria-describedby="w-ssid-h w-ssid-err">
+              <small id="w-ssid-h">Tal como aparece en el celular al buscar redes. Respeta mayúsculas y espacios.</small>
+              <p class="campo-err" id="w-ssid-err"></p>
+            </div>
+
+            <div class="afield">
+              <label for="w-seg">Tipo de seguridad</label>
+              <select id="w-seg" name="seguridad" class="ainput" aria-describedby="w-seg-err">
+                <option value="WPA">WPA/WPA2 (recomendado)</option>
+                <option value="WEP">WEP</option>
+                <option value="nopass">Abierta, sin contraseña</option>
+              </select>
+              <p class="campo-err" id="w-seg-err"></p>
+            </div>
+
+            <div class="afield">
+              <label for="w-pass">Contraseña</label>
+              <div class="wifi__pass">
+                <input id="w-pass" name="password" class="ainput mono" type="password" maxlength="63" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="w-pass-h w-pass-err">
+                <button type="button" class="btn btn--ghost btn--sm wifi__ver" id="w-ver" aria-pressed="false" aria-controls="w-pass">Mostrar</button>
+              </div>
+              <small id="w-pass-h"></small>
+              <p class="campo-err" id="w-pass-err"></p>
+            </div>
+
+            <fieldset class="wifi__vis" aria-describedby="w-vis-err">
+              <legend>Visibilidad en el menú</legend>
+              <label class="wifi-op">
+                <input type="radio" name="visibilidad" value="publica">
+                <span><b>Pública</b><small>Cualquiera que abra el menú.</small></span>
+              </label>
+              <label class="wifi-op">
+                <input type="radio" name="visibilidad" value="socios">
+                <span><b>Solo socios del Pasaporte</b><small>Un incentivo para registrarse.</small></span>
+              </label>
+              <label class="wifi-op">
+                <input type="radio" name="visibilidad" value="oculta">
+                <span><b>Oculta</b><small>No aparece en el menú.</small></span>
+              </label>
+              <p class="campo-err" id="w-vis-err"></p>
+            </fieldset>
+
+            <p class="form-err" id="wifi-err" role="alert"></p>
+            <p class="sr-only" id="wifi-vivo" aria-live="assertive"></p>
+            <div class="wifi__pie">
+              <button class="btn btn--primary wifi__guardar" type="submit" id="w-guardar">Guardar</button>
+            </div>
+            <p class="wifi__nota"><b>Seguridad:</b> usa una red de invitados separada de la caja y las cámaras.</p>
+          </form>
+
+          <figure class="wifi__qr" aria-labelledby="wifi-qr-t">
+            <figcaption>
+              <h3 class="wifi__qr-t" id="wifi-qr-t">Vista previa del QR</h3>
+              <p class="fine">Apunta la cámara del celular para probar que conecta. Se actualiza mientras escribes.</p>
+            </figcaption>
+            <div class="wifi__qr-papel">
+              <div class="wifi__qr-lienzo" id="wifi-qr"></div>
+              <p class="wifi__qr-red" id="wifi-qr-red"></p>
+            </div>
+            <p class="fine wifi__qr-vis" id="wifi-qr-vis"></p>
+          </figure>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- NPS: capturar / editar -->
+  <dialog class="modal" id="dlg-nps" aria-labelledby="dn-t">
+    <form id="dn-form" novalidate>
+      <div class="modal__top">
+        <h2 class="modal__t" id="dn-t">Capturar NPS en papel</h2>
+        <button type="button" class="icon-btn" data-cerrar aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="modal__body">
+        <div id="dn-buscador">
+          <div class="field">
+            <label for="dn-buscar">Socio</label>
+            <input id="dn-buscar" type="search" placeholder="Nombre o teléfono" autocomplete="off" aria-describedby="dn-buscar-h" aria-controls="dn-resultados">
+            <small id="dn-buscar-h">Escribe al menos 2 letras o números y elige al socio.</small>
+          </div>
+          <fieldset class="elige-socio" id="dn-resultados-box" hidden>
+            <legend class="sr-only">Elige al socio</legend>
+            <div id="dn-resultados"></div>
+          </fieldset>
+          <p class="fine" id="dn-buscar-estado" role="status" aria-live="polite"></p>
+        </div>
+        <p class="socio-fijo" id="dn-socio" hidden></p>
+        <fieldset class="escala" id="dn-escala">
+          <legend>Calificación <span class="opc">(0 nada probable · 10 muy probable)</span></legend>
+          <div class="escala__opts" id="dn-scores"></div>
+        </fieldset>
+        <div class="field">
+          <label for="dn-comentario">Comentario <span class="opc">(opcional)</span></label>
+          <textarea id="dn-comentario" rows="3" maxlength="1000"></textarea>
+        </div>
+        <div class="field">
+          <label for="dn-seg">Seguimiento</label>
+          <select id="dn-seg"></select>
+        </div>
+        <div class="field">
+          <label for="dn-notas">Notas del equipo <span class="opc">(opcional)</span></label>
+          <textarea id="dn-notas" rows="2" maxlength="1000" placeholder="Qué se habló o qué se hizo"></textarea>
+        </div>
+        <p class="fine" id="dn-ayuda">Se liga a la visita de hoy del socio; si aún no la tiene, esta captura la registra.</p>
+        <p class="form-err form-err--papel" id="dn-err" role="alert"></p>
+      </div>
+      <div class="modal__pie">
+        <button type="button" class="btn btn--peligro btn--sm" id="dn-borrar" hidden>Borrar</button>
+        <button type="button" class="btn btn--ink btn--sm" data-cerrar>Cancelar</button>
+        <button type="submit" class="btn btn--primary btn--sm" id="dn-guardar">Guardar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Ficha del socio -->
+  <dialog class="drawer" id="ficha" aria-labelledby="fi-t">
+    <div class="drawer__top">
+      <h2 class="modal__t" id="fi-t" tabindex="-1">Ficha del socio</h2>
+      <button type="button" class="icon-btn" data-cerrar aria-label="Cerrar ficha">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="drawer__body">
+      <p class="pase__msg" id="fi-msg" role="status" aria-live="polite"></p>
+      <p class="pase__err" id="fi-err" role="alert"></p>
+      <div id="fi-contenido"></div>
+    </div>
+  </dialog>
+
+  <!-- Confirmación -->
+  <dialog class="modal modal--sm" id="confirmar" aria-labelledby="cf-t" aria-describedby="cf-p">
+    <form id="cf-form" novalidate>
+      <div class="modal__body">
+        <h2 class="modal__t" id="cf-t"></h2>
+        <p id="cf-p"></p>
+        <div class="field" id="cf-escribir" hidden>
+          <label for="cf-input" id="cf-label"></label>
+          <input id="cf-input" autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+      <div class="modal__pie">
+        <button type="button" class="btn btn--ink btn--sm" id="cf-no">Cancelar</button>
+        <button type="submit" class="btn btn--peligro btn--sm" id="cf-si">Borrar</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>

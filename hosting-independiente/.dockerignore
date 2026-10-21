@@ -1,0 +1,14 @@
+*
+!requirements.lock
+!backend/
+!backend/*.py
+!sitio/
+!sitio/**
+!scripts/
+!scripts/start.py
+!scripts/create_team.py
+!scripts/prepare_import.py
+**/__pycache__/
+**/*.sqlite*
+**/*.db*
+**/.DS_Store

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#0e0d0b">
+  <title>Cisne Negro · Video para el hero</title>
+  <style>
+    :root { color-scheme: dark; --tinta: #0e0d0b; --hueso: #f3ede2; --gris: #b7afa2; --ambar: #f2c97d; --borde: #383128; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--tinta); color: var(--hueso); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { width: min(1380px, 100%); margin: auto; padding: clamp(20px, 4vw, 56px); }
+    header { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 25px; }
+    .eyebrow { margin: 0 0 10px; color: var(--ambar); font-size: 11px; line-height: 1.5; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(26px, 3.2vw, 42px); font-weight: 650; letter-spacing: -.035em; }
+    .version { flex-shrink: 0; margin: 0 0 4px; color: var(--gris); font-size: 12px; letter-spacing: .03em; }
+    .player { position: relative; overflow: hidden; background: #070605; border: 1px solid var(--borde); border-radius: 12px; isolation: isolate; container-type: inline-size; }
+    video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
+    .overlay { position: absolute; inset: 0; pointer-events: none; display: flex; align-items: center; padding: clamp(18px, 5.2vw, 74px); background: linear-gradient(90deg, rgba(18, 12, 5, .82), rgba(32, 19, 5, .45) 58%, rgba(14, 13, 11, .1)); }
+    .overlay[hidden] { display: none; }
+    .hero-copy { max-width: 710px; }
+    .hero-kicker { margin: 0 0 12px; color: var(--hueso); font-size: clamp(10px, 1.05vw, 14px); font-weight: 650; letter-spacing: .08em; text-transform: uppercase; }
+    .hero-title { margin: 0; max-width: 10ch; color: var(--ambar); font-family: Impact, "Arial Narrow", sans-serif; font-size: clamp(32px, 7.3vw, 102px); line-height: .96; font-weight: 900; text-transform: uppercase; letter-spacing: .01em; text-shadow: 0 0 18px rgba(242, 201, 125, .35); }
+    .hero-desc { max-width: 32ch; margin: 19px 0 0; font-size: clamp(12px, 1.6vw, 22px); line-height: 1.5; }
+    .toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 20px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    button, .download { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 12px 19px; border: 1px solid var(--borde); border-radius: 999px; font: inherit; font-size: 13px; font-weight: 650; text-decoration: none; cursor: pointer; }
+    button { background: var(--ambar); border-color: var(--ambar); color: var(--tinta); }
+    button[aria-pressed="true"] { background: var(--hueso); border-color: var(--hueso); }
+    .download { color: var(--hueso); background: #191714; }
+    button:hover, .download:hover { filter: brightness(1.12); }
+    :focus-visible { outline: 3px solid var(--ambar); outline-offset: 5px; }
+    .specs { margin: 0; color: var(--gris); font-size: 12px; }
+    .note { margin: 23px 0 0; padding-top: 19px; border-top: 1px solid #29251f; color: var(--gris); font-size: 13px; line-height: 1.7; }
+    .error { color: var(--ambar); font-size: 14px; line-height: 1.6; }
+    @supports (font-size: 1cqw) {
+      .overlay { padding: clamp(18px, 5.2cqw, 74px); }
+      .hero-kicker { font-size: clamp(10px, 1.05cqw, 14px); }
+      .hero-title { font-size: clamp(28px, 7.3cqw, 102px); }
+      .hero-desc { font-size: clamp(12px, 1.6cqw, 22px); }
+    }
+    @media (min-width: 900px) {
+      main { width: min(1380px, calc((100svh - 300px) * 16 / 9 + 80px)); min-width: 740px; padding: 28px 40px; }
+      header { align-items: start; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+      h1 { font-size: 32px; }
+      .eyebrow { margin-bottom: 6px; }
+      .note { margin-top: 16px; padding-top: 14px; }
+    }
+    @media (max-width: 600px) {
+      main { padding: 24px 16px; }
+      header { align-items: start; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+      .version { margin: 0; }
+      .player { border-radius: 8px; }
+      .overlay { padding: 14px 18px; }
+      .hero-kicker { margin-bottom: 7px; font-size: 8px; }
+      .hero-title { font-size: clamp(26px, 7.5vw, 45px); }
+      .hero-desc { margin-top: 8px; max-width: 30ch; font-size: 10px; line-height: 1.4; }
+      .toolbar { gap: 18px; }
+      .actions { width: 100%; }
+      button { flex: 1 1 auto; }
+      .download { flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">Cisne Negro · Vista previa privada</p>
+        <h1>Una vuelta por el Cisne.</h1>
+      </div>
+      <p class="version">V2 · Cerveza y experiencia</p>
+    </header>
+
+    <div class="player">
+      <video id="hero-video" controls muted loop playsinline preload="metadata" poster="../sitio/assets/img/lugar/neon.jpg" aria-label="Propuesta de video del ambiente de Cervecería Cisne Negro, sin audio">
+        <source src="./cisne-negro-hero-v2.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video. Puedes descargar el MP4 con el enlace de abajo.
+      </video>
+      <div class="overlay" id="hero-overlay" hidden>
+        <div class="hero-copy">
+          <p class="hero-kicker">Pachuca, Hgo. · Col. Periodistas</p>
+          <h2 class="hero-title">¡Cuéntalo en el Cisne!</h2>
+          <p class="hero-desc">Cervecería independiente · Barril y comedor · Pachuca</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="actions">
+        <button id="toggle-copy" type="button" aria-pressed="false" aria-controls="hero-overlay">Ver con el texto del hero</button>
+        <a class="download" href="./cisne-negro-hero-v2.mp4" download="cisne-negro-hero-v2.mp4">Descargar MP4 <span aria-hidden="true">&nbsp;↗</span></a>
+      </div>
+      <p class="specs">28 s · 1080p · Loop · Sin audio</p>
+    </div>
+    <p class="error" id="video-error" role="status" hidden>No se pudo cargar el video. Comprueba que el archivo MP4 esté en la misma carpeta que esta vista previa.</p>
+    <p class="note">Cerveza de barril, degustaciones y buena compañía. Activa el texto para imaginarlo en la portada. <a href="./seleccion-v2.jpg" target="_blank" rel="noopener" style="color:var(--ambar)">Ver las fotos elegidas</a>.</p>
+  </main>
+  <script>
+    (() => {
+      const video = document.getElementById('hero-video');
+      const toggle = document.getElementById('toggle-copy');
+      const overlay = document.getElementById('hero-overlay');
+      const error = document.getElementById('video-error');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+      toggle.addEventListener('click', () => {
+        const showCopy = toggle.getAttribute('aria-pressed') !== 'true';
+        overlay.hidden = !showCopy;
+        toggle.setAttribute('aria-pressed', String(showCopy));
+        toggle.textContent = showCopy ? 'Ver solo el video' : 'Ver con el texto del hero';
+      });
+
+      const showError = () => { error.hidden = false; };
+      video.addEventListener('error', showError);
+      video.querySelector('source').addEventListener('error', showError);
+      video.addEventListener('loadeddata', () => { error.hidden = true; });
+
+      if (!reducedMotion.matches) {
+        video.play().catch(() => { /* Los controles permiten iniciar la reproducción. */ });
+      }
+      reducedMotion.addEventListener('change', (event) => {
+        if (event.matches) video.pause();
+      });
+    })();
+  </script>
+</body>
+</html>

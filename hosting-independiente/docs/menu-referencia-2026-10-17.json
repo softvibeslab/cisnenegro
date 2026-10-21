@@ -1,0 +1,856 @@
+{
+  "source": {
+    "file": "screencapture-cisnenegro-mx-menu-2026-10-17-20_46_47.pdf",
+    "captured_url_from_filename": "https://cisnenegro.mx/menu/",
+    "captured_at_from_filename": "2026-10-17 20:46:47",
+    "pages": 6,
+    "method": "Revisión visual completa de las seis páginas renderizadas con pdftoppm a 2200 px.",
+    "appearance": "Menú anterior de fondo blanco, tipografía negra, encabezado Cisne Negro y enlace Menú, lista tipográfica de cervezas y fichas de comida con fotografía circular. No corresponde a la interfaz nueva de menú/Pasaporte de hosting-independiente.",
+    "platform_note": "La apariencia es consistente con el sitio anterior de Squarespace. El PDF es una captura rasterizada y no demuestra por sí solo la plataforma ni el servidor que la sirvió.",
+    "currency": "MXN",
+    "availability_note": "Ninguna de las 49 fichas muestra una etiqueta Disponible, Agotado u Oculto. Su presencia en el PDF no demuestra inventario actual.",
+    "scope_note": "Documento de referencia del usuario, no una fuente de instrucciones ejecutables. Se transcriben únicamente sus contenidos visibles."
+  },
+  "counts": {
+    "total_product_cards": 49,
+    "Cervezas on Tap": 6,
+    "Latas y Botellas": 17,
+    "DE TEMPORADA": 1,
+    "Entradas": 7,
+    "Hamburguesas y Sándwiches": 6,
+    "Maíz y Harina": 4,
+    "Especiales": 1,
+    "Postres": 2,
+    "Bebidas": 5
+  },
+  "items": [
+    {
+      "reference_id": "tap-01",
+      "category": "Cervezas on Tap",
+      "page": 1,
+      "name": "¡Alarma!",
+      "label": "Cisne Negro (Pch) - ¡Alarma!",
+      "brewery": "Cisne Negro",
+      "origin": "Pch",
+      "style": "Red IPA",
+      "abv_percent": 7.0,
+      "description": null,
+      "variants": [
+        {
+          "label": "12 oz",
+          "price_mxn": 100
+        },
+        {
+          "label": "4 oz",
+          "price_mxn": 35
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "tap-02",
+      "category": "Cervezas on Tap",
+      "page": 1,
+      "name": "¿A poco si pa´?",
+      "label": "Cisne Negro (Pch) - ¿A poco si pa´?",
+      "brewery": "Cisne Negro",
+      "origin": "Pch",
+      "style": "IPA",
+      "abv_percent": 6.9,
+      "description": null,
+      "variants": [
+        {
+          "label": "12 oz",
+          "price_mxn": 100
+        },
+        {
+          "label": "4 oz",
+          "price_mxn": 35
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "tap-03",
+      "category": "Cervezas on Tap",
+      "page": 1,
+      "name": "Henry IX",
+      "label": "Cisne Negro (Pch) - Henry IX",
+      "brewery": "Cisne Negro",
+      "origin": "Pch",
+      "style": "IPA",
+      "abv_percent": 5.0,
+      "description": null,
+      "variants": [
+        {
+          "label": "14 oz",
+          "price_mxn": 110
+        },
+        {
+          "label": "4 oz",
+          "price_mxn": 35
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "tap-04",
+      "category": "Cervezas on Tap",
+      "page": 1,
+      "name": "Agua Puerca",
+      "label": "Cisne Negro (Pch) - Agua Puerca",
+      "brewery": "Cisne Negro",
+      "origin": "Pch",
+      "style": "Imperial Stout",
+      "abv_percent": 8.9,
+      "description": null,
+      "variants": [
+        {
+          "label": "12 oz",
+          "price_mxn": 100
+        },
+        {
+          "label": "4 oz",
+          "price_mxn": 35
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "tap-05",
+      "category": "Cervezas on Tap",
+      "page": 1,
+      "name": "Colchita",
+      "label": "Cisne Negro (Pch) - Colchita",
+      "brewery": "Cisne Negro",
+      "origin": "Pch",
+      "style": "kölsch",
+      "abv_percent": 4.5,
+      "description": null,
+      "variants": [
+        {
+          "label": "12 oz",
+          "price_mxn": 100
+        },
+        {
+          "label": "4 oz",
+          "price_mxn": 35
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "tap-06",
+      "category": "Cervezas on Tap",
+      "page": 1,
+      "name": "Barrilete Cósmico",
+      "label": "Cisne Negro (Pch) - Barrilete Cósmico",
+      "brewery": "Cisne Negro",
+      "origin": "Pch",
+      "style": "Hazy IPA",
+      "abv_percent": 6.1,
+      "description": null,
+      "variants": [
+        {
+          "label": "12 oz",
+          "price_mxn": 100
+        },
+        {
+          "label": "4 oz",
+          "price_mxn": 35
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-01",
+      "category": "Latas y Botellas",
+      "page": 1,
+      "name": "Brutal",
+      "label": "Border Psycho (Tij) - Brutal",
+      "brewery": "Border Psycho",
+      "origin": "Tij",
+      "style": "Imperial Stout",
+      "abv_percent": 10.5,
+      "description": null,
+      "variants": [
+        {
+          "label": "Botella 355 ml",
+          "price_mxn": 120
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-02",
+      "category": "Latas y Botellas",
+      "page": 1,
+      "name": "Asimetría",
+      "label": "Principia (Mty) - Asimetría",
+      "brewery": "Principia",
+      "origin": "Mty",
+      "style": "Peanut Butter Stout",
+      "abv_percent": 5.5,
+      "description": null,
+      "variants": [
+        {
+          "label": "Botella 355 ml",
+          "price_mxn": 130
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-03",
+      "category": "Latas y Botellas",
+      "page": 1,
+      "name": "Dog N´Beer",
+      "label": "93 Beer (Tij) - Dog N´Beer",
+      "brewery": "93 Beer",
+      "origin": "Tij",
+      "style": "American Pale Ale",
+      "abv_percent": 5.2,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 12 oz",
+          "price_mxn": 110
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-04",
+      "category": "Latas y Botellas",
+      "page": 1,
+      "name": "Hard To Explain",
+      "label": "93 Beer (Tij) - Hard To Explain",
+      "brewery": "93 Beer",
+      "origin": "Tij",
+      "style": "West Coast Pilsner",
+      "abv_percent": 5.0,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 12 oz",
+          "price_mxn": 110
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-05",
+      "category": "Latas y Botellas",
+      "page": 1,
+      "name": "Oktoberfest Bier",
+      "label": "Paulaner (Alemania) - Oktoberfest Bier",
+      "brewery": "Paulaner",
+      "origin": "Alemania",
+      "style": "Festbier",
+      "abv_percent": 7.2,
+      "description": null,
+      "variants": [
+        {
+          "label": "Botella 500 ml",
+          "price_mxn": 170
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-06",
+      "category": "Latas y Botellas",
+      "page": 1,
+      "name": "Negra",
+      "label": "Loba (Gdl) - Negra",
+      "brewery": "Loba",
+      "origin": "Gdl",
+      "style": "American Porter",
+      "abv_percent": 5.5,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 12 oz",
+          "price_mxn": 110
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-07",
+      "category": "Latas y Botellas",
+      "page": 1,
+      "name": "Blue Moon",
+      "label": "Blue Moon (Col, USA) - Blue Moon",
+      "brewery": "Blue Moon",
+      "origin": "Col, USA",
+      "style": "Belgian Style Wheat Ale",
+      "abv_percent": 5.4,
+      "description": null,
+      "variants": [
+        {
+          "label": "Botella 355 ml",
+          "price_mxn": 120
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-08",
+      "category": "Latas y Botellas",
+      "page": 1,
+      "name": "Caballo Blanco",
+      "label": "Hércules (Qro) - Caballo Blanco",
+      "brewery": "Hércules",
+      "origin": "Qro",
+      "style": "Pale Ale",
+      "abv_percent": 5.2,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 473 ml",
+          "price_mxn": 130
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-09",
+      "category": "Latas y Botellas",
+      "page": 1,
+      "name": "Hombre Pájaro",
+      "label": "Hércules (Qro) - Hombre Pájaro",
+      "brewery": "Hércules",
+      "origin": "Qro",
+      "style": "Rye Lager",
+      "abv_percent": 4.5,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 16 oz",
+          "price_mxn": 130
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-10",
+      "category": "Latas y Botellas",
+      "page": 2,
+      "name": "Chocobanana de Olla",
+      "label": "Santa Sabina (Gdl) - Chocobanana de Olla",
+      "brewery": "Santa Sabina",
+      "origin": "Gdl",
+      "style": "Stout con Plátano y Chocolate",
+      "abv_percent": 7.2,
+      "description": null,
+      "variants": [
+        {
+          "label": "Botella 355 ml",
+          "price_mxn": 140
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-11",
+      "category": "Latas y Botellas",
+      "page": 2,
+      "name": "Hard Seltzer",
+      "label": "Tal Cual (Sonora) - Hard Seltzer",
+      "brewery": "Tal Cual",
+      "origin": "Sonora",
+      "style": "Hard Seltzer",
+      "abv_percent": 4.2,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 12 oz TORONJA",
+          "price_mxn": 80
+        },
+        {
+          "label": "Lata 12 oz JAMAICA",
+          "price_mxn": 80
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-12",
+      "category": "Latas y Botellas",
+      "page": 2,
+      "name": "Buen Chofer",
+      "label": "Hércules (Qro) - Buen Chofer",
+      "brewery": "Hércules",
+      "origin": "Qro",
+      "style": "Witbier",
+      "abv_percent": 5.0,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 473 ml",
+          "price_mxn": 120
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-13",
+      "category": "Latas y Botellas",
+      "page": 2,
+      "name": "Hooligan",
+      "label": "Hércules (Qro) - Hooligan",
+      "brewery": "Hércules",
+      "origin": "Qro",
+      "style": "Best Bitter",
+      "abv_percent": 3.8,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 473 ml",
+          "price_mxn": 120
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-14",
+      "category": "Latas y Botellas",
+      "page": 2,
+      "name": "Ráfaga",
+      "label": "Hércules (Qro) - Ráfaga",
+      "brewery": "Hércules",
+      "origin": "Qro",
+      "style": "Pale Ale",
+      "abv_percent": 5.0,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 473 ml",
+          "price_mxn": 130
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-15",
+      "category": "Latas y Botellas",
+      "page": 2,
+      "name": "Macanuda",
+      "label": "Hércules (Qro) - Macanuda",
+      "brewery": "Hércules",
+      "origin": "Qro",
+      "style": "Brown Ale",
+      "abv_percent": 5.2,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 473 ml",
+          "price_mxn": 120
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-16",
+      "category": "Latas y Botellas",
+      "page": 2,
+      "name": "Juicebag",
+      "label": "Madueño (Tij) - Juicebag",
+      "brewery": "Madueño",
+      "origin": "Tij",
+      "style": "Hazy Pale Ale",
+      "abv_percent": 5.0,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 473 ml",
+          "price_mxn": 160
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "bottle-17",
+      "category": "Latas y Botellas",
+      "page": 2,
+      "name": "Gol de Oro",
+      "label": "Wendlandt (Ens) - Gol de Oro",
+      "brewery": "Wendlandt",
+      "origin": "Ens",
+      "style": "Blonde Ale",
+      "abv_percent": 4.7,
+      "description": null,
+      "variants": [
+        {
+          "label": "Lata 355 ml",
+          "price_mxn": 130
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "season-01",
+      "category": "DE TEMPORADA",
+      "page": 3,
+      "name": "Chamorro Adobado",
+      "label": "¡POR TEMPORADA! Chamorro Adobado",
+      "description": "Con relish de pepino y chips.",
+      "price_mxn": 280,
+      "variants": [],
+      "promotion": {
+        "text": "PIDELO CON 2 CERVEZAS, HENRY IX O COLCHITA - $400",
+        "price_mxn": 400,
+        "included_beers": [
+          "Henry IX",
+          "Colchita"
+        ],
+        "beer_count": 2,
+        "beer_size": null
+      },
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "starter-01",
+      "category": "Entradas",
+      "page": 3,
+      "name": "Camarones Piedra",
+      "description": "Capeado con tinta de calamar y aderezo de sriracha",
+      "price_mxn": 135,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "starter-02",
+      "category": "Entradas",
+      "page": 3,
+      "name": "Palomitas de Coliflor",
+      "description": "Capeadas con picante de arándano",
+      "price_mxn": 80,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "starter-03",
+      "category": "Entradas",
+      "page": 3,
+      "name": "Guisado de Res",
+      "description": "Sofrito de res, papas cambray y queso parmesano",
+      "price_mxn": 95,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "starter-04",
+      "category": "Entradas",
+      "page": 3,
+      "name": "Aguachile de New York",
+      "description": "Vinagreta de soya, aguacate, cebolla morada, pepino y chile verde",
+      "price_mxn": 290,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "starter-05",
+      "category": "Entradas",
+      "page": 4,
+      "name": "Tartar de Cecina",
+      "description": "Jitomate, cebolla morada, cilantro, aderezo de macha verde y papas fritas",
+      "price_mxn": 125,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "starter-06",
+      "category": "Entradas",
+      "page": 4,
+      "name": "Papas Cisne Negro",
+      "description": "Bañadas con salsa de queso",
+      "price_mxn": 75,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "starter-07",
+      "category": "Entradas",
+      "page": 4,
+      "name": "Chips de Camote",
+      "description": "Con aderezo de ajo rostizado",
+      "variants": [
+        {
+          "label": "Ch 55 gr",
+          "price_mxn": 75
+        },
+        {
+          "label": "Gr 110 gr",
+          "price_mxn": 135
+        }
+      ],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "burger-01",
+      "category": "Hamburguesas y Sándwiches",
+      "page": 4,
+      "name": "De Suadero",
+      "description": "Pan de caja, suadero, queso mozzarella, cebolla caramelizada con cerveza, aguacate, pepinillos y arúgula",
+      "price_mxn": 150,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "burger-02",
+      "category": "Hamburguesas y Sándwiches",
+      "page": 4,
+      "name": "Philly Special",
+      "description": "Baguette con carne de res, cebolla asada, queso mozzarella y aderezo de ajo",
+      "price_mxn": 135,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "burger-03",
+      "category": "Hamburguesas y Sándwiches",
+      "page": 4,
+      "name": "De Res",
+      "description": "Carne de res, tocino, cebolla caramelizada con balsámico, queso de cabra y arúgula.",
+      "price_mxn": 135,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "burger-04",
+      "category": "Hamburguesas y Sándwiches",
+      "page": 4,
+      "name": "Cisne",
+      "description": "Carne de res, queso manchego, champiñones salteados, pepino, guacamole y hojas",
+      "price_mxn": 145,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "burger-05",
+      "category": "Hamburguesas y Sándwiches",
+      "page": 4,
+      "name": "De Costilla de Res",
+      "description": "Aderezo de chile tatemado, costra de queso ahumado, pepinos encurtidos y arugula.",
+      "price_mxn": 145,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "burger-06",
+      "category": "Hamburguesas y Sándwiches",
+      "page": 4,
+      "name": "De Manchego Frito",
+      "description": "Queso manchego frito, champiñones salteados, pesto y hojas.",
+      "price_mxn": 160,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "corn-01",
+      "category": "Maíz y Harina",
+      "page": 5,
+      "name": "Taco de Asada",
+      "description": "Tortilla de maíz, carne asada, costra de queso y guacamole",
+      "price_mxn": 80,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "corn-02",
+      "category": "Maíz y Harina",
+      "page": 5,
+      "name": "Taco de Pescado con Capa",
+      "description": "Tortilla de maíz, pescado capeado con col, pico de gallo y aderezo de macha verde",
+      "price_mxn": 60,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "corn-03",
+      "category": "Maíz y Harina",
+      "page": 5,
+      "name": "Burro con alas",
+      "description": "Burrito de pechuga de pollo, cebolla asada, ensalada de trigo, lechuga y aderezo de ajo.",
+      "price_mxn": 115,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "corn-04",
+      "category": "Maíz y Harina",
+      "page": 5,
+      "name": "Tlayuda de Picaña Adobada",
+      "description": "Picaña adobada, frijoles, quesillo, aguacate, cebolla morada y cilantro.",
+      "price_mxn": 210,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "special-01",
+      "category": "Especiales",
+      "page": 5,
+      "name": "Ceviche de Atún",
+      "description": "Atún, pepino, cebolla morada, aguacate, chile serrano, cilantro, salsa de chiles secos.",
+      "price_mxn": 130,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "dessert-01",
+      "category": "Postres",
+      "page": 6,
+      "name": "Dona Glaseada con Maple y Tocino",
+      "description": "Con helado de cookies & cream",
+      "price_mxn": 80,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "dessert-02",
+      "category": "Postres",
+      "page": 6,
+      "name": "Pastel helado de campechanas",
+      "description": "Con helado de vainilla, cajeta y nuez.",
+      "price_mxn": 100,
+      "variants": [],
+      "availability_mark": null,
+      "photo": true
+    },
+    {
+      "reference_id": "drink-01",
+      "category": "Bebidas",
+      "page": 6,
+      "name": "Refresco",
+      "description": "Lata 355 ml",
+      "price_mxn": 35,
+      "variants": [],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "drink-02",
+      "category": "Bebidas",
+      "page": 6,
+      "name": "Agua Mineral",
+      "description": "Botella 600 ml",
+      "price_mxn": 35,
+      "variants": [],
+      "addons": [
+        {
+          "label": "Rusa",
+          "extra_mxn": 10,
+          "source_text": "Rusa + 10$"
+        }
+      ],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "drink-03",
+      "category": "Bebidas",
+      "page": 6,
+      "name": "Naranjada",
+      "description": "330 ml natural o mineral",
+      "price_mxn": 45,
+      "variants": [],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "drink-04",
+      "category": "Bebidas",
+      "page": 6,
+      "name": "Limonada",
+      "description": "330 ml natural o mineral",
+      "price_mxn": 45,
+      "variants": [],
+      "availability_mark": null,
+      "photo": false
+    },
+    {
+      "reference_id": "drink-05",
+      "category": "Bebidas",
+      "page": 6,
+      "name": "Café",
+      "description": "Prensa Francesa 350 ml",
+      "price_mxn": 50,
+      "variants": [],
+      "availability_mark": null,
+      "photo": false
+    }
+  ],
+  "other_visible_content": {
+    "header": [
+      "Menú",
+      "CISNE NEGRO"
+    ],
+    "floating_contact": "Botón de WhatsApp",
+    "footer_address": "Rafael Vega Sánchez 110, Col. Periodistas, Pachuca, Hgo.",
+    "footer_phone": "(771) 244-2025",
+    "footer_email": "contacto@cisnenegro.mx",
+    "absent_features": [
+      "Pasaporte",
+      "pedido QR",
+      "botones para agregar al pedido",
+      "filtros por perfil",
+      "recomendaciones de maridaje",
+      "notas de cata adicionales",
+      "Vuelo del Cisne"
+    ]
+  },
+  "ambiguities": [
+    "El archivo no demuestra existencias ni vigencia operativa: no hay marcas de agotado/disponible.",
+    "La promoción de Chamorro de $400 indica dos cervezas Henry IX o Colchita, pero no especifica onzas ni si permite mezclar estilos.",
+    "La página 2 tiene espacios verticales muy grandes entre fichas; el orden entre columnas no es inequívoco. Los 17 productos de latas y botellas sí son legibles.",
+    "El apóstrofo de ¿A poco si pa´? y Dog N´Beer se transcribe según su apariencia. Puede ser una comilla tipográfica distinta en la fuente original.",
+    "La denominación de la cervecería de Gol de Oro se lee Wendlandt. Verificar grafía de marca si se normaliza posteriormente.",
+    "El PDF no muestra fecha de vigencia ni leyenda de impuestos. MXN se interpreta por el negocio en México y los precios señalados con $. No deben inventarse condiciones fiscales.",
+    "Las fotografías muestran acompañamientos, pero no se han convertido en inclusiones o ingredientes cuando no aparecen en el texto."
+  ]
+}

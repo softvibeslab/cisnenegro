@@ -1,0 +1,1062 @@
+{
+  "title": "Cisne Negro · Manual de usuario",
+  "subtitle": "Página, menú, Pasaporte, CMS, MediaHub y operación del equipo",
+  "date": "17 de octubre de 2026",
+  "edition": "Instalación vigente en cisnenegro.mx",
+  "canonical_url": "https://cisnenegro.mx/",
+  "confidentiality": "Guía de uso sin contraseñas. Los accesos privados se entregan por separado.",
+  "pages": [
+    {
+      "id": "bienvenido",
+      "title": "Todo empieza en Cisne Negro",
+      "subtitle": "Una plataforma para descubrir, visitar y volver",
+      "paragraphs": [
+        "La página pública presenta la cerveza, la cocina y la experiencia. El menú permite explorar productos, preparar un pedido y abrir el Pasaporte. Detrás de la barra, el CMS actualiza el contenido y Equipo registra cuentas y cobros.",
+        "Trabaja desde cisnenegro.mx. El dominio temporal cisne.softvibes.art comparte estos mismos datos. Las instalaciones anteriores en cisnenegro.softvibes.art conservan bases separadas y no sincronizan cambios."
+      ],
+      "steps": [
+        "Cliente: página → menú → pedido o Pasaporte.",
+        "Contenido: CMS → guardar borrador → revisar → publicar.",
+        "Servicio: Equipo → tomar pedido → cuenta → cobro → corte."
+      ],
+      "tips": [
+        "www.cisnenegro.mx redirige al dominio principal. Al cambiar de dominio, inicia sesión nuevamente."
+      ],
+      "screenshot": "portada.png",
+      "extra_screenshots": []
+    },
+    {
+      "id": "menu",
+      "title": "Explorar el menú y preparar un pedido",
+      "subtitle": "https://cisnenegro.mx/menu/",
+      "paragraphs": [
+        "El cliente puede consultar cervezas, cocina, latas y bebidas sin alcohol. Los precios y la disponibilidad proceden de la versión publicada del catálogo."
+      ],
+      "steps": [
+        "Abre la categoría y elige producto, presentación y cantidad. Pulsa «＋ Agregar».",
+        "Para una degustación, selecciona las cuatro cervezas del Vuelo del Cisne y agrégalo al pedido.",
+        "Abre «Mi pedido», revisa cantidades, notas, mesa y total estimado.",
+        "Pulsa «Mostrar al mesero» y presenta el QR o código al equipo. El mesero debe tomar el pedido para incorporarlo a una cuenta."
+      ],
+      "tips": [
+        "Con conexión se registra el pedido al mostrarlo; sin conexión, el QR puede transportar los productos. Equipo necesita conexión para registrarlos y atenderlos.",
+        "El menú no realiza pagos bancarios ni envía automáticamente una comanda a cocina."
+      ],
+      "screenshot": "menu.png",
+      "extra_screenshots": []
+    },
+    {
+      "id": "pasaporte",
+      "title": "Crear y usar el Pasaporte",
+      "subtitle": "https://cisnenegro.mx/menu/#pasaporte",
+      "paragraphs": [
+        "El Pasaporte se abre dentro del menú. Su acceso es independiente de los usuarios del CMS y de Equipo."
+      ],
+      "steps": [
+        "Pulsa «Crear Pasaporte»: escribe nombre, teléfono de 10 dígitos y un PIN de 4 números; acepta el aviso de privacidad.",
+        "Si ya tienes uno, elige «Ya tengo» e inicia sesión con teléfono y PIN.",
+        "En el establecimiento, pide el «Código del día» y pulsa «Registrar mi visita de hoy» → «Sellar visita».",
+        "Muestra al equipo el código de una cortesía disponible. Después de la visita puedes responder la encuesta de recomendación."
+      ],
+      "tips": [
+        "Regla visible actual: un sello por día; cortesía de 4 oz en la visita 5 y de 12 oz en la visita 10, con vigencia de 30 días. Confirmar su aplicación con los responsables del negocio.",
+        "La aceptación de novedades por WhatsApp es opcional; no activa una campaña automática."
+      ],
+      "screenshot": "pasaporte.png",
+      "extra_screenshots": []
+    },
+    {
+      "id": "cms-acceso",
+      "title": "Entrar al espacio de trabajo",
+      "subtitle": "https://cisnenegro.mx/cms/",
+      "paragraphs": [
+        "El CMS usa usuario y contraseña. El propietario administra permisos y publica; el editor prepara contenido y maneja la biblioteca. Las cuentas de Equipo usan otro acceso."
+      ],
+      "steps": [
+        "Abre el CMS y escribe tu usuario y contraseña en «Detrás de la barra».",
+        "Pulsa «Entrar al panel». Comprueba el permiso indicado junto a tu nombre.",
+        "Trabaja en el módulo correspondiente. Guarda antes de cambiar de dispositivo o cerrar el navegador.",
+        "Al terminar, usa «Cerrar sesión» en la parte inferior del menú lateral."
+      ],
+      "tips": [
+        "Administración utiliza la sesión del propietario del CMS. Si entras a /admin/ sin sesión, verás primero esta pantalla.",
+        "Si la sesión termina, vuelve a entrar en la misma pestaña. Los cambios abiertos pueden recuperarse allí; no sustituyen un borrador guardado."
+      ],
+      "screenshot": "cms-login.png",
+      "extra_screenshots": []
+    },
+    {
+      "id": "cms-inicio",
+      "title": "Entender borrador y publicación",
+      "subtitle": "CMS → Inicio",
+      "paragraphs": [
+        "Inicio reúne los accesos al editor, catálogo y MediaHub, junto con el resumen de productos, medios, experiencias y almacenamiento. «Borrador guardado» significa que el trabajo se conserva, pero todavía puede diferir de la web."
+      ],
+      "steps": [
+        "Elige «Editar la página», «Pon al día la carta» o «Encuentra la siguiente historia».",
+        "Si aparece «Cambios sin guardar», pulsa «Guardar borrador».",
+        "Revisa «Tu publicación» y abre «Revisar publicaciones» para comparar borrador y web.",
+        "Usa «Ver página pública» para comprobar el resultado que reciben los clientes."
+      ],
+      "tips": [
+        "La página y el menú se publican como una versión completa. Revisa todos los cambios pendientes, aunque hayas editado solo una sección.",
+        "Subir o editar la ficha de un medio es una operación de biblioteca; no equivale a publicar la página."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "cms-editor",
+      "title": "Cambiar la portada y su historia",
+      "subtitle": "CMS → Editor visual",
+      "paragraphs": [
+        "El editor organiza los campos por secciones: portada, cervezas, cocina, historia, galería, eventos, Pasaporte, visita y buscadores. También puedes seleccionar un bloque de la vista previa."
+      ],
+      "steps": [
+        "Abre la sección y modifica sus títulos, textos o imágenes.",
+        "En Portada, elige imagen o video. Selecciona en MediaHub el material de escritorio, celular y fotografía de respaldo que corresponda.",
+        "Pulsa «Guardar borrador» para actualizar la vista previa privada.",
+        "Alterna «Escritorio» y «Celular». Revisa legibilidad, recorte, botones y fotografía de respaldo.",
+        "Cuando el conjunto esté aprobado, continúa en Publicaciones."
+      ],
+      "tips": [
+        "La vista previa solo es visible para el equipo. Guardar no cambia la web pública.",
+        "Los cambios de encuadre fino no tienen un control visible en esta versión; prepara un archivo con el recorte adecuado o solicita apoyo técnico."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "cms-menu",
+      "title": "Actualizar precios y disponibilidad",
+      "subtitle": "CMS → Menú y cervezas",
+      "paragraphs": [
+        "Las pestañas son «Cervezas de barril», «Cocina», «Latas», «Sin alcohol» y «Vuelo del Cisne». Oculto retira un producto de la presentación; agotado indica que no está disponible."
+      ],
+      "steps": [
+        "Busca el producto y pulsa «Editar producto», o usa «+ Producto». En Cocina puedes crear una categoría.",
+        "Ajusta nombre, descripción, precio y fotografía. Para barril, revisa cada presentación y sus precios.",
+        "Configura «Visible en la carta» y «Disponible para pedir», y selecciona maridajes cuando corresponda.",
+        "Pulsa «Guardar en el borrador» y después el botón superior «Guardar borrador».",
+        "Publica y comprueba el producto en el menú público, incluida su presentación."
+      ],
+      "tips": [
+        "La presentación de 4 oz alimenta el precio del Vuelo. Cambiar solo el borrador no cambia el cálculo de pedidos nuevos.",
+        "Los importes históricos se conservan. El formulario actual no ofrece editar todas las variantes de cocina o bebidas; pide soporte para esos casos."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "cms-media",
+      "title": "Organizar fotos y videos en MediaHub",
+      "subtitle": "CMS → MediaHub",
+      "paragraphs": [
+        "Busca por nombre, etiquetas o descripción; filtra por categoría o tipo. MediaHub conserva originales privados y crea versiones para web."
+      ],
+      "steps": [
+        "Pulsa «Subir archivos» o arrastra varios. Asigna categoría y etiquetas; confirma «Subir a MediaHub».",
+        "Espera a que estén listos. Los videos se procesan en segundo plano.",
+        "Abre la ficha, completa título, texto alternativo y descripción; pulsa «Guardar información».",
+        "Consulta «Dónde se utiliza» antes de «Archivar archivo». Activa «Archivados» para recuperarlo.",
+        "Elige el medio desde editor, producto o evento. Guarda, revisa el recorte y publica."
+      ],
+      "tips": [
+        "Fotos JPG, PNG, WebP y HEIC/HEIF: 20 MB y 40 megapíxeles máximo. Videos MP4: 100 MB y 5 minutos; la versión web queda sin sonido.",
+        "Cuota: 10 GB con originales y derivados. Archivar conserva publicaciones anteriores y no libera espacio. No hay borrado físico en el panel."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "cms-eventos",
+      "title": "Contar lo que viene y lo que se vive",
+      "subtitle": "CMS → Eventos y galería",
+      "paragraphs": [
+        "Eventos y Galería comparten el módulo. Usa fotografías propias y datos confirmados para presentar la experiencia de la cervecería."
+      ],
+      "steps": [
+        "En Eventos, pulsa «+ Evento» y completa nombre, fecha, descripción, enlace e imagen.",
+        "Activa «Mostrar en la página» si debe aparecer al publicar.",
+        "En Galería, pulsa «+ Fotografía», elige el archivo y escribe pie de foto y descripción alternativa.",
+        "Usa las flechas para ordenar; «Editar» para corregir. Retirar un elemento del borrador conserva el archivo en MediaHub.",
+        "Guarda el borrador, revisa la portada y publica cuando esté aprobado."
+      ],
+      "tips": [
+        "Un evento en este módulo no se publica automáticamente en Facebook, Instagram o calendarios externos.",
+        "Revisa periódicamente eventos pasados y enlaces de reservación."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "cms-negocio",
+      "title": "Mantener los datos del negocio",
+      "subtitle": "CMS → Datos del negocio",
+      "paragraphs": [
+        "Esta sección concentra los datos de contacto y visita que utilizan la página y el menú: dirección, horarios, ubicación, redes y enlaces disponibles en el formulario."
+      ],
+      "steps": [
+        "Confirma con el responsable del negocio la información que debe cambiar.",
+        "Edita los campos necesarios y revisa teléfonos, horarios y destinos de enlaces.",
+        "Pulsa «Guardar borrador» y comprueba la vista previa.",
+        "Publica y prueba desde la página pública los botones de contacto, mapa y redes."
+      ],
+      "tips": [
+        "Actualizar aquí no modifica Google Maps, Tripadvisor ni los perfiles sociales externos.",
+        "La red Wi-Fi mostrada en el menú se administra desde Administración → Ajustes, no desde esta pantalla."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "cms-publicaciones",
+      "title": "Publicar y recuperar una versión",
+      "subtitle": "CMS → Publicaciones · permiso Propietario",
+      "paragraphs": [
+        "Publicaciones muestra las diferencias entre el contenido publicado y el borrador, incluidos los cambios todavía abiertos. El historial conserva versiones y notas."
+      ],
+      "steps": [
+        "Revisa «Cambios por publicar»: comprueba todos los campos, precios e imágenes.",
+        "Pulsa «Publicar» o «Publicar versión», escribe una nota clara y confirma «Publicar ahora».",
+        "Abre la página y el menú públicos para comprobar el resultado.",
+        "Para volver a una versión, localízala en «Historial de versiones» y pulsa «Restaurar borrador».",
+        "La restauración sustituye el borrador actual. Revísala y publícala por separado si quieres hacerla visible."
+      ],
+      "tips": [
+        "Restaurar contenido no restaura pedidos, cuentas, socios, visitas, canjes ni NPS.",
+        "Si hay conflicto con otro editor, conserva una copia de tus cambios antes de «Recargar borrador del servidor»: esa acción descarta los cambios locales sin guardar."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "cms-usuarios",
+      "title": "Dar acceso al equipo editorial",
+      "subtitle": "CMS → Usuarios · permiso Propietario",
+      "paragraphs": [
+        "Propietario puede publicar, restaurar, administrar usuarios y entrar al Pasaporte administrativo. Editor puede preparar contenido, catálogo y biblioteca. El CMS admite hasta tres cuentas activas."
+      ],
+      "steps": [
+        "Pulsa «+ Invitar al equipo» y completa nombre, usuario, permiso y contraseña inicial de al menos 12 caracteres.",
+        "Confirma «Crear cuenta» y entrega el acceso por el canal privado acordado.",
+        "Usa «Editar acceso» para cambiar permisos, contraseña o estado.",
+        "Deja vacía «Nueva contraseña» para conservar la actual. Desactiva «Cuenta activa» cuando la persona deje de necesitar acceso."
+      ],
+      "tips": [
+        "Cambiar acceso revoca sesiones según la operación; desactivar una cuenta cierra sus sesiones. El sistema protege al último propietario activo.",
+        "Crear un usuario CMS no crea una cuenta de mesero. Esas cuentas se administran dentro de Equipo."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "admin",
+      "title": "Administrar el Pasaporte y la atención",
+      "subtitle": "https://cisnenegro.mx/admin/ · Propietario CMS",
+      "paragraphs": [
+        "Las pestañas son Hoy, Estadísticas, NPS, Miembros, Ranking y Ajustes. La información de socios y los archivos descargados son de uso interno."
+      ],
+      "steps": [
+        "En Hoy, consulta el «Código del día» para compartirlo en barra con quienes registren su visita.",
+        "Para una cortesía real, captura su código en «Canjear cortesía» y comprueba el resultado antes de entregarla.",
+        "En Miembros, busca al socio o registra un alta en barra con los consentimientos correspondientes. Su ficha permite consultar y atender su cuenta.",
+        "En NPS, revisa comentarios y seguimiento; usa «Capturar NPS en papel» solo para una respuesta real. Esta captura puede registrar la visita de hoy.",
+        "En Ajustes, configura la red Wi-Fi, contraseña y visibilidad, guarda y prueba el QR."
+      ],
+      "tips": [
+        "Los controles de esta pantalla guardan operaciones directamente; no esperan una publicación del CMS.",
+        "No realices canjes, altas, sellos ni encuestas ficticias para practicar en producción."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "equipo-acceso",
+      "title": "Entrar al turno y definir responsables",
+      "subtitle": "https://cisnenegro.mx/equipo/",
+      "paragraphs": [
+        "Equipo usa usuario y PIN de 6 números. El rol Mesero trabaja con sus cuentas; Administrador puede revisar el conjunto del equipo, gestionar usuarios y cerrar el día. No son los permisos del CMS."
+      ],
+      "steps": [
+        "Escribe tu usuario y PIN en «Entrar al turno».",
+        "Comprueba el día operativo y revisa «Mis cuentas abiertas».",
+        "El Administrador puede abrir Equipo para crear cuentas, editar datos, generar «Nuevo PIN» y activar o desactivar personas.",
+        "Al terminar en un dispositivo compartido, pulsa «Salir»."
+      ],
+      "tips": [
+        "La instalación conserva cuentas procedentes de la demostración v2. Antes de operar con personal real, el responsable debe asignar cuentas individuales y revisar esos accesos.",
+        "Un PIN generado se muestra una vez. «Nuevo PIN» invalida el anterior y cierra la sesión correspondiente."
+      ],
+      "screenshot": "equipo-login.png",
+      "extra_screenshots": []
+    },
+    {
+      "id": "equipo-pedidos",
+      "title": "Recibir y tomar un pedido",
+      "subtitle": "Equipo → Inicio → Escanear pedido",
+      "paragraphs": [
+        "El QR presentado por el cliente lleva al pedido. Revisarlo no es lo mismo que tomarlo: el botón «Tomar pedido» lo incorpora a una cuenta."
+      ],
+      "steps": [
+        "Pulsa «Escanear pedido» y permite la cámara. También puedes escribir el código y pulsar «Abrir».",
+        "Verifica productos, cantidades, presentaciones, total y estado del pedido.",
+        "Indica la mesa. El aviso confirma si se abrirá una cuenta nueva o se añadirá una ronda.",
+        "Pulsa «Tomar pedido» y comprueba la cuenta resultante antes de preparar el servicio."
+      ],
+      "tips": [
+        "No tomes nuevamente un pedido ya tomado. Si aparece caducado, pide al cliente que actualice su pedido.",
+        "El QR creado sin internet puede importarse con los precios vigentes; el teléfono del equipo sí debe tener conexión.",
+        "Una cancelación requiere motivo y queda registrada."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "equipo-cuentas",
+      "title": "Mantener la cuenta de una mesa",
+      "subtitle": "Equipo → Mis cuentas abiertas",
+      "paragraphs": [
+        "La cuenta agrupa rondas y muestra subtotales, responsable y bitácora. Las modificaciones están limitadas por permisos, estado de la cuenta y corte."
+      ],
+      "steps": [
+        "Abre la mesa y revisa cada ronda con el cliente.",
+        "Ajusta cantidades con − y ＋. Llevar una línea a cero pide confirmación y deja el producto como «No hay».",
+        "Usa «Agregar ronda» para escanear otro pedido destinado a esa mesa.",
+        "Si cambia el responsable, pulsa «Transferir», selecciona a la persona y confirma.",
+        "Si no habrá consumo, usa «Cancelar cuenta» e indica el motivo. Para finalizar el consumo, elige «Cerrar cuenta»."
+      ],
+      "tips": [
+        "Las cantidades se guardan al modificarlas; no hay un botón general para deshacer toda la cuenta.",
+        "Una cuenta en $0 se cancela en lugar de cobrarse. Revisa las cantidades antes del cobro o corte."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "equipo-cobros",
+      "title": "Registrar el cobro correctamente",
+      "subtitle": "Equipo → Cuenta → Cerrar cuenta",
+      "paragraphs": [
+        "La pantalla registra pagos en efectivo, tarjeta de crédito o débito, y permite combinar métodos. Registrar una tarjeta aquí no ejecuta un cargo bancario: el cobro real se realiza por el medio habitual del negocio."
+      ],
+      "steps": [
+        "Comprueba el importe de la cuenta y captura la propina acordada: Sin, 10%, 15%, 20% u otra cantidad.",
+        "Usa un botón rápido para cubrir todo o «＋ Agregar pago» para dividirlo por métodos.",
+        "En efectivo, «¿Con cuánto paga?» ayuda a calcular el cambio; el monto del pago debe cubrir únicamente la parte asignada.",
+        "Confirma que aparezca «Todo cubierto» y que los pagos coincidan con cuenta más propina.",
+        "Después de comprobar la recepción real del dinero, pulsa «Cobrar». Verifica la cuenta cerrada en Historial."
+      ],
+      "tips": [
+        "Si resta dinero o los pagos suman de más, el botón no permite finalizar.",
+        "El registro de cobro no sustituye la terminal bancaria ni la facturación fiscal."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "equipo-corte",
+      "title": "Revisar historial y cerrar el turno",
+      "subtitle": "Equipo → Historial / Mi corte / Cierre del día",
+      "paragraphs": [
+        "El día operativo va de 05:00 a 05:00, hora de Ciudad de México. Historial filtra fechas, estado, pago y mesa; permite descargar CSV. El Administrador también filtra por mesero."
+      ],
+      "steps": [
+        "Contrasta las cuentas cerradas con comprobantes y efectivo.",
+        "En «Mi corte», resuelve las cuentas abiertas: ciérralas, cancélalas o transfiérelas según lo ocurrido.",
+        "Revisa el resumen y confirma «Hacer mi corte». Esas cuentas quedarán bloqueadas.",
+        "El Administrador revisa cortes y pendientes en «Cierre del día» antes de «Cerrar día».",
+        "Forzar un cierre o reabrir un día requiere Administrador y motivo; úsalo solo para una excepción operativa real."
+      ],
+      "tips": [
+        "«Compartir» permite entregar el resumen del corte. Revisa el destinatario.",
+        "Los errores posteriores al corte se atienden con el Administrador; el mesero no puede modificar un corte confirmado."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "rutina",
+      "title": "Una rutina que mantiene todo al día",
+      "subtitle": "Apertura, servicio y cierre",
+      "paragraphs": [
+        "Asigna responsables de contenido, servicio y cierre. El CMS controla lo que ve el cliente; Equipo y Administración registran lo que sucede en la operación."
+      ],
+      "steps": [
+        "Antes de abrir: revisa precios, productos agotados, horarios, eventos y acceso al menú desde un celular.",
+        "Publica los cambios aprobados y comprueba el resultado en cisnenegro.mx.",
+        "Durante el servicio: toma cada pedido, revisa las mesas, registra cobros reales y atiende el Pasaporte.",
+        "Al cerrar: concilia movimientos, completa cortes y revisa comentarios NPS pendientes.",
+        "Cada semana: ordena MediaHub, retira eventos vencidos y revisa los usuarios activos."
+      ],
+      "tips": [
+        "Respaldo diario a las 03:55 de Ciudad de México, con retención de 14 copias. El del 17 de octubre terminó correctamente y registró una restauración de verificación.",
+        "La copia externa inicial también está verificada. La documentación no contempla una réplica externa periódica. Una recuperación completa requiere soporte técnico."
+      ],
+      "extra_screenshots": []
+    },
+    {
+      "id": "ayuda",
+      "title": "Resolver los problemas más comunes",
+      "subtitle": "Qué revisar antes de pedir ayuda",
+      "paragraphs": [
+        "Reporta URL, hora, dispositivo, pasos y mensaje de error. En las capturas, oculta contraseñas, PIN, datos de socios y pagos."
+      ],
+      "steps": [
+        "Cambio no visible: confirma que editaste el CMS de cisnenegro.mx, publicaste y actualizaste la página pública.",
+        "Conflicto: conserva tus cambios y coordínate con el otro editor antes de recargar el borrador del servidor.",
+        "Archivo no seleccionable: revisa formato, tamaño y estado. Espera el procesamiento o recupera el archivo archivado.",
+        "Cámara bloqueada: habilita su permiso o escribe el código del pedido.",
+        "Acceso rechazado: distingue contraseña CMS, PIN Equipo de 6 dígitos y PIN Pasaporte de 4. Pide al responsable revisar tu cuenta."
+      ],
+      "tips": [
+        "Content Hub y publicación automática en redes no están incluidos en el CMS vigente.",
+        "Si ves el sitio anterior, revisa dirección y caché con soporte. No cambies otra vez los DNS por ese síntoma."
+      ],
+      "screenshot": "cms-login.png",
+      "extra_screenshots": []
+    }
+  ],
+  "introduction": "Guía de la instalación vigente en cisnenegro.mx. Las capturas reales usan cisne.softvibes.art, dominio temporal de la misma aplicación y datos, porque el navegador conservaba caché del sitio anterior. Algunas pantallas contienen datos importados de demostración; sus cifras no representan resultados reales verificados del negocio.",
+  "roles": [
+    {
+      "role": "Visitante / socio",
+      "access": "Menú y Pasaporte",
+      "authentication": "Público; socio: teléfono y PIN de 4 dígitos",
+      "scope": "Explorar, preparar pedido, registrar visita con código, consultar cortesías y responder NPS."
+    },
+    {
+      "role": "Editor CMS",
+      "access": "CMS y MediaHub",
+      "authentication": "Usuario y contraseña",
+      "scope": "Editar, guardar borradores y trabajar con archivos; no publicar ni operar datos privados del Pasaporte."
+    },
+    {
+      "role": "Propietario CMS",
+      "access": "CMS, Usuarios y Administración",
+      "authentication": "Usuario y contraseña CMS",
+      "scope": "Publicar, restaurar borrador, administrar cuentas editoriales y operar el Pasaporte."
+    },
+    {
+      "role": "Mesero",
+      "access": "Equipo",
+      "authentication": "Usuario y PIN de 6 dígitos",
+      "scope": "Tomar pedidos, atender sus cuentas, registrar cobros, consultar su historial y hacer su corte."
+    },
+    {
+      "role": "Administrador de Equipo",
+      "access": "Equipo y Cierre del día",
+      "authentication": "Usuario y PIN de 6 dígitos",
+      "scope": "Operación del equipo, cuentas, reportes, cierres y gestión de usuarios operativos."
+    }
+  ],
+  "urls": [
+    {
+      "label": "Página principal",
+      "url": "https://cisnenegro.mx/",
+      "group": "Producción",
+      "access": "Público",
+      "description": "Sitio definitivo; versión v2 en raíz.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Menú",
+      "url": "https://cisnenegro.mx/menu/",
+      "group": "Producción",
+      "access": "Público",
+      "description": "Carta y preparación de pedidos.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/menu/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Pasaporte",
+      "url": "https://cisnenegro.mx/menu/#pasaporte",
+      "group": "Producción",
+      "access": "Cliente: teléfono + PIN de 4 dígitos",
+      "description": "Modal dentro del menú; registro y fidelización.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/menu/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Ranking público",
+      "url": "https://cisnenegro.mx/menu/#ranking",
+      "group": "Producción",
+      "access": "Público",
+      "description": "Clasificación pública del Pasaporte.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/menu/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Wi-Fi del menú",
+      "url": "https://cisnenegro.mx/menu/#wifi",
+      "group": "Producción",
+      "access": "Depende de la visibilidad configurada",
+      "description": "Datos o acceso a la red de invitados.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/menu/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Aviso de privacidad",
+      "url": "https://cisnenegro.mx/privacidad/",
+      "group": "Producción",
+      "access": "Público",
+      "description": "Texto de privacidad; su aprobación por el negocio continúa documentada como pendiente.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/privacidad/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Administración del Pasaporte",
+      "url": "https://cisnenegro.mx/admin/",
+      "group": "Producción",
+      "access": "Propietario CMS",
+      "description": "Sin sesión redirige al acceso del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Equipo",
+      "url": "https://cisnenegro.mx/equipo/",
+      "group": "Producción",
+      "access": "Equipo: usuario + PIN de 6 dígitos",
+      "description": "Pedidos, cuentas, cobros e historial.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Acceso al CMS",
+      "url": "https://cisnenegro.mx/cms/",
+      "group": "CMS",
+      "access": "Usuario y contraseña CMS",
+      "description": "Pantalla de acceso; al entrar abre el espacio de trabajo. El acceso a Administración requiere Propietario.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Inicio CMS",
+      "url": "https://cisnenegro.mx/cms/#inicio",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Editor visual",
+      "url": "https://cisnenegro.mx/cms/#editor",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Menú y cervezas",
+      "url": "https://cisnenegro.mx/cms/#menu",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "MediaHub",
+      "url": "https://cisnenegro.mx/cms/#media",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Eventos y galería",
+      "url": "https://cisnenegro.mx/cms/#eventos",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Datos del negocio",
+      "url": "https://cisnenegro.mx/cms/#negocio",
+      "group": "CMS",
+      "access": "Propietario / Editor",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Publicaciones",
+      "url": "https://cisnenegro.mx/cms/#publicaciones",
+      "group": "CMS",
+      "access": "Consulta: ambos; publicar/restaurar: Propietario",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Usuarios CMS",
+      "url": "https://cisnenegro.mx/cms/#usuarios",
+      "group": "CMS",
+      "access": "Propietario",
+      "description": "Módulo del CMS; misma sesión individual de usuario y contraseña.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Hoy y código del día",
+      "url": "https://cisnenegro.mx/admin/#hoy",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Estadísticas del Pasaporte",
+      "url": "https://cisnenegro.mx/admin/#estadisticas",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "NPS y seguimiento",
+      "url": "https://cisnenegro.mx/admin/#nps",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Miembros",
+      "url": "https://cisnenegro.mx/admin/#miembros",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Ranking interno",
+      "url": "https://cisnenegro.mx/admin/#ranking",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Wi-Fi y ajustes",
+      "url": "https://cisnenegro.mx/admin/#ajustes",
+      "group": "Administración",
+      "access": "Propietario CMS",
+      "description": "Sección del panel de administración; contiene información interna.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Inicio del turno",
+      "url": "https://cisnenegro.mx/equipo/#inicio",
+      "group": "Equipo",
+      "access": "Mesero / Administrador",
+      "description": "Pantalla operativa; usuario y PIN independientes del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Historial de cuentas",
+      "url": "https://cisnenegro.mx/equipo/#historial",
+      "group": "Equipo",
+      "access": "Mesero: propias; Administrador: equipo",
+      "description": "Pantalla operativa; usuario y PIN independientes del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Mi corte",
+      "url": "https://cisnenegro.mx/equipo/#corte",
+      "group": "Equipo",
+      "access": "Mesero / Administrador",
+      "description": "Pantalla operativa; usuario y PIN independientes del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Cierre del día",
+      "url": "https://cisnenegro.mx/equipo/#cierre",
+      "group": "Equipo",
+      "access": "Administrador de Equipo",
+      "description": "Pantalla operativa; usuario y PIN independientes del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Usuarios operativos",
+      "url": "https://cisnenegro.mx/equipo/#equipo",
+      "group": "Equipo",
+      "access": "Administrador de Equipo",
+      "description": "Pantalla operativa; usuario y PIN independientes del CMS.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/equipo/",
+      "verification": "HTTPS desde VPS; fragmento contrastado con código"
+    },
+    {
+      "label": "Alias www",
+      "url": "https://www.cisnenegro.mx/",
+      "group": "Dominio",
+      "access": "Público",
+      "description": "Redirige al dominio principal sin www.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Portada temporal",
+      "url": "https://cisne.softvibes.art/",
+      "group": "Temporal",
+      "access": "Mismos permisos que producción",
+      "description": "Misma instalación y datos; no es un respaldo. Preferir el dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Menú temporal",
+      "url": "https://cisne.softvibes.art/menu/",
+      "group": "Temporal",
+      "access": "Mismos permisos que producción",
+      "description": "Misma instalación y datos; no es un respaldo. Preferir el dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/menu/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "CMS temporal",
+      "url": "https://cisne.softvibes.art/cms/",
+      "group": "Temporal",
+      "access": "Mismos permisos que producción",
+      "description": "Misma instalación y datos; no es un respaldo. Preferir el dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/cms/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Administración temporal",
+      "url": "https://cisne.softvibes.art/admin/",
+      "group": "Temporal",
+      "access": "Mismos permisos que producción",
+      "description": "Misma instalación y datos; no es un respaldo. Preferir el dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Equipo temporal",
+      "url": "https://cisne.softvibes.art/equipo/",
+      "group": "Temporal",
+      "access": "Mismos permisos que producción",
+      "description": "Misma instalación y datos; no es un respaldo. Preferir el dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisne.softvibes.art/equipo/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Sitio anterior",
+      "url": "https://cisnenegro.softvibes.art/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Instalación anterior con datos separados.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Menú anterior",
+      "url": "https://cisnenegro.softvibes.art/menu/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Menú anterior; no usar para la operación vigente.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/menu/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "CMS anterior",
+      "url": "https://cisnenegro.softvibes.art/cms/",
+      "group": "Legado / referencia",
+      "access": "Usuario CMS legado",
+      "description": "Edita otra base; no sincroniza con cisnenegro.mx.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/cms/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Administración anterior",
+      "url": "https://cisnenegro.softvibes.art/admin/",
+      "group": "Legado / referencia",
+      "access": "Propietario legado",
+      "description": "Base de Pasaporte anterior.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/cms/?next=/admin/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Análisis digital",
+      "url": "https://cisnenegro.softvibes.art/analisis/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Informe de referencia.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/analisis/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Propuesta económica",
+      "url": "https://cisnenegro.softvibes.art/propuesta/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Propuesta comercial de referencia.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/propuesta/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Consultoría Beervibes",
+      "url": "https://cisnenegro.softvibes.art/propuesta/beervibes/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Plan de consultoría de referencia.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/propuesta/beervibes/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Estrategia de contenido",
+      "url": "https://cisnenegro.softvibes.art/estrategia/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Tablero de lectura; no es el editor de Content Hub.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/estrategia/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Hub del proyecto",
+      "url": "https://cisnenegro.softvibes.art/proyecto/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Documentación y artefactos de referencia.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/proyecto/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Versión v2 anterior",
+      "url": "https://cisnenegro.softvibes.art/v2/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Origen anterior; producción actual ya está en la raíz del dominio definitivo.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/v2/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Menú v2 anterior",
+      "url": "https://cisnenegro.softvibes.art/v2/menu/",
+      "group": "Legado / referencia",
+      "access": "Público",
+      "description": "Base v2 anterior e independiente.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/v2/menu/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Administración v2 anterior",
+      "url": "https://cisnenegro.softvibes.art/v2/admin/",
+      "group": "Legado / referencia",
+      "access": "Autenticación del servicio legado",
+      "description": "Devuelve 401 sin credenciales; no es un enlace de trabajo recomendado.",
+      "status": 401,
+      "final_url": "https://cisnenegro.softvibes.art/v2/admin/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Equipo v2 anterior",
+      "url": "https://cisnenegro.softvibes.art/v2/equipo/",
+      "group": "Legado / referencia",
+      "access": "Usuario y PIN v2 legado",
+      "description": "Base operativa anterior e independiente.",
+      "status": 200,
+      "final_url": "https://cisnenegro.softvibes.art/v2/equipo/",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Robots",
+      "url": "https://cisnenegro.mx/robots.txt",
+      "group": "Técnico",
+      "access": "Público",
+      "description": "Diagnóstico o descubrimiento; no es un panel de usuario.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/robots.txt",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Sitemap",
+      "url": "https://cisnenegro.mx/sitemap.xml",
+      "group": "Técnico",
+      "access": "Público",
+      "description": "Diagnóstico o descubrimiento; no es un panel de usuario.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/sitemap.xml",
+      "verification": "HTTPS desde VPS"
+    },
+    {
+      "label": "Estado del servicio",
+      "url": "https://cisnenegro.mx/healthz",
+      "group": "Técnico",
+      "access": "Público",
+      "description": "Diagnóstico o descubrimiento; no es un panel de usuario.",
+      "status": 200,
+      "final_url": "https://cisnenegro.mx/healthz",
+      "verification": "HTTPS desde VPS"
+    }
+  ],
+  "screenshots_note": {
+    "origin": "https://cisne.softvibes.art/",
+    "type": "Capturas reales del alias temporal de la misma instalación",
+    "reason": "El navegador local conservaba caché DNS del sitio anterior en el dominio final al preparar el manual. Las instrucciones y enlaces usan cisnenegro.mx.",
+    "demo_data": "Las capturas pueden mostrar cuentas y operaciones importadas de demostración; no representan resultados verificados del negocio."
+  },
+  "providers": [
+    {
+      "name": "Hostinger · hPanel",
+      "url": "https://hpanel.hostinger.com/",
+      "purpose": "Cuenta de hosting y administración del VPS. El acceso al proveedor es independiente del CMS.",
+      "authentication": "Cuenta Hostinger; verificación adicional si está activada.",
+      "verification": "Página oficial accesible; requiere JavaScript e inicio de sesión para operar."
+    },
+    {
+      "name": "Squarespace · DNS de cisnenegro.mx",
+      "url": "https://account.squarespace.com/domains/managed/cisnenegro.mx/dns/dns-settings",
+      "purpose": "Panel utilizado para cambiar los registros DNS del dominio.",
+      "authentication": "Cuenta Squarespace con permisos sobre el dominio; segundo factor cuando corresponda.",
+      "verification": "Enlace del panel proporcionado por el usuario y utilizado en la migración. El contenido privado requiere sesión; no se volvió a iniciar sesión para elaborar este informe."
+    }
+  ],
+  "technical_summary": {
+    "title": "Estado técnico comprobado",
+    "verified_at": "2026-10-18T01:35:52.109988+00:00",
+    "items": [
+      {
+        "label": "Dominio principal",
+        "value": "https://cisnenegro.mx/",
+        "detail": "Sitio v2 en la raíz, con menú, CMS, Administración, Equipo y privacidad."
+      },
+      {
+        "label": "Servidor",
+        "value": "31.220.63.211",
+        "detail": "Aplicación y datos separados dentro del mismo VPS; no es un servidor físico exclusivo."
+      },
+      {
+        "label": "Servicio",
+        "value": "Activo y saludable",
+        "detail": "Contenedor cisne-independent-app-1 con reinicio unless-stopped; Nginx publica la aplicación del puerto interno 8888."
+      },
+      {
+        "label": "DNS web",
+        "value": "A @ y A www → 31.220.63.211 · TTL 300",
+        "detail": "Los cuatro servidores autoritativos confirman ambos registros; el resolutor 1.1.1.1 coincide y no devuelve AAAA web."
+      },
+      {
+        "label": "Redirecciones",
+        "value": "HTTP y www → https://cisnenegro.mx",
+        "detail": "Conservan ruta y parámetros; comprobado con /menu/?mesa=1."
+      },
+      {
+        "label": "HTTPS",
+        "value": "Certificado Let’s Encrypt válido",
+        "detail": "Cubre cisnenegro.mx y www.cisnenegro.mx; vence el 16 de enero de 2027 a las 00:27 UTC. Temporizador Certbot activo."
+      },
+      {
+        "label": "Dominio temporal",
+        "value": "https://cisne.softvibes.art/",
+        "detail": "Mismo servicio y datos que el dominio definitivo. No es una copia de seguridad; las sesiones son independientes por dominio."
+      },
+      {
+        "label": "Instalación anterior",
+        "value": "https://cisnenegro.softvibes.art/",
+        "detail": "Conserva servicios y bases separados. No sincroniza cambios con producción; usar únicamente como referencia."
+      },
+      {
+        "label": "Respaldos",
+        "value": "Diarios · 03:55 CDMX · retención 14",
+        "detail": "Última ejecución comprobada: 17 de octubre, exit0 y restauración de verificación registrada. Hay ocho archivos; el más reciente valida 1,442 archivos y 477 medios."
+      },
+      {
+        "label": "Copia fuera del VPS",
+        "value": "Copia inicial del 10 de octubre verificada",
+        "detail": "El archivo local conserva el tamaño y SHA-256 esperados. No se documenta una réplica externa periódica."
+      },
+      {
+        "label": "Correo y transferencia",
+        "value": "Registros de correo conservados según bitácora",
+        "detail": "Este informe no cambia DNS ni correo. La conclusión administrativa de la transferencia del registrador no se verificó en la cuenta del proveedor."
+      }
+    ],
+    "dns_records": [
+      {
+        "type": "A",
+        "name": "@",
+        "value": "31.220.63.211",
+        "ttl": 300
+      },
+      {
+        "type": "A",
+        "name": "www",
+        "value": "31.220.63.211",
+        "ttl": 300
+      }
+    ],
+    "nameservers": [
+      "ns-cloud-b1.googledomains.com",
+      "ns-cloud-b2.googledomains.com",
+      "ns-cloud-b3.googledomains.com",
+      "ns-cloud-b4.googledomains.com"
+    ],
+    "backup": {
+      "timer_active": true,
+      "schedule": "03:55 America/Mexico_City",
+      "retention": 14,
+      "files_available": 8,
+      "last_run_utc": "2026-10-17T09:55:01Z",
+      "last_completed_utc": "2026-10-17T09:55:34Z",
+      "last_result": "success",
+      "exit_code": 0,
+      "restore_verified": true,
+      "files_verified": 1442,
+      "ready_media": 477,
+      "latest_archive": "cisne-20261017T095502575820Z.tar.gz",
+      "latest_bytes": 451684334,
+      "external_initial_verified": true
+    },
+    "validation_scope": "Consultas HTTPS, DNS, certificado TLS, estado de servicios y registros de respaldo de solo lectura. No se guardaron contenidos, cobraron cuentas ni ejecutaron restauraciones reales para preparar el informe."
+  }
+}

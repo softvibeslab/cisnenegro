@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-21",
+  "published_revision": 8,
+  "media": [
+    {
+      "source": "/cms/media/3b93840e613643f69379db0cba55a230/file",
+      "local": "/assets/img/publicado/3b93840e613643f69379db0cba55a230.webp",
+      "bytes": 573246,
+      "sha256": "7ff3e58b64fa0a5b177c7725f10f2c6fe7518e6a22c339cd19903f0db2b988de"
+    },
+    {
+      "source": "/cms/media/5ba627a63a7e482899f8880d696bf6f5/file",
+      "local": "/assets/img/publicado/5ba627a63a7e482899f8880d696bf6f5.webp",
+      "bytes": 78654,
+      "sha256": "7d1af233b71d5e0bf682caacaba30cc53de8187ae145aac41bdbb3a779021800"
+    }
+  ]
+}

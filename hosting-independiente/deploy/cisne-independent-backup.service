@@ -1,0 +1,16 @@
+[Unit]
+Description=Respaldo y restauración de verificación de Cisne independiente
+After=docker.service
+Requires=docker.service
+ConditionPathExists=/srv/cisne/data/club.db
+
+[Service]
+Type=oneshot
+User=root
+UMask=0077
+ExecStart=/usr/bin/python3 /srv/cisne/app/deploy/backup.py
+TimeoutStartSec=900
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+

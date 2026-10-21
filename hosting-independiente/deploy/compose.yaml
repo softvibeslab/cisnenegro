@@ -1,0 +1,66 @@
+name: cisne-independent
+
+services:
+  app:
+    build:
+      context: ..
+    image: cisne-independent:local
+    user: "10001:10001"
+    env_file:
+      - /etc/cisne/app.env
+    environment:
+      APP_DATA_DIR: /var/data
+      APP_BIND: 0.0.0.0
+      PORT: "8080"
+    volumes:
+      - type: bind
+        source: /srv/cisne/data
+        target: /var/data
+        bind:
+          create_host_path: false
+    # El único puerto directo de la aplicación está limitado al propio servidor.
+    ports:
+      - "127.0.0.1:8888:8080"
+    expose:
+      - "8080"
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 40s
+    deploy:
+      replicas: 1
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  caddy:
+    image: caddy:2-alpine@sha256:d8542f48d34a9cf4e4c11a478865229840e87e4c96ea3f439101f31a5d35f75f
+    profiles: [standalone]
+    depends_on:
+      app:
+        condition: service_healthy
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - type: bind
+        source: ./Caddyfile
+        target: /etc/caddy/Caddyfile
+        read_only: true
+        bind:
+          create_host_path: false
+      - /srv/cisne/caddy-data:/data
+      - /srv/cisne/caddy-config:/config
+    restart: unless-stopped
+    stop_grace_period: 30s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

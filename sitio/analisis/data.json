@@ -1,0 +1,1554 @@
+{
+ "generado": "2026-10-06",
+ "fuente_scraping": "20261006",
+ "kpis": {
+  "ig_seguidores": 3513,
+  "ig_posts": 245,
+  "ig_analizados": 200,
+  "google_rating": 4.5,
+  "google_resenas": 69,
+  "google_respondidas": 0,
+  "tiktok_viral_vistas": 50900,
+  "posts_por_semana": 1.2,
+  "score_global": 37,
+  "ig_tasa_interaccion": 0.83
+ },
+ "rubrica": {
+  "Presencia": "Existe, está reclamado y completo (20) · existe con huecos (10) · no existe o no se puede ver (0)",
+  "Exactitud": "Nombre, teléfono y horario correctos (20) · correctos pero incompletos (10) · erróneos o no verificables (0)",
+  "Actividad": "Actualizado en los últimos 30 días y con ritmo ≥ 2 por semana (20) · actualizado en 90 días (10) · sin actividad (0)",
+  "Tracción": "Audiencia o prueba social sobre el umbral del canal (20) · intermedia (10) · baja o nula (0)",
+  "Conversión": "Lleva a visitar, llamar o escribir y responde (20) · parcial (10) · sin ruta (0)"
+ },
+ "canales": [
+  {
+   "canal": "Sitio web",
+   "detalle": "cisnenegro.mx",
+   "puntos": [
+    {
+     "dimension": "Presencia",
+     "pts": 20,
+     "motivo": "Dominio propio activo con Inicio, Menú y Contacto"
+    },
+    {
+     "dimension": "Exactitud",
+     "pts": 20,
+     "motivo": "Dirección, teléfono (771) 244-2025 y horario correctos"
+    },
+    {
+     "dimension": "Actividad",
+     "pts": 10,
+     "motivo": "Menú vigente, pero foto de stock y sin eventos ni novedades"
+    },
+    {
+     "dimension": "Tracción",
+     "pts": 0,
+     "motivo": "SEO básico ausente: título 'Cisne Negro' sin ciudad ni giro y meta description vacía"
+    },
+    {
+     "dimension": "Conversión",
+     "pts": 10,
+     "motivo": "Muestra teléfono y correo, pero no enlaza IG, FB ni WhatsApp y tiene un carrito vacío"
+    }
+   ],
+   "score": 60
+  },
+  {
+   "canal": "Instagram",
+   "detalle": "@cisnenegro.mx",
+   "puntos": [
+    {
+     "dimension": "Presencia",
+     "pts": 20,
+     "motivo": "Cuenta de empresa con bio, highlights (Menú, Horario) y enlace"
+    },
+    {
+     "dimension": "Exactitud",
+     "pts": 10,
+     "motivo": "Nombre correcto; la bio no dice dirección, horario ni 'lunes cerrado'"
+    },
+    {
+     "dimension": "Actividad",
+     "pts": 10,
+     "motivo": "15 posts en 90 días (1.2 por semana)"
+    },
+    {
+     "dimension": "Tracción",
+     "pts": 0,
+     "motivo": "3,513 seguidores; interacción mediana de 0.83% por post (últimos 12 meses)"
+    },
+    {
+     "dimension": "Conversión",
+     "pts": 20,
+     "motivo": "La bio enlaza al sitio y a WhatsApp Business"
+    }
+   ],
+   "score": 60
+  },
+  {
+   "canal": "TikTok",
+   "detalle": "@cisnenegro.mx",
+   "puntos": [
+    {
+     "dimension": "Presencia",
+     "pts": 10,
+     "motivo": "Perfil con bio, sin enlace en la bio"
+    },
+    {
+     "dimension": "Exactitud",
+     "pts": 10,
+     "motivo": "Nombre correcto; sin dirección ni horario"
+    },
+    {
+     "dimension": "Actividad",
+     "pts": 0,
+     "motivo": "Último video: 2024-08-22 (774 días sin publicar)"
+    },
+    {
+     "dimension": "Tracción",
+     "pts": 10,
+     "motivo": "189 seguidores, pero un video llegó a 50,900 vistas"
+    },
+    {
+     "dimension": "Conversión",
+     "pts": 0,
+     "motivo": "Sin enlace ni llamada a la acción vigente"
+    }
+   ],
+   "score": 30
+  },
+  {
+   "canal": "Facebook",
+   "detalle": "/cerveceriacisnenegro.mx",
+   "puntos": [
+    {
+     "dimension": "Presencia",
+     "pts": 10,
+     "motivo": "La página existe, pero no se puede ver sin iniciar sesión"
+    },
+    {
+     "dimension": "Exactitud",
+     "pts": 0,
+     "motivo": "No verificable sin sesión"
+    },
+    {
+     "dimension": "Actividad",
+     "pts": 0,
+     "motivo": "No verificable sin sesión"
+    },
+    {
+     "dimension": "Tracción",
+     "pts": 0,
+     "motivo": "Sin calificación pública ('Not yet rated', 2 reseñas)"
+    },
+    {
+     "dimension": "Conversión",
+     "pts": 0,
+     "motivo": "Un visitante sin cuenta no ve datos de contacto"
+    }
+   ],
+   "score": 10
+  },
+  {
+   "canal": "Google",
+   "detalle": "Perfil de Empresa",
+   "puntos": [
+    {
+     "dimension": "Presencia",
+     "pts": 10,
+     "motivo": "Ficha reclamada con 74 fotos, pero sin menú, reservas ni publicaciones"
+    },
+    {
+     "dimension": "Exactitud",
+     "pts": 10,
+     "motivo": "Teléfono y horario correctos; categoría solo 'Restaurante' y nombre 'Cisne Negro'"
+    },
+    {
+     "dimension": "Actividad",
+     "pts": 10,
+     "motivo": "Recibe reseñas cada mes, pero el dueño no publica nada"
+    },
+    {
+     "dimension": "Tracción",
+     "pts": 10,
+     "motivo": "4.5 ★ es alto, pero 69 reseñas es poco volumen (umbral: 100)"
+    },
+    {
+     "dimension": "Conversión",
+     "pts": 10,
+     "motivo": "Enlaza web y teléfono, pero 0 de 69 reseñas tienen respuesta"
+    }
+   ],
+   "score": 50
+  },
+  {
+   "canal": "Tripadvisor / Untappd",
+   "detalle": "fichas de terceros",
+   "puntos": [
+    {
+     "dimension": "Presencia",
+     "pts": 10,
+     "motivo": "Hay ficha en Tripadvisor; en Untappd no existe perfil"
+    },
+    {
+     "dimension": "Exactitud",
+     "pts": 0,
+     "motivo": "Tripadvisor la marca como 'temporalmente cerrado'"
+    },
+    {
+     "dimension": "Actividad",
+     "pts": 0,
+     "motivo": "0 reseñas en Tripadvisor y 0 check-ins en Untappd"
+    },
+    {
+     "dimension": "Tracción",
+     "pts": 0,
+     "motivo": "Sin prueba social en los canales del turista y del público cervecero"
+    },
+    {
+     "dimension": "Conversión",
+     "pts": 0,
+     "motivo": "Un turista que la encuentra la descarta por 'cerrado'"
+    }
+   ],
+   "score": 10
+  }
+ ],
+ "instagram": {
+  "formato": [
+   {
+    "formato": "carrusel",
+    "n": 26,
+    "mediana": 70.0,
+    "promedio": 75.0
+   },
+   {
+    "formato": "reel",
+    "n": 44,
+    "mediana": 27.0,
+    "promedio": 35.7,
+    "mediana_vistas": 279.0
+   },
+   {
+    "formato": "foto",
+    "n": 130,
+    "mediana": 20.5,
+    "promedio": 37.3
+   }
+  ],
+  "frecuencia": [
+   {
+    "mes": "2023-11",
+    "posts": 9,
+    "mediana_inter": 11
+   },
+   {
+    "mes": "2023-12",
+    "posts": 12,
+    "mediana_inter": 20.5
+   },
+   {
+    "mes": "2024-01",
+    "posts": 12,
+    "mediana_inter": 16.5
+   },
+   {
+    "mes": "2024-02",
+    "posts": 11,
+    "mediana_inter": 20
+   },
+   {
+    "mes": "2024-03",
+    "posts": 11,
+    "mediana_inter": 16
+   },
+   {
+    "mes": "2024-04",
+    "posts": 10,
+    "mediana_inter": 10.0
+   },
+   {
+    "mes": "2024-05",
+    "posts": 6,
+    "mediana_inter": 19.0
+   },
+   {
+    "mes": "2024-06",
+    "posts": 9,
+    "mediana_inter": 15
+   },
+   {
+    "mes": "2024-07",
+    "posts": 2,
+    "mediana_inter": 13.0
+   },
+   {
+    "mes": "2024-08",
+    "posts": 0,
+    "mediana_inter": null
+   },
+   {
+    "mes": "2024-09",
+    "posts": 3,
+    "mediana_inter": 58
+   },
+   {
+    "mes": "2024-10",
+    "posts": 9,
+    "mediana_inter": 85
+   },
+   {
+    "mes": "2024-11",
+    "posts": 5,
+    "mediana_inter": 53
+   },
+   {
+    "mes": "2024-12",
+    "posts": 5,
+    "mediana_inter": 24
+   },
+   {
+    "mes": "2025-01",
+    "posts": 4,
+    "mediana_inter": 41.5
+   },
+   {
+    "mes": "2025-02",
+    "posts": 4,
+    "mediana_inter": 62.5
+   },
+   {
+    "mes": "2025-03",
+    "posts": 3,
+    "mediana_inter": 104
+   },
+   {
+    "mes": "2025-04",
+    "posts": 5,
+    "mediana_inter": 49
+   },
+   {
+    "mes": "2025-05",
+    "posts": 3,
+    "mediana_inter": 31
+   },
+   {
+    "mes": "2025-06",
+    "posts": 4,
+    "mediana_inter": 48.5
+   },
+   {
+    "mes": "2025-07",
+    "posts": 2,
+    "mediana_inter": 25.0
+   },
+   {
+    "mes": "2025-08",
+    "posts": 3,
+    "mediana_inter": 17
+   },
+   {
+    "mes": "2025-09",
+    "posts": 4,
+    "mediana_inter": 78.5
+   },
+   {
+    "mes": "2025-10",
+    "posts": 4,
+    "mediana_inter": 34.0
+   },
+   {
+    "mes": "2025-11",
+    "posts": 8,
+    "mediana_inter": 47.5
+   },
+   {
+    "mes": "2025-12",
+    "posts": 5,
+    "mediana_inter": 57
+   },
+   {
+    "mes": "2026-01",
+    "posts": 6,
+    "mediana_inter": 23.0
+   },
+   {
+    "mes": "2026-02",
+    "posts": 4,
+    "mediana_inter": 31.5
+   },
+   {
+    "mes": "2026-03",
+    "posts": 6,
+    "mediana_inter": 22.0
+   },
+   {
+    "mes": "2026-04",
+    "posts": 6,
+    "mediana_inter": 18.5
+   },
+   {
+    "mes": "2026-05",
+    "posts": 6,
+    "mediana_inter": 29.0
+   },
+   {
+    "mes": "2026-06",
+    "posts": 4,
+    "mediana_inter": 31.5
+   },
+   {
+    "mes": "2026-07",
+    "posts": 4,
+    "mediana_inter": 22.0
+   },
+   {
+    "mes": "2026-08",
+    "posts": 5,
+    "mediana_inter": 41
+   },
+   {
+    "mes": "2026-09",
+    "posts": 6,
+    "mediana_inter": 70.0
+   }
+  ],
+  "meses_cero": [
+   "2024-08"
+  ],
+  "frec_actual": {
+   "posts_ult_90_dias": 15,
+   "posts_por_semana_ult_90": 1.2,
+   "prom_mensual_2024_s1": 9.8,
+   "prom_mensual_2025": 4.1,
+   "prom_mensual_2026": 5.2,
+   "ultimo_post": "2026-09-29"
+  },
+  "heatmap": [
+   {
+    "dia": "Lun",
+    "franja": "Mañana",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Lun",
+    "franja": "Mediodía",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Lun",
+    "franja": "Tarde",
+    "n": 5,
+    "indice": 2.6
+   },
+   {
+    "dia": "Lun",
+    "franja": "Noche",
+    "n": 4,
+    "indice": 1.46
+   },
+   {
+    "dia": "Lun",
+    "franja": "Madrugada",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Mar",
+    "franja": "Mañana",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Mar",
+    "franja": "Mediodía",
+    "n": 11,
+    "indice": 1.33
+   },
+   {
+    "dia": "Mar",
+    "franja": "Tarde",
+    "n": 13,
+    "indice": 0.81
+   },
+   {
+    "dia": "Mar",
+    "franja": "Noche",
+    "n": 1,
+    "indice": 2.11
+   },
+   {
+    "dia": "Mar",
+    "franja": "Madrugada",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Mié",
+    "franja": "Mañana",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Mié",
+    "franja": "Mediodía",
+    "n": 12,
+    "indice": 0.94
+   },
+   {
+    "dia": "Mié",
+    "franja": "Tarde",
+    "n": 14,
+    "indice": 1.12
+   },
+   {
+    "dia": "Mié",
+    "franja": "Noche",
+    "n": 3,
+    "indice": 1.19
+   },
+   {
+    "dia": "Mié",
+    "franja": "Madrugada",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Jue",
+    "franja": "Mañana",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Jue",
+    "franja": "Mediodía",
+    "n": 10,
+    "indice": 1.23
+   },
+   {
+    "dia": "Jue",
+    "franja": "Tarde",
+    "n": 14,
+    "indice": 1.25
+   },
+   {
+    "dia": "Jue",
+    "franja": "Noche",
+    "n": 1,
+    "indice": 1.07
+   },
+   {
+    "dia": "Jue",
+    "franja": "Madrugada",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Vie",
+    "franja": "Mañana",
+    "n": 2,
+    "indice": 1.15
+   },
+   {
+    "dia": "Vie",
+    "franja": "Mediodía",
+    "n": 12,
+    "indice": 0.9
+   },
+   {
+    "dia": "Vie",
+    "franja": "Tarde",
+    "n": 25,
+    "indice": 0.9
+   },
+   {
+    "dia": "Vie",
+    "franja": "Noche",
+    "n": 3,
+    "indice": 0.89
+   },
+   {
+    "dia": "Vie",
+    "franja": "Madrugada",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Sáb",
+    "franja": "Mañana",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Sáb",
+    "franja": "Mediodía",
+    "n": 26,
+    "indice": 0.65
+   },
+   {
+    "dia": "Sáb",
+    "franja": "Tarde",
+    "n": 17,
+    "indice": 1.15
+   },
+   {
+    "dia": "Sáb",
+    "franja": "Noche",
+    "n": 3,
+    "indice": 1.33
+   },
+   {
+    "dia": "Sáb",
+    "franja": "Madrugada",
+    "n": 0,
+    "indice": null
+   },
+   {
+    "dia": "Dom",
+    "franja": "Mañana",
+    "n": 5,
+    "indice": 0.75
+   },
+   {
+    "dia": "Dom",
+    "franja": "Mediodía",
+    "n": 13,
+    "indice": 0.9
+   },
+   {
+    "dia": "Dom",
+    "franja": "Tarde",
+    "n": 4,
+    "indice": 3.58
+   },
+   {
+    "dia": "Dom",
+    "franja": "Noche",
+    "n": 2,
+    "indice": 6.88
+   },
+   {
+    "dia": "Dom",
+    "franja": "Madrugada",
+    "n": 0,
+    "indice": null
+   }
+  ],
+  "dias": [
+   {
+    "dia": "Lun",
+    "n": 9,
+    "indice": 2.17
+   },
+   {
+    "dia": "Mar",
+    "n": 25,
+    "indice": 1.25
+   },
+   {
+    "dia": "Mié",
+    "n": 29,
+    "indice": 1.15
+   },
+   {
+    "dia": "Jue",
+    "n": 25,
+    "indice": 1.1
+   },
+   {
+    "dia": "Vie",
+    "n": 42,
+    "indice": 0.89
+   },
+   {
+    "dia": "Sáb",
+    "n": 46,
+    "indice": 0.79
+   },
+   {
+    "dia": "Dom",
+    "n": 24,
+    "indice": 0.88
+   }
+  ],
+  "franjas": [
+   {
+    "franja": "Mañana",
+    "n": 7,
+    "indice": 0.8
+   },
+   {
+    "franja": "Mediodía",
+    "n": 84,
+    "indice": 0.91
+   },
+   {
+    "franja": "Tarde",
+    "n": 92,
+    "indice": 1.07
+   },
+   {
+    "franja": "Noche",
+    "n": 17,
+    "indice": 1.19
+   },
+   {
+    "franja": "Madrugada",
+    "n": 0,
+    "indice": null
+   }
+  ],
+  "mejor": {
+   "dia": {
+    "dia": "Mar",
+    "n": 25,
+    "indice": 1.25
+   },
+   "franja": {
+    "franja": "Noche",
+    "n": 17,
+    "indice": 1.19
+   },
+   "celda": {
+    "dia": "Mar",
+    "franja": "Mediodía",
+    "n": 11,
+    "indice": 1.33
+   },
+   "min_n": 10,
+   "mediana_por_anio": {
+    "2023": 17,
+    "2024": 20,
+    "2025": 48,
+    "2026": 27
+   }
+  },
+  "top10": [
+   {
+    "id": "Db9oH3gufho",
+    "url": "https://www.instagram.com/p/Db9oH3gufho/",
+    "fecha": "2026-08-12",
+    "formato": "foto",
+    "likes": 773,
+    "comentarios": 29,
+    "inter": 802,
+    "texto": "OKTOBERFEST LA JABONERA 2026 🍻🇩🇪 ¡Pachuca, ya se armó el plan! Este 3 y 4 de octubre nos vemos en La Jabonera para echar chela de a montones",
+    "img": "img/Db9oH3gufho.jpg",
+    "tema": "Eventos y colaboraciones"
+   },
+   {
+    "id": "DCNluwyRYs4",
+    "url": "https://www.instagram.com/p/DCNluwyRYs4/",
+    "fecha": "2024-11-10",
+    "formato": "carrusel",
+    "likes": 200,
+    "comentarios": 1,
+    "inter": 201,
+    "texto": "Tarde de 𝗰𝗲𝗿𝘃𝗲𝘇𝗮𝘀 🍻, 𝗮𝗺𝗶𝗴𝗼𝘀 🙂 𝘆 𝘂𝗻𝗮 𝗯𝘂𝗲𝗻𝗮 𝗰𝗼𝗺𝗶𝗱𝗮 🍽️ a cargo de @elvalerioavila 🙌🏻 en el 𝗖𝗶𝘀𝗻𝗲 𝗡𝗲𝗴𝗿𝗼 🪶 #kitchentakeover #chef #beers #tap #ce",
+    "img": "img/DCNluwyRYs4.jpg",
+    "tema": "Eventos y colaboraciones"
+   },
+   {
+    "id": "DC0A35vRH9-",
+    "url": "https://www.instagram.com/p/DC0A35vRH9-/",
+    "fecha": "2024-11-25",
+    "formato": "carrusel",
+    "likes": 188,
+    "comentarios": 3,
+    "inter": 191,
+    "texto": "𝗚𝗥𝗔𝗖𝗜𝗔𝗦 por acompañarnos a festejar nuestro 𝟭𝗘𝗥 𝗖𝗨𝗠𝗣𝗟𝗘 🍺🪶🎈 #anniversary #beer #tap #friends",
+    "img": "img/DC0A35vRH9-.jpg",
+    "tema": "Eventos y colaboraciones"
+   },
+   {
+    "id": "DQk1REsDF_W",
+    "url": "https://www.instagram.com/p/DQk1REsDF_W/",
+    "fecha": "2025-11-02",
+    "formato": "foto",
+    "likes": 170,
+    "comentarios": 8,
+    "inter": 178,
+    "texto": "🎨🍻 ¡Les presentamos al expositor de noviembre en nuestro Circuito Arte & Chela en @masiosare_tragosmexas ! Este mes tenemos a nuestro artist",
+    "img": "img/DQk1REsDF_W.jpg",
+    "tema": "Eventos y colaboraciones"
+   },
+   {
+    "id": "DdATNslu44m",
+    "url": "https://www.instagram.com/p/DdATNslu44m/",
+    "fecha": "2026-09-07",
+    "formato": "foto",
+    "likes": 166,
+    "comentarios": 7,
+    "inter": 173,
+    "texto": "🕯️Noche de Velas 🕯️ y Pizza 🍕 con 𝗣𝗮𝘀𝗮𝗱𝗼 𝗱𝗲 𝗠𝗮𝘀𝗮. @gabyig y @josegaja nos presentan su nuevo proyecto, este 18 de Septiembre en Cisne Negro ",
+    "img": "img/DdATNslu44m.jpg",
+    "tema": "Eventos y colaboraciones"
+   },
+   {
+    "id": "DHC6KYxu35h",
+    "url": "https://www.instagram.com/p/DHC6KYxu35h/",
+    "fecha": "2025-03-10",
+    "formato": "foto",
+    "likes": 116,
+    "comentarios": 10,
+    "inter": 126,
+    "texto": "🪽MATRIA🪽Les comparto la ilustración que trabajé para @cisnenegro.mx en el marco del #8M. El proyecto consistió en reunir a un grupo de mujer",
+    "img": "img/DHC6KYxu35h.jpg",
+    "tema": "Eventos y colaboraciones"
+   },
+   {
+    "id": "DBFOVjyxm2m",
+    "url": "https://www.instagram.com/p/DBFOVjyxm2m/",
+    "fecha": "2024-10-13",
+    "formato": "carrusel",
+    "likes": 112,
+    "comentarios": 2,
+    "inter": 114,
+    "texto": "No podríamos estar más zen después de una sesión de 𝘆𝗼𝗴𝗮 𝘆 𝗱𝗲 𝗰𝗲𝗿𝘃𝗲𝘇𝗮 con @iza.isla 🧘‍♀️🍺 ¡nos vemos en la próxima! #yoga #beer #zen #photos",
+    "img": "img/DBFOVjyxm2m.jpg",
+    "tema": "Eventos y colaboraciones"
+   },
+   {
+    "id": "C3LZn-XOui7",
+    "url": "https://www.instagram.com/p/C3LZn-XOui7/",
+    "fecha": "2024-02-10",
+    "formato": "reel",
+    "likes": 113,
+    "comentarios": 0,
+    "inter": 113,
+    "texto": "🍻🖤 ¡Descubre el sabor único de la Cervecería Cisne Negro! 🖤🍴 Prueba nuestros exquisitos platillos diseñados para maridar a la perfección con",
+    "img": "img/C3LZn-XOui7.jpg",
+    "tema": "Comida"
+   },
+   {
+    "id": "DBpOUz4Rxf4",
+    "url": "https://www.instagram.com/p/DBpOUz4Rxf4/",
+    "fecha": "2024-10-27",
+    "formato": "carrusel",
+    "likes": 108,
+    "comentarios": 1,
+    "inter": 109,
+    "texto": "Chelitas del cisne negro 🍺 + hamburguesas de mamón 🍔= el sábado perfecto 👌🏻 #burger #beer #cisnenegro #mamon #takeover #popup #photo",
+    "img": "img/DBpOUz4Rxf4.jpg",
+    "tema": "Eventos y colaboraciones"
+   },
+   {
+    "id": "DHm_wHeu-vm",
+    "url": "https://www.instagram.com/p/DHm_wHeu-vm/",
+    "fecha": "2025-03-24",
+    "formato": "carrusel",
+    "likes": 99,
+    "comentarios": 5,
+    "inter": 104,
+    "texto": "Ride n chelas, ft. @cisnenegro.mx 🔥 Después de un buen ride, nada como llegar a comer una buenas burgers y chelas 🤌😮‍💨",
+    "img": "img/DHm_wHeu-vm.jpg",
+    "tema": "Eventos y colaboraciones"
+   }
+  ],
+  "temas": [
+   {
+    "tema": "Eventos y colaboraciones",
+    "n": 27,
+    "mediana": 82,
+    "indice": 1.85
+   },
+   {
+    "tema": "Avisos y horarios",
+    "n": 18,
+    "mediana": 11.5,
+    "indice": 0.62
+   },
+   {
+    "tema": "Comida",
+    "n": 69,
+    "mediana": 19,
+    "indice": 0.8
+   },
+   {
+    "tema": "Cerveza",
+    "n": 43,
+    "mediana": 36,
+    "indice": 1.04
+   },
+   {
+    "tema": "Ambiente y comunidad",
+    "n": 43,
+    "mediana": 25,
+    "indice": 1.15
+   }
+  ],
+  "hashtags": {
+   "top": [
+    [
+     "beer",
+     53
+    ],
+    [
+     "cisnenegro",
+     30
+    ],
+    [
+     "cerveza",
+     29
+    ],
+    [
+     "pachuca",
+     25
+    ],
+    [
+     "tap",
+     16
+    ],
+    [
+     "taproom",
+     13
+    ],
+    [
+     "cervezaartesanal",
+     10
+    ],
+    [
+     "burger",
+     9
+    ],
+    [
+     "photo",
+     8
+    ],
+    [
+     "reel",
+     6
+    ],
+    [
+     "ipa",
+     6
+    ],
+    [
+     "cervezamexicana",
+     5
+    ]
+   ],
+   "posts_con_hashtag_pachuca": 25,
+   "posts_que_mencionan_pachuca": 28,
+   "posts_con_cuentalo_en_el_cisne": 1,
+   "posts_sin_hashtags": 74
+  },
+  "hueco": {
+   "dias": 70,
+   "desde": "2024-07-06",
+   "hasta": "2024-09-15"
+  },
+  "reglas_temas": {
+   "Eventos y colaboraciones": 25,
+   "Avisos y horarios": 14,
+   "Comida": 31,
+   "Cerveza": 34
+  }
+ },
+ "tiktok": {
+  "seguidores": 189,
+  "likes_totales": 1249,
+  "videos": 14,
+  "bio_link": null,
+  "primer_post": "2024-07-10",
+  "ultimo_post": "2024-08-22",
+  "dias_sin_publicar": 774,
+  "vistas_totales": 65238,
+  "mediana_vistas_resto": 889,
+  "viral": {
+   "fecha": "2024-08-17",
+   "vistas": 50900,
+   "likes": 1021,
+   "compartidos": 653,
+   "guardados": 533,
+   "comentarios": 16,
+   "duracion_s": 31,
+   "url": "https://www.tiktok.com/@cisnenegro.mx/video/7404243380341099782",
+   "texto": "somos el único taproom en Pachuca con cerveza independiente 🍻 no dudes en visitarnos 🤩",
+   "pct_vistas_totales": 78.0,
+   "veces_mediana_resto": 57.3,
+   "dias_hasta_abandono": 4
+  },
+  "posts": [
+   {
+    "fecha": "2024-07-10",
+    "formato": "video",
+    "vistas": 1367,
+    "likes": 7
+   },
+   {
+    "fecha": "2024-07-11",
+    "formato": "video",
+    "vistas": 480,
+    "likes": 3
+   },
+   {
+    "fecha": "2024-07-13",
+    "formato": "carrusel",
+    "vistas": 681,
+    "likes": 6
+   },
+   {
+    "fecha": "2024-07-17",
+    "formato": "video",
+    "vistas": 698,
+    "likes": 14
+   },
+   {
+    "fecha": "2024-07-18",
+    "formato": "video",
+    "vistas": 919,
+    "likes": 41
+   },
+   {
+    "fecha": "2024-07-22",
+    "formato": "video",
+    "vistas": 456,
+    "likes": 14
+   },
+   {
+    "fecha": "2024-07-26",
+    "formato": "video",
+    "vistas": 891,
+    "likes": 20
+   },
+   {
+    "fecha": "2024-07-27",
+    "formato": "video",
+    "vistas": 1156,
+    "likes": 36
+   },
+   {
+    "fecha": "2024-08-01",
+    "formato": "carrusel",
+    "vistas": 971,
+    "likes": 6
+   },
+   {
+    "fecha": "2024-08-06",
+    "formato": "carrusel",
+    "vistas": 632,
+    "likes": 8
+   },
+   {
+    "fecha": "2024-08-13",
+    "formato": "video",
+    "vistas": 4462,
+    "likes": 36
+   },
+   {
+    "fecha": "2024-08-17",
+    "formato": "video",
+    "vistas": 50900,
+    "likes": 1021
+   },
+   {
+    "fecha": "2024-08-19",
+    "formato": "video",
+    "vistas": 889,
+    "likes": 30
+   },
+   {
+    "fecha": "2024-08-22",
+    "formato": "video",
+    "vistas": 736,
+    "likes": 7
+   }
+  ]
+ },
+ "google": {
+  "titulo_ficha": "Cisne Negro",
+  "categorias": [
+   "Restaurante"
+  ],
+  "rating": 4.5,
+  "resenas": 69,
+  "fotos": 74,
+  "reclamada": true,
+  "respondidas": 0,
+  "con_texto": 45,
+  "estrellas": [
+   {
+    "estrellas": 5,
+    "n": 51
+   },
+   {
+    "estrellas": 4,
+    "n": 9
+   },
+   {
+    "estrellas": 3,
+    "n": 6
+   },
+   {
+    "estrellas": 2,
+    "n": 0
+   },
+   {
+    "estrellas": 1,
+    "n": 3
+   }
+  ],
+  "por_anio": [
+   {
+    "anio": "2023",
+    "n": 3,
+    "promedio": 5.0,
+    "pct_5": 100,
+    "bajas": 0
+   },
+   {
+    "anio": "2024",
+    "n": 30,
+    "promedio": 4.57,
+    "pct_5": 70,
+    "bajas": 4
+   },
+   {
+    "anio": "2025",
+    "n": 22,
+    "promedio": 4.27,
+    "pct_5": 73,
+    "bajas": 4
+   },
+   {
+    "anio": "2026",
+    "n": 14,
+    "promedio": 4.71,
+    "pct_5": 79,
+    "bajas": 1
+   }
+  ],
+  "subcalificaciones": [
+   {
+    "aspecto": "Comida",
+    "n": 53,
+    "promedio": 4.6
+   },
+   {
+    "aspecto": "Servicio",
+    "n": 55,
+    "promedio": 4.67
+   },
+   {
+    "aspecto": "Ambiente",
+    "n": 55,
+    "promedio": 4.62
+   }
+  ],
+  "precio_por_persona": [
+   [
+    "100-200 $",
+    3
+   ],
+   [
+    "200-300 $",
+    18
+   ],
+   [
+    "300-400 $",
+    2
+   ],
+   [
+    "400-500 $",
+    4
+   ],
+   [
+    "500-600 $",
+    3
+   ]
+  ],
+  "positivos": [
+   [
+    "Comida",
+    27
+   ],
+   [
+    "Cerveza",
+    25
+   ],
+   [
+    "Ambiente y lugar",
+    18
+   ],
+   [
+    "Servicio y atención",
+    18
+   ],
+   [
+    "Concepto único en Pachuca",
+    5
+   ]
+  ],
+  "negativos": [
+   [
+    "Actitud del servicio",
+    6
+   ],
+   [
+    "Comida (grasa, pan, porción)",
+    4
+   ],
+   [
+    "Precio",
+    4
+   ],
+   [
+    "Carta o tap list limitados",
+    3
+   ],
+   [
+    "Calidad o frescura de la cerveza",
+    3
+   ],
+   [
+    "Información y orden (precios, horario)",
+    2
+   ],
+   [
+    "Limpieza",
+    1
+   ]
+  ],
+  "n_clasificadas": 45,
+  "n_bajas_con_texto": 9,
+  "citas": [
+   {
+    "texto": "Pocas veces en taprooms, la comida y la bebidas están tan espectacularmente equilibradas. Parada obligada en Pachuca",
+    "estrellas": 5,
+    "tono": "positiva"
+   },
+   {
+    "texto": "el personal se toma el tiempo de explicar cada una de ellos; eso se agradece demasiado",
+    "estrellas": 5,
+    "tono": "positiva"
+   },
+   {
+    "texto": "Me encantó es un concepto diferente en Pachuca",
+    "estrellas": 5,
+    "tono": "positiva"
+   },
+   {
+    "texto": "casi cada semana puedes encontrar algo nuevo",
+    "estrellas": 5,
+    "tono": "positiva"
+   },
+   {
+    "texto": "Los precios son un poco elevados",
+    "estrellas": 4,
+    "tono": "crítica"
+   },
+   {
+    "texto": "cuando quieres ver el menú de cheves en la pared, te los dicen de memoria. Si pusieran el precio de cada una, mucho ayudaría",
+    "estrellas": 3,
+    "tono": "crítica"
+   },
+   {
+    "texto": "Una mesera nos hablaba de manera hostíl, cero amable",
+    "estrellas": 3,
+    "tono": "crítica"
+   },
+   {
+    "texto": "la cerveza no esta fresca",
+    "estrellas": 3,
+    "tono": "crítica"
+   }
+  ],
+  "horas_pico": {},
+  "menu": null,
+  "reservas": null,
+  "publicaciones": 0,
+  "preguntas": 0,
+  "etiquetas_resenas": [
+   [
+    "cerveza artesanal",
+    8
+   ],
+   [
+    "hamburguesas",
+    8
+   ],
+   [
+    "ambiente",
+    6
+   ],
+   [
+    "música",
+    4
+   ],
+   [
+    "concepto",
+    4
+   ],
+   [
+    "ceviche",
+    3
+   ],
+   [
+    "cara",
+    2
+   ],
+   [
+    "variedad de cervezas",
+    2
+   ],
+   [
+    "negocio",
+    2
+   ],
+   [
+    "mesa",
+    2
+   ]
+  ],
+  "horario": [
+   {
+    "day": "lunes",
+    "hours": "Cerrado"
+   },
+   {
+    "day": "martes",
+    "hours": "4 to 10 PM"
+   },
+   {
+    "day": "miércoles",
+    "hours": "4 to 10 PM"
+   },
+   {
+    "day": "jueves",
+    "hours": "4 to 10 PM"
+   },
+   {
+    "day": "viernes",
+    "hours": "4 to 11:30 PM"
+   },
+   {
+    "day": "sábado",
+    "hours": "4 to 11:30 PM"
+   },
+   {
+    "day": "domingo",
+    "hours": "2 to 7 PM"
+   }
+  ],
+  "telefono": "+52 771 244 2025"
+ },
+ "nap": [
+  {
+   "canal": "Sitio cisnenegro.mx",
+   "nombre": "Cisne Negro",
+   "telefono": "(771) 244-2025",
+   "horario": "Mar–Jue 16–22 · Vie–Sáb 16–23:30 · Dom 14–19 (lunes no aparece)",
+   "estado": "Activo",
+   "nivel": "ok",
+   "nota": "Datos correctos; no enlaza redes ni WhatsApp",
+   "fuente": "HTML descargado el 2026-10-06 (contenido/sitio-web/)"
+  },
+  {
+   "canal": "Landing Abacus",
+   "nombre": "Cisne Negro — Cervecería Mexicana Independiente",
+   "telefono": "(771) 123-4567",
+   "horario": "Lun–Jue 14–23 · Vie–Sáb 13–24 · Dom 13–21",
+   "estado": "Publicada",
+   "nivel": "error",
+   "nota": "Teléfono falso; abre en lunes y los tres rangos de horario son incorrectos",
+   "fuente": "cisne-negro-landing-a2w76y.abacusai.app, consultada el 2026-10-06"
+  },
+  {
+   "canal": "Google",
+   "nombre": "Cisne Negro",
+   "telefono": "(771) 244-2025",
+   "horario": "Mar–Jue 16–22 · Vie–Sáb 16–23:30 · Dom 14–19 · Lun cerrado",
+   "estado": "Abierto",
+   "nivel": "aviso",
+   "nota": "Datos correctos, pero la categoría es solo 'Restaurante' y el nombre no dice 'Cervecería'",
+   "fuente": "Ficha de Google Maps, scraping del 2026-10-06"
+  },
+  {
+   "canal": "Instagram",
+   "nombre": "Cervecería Cisne Negro",
+   "telefono": "No visible (enlace a WhatsApp Business)",
+   "horario": "Solo en la historia destacada 'Horario'",
+   "estado": "Activo",
+   "nivel": "aviso",
+   "nota": "Ni la bio ni el perfil muestran dirección u horario",
+   "fuente": "Perfil @cisnenegro.mx, scraping del 2026-10-06"
+  },
+  {
+   "canal": "Facebook",
+   "nombre": "s/d",
+   "telefono": "s/d",
+   "horario": "s/d",
+   "estado": "Bloqueado sin sesión",
+   "nivel": "aviso",
+   "nota": "Sin calificación pública ('Not yet rated', 2 reseñas)",
+   "fuente": "facebook.com/cerveceriacisnenegro.mx (2026-10-05/06)"
+  },
+  {
+   "canal": "Tripadvisor",
+   "nombre": "Cisne Negro",
+   "telefono": "s/d",
+   "horario": "s/d",
+   "estado": "Temporalmente cerrado",
+   "nivel": "error",
+   "nota": "Clasificado como 'American, Brew Pub', con 0 reseñas",
+   "fuente": "Tripadvisor, revisión del 2026-10-05 (el 2026-10-06 bloqueó la consulta automática)"
+  },
+  {
+   "canal": "Uber Eats",
+   "nombre": "Cisne Negro",
+   "telefono": "s/d",
+   "horario": "s/d",
+   "estado": "Activo",
+   "nivel": "aviso",
+   "nota": "Tienda activa; revisar fotos y descripción",
+   "fuente": "Uber Eats, revisión del 2026-10-05 (el 2026-10-06 bloqueó la consulta automática)"
+  }
+ ],
+ "seo": {
+  "busqueda_generica": {
+   "consulta": "cisne negro",
+   "fecha": "2026-10-06",
+   "aparece_la_cerveceria": false,
+   "que_aparece": [
+    "La película El cisne negro (2010)",
+    "La teoría del cisne negro de Nassim Taleb",
+    "Un libro titulado Cisne Negro",
+    "El ave (Cygnus atratus)"
+   ]
+  },
+  "busqueda_local": {
+   "consulta": "cerveza artesanal Pachuca taproom",
+   "fecha": "2026-10-06",
+   "aparece_sitio_propio": false,
+   "que_aparece": [
+    "Perfil en Untappd de Cervecería Pachuca (primer resultado)",
+    "Notas de prensa locales (La Silla Rota, El Universal Hidalgo, Criterio Hidalgo)",
+    "Sitios propios de competidores en Pachuca (Buesjo Brewer Co., Cervecería Pamplona)",
+    "Páginas de Facebook de otras cervecerías locales"
+   ]
+  },
+  "limitacion": "La herramienta de búsqueda usa resultados de EE. UU.; una búsqueda desde Pachuca con ubicación activa mostraría el mapa local. No hay datos de volumen de búsqueda: validar con Search Console.",
+  "titulo_sitio": "Cisne Negro",
+  "meta_description": ""
+ },
+ "benchmark": {
+  "fecha": "2026-10-06",
+  "filas": [
+   {
+    "nombre": "Cervecería Cisne Negro",
+    "ubicacion": "Pachuca",
+    "google_rating": "4.5",
+    "google_resenas": "69",
+    "google_categoria": "Restaurante",
+    "google_fuente": "https://www.google.com/maps/search/?api=1&query=Cisne+Negro+Pachuca",
+    "ig": "3,513 (@cisnenegro.mx)",
+    "ig_fuente": "https://www.instagram.com/cisnenegro.mx/",
+    "untappd": "Sin perfil",
+    "untappd_fuente": null,
+    "sitio": "Sí (cisnenegro.mx)",
+    "otros": "Tripadvisor la marca como 'temporalmente cerrado'",
+    "es_cliente": true
+   },
+   {
+    "nombre": "La Vizcaína",
+    "ubicacion": "Mineral del Monte (Real del Monte)",
+    "google_rating": "4.8",
+    "google_resenas": "458",
+    "google_categoria": "Cervecería artesanal, Cervecería",
+    "google_fuente": "https://www.google.com/maps/search/?api=1&query=La+Vizca%C3%ADna+Cervecer%C3%ADa+Artesanal+de+Real+del+Monte",
+    "ig": "3,139 (@lavizcainabrew)",
+    "ig_fuente": "https://www.instagram.com/lavizcainabrew/",
+    "untappd": "3.58 · 154 calificaciones",
+    "untappd_fuente": "https://untappd.com/w/la-vizcaina/331532",
+    "sitio": "No (Facebook como sitio)",
+    "otros": "Tripadvisor: 5.0 con 1 y 3 opiniones (solo visto en resultados de búsqueda)"
+   },
+   {
+    "nombre": "Cervecería Hacienda",
+    "ubicacion": "Zempoala",
+    "google_rating": "5.0",
+    "google_resenas": "3",
+    "google_categoria": "Fábrica (el recinto, Hacienda San Juan Pueblilla, tiene 4.6 ★ con 219 reseñas)",
+    "google_fuente": "https://www.google.com/maps/search/?api=1&query=Cerveceria+Hacienda+Zempoala",
+    "ig": "2,107 (@cerveceriahacienda, probable)",
+    "ig_fuente": "https://www.instagram.com/cerveceriahacienda/",
+    "untappd": "3.08 · 1,427 calificaciones · 1,705 check-ins",
+    "untappd_fuente": "https://untappd.com/w/cerveceria-hacienda/6143",
+    "sitio": "Caído (cerveceriahacienda.com no resuelve)",
+    "otros": "Sin ficha en Tripadvisor"
+   },
+   {
+    "nombre": "La Minera",
+    "ubicacion": "Zimapán",
+    "google_rating": "4.8",
+    "google_resenas": "5",
+    "google_categoria": "Bar",
+    "google_fuente": "https://www.google.com/maps/search/?api=1&query=Cerveceria+La+Minera+Zimapan",
+    "ig": "833 (@cerveceriaartesanallaminera, probable)",
+    "ig_fuente": "https://www.instagram.com/cerveceriaartesanallaminera/",
+    "untappd": "Sin perfil",
+    "untappd_fuente": null,
+    "sitio": "No",
+    "otros": "Facebook: 1,894 seguidores y 208 check-ins (la única página sin restricción de edad)"
+   }
+  ],
+  "notas": [
+   "La Vizcaína es la referencia: tiene 6.6 veces las reseñas de Google de Cisne Negro (458 contra 69), mejor calificación y su categoría de Google es 'Cervecería artesanal'. Cisne Negro le gana en seguidores de Instagram y es la única de las cuatro con un sitio propio funcionando.",
+   "El caso de Cervecería Hacienda muestra el peso de Untappd: casi no tiene reseñas de Google, pero acumula 1,705 check-ins ahí. Cisne Negro no tiene perfil.",
+   "Las cuentas marcadas 'probable' coinciden en nombre, pero no se pudo ver su bio por la restricción de edad. Los seguidores de Facebook de Hacienda y La Vizcaína quedan s/d por la misma razón."
+  ],
+  "fuentes": [
+   {
+    "titulo": "La Silla Rota (jun 2026)",
+    "url": "https://lasillarota.com/hidalgo/vida/2026/6/25/hidalgo-tambien-se-bebe-conoce-la-cerveza-artesanal-del-estado-517466.html"
+   },
+   {
+    "titulo": "Google Maps: La Vizcaína",
+    "url": "https://www.google.com/maps/search/?api=1&query=La+Vizca%C3%ADna+Cervecer%C3%ADa+Artesanal+de+Real+del+Monte"
+   },
+   {
+    "titulo": "Google Maps: Cervecería Hacienda",
+    "url": "https://www.google.com/maps/search/?api=1&query=Cerveceria+Hacienda+Zempoala"
+   },
+   {
+    "titulo": "Google Maps: Hacienda San Juan Pueblilla",
+    "url": "https://www.google.com/maps/search/?api=1&query=Hacienda+San+Juan+Pueblilla+Zempoala"
+   },
+   {
+    "titulo": "Google Maps: La Minera",
+    "url": "https://www.google.com/maps/search/?api=1&query=Cerveceria+La+Minera+Zimapan"
+   },
+   {
+    "titulo": "Instagram @lavizcainabrew",
+    "url": "https://www.instagram.com/lavizcainabrew/"
+   },
+   {
+    "titulo": "Instagram @cerveceriahacienda",
+    "url": "https://www.instagram.com/cerveceriahacienda/"
+   },
+   {
+    "titulo": "Instagram @cerveceriaartesanallaminera",
+    "url": "https://www.instagram.com/cerveceriaartesanallaminera/"
+   },
+   {
+    "titulo": "Facebook La Minera",
+    "url": "https://www.facebook.com/cerveceriaalaminera.zim/"
+   },
+   {
+    "titulo": "Untappd Hacienda",
+    "url": "https://untappd.com/w/cerveceria-hacienda/6143"
+   },
+   {
+    "titulo": "Untappd La Vizcaína",
+    "url": "https://untappd.com/w/la-vizcaina/331532"
+   },
+   {
+    "titulo": "Wanderlog (La Vizcaína)",
+    "url": "https://wanderlog.com/place/details/630878/la-vizca%C3%ADna-cervecer%C3%ADa-artesanal-de-real-del-monte"
+   }
+  ]
+ }
+}

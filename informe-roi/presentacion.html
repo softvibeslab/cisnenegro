@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transformación digital · Cisne Negro · CN-2026-01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=JetBrains+Mono:wght@500&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tinta:#0E0D0B; --carbon:#191714; --borde:#2B2823;
+  --hueso:#F3EDE2; --gris:#A39B8E; --neon:#F2C97D; --pico:#FF5A1F;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--tinta);color:var(--hueso);font-family:Manrope,sans-serif}
+body{height:100vh;overflow:hidden}
+.deck{height:100vh;overflow-y:auto;scroll-snap-type:y mandatory;scroll-behavior:smooth}
+.slide{
+  min-height:100vh;scroll-snap-align:start;scroll-snap-stop:always;
+  padding:76px 52px 28px 6vw;display:flex;flex-direction:column;justify-content:center;
+  border-bottom:1px solid var(--borde);
+}
+.slide.papel{background:var(--hueso);color:var(--tinta)}
+.kicker{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--neon);margin:0 0 12px}
+.papel .kicker{color:#8A5A12}
+h1,h2{font-family:"Big Shoulders Display",sans-serif;font-weight:800;letter-spacing:.02em;text-transform:uppercase;margin:0 0 16px;line-height:.95}
+h1{font-size:clamp(40px,6vw,84px);max-width:16ch}
+h2{font-size:clamp(32px,4.4vw,56px);max-width:18ch}
+p{margin:0 0 12px;font-size:18px;line-height:1.45;max-width:62ch}
+.lead{font-size:22px;max-width:46ch}
+.gris{color:var(--gris)}
+.papel .gris{color:#5C564C}
+.row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+.stat{background:var(--carbon);border:1px solid var(--borde);padding:16px 18px;min-width:0}
+.papel .stat{background:#fff;border-color:#E4DCCE}
+.stat b{display:block;font-family:"Big Shoulders Display",sans-serif;font-size:clamp(26px,4vw,40px);line-height:1;color:var(--neon)}
+.papel .stat b{color:#8A5A12}
+.stat span{display:block;margin-top:6px;color:var(--gris);font-size:13px}
+.papel .stat span{color:#5C564C}
+table{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--borde);vertical-align:top}
+.papel th,.papel td{border-color:#E4DCCE}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--gris);font-weight:700}
+td.num,th.num{text-align:right;font-family:"JetBrains Mono",monospace;font-size:13px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+@media(max-width:520px){
+  .grid2{grid-template-columns:1fr}
+  .slide{padding:84px 40px 20px 16px}
+  h1{font-size:38px}
+  h2{font-size:32px}
+  p,.lead{font-size:15px}
+  th,td{font-size:12px;padding:5px 4px}
+  .stat{padding:12px}
+  .stat span{font-size:11px}
+}
+.bar{display:grid;grid-template-columns:148px 1fr 52px;gap:8px;align-items:center;margin:7px 0;font-size:14px}
+.track{height:8px;background:#2B2823;border-radius:99px;overflow:hidden}
+.papel .track{background:#E4DCCE}
+.fill{height:100%;background:var(--pico)}
+.nav{position:fixed;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:8px;z-index:2}
+.nav button{width:10px;height:10px;border-radius:99px;border:0;background:#3A342C;padding:0;cursor:pointer}
+.nav button[aria-current="true"]{background:var(--pico)}
+.tools{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:2;display:flex;gap:8px;align-items:center;background:var(--tinta);border:1px solid var(--borde);border-radius:999px;padding:6px 8px}
+.tools button,.chips button{
+  font-family:Manrope,sans-serif;font-weight:700;font-size:13px;
+  background:transparent;color:var(--hueso);border:1px solid var(--borde);
+  border-radius:99px;padding:8px 12px;cursor:pointer;
+}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}
+.chips button[aria-pressed="true"]{background:var(--pico);color:var(--tinta);border-color:var(--pico)}
+.note{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--gris);max-width:78ch}
+ol{margin:8px 0 0;padding-left:18px}
+li{margin:8px 0;max-width:68ch;line-height:1.4}
+.tag{display:inline-block;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.06em;border:1px solid var(--borde);padding:4px 8px;border-radius:99px;color:var(--gris)}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Diapositivas"></nav>
+<div class="tools">
+  <button type="button" id="prev">Anterior</button>
+  <button type="button" id="next">Siguiente</button>
+  <span class="tag" id="pos">1 / 10</span>
+</div>
+<main class="deck" id="deck">
+
+<section class="slide" data-title="Portada">
+  <p class="kicker">Softvibes · Folio CN-2026-01 · 7 de octubre de 2026</p>
+  <h1>La cervecería, con nombre y con cuenta.</h1>
+  <p class="lead">Qué queda en pie cuando operan la página, el menú, el Pasaporte Cisne y el CMS. Borrador para la conversación con los dueños. No está publicado.</p>
+  <div class="row">
+    <div class="stat"><b>37</b><span>presencia digital, de 100</span></div>
+    <div class="stat"><b>4.5</b><span>estrellas en Google, 69 reseñas</span></div>
+    <div class="stat"><b>$66,800</b><span>año 1, antes de impuestos</span></div>
+  </div>
+</section>
+
+<section class="slide papel" data-title="Hoy">
+  <p class="kicker">01 · Lo que ya se puede contar</p>
+  <h2>El producto convence. La ficha, no.</h2>
+  <p>Comida 4.6, servicio 4.67 y ambiente 4.62. El índice de canales, medido el 6 de octubre de 2026, es 37 sobre 100. Cada visita sigue sin dejar un nombre.</p>
+  <div class="bar"><span>Sitio web</span><div class="track"><div class="fill" style="width:60%"></div></div><span>60</span></div>
+  <div class="bar"><span>Instagram</span><div class="track"><div class="fill" style="width:60%"></div></div><span>60</span></div>
+  <div class="bar"><span>Google</span><div class="track"><div class="fill" style="width:50%"></div></div><span>50</span></div>
+  <div class="bar"><span>TikTok</span><div class="track"><div class="fill" style="width:30%"></div></div><span>30</span></div>
+  <div class="bar"><span>Facebook</span><div class="track"><div class="fill" style="width:10%"></div></div><span>10</span></div>
+  <div class="bar"><span>Tripadvisor</span><div class="track"><div class="fill" style="width:10%"></div></div><span>10</span></div>
+  <p class="note">Instagram: 3,513 seguidores. Google: 0 respuestas del local en 69 reseñas. TikTok sin publicar desde agosto de 2024, con un video de 50,900 vistas. Facebook: 2 reseñas, sin calificación.</p>
+</section>
+
+<section class="slide" data-title="Después">
+  <p class="kicker">02 · En operación</p>
+  <h2>Cuatro piezas, un solo paquete.</h2>
+  <div class="grid2">
+    <div>
+      <p><b>Página.</b> Adaptable, con cerveza de barril, cocina, historia, Pasaporte, galería, eventos y ubicación. Video de portada en silencio, con pausa y foto de respaldo. Dominio y HTTPS.</p>
+      <p><b>Menú.</b> QR, hasta 60 productos, precios, fotos disponibles, maridajes aprobados, vuelo y disponibilidad. El cliente enseña la selección. No hay pedido a cocina ni cobro.</p>
+    </div>
+    <div>
+      <p><b>Pasaporte.</b> Socios, sello con código del día, una visita diaria, cortesía de 4 oz a la 5 y de 12 oz a la 10, encuesta y CSV.</p>
+      <p><b>CMS.</b> Hasta 3 cuentas y dos roles. El editor publica menú, textos, galería y eventos. El propietario administra accesos y el club.</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide papel" data-title="Cambio">
+  <p class="kicker">03 · El cambio concreto</p>
+  <h2>De anónimo a contable.</h2>
+  <table>
+    <thead><tr><th>Hoy</th><th>Cuando opera</th></tr></thead>
+    <tbody>
+      <tr><td>Cambiar un precio pide desarrollo</td><td>El editor lo publica desde el panel, en borrador y luego en vivo</td></tr>
+      <tr><td>El menú no vive en un QR del dominio final</td><td>El QR abre el menú de la cervecería, con lo que hay y lo que no</td></tr>
+      <tr><td>La visita no deja rastro</td><td>Sello del día, tope de una visita, ranking y exportación</td></tr>
+      <tr><td>La satisfacción no se pregunta</td><td>NPS, comentario y resumen mensual</td></tr>
+      <tr><td>La cortesía no tiene regla única</td><td>16 oz por cada ciclo de 10 visitas, a cargo de la casa, vigencia 30 días</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="slide" data-title="Medición">
+  <p class="kicker">04 · Lo medible</p>
+  <h2>El panel cuenta personas, no tickets.</h2>
+  <table>
+    <thead><tr><th>Indicador</th><th>Hoy</th><th>Para qué sirve a los 90 días</th></tr></thead>
+    <tbody>
+      <tr><td>Socios con visita sellada</td><td class="num">0</td><td>Si sigue en cero, el código no se usa en barra</td></tr>
+      <tr><td>Recurrencia (2+ visitas)</td><td>Sin serie</td><td>Si la gente vuelve</td></tr>
+      <tr><td>NPS y comentarios</td><td>Sin medir</td><td>Línea base en las primeras semanas</td></tr>
+      <tr><td>Onzas canjeadas</td><td class="num">0</td><td>Costo del club cuando exista el costo por onza</td></tr>
+      <tr><td>Menú publicado por el editor</td><td>No ocurre</td><td>En 2 días hábiles, dentro de las 3 horas del mes</td></tr>
+      <tr><td>Respaldo que se puede recuperar</td><td>Pendiente</td><td>Prueba mensual: sí o no</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Un piso de 400 socios o de NPS 60 está en el documento de marca. CN-2026-01 no lo compromete.</p>
+</section>
+
+<section class="slide papel" data-title="Inversión">
+  <p class="kicker">05 · Dinero cerrado</p>
+  <h2>$32,000 para salir. $2,900 para seguir.</h2>
+  <table>
+    <thead><tr><th>Concepto</th><th class="num">MXN</th></tr></thead>
+    <tbody>
+      <tr><td>Página y video de portada</td><td class="num">9,000</td></tr>
+      <tr><td>Menú, QR y maridajes</td><td class="num">5,500</td></tr>
+      <tr><td>Pasaporte y panel</td><td class="num">6,500</td></tr>
+      <tr><td>CMS</td><td class="num">8,000</td></tr>
+      <tr><td>Lanzamiento, pruebas y capacitación</td><td class="num">3,000</td></tr>
+      <tr><td>Año 1 con doce meses de administración</td><td class="num">66,800</td></tr>
+    </tbody>
+  </table>
+  <p>Pagos de la obra: $16,000 al iniciar, $9,600 con el CMS en revisión, $6,400 antes de salir. Importes antes de impuestos.</p>
+</section>
+
+<section class="slide" data-title="Umbral">
+  <p class="kicker">06 · Hipótesis, no pronóstico</p>
+  <h2>Cuántas visitas igualan el año.</h2>
+  <p>30 reseñadores declararon un rango de gasto. 18 de ellos están entre $200 y $300. Elige un gasto y un margen. El margen real lo anotan los dueños.</p>
+  <div class="chips" id="tickets" role="group" aria-label="Gasto supuesto"></div>
+  <div class="chips" id="margins" role="group" aria-label="Margen supuesto"></div>
+  <div class="row">
+    <div class="stat"><b id="v-year">535</b><span>visitas para cubrir el año 1</span></div>
+    <div class="stat"><b id="v-month">24</b><span>visitas al mes para la cuota</span></div>
+    <div class="stat"><b id="v-contrib">$125</b><span>aporte supuesto por visita</span></div>
+  </div>
+  <p class="note" id="formula">Con gasto de $250 y margen de 50%, cada visita aportaría $125. La obra sola equivaldría a 256 visitas de ese tipo.</p>
+</section>
+
+<section class="slide papel" data-title="Lectura">
+  <p class="kicker">07 · Cómo se lee a los 90 días</p>
+  <h2>Primero el uso. Después el dinero.</h2>
+  <ol>
+    <li>Si hay socios, sellos y NPS, la instrumentación está viva. Esa es la primera meta.</li>
+    <li>Si los sellos siguen en cero, el tema es la barra, no el software: el código del día no se está pidiendo.</li>
+    <li>Las onzas canjeadas × el costo por onza de la casa es el costo del club. Son 16 oz por cada ciclo de 10 visitas.</li>
+    <li>La fila de visitas del umbral se compara con las visitas selladas solo cuando el margen deja de ser supuesto.</li>
+    <li>La reunión mensual de 30 minutos es el lugar de esa lectura. El resumen ya trae socios, visitas, canjes y satisfacción.</li>
+  </ol>
+</section>
+
+<section class="slide" data-title="Fuera">
+  <p class="kicker">08 · Límites</p>
+  <h2>Esto no entra en el retorno.</h2>
+  <p>Redes, respuesta a reseñas, pauta, foto o video nuevos, impresión, caja, pagos, reservaciones, app, varias sucursales, y los puntos o retos extra del roadmap.</p>
+  <p>Tampoco lo cierra el CMS, y ya está verificado: la landing de Abacus publica el teléfono (771) 123-4567 y abre en lunes. Tripadvisor figura como temporalmente cerrado. El teléfono del local es (771) 244-2025. El lunes cierran. Horario: mar–jue 16–22, vie–sáb 16–23:30, dom 14–19.</p>
+  <p class="gris">La propuesta no promete ventas, posiciones en buscadores ni una cantidad de socios.</p>
+</section>
+
+<section class="slide papel" data-title="Cierre">
+  <p class="kicker">09 · Para iniciar</p>
+  <h2>Tres datos y el anticipo.</h2>
+  <ol>
+    <li>Confirmar alcance e inversión de CN-2026-01, vigente hasta el 22 de octubre de 2026.</li>
+    <li>Anotar gasto promedio por visita y margen de contribución, para sustituir la hipótesis.</li>
+    <li>Designar a quien aprueba, y reunir catálogo, dominio y materiales. El anticipo es $16,000.</li>
+  </ol>
+  <p class="note">Detalle y fuentes: informe-roi/informe.md. Propuesta publicada: cisnenegro.softvibes.art/propuesta/. Esta presentación no se despliega sin autorización.</p>
+</section>
+
+</main>
+<script>
+const deck = document.getElementById("deck");
+const slides = [...deck.querySelectorAll(".slide")];
+const nav = document.querySelector(".nav");
+const pos = document.getElementById("pos");
+function go(i){
+  const n = Math.max(0, Math.min(slides.length - 1, i));
+  deck.scrollTo({top: slides[n].offsetTop, behavior: "smooth"});
+}
+slides.forEach((s, i) => {
+  const b = document.createElement("button");
+  b.type = "button";
+  b.setAttribute("aria-label", s.dataset.title);
+  b.addEventListener("click", () => go(i));
+  nav.appendChild(b);
+});
+const dots = [...nav.children];
+function current(){
+  const y = deck.scrollTop;
+  let idx = 0;
+  slides.forEach((s, i) => { if (s.offsetTop <= y + 40) idx = i; });
+  return idx;
+}
+function paint(){
+  const i = current();
+  dots.forEach((d, n) => {
+    if (n === i) d.setAttribute("aria-current", "true");
+    else d.removeAttribute("aria-current");
+  });
+  pos.textContent = (i + 1) + " / " + slides.length;
+}
+deck.addEventListener("scroll", paint, {passive:true});
+document.getElementById("next").addEventListener("click", () => go(current() + 1));
+document.getElementById("prev").addEventListener("click", () => go(current() - 1));
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowDown" || e.key === "ArrowRight" || e.key === "PageDown") {
+    e.preventDefault();
+    document.getElementById("next").click();
+  }
+  if (e.key === "ArrowUp" || e.key === "ArrowLeft" || e.key === "PageUp") {
+    e.preventDefault();
+    document.getElementById("prev").click();
+  }
+});
+
+const tickets = [200, 250, 400];
+const margins = [30, 50, 70];
+let ticket = 250, margin = 50;
+function ceilDiv(cost){ return Math.ceil(cost / (ticket * margin / 100)); }
+function money(n){ return n.toLocaleString("es-MX"); }
+function renderCalc(){
+  const year = ceilDiv(66800), month = ceilDiv(2900), impl = ceilDiv(32000);
+  const contrib = Math.round(ticket * margin / 100);
+  document.getElementById("v-year").textContent = money(year);
+  document.getElementById("v-month").textContent = money(month);
+  document.getElementById("v-contrib").textContent = "$" + money(contrib);
+  document.getElementById("formula").textContent =
+    "Con gasto de $" + ticket + " y margen de " + margin + "%, cada visita aportaría $" + money(contrib) + ". La obra sola equivaldría a " + money(impl) + " visitas de ese tipo.";
+  document.querySelectorAll("#tickets button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === String(ticket) ? "true" : "false"));
+  document.querySelectorAll("#margins button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === String(margin) ? "true" : "false"));
+}
+function group(id, values, prefix, set){
+  const host = document.getElementById(id);
+  values.forEach(v => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.dataset.v = String(v);
+    b.textContent = prefix + v + (id === "margins" ? "%" : "");
+    b.addEventListener("click", () => { set(v); renderCalc(); });
+    host.appendChild(b);
+  });
+}
+group("tickets", tickets, "Gasto $", v => { ticket = v; });
+group("margins", margins, "Margen ", v => { margin = v; });
+renderCalc();
+paint();
+</script>
+</body>
+</html>

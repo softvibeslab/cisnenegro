@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "package": "cisne-negro-ecosistema",
+  "version": "1.0.0",
+  "prepared_on": "2026-10-21",
+  "scope": "Cisne Negro project only; no global account configuration, other-client content or runtime data",
+  "hash_algorithm": "SHA-256",
+  "manifest_self_excluded": true,
+  "paths_note": "files keys relative to ecosistema; evidence paths relative to repository root",
+  "skills": [
+    {
+      "id": "imagegen",
+      "path": "skills/imagegen",
+      "type": "third_party_exact_copy",
+      "provider": "OpenAI",
+      "version": "not declared by installed skill",
+      "snapshot_date": "2026-10-21",
+      "source": "Codex installed system skill: skills/.system/imagegen",
+      "license": "Apache-2.0",
+      "license_path": "skills/imagegen/LICENSE.txt",
+      "evidence_status": "integrated tool use confirmed; exact historical skill version not established",
+      "evidence": [
+        "hosting-independiente/docs/colchita/README.md"
+      ],
+      "files": 12,
+      "bytes": 134942
+    },
+    {
+      "id": "sitios-inventario",
+      "path": "skills/sitios-inventario",
+      "type": "new_original_portable_workflow",
+      "provider": "Softvibes project package",
+      "version": "1.0.0",
+      "created": "2026-10-21",
+      "license": "No general public reuse license assigned",
+      "source": "New document based on the inventory method documented in this project; not a verbatim copy of landing-inventory-first",
+      "evidence_status": "method documented; historical invocation of this new skill does not apply",
+      "evidence": [
+        "03-plan-ejecucion.md#fase-3--landing-"
+      ]
+    },
+    {
+      "id": "sitios-desarrollo-qa",
+      "path": "skills/sitios-desarrollo-qa",
+      "type": "new_original_portable_workflow",
+      "provider": "Softvibes project package",
+      "version": "1.0.0",
+      "created": "2026-10-21",
+      "license": "No general public reuse license assigned",
+      "source": "New document derived from project architecture and validation records",
+      "evidence_status": "project code and validation documented; historical invocation of this new skill does not apply",
+      "evidence": [
+        "hosting-independiente/README.md",
+        "hosting-independiente/VALIDACION.md",
+        "hosting-independiente/requirements.lock"
+      ]
+    },
+    {
+      "id": "documentos-pdf",
+      "path": "skills/documentos-pdf",
+      "type": "new_original_portable_workflow",
+      "provider": "Softvibes project package",
+      "version": "1.0.0",
+      "created": "2026-10-21",
+      "license": "No general public reuse license assigned",
+      "source": "New document describing the project ReportLab/PDF verification workflow; original Codex PDF plugin not redistributed",
+      "evidence_status": "PDF work confirmed; historical invocation of this new skill does not apply",
+      "evidence": [
+        "manual-usuario/README.md",
+        "manual-usuario/generar_pdf.py",
+        "propuesta-economica/generar_pdf.py"
+      ]
+    }
+  ],
+  "tools_confirmed_by_project": [
+    "HTML/CSS/JavaScript",
+    "Python",
+    "Flask",
+    "SQLite",
+    "Gunicorn",
+    "BeautifulSoup",
+    "Pillow",
+    "pillow-heif",
+    "FFmpeg/ffprobe",
+    "Docker/Compose",
+    "Nginx",
+    "SSH",
+    "HTTPS/Certbot",
+    "Hostinger infrastructure",
+    "Playwright test scripts",
+    "ReportLab",
+    "PyMuPDF",
+    "pypdf",
+    "Poppler",
+    "Apify",
+    "yt-dlp",
+    "curl"
+  ],
+  "unbundled_or_unconfirmed": [
+    {
+      "id": "Hostinger skill",
+      "status": "not found in inspected local skill roots; infrastructure use documented",
+      "action": "document tools; no invented or downloaded skill"
+    },
+    {
+      "id": "google-maps-scraper",
+      "status": "documented as replaced by Apify, not executed",
+      "evidence": "scraping/README.md"
+    },
+    {
+      "id": "strategy and design skills listed in content plan",
+      "status": "proposed workflows; invocation not established",
+      "evidence": "estrategia-contenido/08-plan-estrategia-contenido-y-content-hub.md"
+    },
+    {
+      "id": "Codex PDF runtime skill",
+      "status": "work confirmed; original plugin not redistributed because no redistribution license found in inspected package",
+      "inspected_package_version": "26.1017.22136",
+      "replacement": "documentos-pdf"
+    },
+    {
+      "id": "landing-inventory-first",
+      "status": "method evidenced; exact original not copied because local skill had no license file",
+      "replacement": "sitios-inventario"
+    }
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 4585,
+      "sha256": "4ab47255799817ec1725f9ef6de0ebe81f10a19dc0b4580b79cb626730fee349"
+    },
+    "herramientas.md": {
+      "bytes": 6198,
+      "sha256": "7eb4e08be03841ab2f7abadfb307369345b5a089764a8cad8d8c396feca48a4e"
+    },
+    "procedencia.md": {
+      "bytes": 4373,
+      "sha256": "b492415ee81ce9df275bf34177e2efe47b5f78b5ce72f3b081c120e0e86dcc3e"
+    },
+    "scripts/install_skills.py": {
+      "bytes": 3756,
+      "sha256": "a4b162d6f567c6ebc8f10e8d5012a415b74ea07ec13bf747c6705d128fd313b7"
+    },
+    "skills/documentos-pdf/SKILL.md": {
+      "bytes": 2824,
+      "sha256": "171a581b7add7f6f14b391c6f207034a982693a53934bd771b5d332f5090ce61"
+    },
+    "skills/imagegen/LICENSE.txt": {
+      "bytes": 10776,
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9"
+    },
+    "skills/imagegen/SKILL.md": {
+      "bytes": 24003,
+      "sha256": "59981d23519222bcecf1be48bb37730bbc50539ceb0e35ad09fcef98a3df19d3"
+    },
+    "skills/imagegen/agents/openai.yaml": {
+      "bytes": 275,
+      "sha256": "9ca574af14580dc7a2a3dc37a1796d17f93cb8850be66501f0799ef8603e9dc0"
+    },
+    "skills/imagegen/assets/imagegen-small.svg": {
+      "bytes": 2889,
+      "sha256": "cff5f34f57ff60b3ee92eaedd17b15e96dd4b9e776df3e78936c9e00d42be294"
+    },
+    "skills/imagegen/assets/imagegen.png": {
+      "bytes": 1711,
+      "sha256": "95952f644064eb9e890f98d8db07216347186526e4c41ad66d3420629eb86e20"
+    },
+    "skills/imagegen/references/cli.md": {
+      "bytes": 10188,
+      "sha256": "38d92cdbec5f3430439a3868ced0a3c5694e0e84a75e46d6e7f7a00aca6e673b"
+    },
+    "skills/imagegen/references/codex-network.md": {
+      "bytes": 1779,
+      "sha256": "c88298ca4481f6116a16fa7987434fc977f8b311c1bbc0c3d862ffd0c5981148"
+    },
+    "skills/imagegen/references/image-api.md": {
+      "bytes": 6079,
+      "sha256": "ca5424dfcad5a4c87b4401d1cffb70bfcc18c7ca2c281d12045f822e59fa4093"
+    },
+    "skills/imagegen/references/prompting.md": {
+      "bytes": 9896,
+      "sha256": "a88c459a0306051535d1b68eb899925f08a175cbbcd07d72a9d0c43f330cb81f"
+    },
+    "skills/imagegen/references/sample-prompts.md": {
+      "bytes": 19239,
+      "sha256": "43307821f1db18e06be50189a078f3e1ccc3ee6b5523934614e22e64d27597ab"
+    },
+    "skills/imagegen/scripts/image_gen.py": {
+      "bytes": 34271,
+      "sha256": "35e8f9fa47deca111e46c63c4ac2008e09198ef664c0926a9dfdcd6745aa37ed"
+    },
+    "skills/imagegen/scripts/remove_chroma_key.py": {
+      "bytes": 13836,
+      "sha256": "3f7b9b14ad5c90f37618bc1c16a039a2076abca12ddc41b3ae470e2b1cad6c0e"
+    },
+    "skills/sitios-desarrollo-qa/SKILL.md": {
+      "bytes": 3872,
+      "sha256": "dc10b4dbd9a8afe95662cbc73b6c73b0bb427a56b1653a008d2b64a31ebb6eca"
+    },
+    "skills/sitios-inventario/SKILL.md": {
+      "bytes": 2537,
+      "sha256": "530fd16d578cb9113536bb216aefbf805dc6d78507da009b40746c7e2a03099a"
+    }
+  }
+}

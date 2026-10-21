@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0E0D0B">
+  <title>Entra al Cisne · Cervecería Cisne Negro</title>
+  <meta name="description" content="De la calle a la barra. Una exploración de Cisne Negro, cervecería independiente en Pachuca.">
+  <link rel="icon" href="../assets/img/marca/favicon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Manrope:wght@400;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="experiencia.css">
+  <script src="experiencia.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="../" aria-label="Cisne Negro, sitio principal"><img src="../assets/img/marca/favicon-192.png" width="192" height="192" alt=""><span>CISNE NEGRO<small>CERVECERÍA INDEPENDIENTE</small></span></a>
+    <nav aria-label="Navegación principal">
+      <a class="menu-link" href="../menu/">Ver menú <span aria-hidden="true">↗</span></a>
+      <a data-maps href="https://www.google.com/maps/search/?api=1&amp;query=Cervecer%C3%ADa%20Cisne%20Negro%20Pachuca&amp;query_place_id=ChIJ-ed8Ic0J0YURa34980-5WC0" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="contenido">
+    <!-- Depth: real photograph / atmosphere / editorial foreground. Native scroll, no pinning. -->
+    <section class="scene entrance" id="portada" aria-labelledby="hero-title">
+      <figure class="facade depth-0" data-depth="0" data-parallax="0.045">
+        <img src="../assets/img/ig/aniversario-primer-cumple.jpg" width="1400" height="1400" alt="Amigos y equipo frente a la fachada de Cisne Negro en su primer aniversario" fetchpriority="high" decoding="async">
+        <figcaption>La casa y su gente · Primer aniversario</figcaption>
+      </figure>
+      <div class="entrance-shade depth-1" data-depth="1" aria-hidden="true"></div>
+      <div class="hero-copy depth-4" data-depth="4">
+        <p class="eyebrow">Pachuca, Hidalgo / Col. Periodistas</p>
+        <h1 id="hero-title">¡CUÉNTALO<br>EN EL <span>CISNE!</span></h1>
+        <p class="intro">Las buenas historias<br>empiezan en la barra.</p>
+        <a class="explore" href="#barra">Explorar la barra <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="door-note depth-4" data-depth="4"><span>Barril y comedor</span><span>Cerveza hecha aquí. Sin pretensiones.</span></div>
+      <p class="scene-index" aria-hidden="true">01 / LA CASA</p>
+    </section>
+    <!-- Original beer illustrations, presented as artwork, never simulated product photography. -->
+    <section class="scene bar" id="barra" data-beer="alarma" tabindex="-1" aria-labelledby="bar-title">
+      <div class="bar-heading depth-4" data-depth="4">
+        <p class="eyebrow">02 / Del otro lado de la puerta</p>
+        <h2 id="bar-title">TU LUGAR<br>EN LA <span>BARRA.</span></h2>
+        <p>Dos cervezas, dos maneras de empezar la plática.</p>
+      </div>
+      <figure class="bar-art" aria-labelledby="art-caption">
+        <div class="art-frame" id="beer-art">
+          <img data-art="alarma" src="../assets/img/cervezas/alarma.jpg" width="900" height="900" decoding="async" alt="¡Alarma!: ilustración de cerveza ámbar junto a su etiqueta de cómic, en crema, mostaza y coral">
+          <img data-art="agua-puerca" src="../assets/img/cervezas/agua-puerca.jpg" width="900" height="900" decoding="async" alt="Agua Puerca: ilustración de stout oscura con espuma caramelo, chocolate y café dibujados sobre papel crema" hidden>
+        </div>
+        <figcaption id="art-caption">¡Alarma! · Ilustración de la cerveza y su etiqueta.</figcaption>
+      </figure>
+      <div class="beer-console depth-4" data-depth="4">
+        <div id="beer-data" aria-busy="false">
+          <p id="load-status" role="status">La selección de cervezas se carga desde nuestra carta.</p>
+          <noscript><p>Activa JavaScript para explorar las cervezas. Puedes seguir al menú o consultar la <a href="../data/menu.json">carta en datos</a>.</p></noscript>
+          <fieldset id="beer-choice" hidden><legend>¿Con cuál empiezas?</legend><div class="choices" id="choices"></div></fieldset>
+          <div id="beer-detail" aria-live="polite" aria-atomic="true"></div>
+          <button id="retry" type="button" hidden>Volver a intentar</button>
+        </div>
+        <a class="full-menu" href="../menu/">Ver la carta completa <span aria-hidden="true">↗</span></a>
+        <p class="fine">Selección de la carta, no inventario en tiempo real. Confirma disponibilidad en barra. Notas del perfil típico del estilo, no una cata del cervecero.</p>
+      </div>
+    </section>
+  </main>
+  <footer><a href="#portada">Volver a la puerta ↑</a><p>Cisne Negro · Pachuca<br><span>Disfruta con moderación.</span></p><a href="../">Visitar el sitio completo ↗</a></footer>
+</body>
+</html>

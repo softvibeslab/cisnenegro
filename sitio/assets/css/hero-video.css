@@ -1,0 +1,45 @@
+/* Variante del hero: /con-video/. Conserva la foto hasta tener video reproducible. */
+.hero--video .hero__poster { z-index: -3; }
+.hero__video {
+  opacity: 0;
+  pointer-events: none;
+  object-position: 50% 50%;
+  transition: opacity .5s ease;
+}
+.hero__video.is-ready { opacity: 1; }
+.hero--video .hero__shade {
+  background:
+    linear-gradient(90deg, rgba(14,13,11,.82) 0%, rgba(14,13,11,.6) 36%, rgba(14,13,11,.1) 78%),
+    linear-gradient(180deg, rgba(14,13,11,.12) 10%, rgba(14,13,11,.2) 60%, var(--tinta) 100%);
+}
+.hero__video-control {
+  position: absolute;
+  z-index: 2;
+  top: 22px;
+  left: max(var(--pad), calc((100% - var(--wrap)) / 2 + var(--pad)), env(safe-area-inset-left));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 10px 15px;
+  border: 1px solid rgba(243,237,226,.35);
+  border-radius: 999px;
+  background: rgba(14,13,11,.78);
+  color: var(--hueso);
+  font-size: .8125rem;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.hero__video-control[hidden] { display: none; }
+.hero__video-control:hover { background: var(--tinta); border-color: var(--neon); }
+.hero__video-control [data-video-icon] { width: 14px; text-align: center; }
+@media (max-width: 767px) {
+  .hero--video .hero__shade {
+    background: linear-gradient(180deg, rgba(14,13,11,.15) 0%, rgba(14,13,11,.56) 30%, rgba(14,13,11,.88) 70%, var(--tinta) 100%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__video { transition: none; }
+}

@@ -1,0 +1,199 @@
+{
+  "duration": 28.0,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "codec": "h264",
+  "audio": false,
+  "bytes": 9587322,
+  "transition_seconds": 0.375,
+  "shots": [
+    {
+      "name": "El neón",
+      "source": "sitio/assets/img/lugar/neon.jpg",
+      "frames": 84,
+      "crop": [
+        0,
+        40,
+        1600,
+        900
+      ],
+      "zoom": [
+        1,
+        1.035
+      ],
+      "timeline_start": 0.0
+    },
+    {
+      "name": "En los grifos",
+      "source": "contenido/instagram/posts/2025-01-23_DFL_h-KxPsp/01.jpg",
+      "frames": 60,
+      "crop": [
+        0,
+        65,
+        1440,
+        810
+      ],
+      "zoom": [
+        1.015,
+        1.045
+      ],
+      "timeline_start": 3.125,
+      "source_url": "https://www.instagram.com/p/DFL_h-KxPsp/"
+    },
+    {
+      "name": "Del barril al vaso",
+      "source": "contenido/tiktok/20240727_7396425455320009989.mp4",
+      "frames": 72,
+      "crop": [
+        0,
+        340,
+        576,
+        324
+      ],
+      "start": 25.65,
+      "speed": 1,
+      "timeline_start": 5.25,
+      "source_url": "https://www.tiktok.com/@cisnenegro.mx/video/7396425455320009989"
+    },
+    {
+      "name": "Una degustación",
+      "source": "contenido/google-maps/fotos/003.jpg",
+      "frames": 66,
+      "crop": [
+        0,
+        165,
+        1374,
+        772
+      ],
+      "zoom": [
+        1,
+        1.035
+      ],
+      "source_collection": "Fotos públicas del Perfil de Empresa de Cisne Negro en Google Maps, descargadas en contenido/",
+      "timeline_start": 7.875
+    },
+    {
+      "name": "Una para cada gusto",
+      "source": "contenido/instagram/posts/2025-11-15_DRGG0PMkqFT/01.jpg",
+      "frames": 60,
+      "crop": [
+        0,
+        180,
+        1052,
+        592
+      ],
+      "zoom": [
+        1,
+        1.022
+      ],
+      "timeline_start": 10.25,
+      "source_url": "https://www.instagram.com/p/DRGG0PMkqFT/"
+    },
+    {
+      "name": "La plática y la cerveza",
+      "source": "contenido/instagram/posts/2026-04-09_DW7L_1fDjE9/01.jpg",
+      "frames": 66,
+      "crop": [
+        0,
+        400,
+        1440,
+        810
+      ],
+      "zoom": [
+        1.03,
+        1
+      ],
+      "timeline_start": 12.375,
+      "source_url": "https://www.instagram.com/p/DW7L_1fDjE9/"
+    },
+    {
+      "name": "Entre amigos",
+      "source": "contenido/instagram/posts/2024-12-01_DDBCnhARpjm/01.jpg",
+      "frames": 54,
+      "crop": [
+        0,
+        55,
+        1068,
+        600
+      ],
+      "zoom": [
+        1,
+        1.025
+      ],
+      "timeline_start": 14.75,
+      "source_url": "https://www.instagram.com/p/DDBCnhARpjm/"
+    },
+    {
+      "name": "Cuatro pintas, un brindis",
+      "source": "contenido/instagram/posts/2024-10-16_DBM4XOjxsZY/01.jpg",
+      "frames": 60,
+      "crop": [
+        0,
+        370,
+        1440,
+        810
+      ],
+      "zoom": [
+        1.035,
+        1.005
+      ],
+      "saturation": 0.93,
+      "timeline_start": 16.625,
+      "source_url": "https://www.instagram.com/p/DBM4XOjxsZY/"
+    },
+    {
+      "name": "El brindis",
+      "source": "contenido/instagram/posts/2025-02-16_DGHi1ozxMd8/02.jpg",
+      "frames": 66,
+      "crop": [
+        0,
+        250,
+        1440,
+        810
+      ],
+      "zoom": [
+        1.01,
+        1.04
+      ],
+      "timeline_start": 18.75,
+      "source_url": "https://www.instagram.com/p/DGHi1ozxMd8/"
+    },
+    {
+      "name": "El taproom se vive",
+      "source": "contenido/instagram/posts/2025-11-23_DRacrleklrs/03.jpg",
+      "frames": 84,
+      "crop": [
+        0,
+        80,
+        1440,
+        810
+      ],
+      "zoom": [
+        1.035,
+        1
+      ],
+      "timeline_start": 21.125,
+      "source_url": "https://www.instagram.com/p/DRacrleklrs/"
+    },
+    {
+      "name": "Volver al neón",
+      "source": "sitio/assets/img/lugar/neon.jpg",
+      "frames": 90,
+      "crop": [
+        0,
+        40,
+        1600,
+        900
+      ],
+      "zoom": [
+        1.035,
+        1
+      ],
+      "timeline_start": 24.25
+    }
+  ],
+  "verification": "Dimensiones, cuadros, duración, ausencia de audio y decodificación completa: OK",
+  "loop_endpoint_mean_absolute_error": 0.505,
+  "faststart_verified": true
+}

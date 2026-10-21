@@ -1,0 +1,1977 @@
+{
+ "generado": "2026-10-08",
+ "fuente": "@oktoberfestjabonera (Instagram, datos públicos sin login) + @cisnenegro.mx + reseñas de Google",
+ "privacidad": "Solo agregados. Usernames solo de cuentas de negocio/creador públicas o acreditadas en posts del festival. Crudos en scraping/raw/jabonera-20261008/ (gitignored).",
+ "perfil_jabonera": {
+  "username": "oktoberfestjabonera",
+  "fullName": "OKTOBERFEST la jabonera",
+  "biography": "Festival de cerveza estilo bavaria, música, diversión y mucha buena cheve",
+  "followersCount": 1550,
+  "followsCount": 258,
+  "postsCount": 66,
+  "businessCategoryName": "Festival",
+  "externalUrl": "https://oktoberfest-2026-la-jabonera.boletia.com"
+ },
+ "extraccion": {
+  "plan": "A (lista de seguidores/seguidos sin login) — viable; complementado con posts y comentarios (Plan B)",
+  "seguidores_obtenidos": 700,
+  "seguidores_totales": 1550,
+  "cobertura_seguidores_pct": 45.2,
+  "seguidos_obtenidos": 225,
+  "seguidos_totales": 258,
+  "posts_obtenidos": 50,
+  "comentarios_unicos": 98,
+  "actores": {
+   "apify/instagram-profile-scraper": "perfil Jabonera + 6 aliados",
+   "scraping_solutions/instagram-scraper-followers-following": "seguidores (limite 750) y seguidos (limite 300) con enrichProfileDetails",
+   "apify/instagram-post-scraper": "posts (limite 70)",
+   "apify/instagram-comment-scraper": "3 posts, limite 35 c/u"
+  }
+ },
+ "seguidores_muestra": {
+  "muestra": 700,
+  "metodo": "clasificación por palabras clave en bio + nombre + usuario (inferido; ver 'notas_metodo')",
+  "tipo_cuenta": {
+   "personal": {
+    "n": 602,
+    "pct": 86.0
+   },
+   "creador": {
+    "n": 52,
+    "pct": 7.4
+   },
+   "negocio": {
+    "n": 46,
+    "pct": 6.6
+   }
+  },
+  "privadas": {
+   "n": 290,
+   "pct": 41.4
+  },
+  "con_bio": {
+   "n": 502,
+   "pct": 71.7
+  },
+  "probables_inactivas_o_sin_contenido": 17,
+  "seguidores_de_las_cuentas": {
+   "mediana_todas": 507.5,
+   "mediana_personales": 455.5,
+   "tramos_todas": {
+    "a_<300": 221,
+    "b_300-999": 298,
+    "c_nano_1k-9.9k": 175,
+    "d_micro_10k-99k": 6
+   },
+   "tramos_personales": {
+    "a_<300": 211,
+    "b_300-999": 260,
+    "c_nano_1k-9.9k": 130,
+    "d_micro_10k-99k": 1
+   },
+   "nota": "nano = 1k–9.9k, micro = 10k–99k. Seguidores de cada cuenta, no de la Jabonera."
+  },
+  "ubicacion_declarada_en_bio": {
+   "base": "502 cuentas con bio",
+   "con_ubicacion_detectable": {
+    "n": 77,
+    "pct": 15.3
+   },
+   "reparto_sobre_detectables": {
+    "pachuca_zona_metro": {
+     "n": 33,
+     "pct": 42.9
+    },
+    "hidalgo_otros_municipios": {
+     "n": 20,
+     "pct": 26.0
+    },
+    "otros_estados_mx": {
+     "n": 10,
+     "pct": 13.0
+    },
+    "extranjero": {
+     "n": 7,
+     "pct": 9.1
+    },
+    "cdmx": {
+     "n": 7,
+     "pct": 9.1
+    }
+   },
+   "nota": "Solo cuenta a quien escribe su ciudad/estado en la bio o el nombre; el resto es desconocido, no 'fuera de Pachuca'."
+  },
+  "intereses_en_bio": {
+   "base": "502 cuentas con bio (multi-etiqueta)",
+   "arte_diseno_creativos": {
+    "n": 76,
+    "pct_sobre_con_bio": 15.1
+   },
+   "musica_conciertos": {
+    "n": 49,
+    "pct_sobre_con_bio": 9.8
+   },
+   "gastronomia_foodie": {
+    "n": 43,
+    "pct_sobre_con_bio": 8.6
+   },
+   "fitness_outdoor": {
+    "n": 31,
+    "pct_sobre_con_bio": 6.2
+   },
+   "emprendedor_negocios": {
+    "n": 25,
+    "pct_sobre_con_bio": 5.0
+   },
+   "viajes": {
+    "n": 25,
+    "pct_sobre_con_bio": 5.0
+   },
+   "cerveza_artesanal": {
+    "n": 24,
+    "pct_sobre_con_bio": 4.8
+   },
+   "salud_profesiones": {
+    "n": 24,
+    "pct_sobre_con_bio": 4.8
+   },
+   "mascotas": {
+    "n": 22,
+    "pct_sobre_con_bio": 4.4
+   },
+   "cafe": {
+    "n": 22,
+    "pct_sobre_con_bio": 4.4
+   },
+   "vino_destilados_cocteleria": {
+    "n": 19,
+    "pct_sobre_con_bio": 3.8
+   },
+   "familia_padres": {
+    "n": 16,
+    "pct_sobre_con_bio": 3.2
+   },
+   "estudiantes_universidad": {
+    "n": 13,
+    "pct_sobre_con_bio": 2.6
+   },
+   "espiritualidad_bienestar": {
+    "n": 12,
+    "pct_sobre_con_bio": 2.4
+   },
+   "futbol_deporte_espectaculo": {
+    "n": 3,
+    "pct_sobre_con_bio": 0.6
+   },
+   "eventos_fiesta": {
+    "n": 3,
+    "pct_sobre_con_bio": 0.6
+   }
+  },
+  "genero_inferido_personales": {
+   "base_personales": 602,
+   "clasificables": 265,
+   "cobertura_pct": 44.0,
+   "F_pct_sobre_clasificables": 38.5,
+   "M_pct_sobre_clasificables": 61.5,
+   "metodo": "primer nombre del campo 'nombre' contra listas de nombres frecuentes en México; se excluyen ambiguos y apodos",
+   "error_esperado": "±5–10 pp por sesgo de cobertura (quien usa apodo/emoji queda fuera) y nombres unisex; no capta identidades no binarias. Úsese solo como orden de magnitud."
+  },
+  "categorias_negocio_creador": {
+   "musica_dj": {
+    "n": 22,
+    "pct": 22.4
+   },
+   "arte_diseno_foto": {
+    "n": 20,
+    "pct": 20.4
+   },
+   "cerveza_vino_destilados": {
+    "n": 18,
+    "pct": 18.4
+   },
+   "otro": {
+    "n": 11,
+    "pct": 11.2
+   },
+   "cafe_panaderia_postres": {
+    "n": 11,
+    "pct": 11.2
+   },
+   "restaurante_comida": {
+    "n": 5,
+    "pct": 5.1
+   },
+   "eventos_espacios_cultura": {
+    "n": 4,
+    "pct": 4.1
+   },
+   "medio_foodie_creador": {
+    "n": 4,
+    "pct": 4.1
+   },
+   "servicios_otros": {
+    "n": 2,
+    "pct": 2.0
+   },
+   "bienestar_fitness": {
+    "n": 1,
+    "pct": 1.0
+   }
+  }
+ },
+ "seguidos_por_la_jabonera": {
+  "muestra": 225,
+  "metodo": "clasificación por palabras clave en bio + nombre + usuario (inferido; ver 'notas_metodo')",
+  "tipo_cuenta": {
+   "personal": {
+    "n": 84,
+    "pct": 37.3
+   },
+   "negocio": {
+    "n": 76,
+    "pct": 33.8
+   },
+   "creador": {
+    "n": 65,
+    "pct": 28.9
+   }
+  },
+  "privadas": {
+   "n": 38,
+   "pct": 16.9
+  },
+  "con_bio": {
+   "n": 199,
+   "pct": 88.4
+  },
+  "probables_inactivas_o_sin_contenido": 0,
+  "seguidores_de_las_cuentas": {
+   "mediana_todas": 1788,
+   "mediana_personales": 825.0,
+   "tramos_todas": {
+    "a_<300": 13,
+    "b_300-999": 66,
+    "c_nano_1k-9.9k": 87,
+    "d_micro_10k-99k": 38,
+    "e_macro_100k+": 21
+   },
+   "tramos_personales": {
+    "a_<300": 10,
+    "b_300-999": 39,
+    "c_nano_1k-9.9k": 35
+   },
+   "nota": "nano = 1k–9.9k, micro = 10k–99k. Seguidores de cada cuenta, no de la Jabonera."
+  },
+  "ubicacion_declarada_en_bio": {
+   "base": "199 cuentas con bio",
+   "con_ubicacion_detectable": {
+    "n": 77,
+    "pct": 38.7
+   },
+   "reparto_sobre_detectables": {
+    "cdmx": {
+     "n": 37,
+     "pct": 48.1
+    },
+    "pachuca_zona_metro": {
+     "n": 19,
+     "pct": 24.7
+    },
+    "extranjero": {
+     "n": 8,
+     "pct": 10.4
+    },
+    "otros_estados_mx": {
+     "n": 7,
+     "pct": 9.1
+    },
+    "hidalgo_otros_municipios": {
+     "n": 6,
+     "pct": 7.8
+    }
+   },
+   "nota": "Solo cuenta a quien escribe su ciudad/estado en la bio o el nombre; el resto es desconocido, no 'fuera de Pachuca'."
+  },
+  "intereses_en_bio": {
+   "base": "199 cuentas con bio (multi-etiqueta)",
+   "gastronomia_foodie": {
+    "n": 65,
+    "pct_sobre_con_bio": 32.7
+   },
+   "arte_diseno_creativos": {
+    "n": 27,
+    "pct_sobre_con_bio": 13.6
+   },
+   "vino_destilados_cocteleria": {
+    "n": 21,
+    "pct_sobre_con_bio": 10.6
+   },
+   "musica_conciertos": {
+    "n": 19,
+    "pct_sobre_con_bio": 9.5
+   },
+   "mascotas": {
+    "n": 8,
+    "pct_sobre_con_bio": 4.0
+   },
+   "emprendedor_negocios": {
+    "n": 8,
+    "pct_sobre_con_bio": 4.0
+   },
+   "cerveza_artesanal": {
+    "n": 8,
+    "pct_sobre_con_bio": 4.0
+   },
+   "viajes": {
+    "n": 8,
+    "pct_sobre_con_bio": 4.0
+   },
+   "cafe": {
+    "n": 5,
+    "pct_sobre_con_bio": 2.5
+   },
+   "eventos_fiesta": {
+    "n": 4,
+    "pct_sobre_con_bio": 2.0
+   },
+   "fitness_outdoor": {
+    "n": 4,
+    "pct_sobre_con_bio": 2.0
+   },
+   "futbol_deporte_espectaculo": {
+    "n": 3,
+    "pct_sobre_con_bio": 1.5
+   },
+   "espiritualidad_bienestar": {
+    "n": 3,
+    "pct_sobre_con_bio": 1.5
+   },
+   "salud_profesiones": {
+    "n": 3,
+    "pct_sobre_con_bio": 1.5
+   },
+   "estudiantes_universidad": {
+    "n": 2,
+    "pct_sobre_con_bio": 1.0
+   },
+   "familia_padres": {
+    "n": 2,
+    "pct_sobre_con_bio": 1.0
+   }
+  },
+  "genero_inferido_personales": {
+   "base_personales": 84,
+   "clasificables": 34,
+   "cobertura_pct": 40.5,
+   "F_pct_sobre_clasificables": 41.2,
+   "M_pct_sobre_clasificables": 58.8,
+   "metodo": "primer nombre del campo 'nombre' contra listas de nombres frecuentes en México; se excluyen ambiguos y apodos",
+   "error_esperado": "±5–10 pp por sesgo de cobertura (quien usa apodo/emoji queda fuera) y nombres unisex; no capta identidades no binarias. Úsese solo como orden de magnitud."
+  },
+  "categorias_negocio_creador": {
+   "medio_foodie_creador": {
+    "n": 29,
+    "pct": 20.6
+   },
+   "restaurante_comida": {
+    "n": 24,
+    "pct": 17.0
+   },
+   "cerveza_vino_destilados": {
+    "n": 19,
+    "pct": 13.5
+   },
+   "otro": {
+    "n": 17,
+    "pct": 12.1
+   },
+   "musica_dj": {
+    "n": 16,
+    "pct": 11.3
+   },
+   "cafe_panaderia_postres": {
+    "n": 11,
+    "pct": 7.8
+   },
+   "arte_diseno_foto": {
+    "n": 8,
+    "pct": 5.7
+   },
+   "eventos_espacios_cultura": {
+    "n": 7,
+    "pct": 5.0
+   },
+   "servicios_otros": {
+    "n": 6,
+    "pct": 4.3
+   },
+   "bienestar_fitness": {
+    "n": 2,
+    "pct": 1.4
+   },
+   "belleza_moda": {
+    "n": 2,
+    "pct": 1.4
+   }
+  },
+  "nota": "225 de 258 seguidos (33 no devueltos por el actor). Las cuentas personales se cuentan pero no se nombran."
+ },
+ "seguidos_negocio_creador_por_ubicacion": {
+  "null": 80,
+  "cdmx": 34,
+  "pachuca_zona_metro": 12,
+  "otros_estados_mx": 6,
+  "extranjero": 5,
+  "hidalgo_otros_municipios": 4
+ },
+ "posts": {
+  "posts_obtenidos": 50,
+  "posts_totales_perfil": 66,
+  "nota": "La cuenta se usó en jun-2025 para otro festival gastronómico/musical en La Jabonera (perfiles de cocineros, cervecerías, DJs) y desde jul-2026 para el Oktoberfest.",
+  "por_anio": {
+   "2025": {
+    "n": 27,
+    "mediana_interaccion": 22,
+    "mediana_con_coautor": 93.0,
+    "n_con_coautor": 8,
+    "mediana_sin_coautor": 12,
+    "por_formato": {
+     "imagen": {
+      "n": 11,
+      "mediana": 7
+     },
+     "carrusel": {
+      "n": 16,
+      "mediana": 43.0
+     }
+    }
+   },
+   "2026": {
+    "n": 23,
+    "mediana_interaccion": 39,
+    "mediana_con_coautor": 382.0,
+    "n_con_coautor": 6,
+    "mediana_sin_coautor": 28,
+    "por_formato": {
+     "imagen": {
+      "n": 15,
+      "mediana": 22
+     },
+     "carrusel": {
+      "n": 4,
+      "mediana": 68.0
+     },
+     "video/reel": {
+      "n": 4,
+      "mediana": 239.0
+     }
+    }
+   }
+  },
+  "top_8": [
+   {
+    "fecha": "2026-08-13",
+    "formato": "imagen",
+    "likes": 773,
+    "comentarios": 29,
+    "vistas_video": null,
+    "coautores": [
+     "l.a.jabonera",
+     "juancirerolofficial",
+     "el_garnashians",
+     "mowebiergarten",
+     "cisnenegro.mx"
+    ],
+    "tema": "OKTOBERFEST LA JABONERA 2026 🍻🇩🇪 ¡Pachuca, ya se armó el plan! Este 3 "
+   },
+   {
+    "fecha": "2026-08-20",
+    "formato": "carrusel",
+    "likes": 447,
+    "comentarios": 8,
+    "vistas_video": null,
+    "coautores": [
+     "juancirerolofficial",
+     "coffeeparkcentro",
+     "el_garnashians"
+    ],
+    "tema": "JUAN CIREROL EN OKTOBERFEST LA JABONERA 2026 🤠 Juan Cirerol lleva años"
+   },
+   {
+    "fecha": "2026-09-22",
+    "formato": "video/reel",
+    "likes": 409,
+    "comentarios": 27,
+    "vistas_video": 13017,
+    "coautores": [
+     "juancirerolofficial"
+    ],
+    "tema": "JUAN CIREROL TIENE ALGO QUE DECIRTE: Este 3 y 4 de octubre, nos vemos "
+   },
+   {
+    "fecha": "2026-09-15",
+    "formato": "video/reel",
+    "likes": 317,
+    "comentarios": 11,
+    "vistas_video": 54591,
+    "coautores": [
+     "mowebiergarten",
+     "elgaritodesanja",
+     "coffeeparkcentro"
+    ],
+    "tema": "¿YA TIENES PLAN PARA EL 3 y 4 DE OCTUBRE? PORQUE NOSOTROS SÍ! 🇩🇪 OKTOB"
+   },
+   {
+    "fecha": "2025-06-13",
+    "formato": "carrusel",
+    "likes": 208,
+    "comentarios": 13,
+    "vistas_video": null,
+    "coautores": [],
+    "tema": "Hace 6 años nació La Panzona, un lugar de culto donde la receta de la "
+   },
+   {
+    "fecha": "2025-06-06",
+    "formato": "carrusel",
+    "likes": 154,
+    "comentarios": 1,
+    "vistas_video": null,
+    "coautores": [
+     "bakery_sanja"
+    ],
+    "tema": "C.P. Bakery Es una panadería que se inauguró en septiembre de 2024, au"
+   },
+   {
+    "fecha": "2026-09-30",
+    "formato": "video/reel",
+    "likes": 144,
+    "comentarios": 6,
+    "vistas_video": 6475,
+    "coautores": [
+     "escuby.wav"
+    ],
+    "tema": "❤️‍🔥 UN CORAZÓN FLOTANTE. 🎧 UN DJ ESCUBY ENTRE LA GENTE. 🍺 Y UN CIERRE"
+   },
+   {
+    "fecha": "2025-06-03",
+    "formato": "carrusel",
+    "likes": 112,
+    "comentarios": 14,
+    "vistas_video": null,
+    "coautores": [
+     "rk.mmmm"
+    ],
+    "tema": "Paella con RK RK lleva más de 10 años preparando paellas al carbón que"
+   }
+  ]
+ },
+ "comentarios": {
+  "comentarios_unicos": 98,
+  "de_la_cuenta_respondiendo": 1,
+  "de_audiencia": 97,
+  "comentaristas_unicos": 77,
+  "por_anio_del_post": {
+   "2026": 59,
+   "2025": 38
+  },
+  "con_mencion_a_otra_cuenta": {
+   "n": 2,
+   "pct": 2.1
+  },
+  "solo_etiquetas_sin_texto": {
+   "n": 2,
+   "pct": 2.1,
+   "lectura": "señal de 'envío/etiquetado social': la persona invita a amigos al plan"
+  },
+  "temas": {
+   "elogio_entusiasmo": {
+    "n": 32,
+    "pct": 33.0
+   },
+   "horarios_fechas": {
+    "n": 10,
+    "pct": 10.3
+   },
+   "artista_musica": {
+    "n": 10,
+    "pct": 10.3
+   },
+   "fans_del_artista_piden_otras_ciudades": {
+    "n": 7,
+    "pct": 7.2
+   },
+   "cerveza_bebida": {
+    "n": 6,
+    "pct": 6.2
+   },
+   "precio_boletos_preventa": {
+    "n": 2,
+    "pct": 2.1
+   },
+   "estacionamiento_ubicacion": {
+    "n": 2,
+    "pct": 2.1
+   },
+   "ninos_familia": {
+    "n": 1,
+    "pct": 1.0
+   }
+  },
+  "preguntas": {
+   "n": 24,
+   "pct": 24.7,
+   "textos_anonimizados": [
+    "Incluye copa?",
+    "¿Se puede ingresar con mochilas?",
+    "Ya tienen los horarios de presentaciones ?",
+    "A qué hora toca Juanito??",
+    "Que día va a tocar Juan Cirerol ?",
+    "Solo diste una fecha aquí  en Pachuca ?",
+    "Donde es eso? En Pachuca?",
+    "Guadalajara sigue en pie pa diciembre gallo?",
+    "Cuando vienes a MTY Juanito?",
+    "que pedo con Qro? padrno",
+    "Dónde va a ser en Cuautitlán?",
+    "nada en cdmx?? 😢",
+    "A qué hora estará Juan?",
+    "¿Qué día toca Juan?",
+    "Que día toca Juan Cirerol ?"
+   ]
+  },
+  "emojis_top": [
+   [
+    "👏",
+    30
+   ],
+   [
+    "🔥",
+    25
+   ],
+   [
+    "❤",
+    10
+   ],
+   [
+    "🍺",
+    6
+   ],
+   [
+    "😍",
+    5
+   ],
+   [
+    "🙌",
+    5
+   ],
+   [
+    "🤩",
+    5
+   ],
+   [
+    "😋",
+    3
+   ],
+   [
+    "🤖",
+    3
+   ],
+   [
+    "💎",
+    3
+   ],
+   [
+    "😢",
+    2
+   ],
+   [
+    "✨",
+    2
+   ]
+  ],
+  "en_posts_con_juan_cirerol": {
+   "n": 37,
+   "pct": 38.1
+  },
+  "cobertura": "98 comentarios de primer nivel visibles sin login (de 149 que reporta Instagram; la diferencia son respuestas anidadas, función de pago). El comment-scraper sobre los 3 posts con más conversación no añadió comentarios nuevos."
+ },
+ "solapamiento_cisne_negro": {
+  "metodo": "intersección de conjuntos de usernames calculada en local; solo se publican conteos",
+  "comentaristas_cisne_negro_200_posts": 91,
+  "de_ellos_en_muestra_seguidores_jabonera_700": 18,
+  "de_ellos_que_comentaron_en_jabonera": 16,
+  "comentaristas_jabonera": 77,
+  "comentaristas_jabonera_en_muestra_seguidores": 23,
+  "cisnenegro_mx_es_seguido_por_jabonera": true,
+  "cisnenegro_mx_en_muestra_seguidores_jabonera": false,
+  "seguidores_muestra_que_tambien_sigue_la_jabonera_(mutuos)": 42,
+  "lectura": "Con 1,550 seguidores (Jabonera) y 3,515 (Cisne), la muestra de 700 permite detectar solapamiento entre comentaristas, no estimar el solapamiento total de audiencias (requeriría la lista completa de seguidores de ambas cuentas)."
+ },
+ "resenas_google_cisne_negro": {
+  "resenas_total": 69,
+  "con_texto": 45,
+  "estrellas": {
+   "1": 3,
+   "3": 6,
+   "4": 9,
+   "5": 51
+  },
+  "temas": {
+   "comida": {
+    "n": 31,
+    "pct_con_texto": 68.9,
+    "estrellas_promedio": 4.48
+   },
+   "cerveza_producto": {
+    "n": 31,
+    "pct_con_texto": 68.9,
+    "estrellas_promedio": 4.61
+   },
+   "ambiente_lugar": {
+    "n": 26,
+    "pct_con_texto": 57.8,
+    "estrellas_promedio": 4.58
+   },
+   "servicio_atencion": {
+    "n": 23,
+    "pct_con_texto": 51.1,
+    "estrellas_promedio": 4.3
+   },
+   "recomendacion_volver": {
+    "n": 8,
+    "pct_con_texto": 17.8,
+    "estrellas_promedio": 4.75
+   },
+   "maridaje_equilibrio": {
+    "n": 5,
+    "pct_con_texto": 11.1,
+    "estrellas_promedio": 5
+   },
+   "eventos_amigos": {
+    "n": 4,
+    "pct_con_texto": 8.9,
+    "estrellas_promedio": 5
+   },
+   "precio": {
+    "n": 4,
+    "pct_con_texto": 8.9,
+    "estrellas_promedio": 3.75
+   },
+   "limpieza": {
+    "n": 1,
+    "pct_con_texto": 2.2,
+    "estrellas_promedio": 1
+   }
+  },
+  "en_ingles": 0,
+  "metodo": "palabras clave sobre el texto de la reseña (multi-etiqueta)"
+ },
+ "aliados_potenciales": {
+  "n": 117,
+  "por_categoria": {
+   "medio_foodie_creador": 22,
+   "restaurante_comida": 22,
+   "cerveza_vino_destilados": 20,
+   "cafe_panaderia_postres": 14,
+   "musica_dj": 14,
+   "arte_diseno_foto": 7,
+   "otro": 7,
+   "eventos_espacios_cultura": 3,
+   "bienestar_fitness": 3,
+   "servicios_otros": 3,
+   "belleza_moda": 2
+  },
+  "criterio_privacidad": "más una lista de exclusión por revisión manual guardada en raw/ (no versionada); se excluyen privadas y personales; un negocio con nombre de persona solo entra si el nombre/usuario tiene señales de marca o es figura pública (≥5k, acreditado en el festival o collab previa con Cisne); un creador solo si es figura pública o su nombre es de marca",
+  "metodo_score": "categoría afín (cerveza 3 · restaurante/música/foodie/eventos 2.5 · café 2 …) + local Pachuca/Hidalgo 3 + alcance 0.5–2 + 0.6 por crédito en posts del Oktoberfest 2026 (máx 5) + 1.5 si ya hubo collab con Cisne + 0.5 si sigue a la Jabonera",
+  "top_40": [
+   {
+    "cuenta": "@mowebiergarten",
+    "nombre": "Möwe Biergarten",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": "Restaurants",
+    "seguidores": 4026,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 6,
+    "acreditado_en_posts_jabonera": 7,
+    "collab_previa_con_cisne": 1,
+    "relacion_con_jabonera": "acreditado_en_posts",
+    "bio": "¡Ven a probar las mejores salchichas de tu vida y de paso échate una de nuestras más de 200 cervezas! ¡Somos especialistas! Revolución 702-b",
+    "score": 11.5
+   },
+   {
+    "cuenta": "@coffeeparkcentro",
+    "nombre": "𝐂𝐨𝐟𝐟𝐞𝐞 𝐏𝐚𝐫𝐤",
+    "tipo": "negocio",
+    "categoria": "cafe_panaderia_postres",
+    "categoria_ig": "Cafe",
+    "seguidores": 6976,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 6,
+    "acreditado_en_posts_jabonera": 6,
+    "collab_previa_con_cisne": 1,
+    "relacion_con_jabonera": "acreditado_en_posts",
+    "bio": "𝐒𝐢 𝐯𝐚 𝐚 𝐩𝐚𝐬𝐚𝐫… 𝐐𝐮𝐞 𝐩𝐚𝐬𝐞 𝐞𝐧 𝐂𝐨𝐟𝐟𝐞𝐞 𝐏𝐚𝐫𝐤 ☕️ 𝐂𝐚𝐟𝐞 🍽️ 𝐂𝐨𝐦𝐢𝐝𝐚 🥐 𝐏𝐚𝐧𝐚𝐝𝐞𝐫𝐢𝐚 🍺 𝐁𝐚𝐫 🗺️ 𝐀𝐥𝐥𝐞𝐧𝐝𝐞 𝟔𝟏𝟐 𝐏𝐚𝐜𝐡𝐮𝐜𝐚 𝐇𝐢𝐝𝐚𝐥𝐠𝐨 🐕 𝐏𝐄𝐓 𝐅𝐑𝐈𝐄𝐍𝐃𝐋𝐘 📱 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝟕𝟕𝟏 𝟑𝟓𝟔 ",
+    "score": 11.0
+   },
+   {
+    "cuenta": "@elgaritodesanja",
+    "nombre": "𝐄𝐥 𝐆𝐚𝐫𝐢𝐭𝐨 𝐝𝐞 𝐒𝐚𝐧𝐣𝐚",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 3727,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 6,
+    "acreditado_en_posts_jabonera": 6,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguidor_de_jabonera",
+    "bio": "𝐕𝐈𝐍𝐎🍷𝐔𝐋𝐓𝐑𝐀𝐌𝐀𝐑𝐈𝐍𝐎𝐒🐟 𝐐𝐔𝐄𝐒𝐎𝐒🧀𝐏𝐈𝐙𝐙𝐀🍕 𝐏𝐚𝐜𝐡𝐮𝐜𝐚, 𝐇𝐢𝐝𝐚𝐥𝐠𝐨 4pm a 11:30pm 𝐄𝐬𝐭𝐚𝐦𝐨𝐬 𝐣𝐮𝐧𝐭𝐨 𝐚 @bakery_sanja",
+    "score": 10.5
+   },
+   {
+    "cuenta": "@l.a.jabonera",
+    "nombre": "LA JABONERA",
+    "tipo": "negocio",
+    "categoria": "eventos_espacios_cultura",
+    "categoria_ig": null,
+    "seguidores": 1789,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 2,
+    "acreditado_en_posts_jabonera": 2,
+    "collab_previa_con_cisne": 2,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Antigua fábrica de jabón convertida en sede de experiencias gastronómicas y creativas en Pachuca",
+    "score": 9.7
+   },
+   {
+    "cuenta": "@juancirerolofficial",
+    "nombre": "Juan Cirerol",
+    "tipo": "negocio",
+    "categoria": "musica_dj",
+    "categoria_ig": null,
+    "seguidores": 35060,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 5,
+    "acreditado_en_posts_jabonera": 5,
+    "collab_previa_con_cisne": 1,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Info agenda: oficinajuancirerol@gmail.com",
+    "score": 9.5
+   },
+   {
+    "cuenta": "@_musicofilia",
+    "nombre": "Musicofilia",
+    "tipo": "creador",
+    "categoria": "musica_dj",
+    "categoria_ig": "Music",
+    "seguidores": 2462,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 4,
+    "acreditado_en_posts_jabonera": 4,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "acreditado_en_posts",
+    "bio": "Joyas musicales en todos los formatos. Colección personal de @v_hugoperezcruz Pachuca de Soto, Hidalgo 🇲🇽",
+    "score": 8.9
+   },
+   {
+    "cuenta": "@amordeveranostd",
+    "nombre": "Salvador Verano C.",
+    "tipo": "creador",
+    "categoria": "arte_diseno_foto",
+    "categoria_ig": null,
+    "seguidores": 15525,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 2,
+    "relacion_con_jabonera": "seguidor_de_jabonera",
+    "bio": "Freelance illustrator and graphic designer from Pachuquita with love. NO LOGOS. Commisions: hola@amordeverano.com or amordeveranostd@gmail.c",
+    "score": 8.0
+   },
+   {
+    "cuenta": "@traphausbrewco",
+    "nombre": "TrapHausBrewCO",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 609,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 1,
+    "acreditado_en_posts_jabonera": 3,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Pequeña Cervecería Artesanal ubicada en Pachuca, Hidalgo. Small craft brewery located in the heart of Hidalgo, Mexico. München trained, Mexi",
+    "score": 7.6
+   },
+   {
+    "cuenta": "@lavizcainabrew",
+    "nombre": "Cervecería La Vizcaina",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 3157,
+    "ubicacion_bio": "hidalgo_otros_municipios",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "",
+    "score": 7.5
+   },
+   {
+    "cuenta": "@unhidalgocerveceriamexicana",
+    "nombre": "Un Hidalgo Cervecería Méxicana",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 1573,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguidor_de_jabonera",
+    "bio": "Centro especializado en cerveza artesanal mexican Calle Francisco Hermosillo 107 Colonia Doctores Pachuca, Hidalgo.",
+    "score": 7.5
+   },
+   {
+    "cuenta": "@scorpio_seis_nueve",
+    "nombre": "Gabriell Escorpio Seis Nueve Ca",
+    "tipo": "creador",
+    "categoria": "musica_dj",
+    "categoria_ig": null,
+    "seguidores": 25190,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 4,
+    "acreditado_en_posts_jabonera": 4,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "",
+    "score": 7.4
+   },
+   {
+    "cuenta": "@el_garnashians",
+    "nombre": "El Garnashians",
+    "tipo": "creador",
+    "categoria": "medio_foodie_creador",
+    "categoria_ig": null,
+    "seguidores": 9241,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 3,
+    "acreditado_en_posts_jabonera": 3,
+    "collab_previa_con_cisne": 1,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Por el amor a comer y beber hice este proyecto, para reseñar y archivar mi vicio garnachero. Colaboraciones por DM.",
+    "score": 7.3
+   },
+   {
+    "cuenta": "@los_rurales",
+    "nombre": "Los Rurales",
+    "tipo": "creador",
+    "categoria": "musica_dj",
+    "categoria_ig": null,
+    "seguidores": 1059,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 5,
+    "acreditado_en_posts_jabonera": 5,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Balkan/Second Line",
+    "score": 7.0
+   },
+   {
+    "cuenta": "@cerveceriabriah",
+    "nombre": "",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 244,
+    "ubicacion_bio": "hidalgo_otros_municipios",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguidor_de_jabonera",
+    "bio": "Cerveza Artesanal 🍺 Creación que inspira sonido 📍Tulancingo",
+    "score": 7.0
+   },
+   {
+    "cuenta": "@g.latineo",
+    "nombre": "G𓋼𓍊𖡼.𖤣𖥧𖡼.𖤣𖥧",
+    "tipo": "creador",
+    "categoria": "musica_dj",
+    "categoria_ig": null,
+    "seguidores": 2135,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 1,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguidor_de_jabonera",
+    "bio": "✨Dj G-latina ‧˚❀༉˚ 🔪Cocino y reparto cosas en @tragon.tragonn 𓆝 𓆟 𓆞 𓆝 📍Pachuca, hgo.",
+    "score": 7.0
+   },
+   {
+    "cuenta": "@rancholagasparena",
+    "nombre": "Rancho La Gaspareña",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 880,
+    "ubicacion_bio": "hidalgo_otros_municipios",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "🌱 Recorridos guiados entre magueyes | Degustación de pulque y aguamiel | Cocina tradicional con ingredientes del maguey | Saberes y sabores ",
+    "score": 6.5
+   },
+   {
+    "cuenta": "@elcanibalmx",
+    "nombre": "El Canibal",
+    "tipo": "negocio",
+    "categoria": "restaurante_comida",
+    "categoria_ig": null,
+    "seguidores": 3734,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Las mejores hamburguesas de Pachuca…y de Guadalajara @elcanibal_gdl L-S: 1pm-11pm D: 1pm-10pm Servicio a domicilio (771)1530308",
+    "score": 6.5
+   },
+   {
+    "cuenta": "@urbomx",
+    "nombre": "Urbo Pachuca",
+    "tipo": "negocio",
+    "categoria": "restaurante_comida",
+    "categoria_ig": null,
+    "seguidores": 4442,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "La app 100% Pachuqueña, cientos de restaurantes y tiendas en un solo lugar con envíos a domicilio ⬇️⬇️⬇️",
+    "score": 6.5
+   },
+   {
+    "cuenta": "@salymiel.pasteleria",
+    "nombre": "Sal & Miel |Pasteles personalizados Pachuca",
+    "tipo": "negocio",
+    "categoria": "cafe_panaderia_postres",
+    "categoria_ig": null,
+    "seguidores": 2229,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguidor_de_jabonera",
+    "bio": "Pastelería & café 🎀Pachuca✨ Pasteles, postres & momentos bonitos📍 Samuel Carro 200🩷 Pedidos con 3 días de anticipación👇🏻 Cotiza aquí",
+    "score": 6.5
+   },
+   {
+    "cuenta": "@automata_mx",
+    "nombre": "Somos autómatas",
+    "tipo": "creador",
+    "categoria": "musica_dj",
+    "categoria_ig": null,
+    "seguidores": 1754,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 2,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "acreditado_en_posts",
+    "bio": "MUSIC. ELECTRO. FUTURE Pachuca ⬇️⬇️⬇️",
+    "score": 6.5
+   },
+   {
+    "cuenta": "@tonygarc",
+    "nombre": "MARÍA CÉSAR",
+    "tipo": "creador",
+    "categoria": "musica_dj",
+    "categoria_ig": null,
+    "seguidores": 2248,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 4,
+    "acreditado_en_posts_jabonera": 4,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "DJ | Musician | Producer | Architect | Designer @mariacesar_arq @automata_mx Mx | 🏳️‍🌈 New single! Listen to Ask No More here ⬇️💣📀",
+    "score": 6.4
+   },
+   {
+    "cuenta": "@escuby.wav",
+    "nombre": "Enrique Tena Padilla",
+    "tipo": "creador",
+    "categoria": "musica_dj",
+    "categoria_ig": null,
+    "seguidores": 13942,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 4,
+    "acreditado_en_posts_jabonera": 4,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Poseído por el ritmo 🥁 ragatanga",
+    "score": 6.4
+   },
+   {
+    "cuenta": "@el_de_santajulia",
+    "nombre": "De Santa Julia",
+    "tipo": "negocio",
+    "categoria": "musica_dj",
+    "categoria_ig": null,
+    "seguidores": 460,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Pachuca de Soto, Hidalgo Conciertos, lucha libre y cultura pa’l alma. Aquí se mezcla lo que suena, lo que vibra y lo que se hereda. DSJ Medi",
+    "score": 6.0
+   },
+   {
+    "cuenta": "@la.borraja",
+    "nombre": "La Borraja",
+    "tipo": "negocio",
+    "categoria": "restaurante_comida",
+    "categoria_ig": null,
+    "seguidores": 103,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Tacos Artesanales. Nos encontramos Blvd Valle de San Javier #610. The Garden Pachuca.",
+    "score": 6.0
+   },
+   {
+    "cuenta": "@apex.hybridfitness",
+    "nombre": "APEX 362",
+    "tipo": "negocio",
+    "categoria": "bienestar_fitness",
+    "categoria_ig": null,
+    "seguidores": 2838,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguidor_de_jabonera",
+    "bio": "Hybrid Studio Funcional • Pilates • CrossFit • Hyrox 📍 Pachuca 📲 Solicita una clase El lugar al que llegas cuando ya no quieres perder el ti",
+    "score": 6.0
+   },
+   {
+    "cuenta": "@marmolmarmolmarmol",
+    "nombre": "Rū𒋦𓁿𓁿𓁿",
+    "tipo": "creador",
+    "categoria": "musica_dj",
+    "categoria_ig": null,
+    "seguidores": 3578,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 3,
+    "acreditado_en_posts_jabonera": 3,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "✷ DJ/Selector/Booker ✷ Fundador/Creativo @automata_mx ✷ Future Beats & Timeless Music ✷ Música 🇵🇸 Comunidad ☭ Resistencia. ✷ DJ Sets y EP",
+    "score": 5.8
+   },
+   {
+    "cuenta": "@xou_nailart",
+    "nombre": "XOU • Nail Art",
+    "tipo": "negocio",
+    "categoria": "arte_diseno_foto",
+    "categoria_ig": null,
+    "seguidores": 2611,
+    "ubicacion_bio": "pachuca_zona_metro",
+    "local": true,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "💅🏼 ARTE EN UÑAS 🪄MANICURA RUSA 👩🏻‍🎨 Soy Xochitl García 📍 Pachuca, Hgo • Servicio exclusivo a domicilio.",
+    "score": 5.5
+   },
+   {
+    "cuenta": "@bakery_sanja",
+    "nombre": "𝙲𝚘𝚏𝚏𝚎𝚎 𝙿𝚊𝚛𝚔 𝙱𝚊𝚔𝚎𝚛𝚢",
+    "tipo": "negocio",
+    "categoria": "cafe_panaderia_postres",
+    "categoria_ig": null,
+    "seguidores": 5184,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 2,
+    "acreditado_en_posts_jabonera": 3,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguidor_de_jabonera",
+    "bio": "𝙻𝙰 𝙿𝙰𝙽𝙰𝙳𝙴𝚁𝙸𝙰 𝙳𝙴 @coffeeparkcentro 𝙼𝙰𝚂 𝙵𝚁𝙴𝚂𝙲𝙾 𝙽𝙾 𝚂𝙴 𝙿𝚄𝙴𝙳𝙴 Lun-Dom 7am a 10pm 𝐁𝐥𝐯𝐝. 𝐕𝐚𝐥𝐥𝐞 𝐝𝐞 𝐒𝐚𝐧 𝐉𝐚𝐯𝐢",
+    "score": 5.2
+   },
+   {
+    "cuenta": "@principia.cdmx",
+    "nombre": "Principia CDMX | Taproom de Cervecería Principia",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 10050,
+    "ubicacion_bio": "cdmx",
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 1,
+    "acreditado_en_posts_jabonera": 1,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "🍺Bar de cerveza artesanal - 🐶Pet friendly 🌌Descubre los sabores del cosmos 📍Del Valle Nte, CDMX - 🕐 Lunes a domingo 👇🏼RESERVA AQUÍ",
+    "score": 5.1
+   },
+   {
+    "cuenta": "@beersandtrips",
+    "nombre": "Beers And Trips",
+    "tipo": "creador",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 8703,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "The world of craftbeers through our travels.| El mundo de las cervezas visto desde un prisma viajero. Tag us #beersandtrips DM for collabs",
+    "score": 5.0
+   },
+   {
+    "cuenta": "@alelirooftop",
+    "nombre": "Restaurante Aleli Rooftop",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 29166,
+    "ubicacion_bio": "cdmx",
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Cocina de brasa al aire libre. Cerveza, cocteles y mezcales. #Petfriendly 🐶 @loreamx @antesala.cdmx @supertyrano",
+    "score": 5.0
+   },
+   {
+    "cuenta": "@monte_xanic",
+    "nombre": "Monte Xanic",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 99448,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Somos amantes de lo excepcional de México Bodega líder en vinos ultra premium mexicanos Permisos Cofepris 203300201A0906 223300201A2318 2433",
+    "score": 5.0
+   },
+   {
+    "cuenta": "@100vinosmexicanos",
+    "nombre": "Festival 100 Vinos Mexicanos",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 65053,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Se solicitan mexicanos que tomen vino mexicano. Unidos por el vino mexicano🍷🇲🇽 🗓️ 28 de febrero y 1 de marzo de 2026 #100vinosmexicanos",
+    "score": 5.0
+   },
+   {
+    "cuenta": "@claroscuro_dim",
+    "nombre": "CLAROSCURO",
+    "tipo": "creador",
+    "categoria": "musica_dj",
+    "categoria_ig": null,
+    "seguidores": 450,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 3,
+    "acreditado_en_posts_jabonera": 3,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "DJ & selector de emociones | House / Indie / Techno Booking: claroscuro.viz@gmail.com",
+    "score": 4.8
+   },
+   {
+    "cuenta": "@festivaldelossentidos",
+    "nombre": "Festival de los Sentidos",
+    "tipo": "negocio",
+    "categoria": "musica_dj",
+    "categoria_ig": null,
+    "seguidores": 22636,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "#Sentidos27 | 🗓11.12.13 junio 2027 ❤️🌈♻️ Música y gastronomía 🤩",
+    "score": 4.5
+   },
+   {
+    "cuenta": "@freims.mex",
+    "nombre": "Frëims",
+    "tipo": "negocio",
+    "categoria": "eventos_espacios_cultura",
+    "categoria_ig": null,
+    "seguidores": 32234,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Espacio vecinal para la cultura emergente, el intercambio humano y las cosas ricas. L-V: 8-6 S-D: 8-9",
+    "score": 4.5
+   },
+   {
+    "cuenta": "@peltre_loncheria",
+    "nombre": "Peltre Lonchería",
+    "tipo": "negocio",
+    "categoria": "restaurante_comida",
+    "categoria_ig": null,
+    "seguidores": 51298,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "¡Bienvenido a Peltre Lonchería, tu Lugar Feliz! Aquí la felicidad se sirve en cada platillo. 🩵",
+    "score": 4.5
+   },
+   {
+    "cuenta": "@cavamaciel",
+    "nombre": "Cava Maciel",
+    "tipo": "negocio",
+    "categoria": "cerveza_vino_destilados",
+    "categoria_ig": null,
+    "seguidores": 6213,
+    "ubicacion_bio": null,
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 1,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Abierto para degustaciones de lunes a domingo de 11:00am a 5:00pm Open daily for wine tastings🍷 Book here - reserva aquí👇🏼",
+    "score": 4.5
+   },
+   {
+    "cuenta": "@porqueamocomer",
+    "nombre": "Porque AMO comer | Tus foodies de confianza",
+    "tipo": "creador",
+    "categoria": "medio_foodie_creador",
+    "categoria_ig": null,
+    "seguidores": 20172,
+    "ubicacion_bio": "cdmx",
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "🍽️ Te ayudamos a decidir dónde comer 📍Miami 🇺🇸 | CDMX 🇲🇽 🎥 Reseñas honestas 📩 porqueamocomer@gmail.com",
+    "score": 4.5
+   },
+   {
+    "cuenta": "@fondafinamx",
+    "nombre": "Fonda Fina",
+    "tipo": "negocio",
+    "categoria": "restaurante_comida",
+    "categoria_ig": null,
+    "seguidores": 57326,
+    "ubicacion_bio": "cdmx",
+    "local": false,
+    "acreditado_en_oktoberfest_2026": 0,
+    "acreditado_en_posts_jabonera": 0,
+    "collab_previa_con_cisne": 0,
+    "relacion_con_jabonera": "seguido_por_jabonera",
+    "bio": "Cocina de México / Chef @juanca3rera Medellín 79, Roma Norte, CDMX Reserva al (55) 5533 9002 OPEN TABLE",
+    "score": 4.5
+   }
+  ],
+  "resto": [
+   {
+    "cuenta": "@delirio_mx",
+    "categoria": "restaurante_comida",
+    "seguidores": 49525,
+    "local": false,
+    "score": 4.5
+   },
+   {
+    "cuenta": "@aguagovi",
+    "categoria": "servicios_otros",
+    "seguidores": 340,
+    "local": true,
+    "score": 4.5
+   },
+   {
+    "cuenta": "@vuelvecarmela",
+    "categoria": "restaurante_comida",
+    "seguidores": 61191,
+    "local": false,
+    "score": 4.5
+   },
+   {
+    "cuenta": "@aguaysaldf",
+    "categoria": "restaurante_comida",
+    "seguidores": 27907,
+    "local": false,
+    "score": 4.5
+   },
+   {
+    "cuenta": "@rodrigoestradagarcia",
+    "categoria": "cerveza_vino_destilados",
+    "seguidores": 14069,
+    "local": false,
+    "score": 4.5
+   },
+   {
+    "cuenta": "@gorditour",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 25782,
+    "local": false,
+    "score": 4.5
+   },
+   {
+    "cuenta": "@quetzal_cafeycerveza",
+    "categoria": "cerveza_vino_destilados",
+    "seguidores": 3457,
+    "local": false,
+    "score": 4.5
+   },
+   {
+    "cuenta": "@holayelle",
+    "categoria": "otro",
+    "seguidores": 991,
+    "local": true,
+    "score": 4.5
+   },
+   {
+    "cuenta": "@nauyaca_cerveza",
+    "categoria": "cerveza_vino_destilados",
+    "seguidores": 2758,
+    "local": false,
+    "score": 4.5
+   },
+   {
+    "cuenta": "@chefcollinsevents",
+    "categoria": "restaurante_comida",
+    "seguidores": 10346,
+    "local": false,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@costa_vinos",
+    "categoria": "cerveza_vino_destilados",
+    "seguidores": 1972,
+    "local": false,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@cafeologia.of",
+    "categoria": "cafe_panaderia_postres",
+    "seguidores": 29890,
+    "local": false,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@lacavadejean",
+    "categoria": "cerveza_vino_destilados",
+    "seguidores": 3154,
+    "local": false,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@alexcorpmx",
+    "categoria": "musica_dj",
+    "seguidores": 8705,
+    "local": false,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@acacia_rest",
+    "categoria": "restaurante_comida",
+    "seguidores": 6181,
+    "local": false,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@foodies_encdmx",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 14684,
+    "local": false,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@missfoodiecdmx",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 8505,
+    "local": false,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@erizo_cocina",
+    "categoria": "restaurante_comida",
+    "seguidores": 5047,
+    "local": false,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@weeatmx",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 9999,
+    "local": false,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@chilangoconhambre",
+    "categoria": "restaurante_comida",
+    "seguidores": 5251,
+    "local": false,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@iceberg_mexico",
+    "categoria": "servicios_otros",
+    "seguidores": 375,
+    "local": true,
+    "score": 4.0
+   },
+   {
+    "cuenta": "@ferocity.wav",
+    "categoria": "otro",
+    "seguidores": 2553,
+    "local": false,
+    "score": 3.8
+   },
+   {
+    "cuenta": "@timeoutmexico",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 398086,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@restauranterosetta",
+    "categoria": "restaurante_comida",
+    "seguidores": 173240,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@foodiesidemx",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 784,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@rest_quintonil",
+    "categoria": "restaurante_comida",
+    "seguidores": 193729,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@food4fer",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 217153,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@chilangocom",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 1090924,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@ximenamh_",
+    "categoria": "bienestar_fitness",
+    "seguidores": 72313,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@alikante22",
+    "categoria": "restaurante_comida",
+    "seguidores": 2328,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@agourmet",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 202348,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@che_taco_restaurante",
+    "categoria": "musica_dj",
+    "seguidores": 1632,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@o_forno_paulista",
+    "categoria": "restaurante_comida",
+    "seguidores": 1323,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@bottletracking",
+    "categoria": "restaurante_comida",
+    "seguidores": 1997,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@comidistasmx",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 368209,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@el.pepebotella",
+    "categoria": "cerveza_vino_destilados",
+    "seguidores": 783,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@restaurantehaciendaconcordia",
+    "categoria": "restaurante_comida",
+    "seguidores": 2482,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@lafoodielovermx",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 3749,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@degourmand",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 276175,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@maldelpuerco",
+    "categoria": "restaurante_comida",
+    "seguidores": 279807,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@oishi_pokebar",
+    "categoria": "restaurante_comida",
+    "seguidores": 1086,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@foodpolicemx",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 256188,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@diariodeunafoodie",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 125715,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@gastronautadf",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 131731,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@wine_coolers_empire",
+    "categoria": "cerveza_vino_destilados",
+    "seguidores": 590,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@pidelacuentamx",
+    "categoria": "eventos_espacios_cultura",
+    "seguidores": 1515,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@tostacomx",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 1831,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@el_capitan_restaurante",
+    "categoria": "restaurante_comida",
+    "seguidores": 1413,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@cronicasdeluzysal",
+    "categoria": "arte_diseno_foto",
+    "seguidores": 29845,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@lavie_panaderia",
+    "categoria": "cafe_panaderia_postres",
+    "seguidores": 2419,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@arte_hastaquetehartes",
+    "categoria": "arte_diseno_foto",
+    "seguidores": 18310,
+    "local": false,
+    "score": 3.5
+   },
+   {
+    "cuenta": "@panaderiarosetta",
+    "categoria": "cafe_panaderia_postres",
+    "seguidores": 276074,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@maximobistrot",
+    "categoria": "cafe_panaderia_postres",
+    "seguidores": 160795,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@aquileschavez",
+    "categoria": "cafe_panaderia_postres",
+    "seguidores": 308476,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@arcillareposteria",
+    "categoria": "cafe_panaderia_postres",
+    "seguidores": 631,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@dulxe.reposteria",
+    "categoria": "cafe_panaderia_postres",
+    "seguidores": 4046,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@postreria.mex",
+    "categoria": "cafe_panaderia_postres",
+    "seguidores": 134144,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@foodie.discovery",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 562,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@the_pot_design",
+    "categoria": "cafe_panaderia_postres",
+    "seguidores": 2510,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@foodielicious.mx",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 487,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@coconourishbar",
+    "categoria": "cafe_panaderia_postres",
+    "seguidores": 1637,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@cheateatsmx",
+    "categoria": "restaurante_comida",
+    "seguidores": 712,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@2mexfoodies",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 385,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@90sfoodiemx",
+    "categoria": "medio_foodie_creador",
+    "seguidores": 397,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@chapatasstreet_mx",
+    "categoria": "cafe_panaderia_postres",
+    "seguidores": 4725,
+    "local": false,
+    "score": 3.0
+   },
+   {
+    "cuenta": "@lardomexico",
+    "categoria": "otro",
+    "seguidores": 89347,
+    "local": false,
+    "score": 2.5
+   },
+   {
+    "cuenta": "@anfora",
+    "categoria": "arte_diseno_foto",
+    "seguidores": 157394,
+    "local": false,
+    "score": 2.5
+   },
+   {
+    "cuenta": "@eric_reyes_lamothe",
+    "categoria": "arte_diseno_foto",
+    "seguidores": 1342,
+    "local": false,
+    "score": 2.5
+   },
+   {
+    "cuenta": "@deborahdanalifestyle",
+    "categoria": "otro",
+    "seguidores": 98541,
+    "local": false,
+    "score": 2.5
+   },
+   {
+    "cuenta": "@siete30salon",
+    "categoria": "belleza_moda",
+    "seguidores": 94072,
+    "local": false,
+    "score": 2.5
+   },
+   {
+    "cuenta": "@adelgaza_bhip_oficial",
+    "categoria": "bienestar_fitness",
+    "seguidores": 1007,
+    "local": false,
+    "score": 2.5
+   },
+   {
+    "cuenta": "@fannymoontez",
+    "categoria": "otro",
+    "seguidores": 6357,
+    "local": false,
+    "score": 2.5
+   },
+   {
+    "cuenta": "@wallace.social",
+    "categoria": "otro",
+    "seguidores": 16065,
+    "local": false,
+    "score": 2.0
+   },
+   {
+    "cuenta": "@cocolectivo.cc",
+    "categoria": "arte_diseno_foto",
+    "seguidores": 145,
+    "local": false,
+    "score": 2.0
+   },
+   {
+    "cuenta": "@zapatomonicamarquez",
+    "categoria": "belleza_moda",
+    "seguidores": 127258,
+    "local": false,
+    "score": 1.5
+   },
+   {
+    "cuenta": "@la_tascapachuca",
+    "categoria": "otro",
+    "seguidores": 898,
+    "local": false,
+    "score": 1.0
+   },
+   {
+    "cuenta": "@guarermx",
+    "categoria": "servicios_otros",
+    "seguidores": 349,
+    "local": false,
+    "score": 1.0
+   }
+  ]
+ },
+ "notas_metodo": [
+  "Tipo de cuenta, categoría, ubicación, intereses y género son INFERENCIAS por palabras clave; no hay campo 'business' en los datos de seguidores.",
+  "La muestra de seguidores (700/1,550) es el orden que devuelve Instagram (aprox. más recientes primero): sobrerrepresenta a quien siguió durante la promoción del Oktoberfest 2026.",
+  "El 41% de la muestra es privada: su bio sí es visible, pero no sus posts.",
+  "Los 'likers' no son obtenibles sin login; la audiencia comprometida se mide con comentaristas.",
+  "Edad: no se infiere (no hay dato fiable). La comunicación asume 25+ por COFEPRIS."
+ ]
+}

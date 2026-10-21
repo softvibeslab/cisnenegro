@@ -1,0 +1,18 @@
+{
+  "name": "Cisne Equipo · Cervecería Cisne Negro",
+  "short_name": "Cisne Equipo",
+  "description": "App del equipo de Cervecería Cisne Negro: pedidos por QR, cuentas por mesa, cobro, historial y cortes.",
+  "lang": "es-MX",
+  "id": "/equipo/",
+  "start_url": "/equipo/",
+  "scope": "/equipo/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0E0D0B",
+  "theme_color": "#0E0D0B",
+  "icons": [
+    { "src": "/assets/img/marca/icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/img/marca/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/img/marca/icono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,13 @@
+[Unit]
+Description=Activar HTTPS final de Cisne Negro cuando el DNS esté listo
+After=network-online.target nginx.service
+Wants=network-online.target
+ConditionPathExists=/etc/nginx/sites-available/cisne-final
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/bin/python3 /srv/cisne/app/deploy/activate_final.py
+TimeoutStartSec=480
+UMask=0077
+PrivateTmp=true

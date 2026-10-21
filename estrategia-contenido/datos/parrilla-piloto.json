@@ -1,0 +1,4004 @@
+{
+  "version": 2,
+  "generado": "2026-10-10",
+  "piloto": {
+    "inicio": "2026-10-24",
+    "fin": "2026-11-29",
+    "zona": "America/Mexico_City",
+    "nombre": "Piloto de temporada: Halloween → Aniversario III",
+    "semanas": 5,
+    "nota": "Arranca el sábado 24 de octubre, una semana antes de Halloween (antes: lunes 19). Fechas de temporada: Halloween (sáb 31-oct), Día de Muertos (1 y 2-nov), Día Internacional de la Stout (jue 5-nov), Buen Fin y puente (13 al 16-nov, por confirmar), Aniversario Año III (supuesto sáb 21-nov). El 20 de noviembre no se asocia a la cerveza."
+  },
+  "estrategia": {
+    "objetivo": "Convertir la presencia digital de Cervecería Cisne Negro en visitas medibles: pasar de 1.2 a ≥3.5 posts de feed por semana en Instagram con secciones probadas por el método (R1–R3), reactivar TikTok, activar Google Business Profile y el Canal de WhatsApp, y responder el 100% de las reseñas, todo con el cumplimiento COFEPRIS como punto de partida.",
+    "kpi_estrella": "Visitas atribuidas por semana",
+    "kpis": [
+      {
+        "clave": "visitas_atribuidas",
+        "tipo": "estrella",
+        "nombre": "Visitas atribuidas por semana",
+        "meta": "Línea base durante el piloto; meta para diciembre",
+        "fuente": "Altas y visitas del Pasaporte con UTM o código por canal + pregunta «¿cómo nos conociste?»"
+      },
+      {
+        "clave": "posts_ig_semana",
+        "tipo": "constancia",
+        "nombre": "Posts de feed por semana en Instagram",
+        "meta": "≥3.5",
+        "fuente": "Hub"
+      },
+      {
+        "clave": "secciones_vigentes",
+        "tipo": "metodo",
+        "nombre": "Secciones probadas y vigentes",
+        "meta": "6 probadas, ≥3 vigentes",
+        "fuente": "Laboratorio del Hub"
+      },
+      {
+        "clave": "interaccion_vs_ideal",
+        "tipo": "interaccion",
+        "nombre": "Mediana por formato contra la interacción ideal",
+        "meta": "≥100% en las secciones vigentes",
+        "fuente": "Medición a 24 h"
+      },
+      {
+        "clave": "distribucion",
+        "tipo": "distribucion",
+        "nombre": "Compartidos y guardados por alcance",
+        "meta": "Línea base (requiere acceso a Insights, B2)",
+        "fuente": "Insights de Instagram"
+      },
+      {
+        "clave": "resenas_respondidas",
+        "tipo": "local",
+        "nombre": "Reseñas de Google respondidas",
+        "meta": "100% (69 pendientes + nuevas)",
+        "fuente": "Google Business Profile"
+      },
+      {
+        "clave": "resenas_nuevas",
+        "tipo": "local",
+        "nombre": "Reseñas nuevas por semana",
+        "meta": "≥3, de forma constante",
+        "fuente": "Pasaporte → Google"
+      },
+      {
+        "clave": "tiktok_reactivado",
+        "tipo": "descubrimiento",
+        "nombre": "TikTok reactivado",
+        "meta": "≥12 videos (el piloto programa 14); mediana ≥900 vistas",
+        "fuente": "TikTok"
+      },
+      {
+        "clave": "clics_menu_pasaporte",
+        "tipo": "conversion",
+        "nombre": "Clics al menú QR y al Pasaporte desde redes",
+        "meta": "Línea base",
+        "fuente": "UTM"
+      }
+    ],
+    "leyenda_sanitaria": "EVITE EL EXCESO",
+    "linea_base": {
+      "ig": {
+        "reel": 32,
+        "carrusel": 56,
+        "imagen": 43
+      },
+      "tiktok": {
+        "video": 25
+      },
+      "corte": "2026-10-06",
+      "nota": "likes + comentarios de los últimos 12 meses (carrusel 49 sin collab; imagen sin el atípico de 802); TikTok incluye compartidos y guardados, sin el viral. Recalibrar con Insights (B2)."
+    },
+    "diagnostico": {
+      "insights": [
+        "Eventos y colaboraciones son el motor: 9 de los 10 mejores posts e índice ×2.0, aunque son solo el 13% de lo publicado.",
+        "La coautoría (collab) rinde: mediana de 104 contra 23 de un post propio (×2.7).",
+        "Los carruseles tienen mediana de 70 contra 20.5 de la foto (3.4×), pero son solo 26 de 200 posts.",
+        "Comunidad, mascotas y «etiqueta a tus compas» rinden ×1.5.",
+        "El cambio de voz funcionó: captions genéricos con mediana 16 contra 37.5 con voz de humor y eventos.",
+        "Mejor horario: martes de 12 a 14 h (×1.33) y jueves de 12 a 18 h (×1.23–1.25).",
+        "TikTok tiene potencial: un video llegó a 50,900 vistas (×57) con el mensaje del primer taproom con microcervecería de Pachuca.",
+        "Las reseñas son prueba social lista para usarse: 4.5★ en 69 reseñas con frases como «parada obligada en Pachuca»."
+      ],
+      "debilidades": [
+        "Google Business Profile pasivo: 0 publicaciones, 0 de 69 reseñas respondidas y categoría solo «Restaurante».",
+        "Frecuencia en Instagram: de 9.8 posts al mes en 2024 a 4–5 en 2025–2026 (1.2 por semana), con huecos de hasta 70 días.",
+        "TikTok: 774 días sin publicar y sin enlace en la bio.",
+        "Conversación casi nula: de 0.2 a 1.6 comentarios por post; #CuéntaloEnElCisne usado en 1 de 200 posts.",
+        "El horario más usado es el peor: el sábado concentra 46 de 200 posts y rinde ×0.79.",
+        "Hashtags genéricos en inglés y 74 de 200 posts sin ninguno.",
+        "Datos de producto contradictorios: estilo de Henry IX, ABV de ¿A poco sí pa'? (6.8% contra 6.9%) y si Guamaica es propia o invitada.",
+        "Sin métricas privadas (alcance, guardados, compartidos) hasta tener acceso a Insights (B2)."
+      ]
+    }
+  },
+  "canales": [
+    {
+      "clave": "ig",
+      "nombre": "Instagram",
+      "handle": "@cisnenegro.mx",
+      "color": "#E1306C",
+      "icono": "instagram",
+      "metodo": "manual",
+      "rol": "Canal principal de marca y comunidad",
+      "cadencia": "5 posts de feed por semana en el piloto (carruseles y reels), stories diarias y 1 Trial Reel semanal (miércoles)"
+    },
+    {
+      "clave": "fb",
+      "nombre": "Facebook",
+      "handle": "/cerveceriacisnenegro.mx",
+      "color": "#4C8BF5",
+      "icono": "facebook",
+      "metodo": "manual",
+      "rol": "Cobertura de un público mayor; álbumes de eventos",
+      "cadencia": "Publicación cruzada de reels, carruseles (álbum) y agenda: 4–5 por semana"
+    },
+    {
+      "clave": "tiktok",
+      "nombre": "TikTok",
+      "handle": "@cisnenegro.mx",
+      "color": "#25F4EE",
+      "icono": "tiktok",
+      "metodo": "manual",
+      "rol": "Descubrimiento local (búsqueda y Local Feed); reactivación tras 774 días",
+      "cadencia": "3 por semana (lunes, miércoles y jueves), reutilizando reels propios sin marca de agua"
+    },
+    {
+      "clave": "threads",
+      "nombre": "Threads",
+      "handle": "@cisnenegro.mx (por verificar, B4)",
+      "color": "#D4D4D8",
+      "icono": "threads",
+      "metodo": "manual",
+      "rol": "Conversación ligera y preguntas",
+      "cadencia": "3 por semana, derivados de las piezas de martes, jueves y domingo"
+    },
+    {
+      "clave": "yt",
+      "nombre": "YouTube Shorts",
+      "handle": "Canal por crear",
+      "color": "#F97316",
+      "icono": "youtube",
+      "metodo": "manual",
+      "rol": "Archivo y búsqueda",
+      "cadencia": "1–2 Shorts por semana (los reels de lunes y miércoles)"
+    },
+    {
+      "clave": "gbp",
+      "nombre": "Google Business Profile",
+      "handle": "Cisne Negro (ficha de Google)",
+      "color": "#FACC15",
+      "icono": "google",
+      "metodo": "manual",
+      "rol": "Convertir búsquedas en visitas; SEO local",
+      "cadencia": "1 publicación (comida, lugar o agenda) y 5–10 fotos reales por semana; responder el 100% de las reseñas"
+    },
+    {
+      "clave": "wa",
+      "nombre": "Canal de WhatsApp",
+      "handle": "Canal por crear",
+      "color": "#25D366",
+      "icono": "whatsapp",
+      "metodo": "manual",
+      "rol": "Canal propio para avisos de barril y agenda",
+      "cadencia": "Martes: Barril de la semana · Viernes: Agenda del finde (siempre a mano; los Canales no tienen API)"
+    }
+  ],
+  "formatos": [
+    {
+      "clave": "ig-carrusel",
+      "canal": "ig",
+      "nombre": "Carrusel",
+      "tipo": "carrusel",
+      "proporcion": "4:5",
+      "max_caracteres": 2200,
+      "max_laminas": 20,
+      "max_segundos": null,
+      "interaccion_ideal": 56
+    },
+    {
+      "clave": "ig-reel",
+      "canal": "ig",
+      "nombre": "Reel",
+      "tipo": "reel",
+      "proporcion": "9:16",
+      "max_caracteres": 2200,
+      "max_laminas": null,
+      "max_segundos": 180,
+      "interaccion_ideal": 32
+    },
+    {
+      "clave": "ig-imagen",
+      "canal": "ig",
+      "nombre": "Imagen",
+      "tipo": "imagen",
+      "proporcion": "4:5",
+      "max_caracteres": 2200,
+      "max_laminas": 1,
+      "max_segundos": null,
+      "interaccion_ideal": 43
+    },
+    {
+      "clave": "ig-story",
+      "canal": "ig",
+      "nombre": "Story",
+      "tipo": "story",
+      "proporcion": "9:16",
+      "max_caracteres": null,
+      "max_laminas": null,
+      "max_segundos": 60,
+      "interaccion_ideal": null
+    },
+    {
+      "clave": "fb-reel",
+      "canal": "fb",
+      "nombre": "Reel",
+      "tipo": "reel",
+      "proporcion": "9:16",
+      "max_caracteres": 63206,
+      "max_laminas": null,
+      "max_segundos": 90,
+      "interaccion_ideal": null
+    },
+    {
+      "clave": "fb-album",
+      "canal": "fb",
+      "nombre": "Álbum",
+      "tipo": "album",
+      "proporcion": "4:5",
+      "max_caracteres": 63206,
+      "max_laminas": null,
+      "max_segundos": null,
+      "interaccion_ideal": null
+    },
+    {
+      "clave": "fb-post",
+      "canal": "fb",
+      "nombre": "Publicación",
+      "tipo": "post",
+      "proporcion": "4:5",
+      "max_caracteres": 63206,
+      "max_laminas": 1,
+      "max_segundos": null,
+      "interaccion_ideal": null
+    },
+    {
+      "clave": "tiktok-video",
+      "canal": "tiktok",
+      "nombre": "Video",
+      "tipo": "video",
+      "proporcion": "9:16",
+      "max_caracteres": 2200,
+      "max_laminas": null,
+      "max_segundos": 600,
+      "interaccion_ideal": 25
+    },
+    {
+      "clave": "tiktok-slideshow",
+      "canal": "tiktok",
+      "nombre": "Slideshow (fotos)",
+      "tipo": "slideshow",
+      "proporcion": "9:16",
+      "max_caracteres": 2200,
+      "max_laminas": 35,
+      "max_segundos": null,
+      "interaccion_ideal": null
+    },
+    {
+      "clave": "threads-texto",
+      "canal": "threads",
+      "nombre": "Texto",
+      "tipo": "texto",
+      "proporcion": null,
+      "max_caracteres": 500,
+      "max_laminas": null,
+      "max_segundos": null,
+      "interaccion_ideal": null
+    },
+    {
+      "clave": "threads-imagen",
+      "canal": "threads",
+      "nombre": "Texto con imagen",
+      "tipo": "imagen",
+      "proporcion": "4:5",
+      "max_caracteres": 500,
+      "max_laminas": 20,
+      "max_segundos": null,
+      "interaccion_ideal": null
+    },
+    {
+      "clave": "yt-short",
+      "canal": "yt",
+      "nombre": "Short",
+      "tipo": "short",
+      "proporcion": "9:16",
+      "max_caracteres": 5000,
+      "max_laminas": null,
+      "max_segundos": 180,
+      "interaccion_ideal": null
+    },
+    {
+      "clave": "gbp-publicacion",
+      "canal": "gbp",
+      "nombre": "Publicación",
+      "tipo": "publicacion",
+      "proporcion": "4:3",
+      "max_caracteres": 1500,
+      "max_laminas": 1,
+      "max_segundos": null,
+      "interaccion_ideal": null
+    },
+    {
+      "clave": "gbp-foto",
+      "canal": "gbp",
+      "nombre": "Foto",
+      "tipo": "foto",
+      "proporcion": "4:3",
+      "max_caracteres": null,
+      "max_laminas": 1,
+      "max_segundos": null,
+      "interaccion_ideal": null
+    },
+    {
+      "clave": "wa-aviso",
+      "canal": "wa",
+      "nombre": "Aviso del Canal",
+      "tipo": "aviso",
+      "proporcion": null,
+      "max_caracteres": 65536,
+      "max_laminas": 1,
+      "max_segundos": null,
+      "interaccion_ideal": null
+    }
+  ],
+  "plantillas": [
+    {
+      "clave": "yo-antes-yo-ahora",
+      "nombre": "Antes / Ahora",
+      "que_es": "Lado izquierdo lo antiguo o la idea equivocada; lado derecho lo correcto. En el Cisne: «Antes pensaba que la IPA era solo amarga / Ahora sé que hay cítrica, tropical y resinosa», o la carta de 2023 contra la de hoy.",
+      "virtud": "Mini consejos rápidos y visuales; genera likes y guardados.",
+      "que_se_necesita": "Hacks o datos cortos y verificados (estilos, carta, oficio).",
+      "tiempo": "Rápido",
+      "origen": "PDF 035 · Yo antes / Yo ahora (adaptada)"
+    },
+    {
+      "clave": "meme-reel",
+      "nombre": "Meme + Reel",
+      "que_es": "Un meme del sector arriba y debajo un reel cortado del propio Cisne (cocina, producción, barra sin consumo).",
+      "virtud": "Más visualizaciones y retención; el meme dispara el like rápido.",
+      "que_se_necesita": "Meme sobre el tema del reel (sin personas bebiendo) y un video propio de hasta 1 minuto.",
+      "tiempo": "Medio",
+      "origen": "PDF 035 · Meme/Reels (adaptada)"
+    },
+    {
+      "clave": "noticia-sector",
+      "nombre": "Noticia de sector",
+      "que_es": "Pantalla dividida con título y subtítulo sobre una nota del sector cervecero o de Pachuca (p. ej., La Silla Rota, Criterio Hidalgo).",
+      "virtud": "Ultra fácil; las noticias abren conversación y debate.",
+      "que_se_necesita": "Una nota de interés, con fuente y fecha verificadas.",
+      "tiempo": "Ultra rápido",
+      "origen": "PDF 035 · Noticia de sector"
+    },
+    {
+      "clave": "volteo-etiqueta",
+      "nombre": "Volteo de etiqueta",
+      "que_es": "Reel en el que la etiqueta o lata está oculta (boca abajo o tapada), se cuenta la historia del nombre y al final se voltea para revelar el arte.",
+      "virtud": "La gente lo guarda y pregunta en comentarios dónde encontrarla; la revelación retiene hasta el final.",
+      "que_se_necesita": "La etiqueta o lata, la historia del nombre verificada y el permiso del ilustrador.",
+      "tiempo": "Rápido",
+      "origen": "PDF 035 · Reels de volteo de libro (adaptada a etiqueta)"
+    },
+    {
+      "clave": "si-haz",
+      "nombre": "Si… → tu barril es…",
+      "que_es": "Carrusel o slideshow: a la izquierda el gusto («Si te gusta lo cítrico»), a la derecha el barril o la pareja oficial que corresponde. Sin imperativos de consumo.",
+      "virtud": "Se guarda como guía y abre comentarios con gustos propios.",
+      "que_se_necesita": "Perfiles y notas validados de la tap list y los maridajes oficiales.",
+      "tiempo": "Rápido",
+      "origen": "PDF 035 · Si…/Haz (adaptada)"
+    },
+    {
+      "clave": "reel-meme",
+      "nombre": "Reel meme",
+      "que_es": "Un reel que es meme directo en video (video-reacción o tendencia) con contexto de Pachuca o de la barra, sin consumo en cuadro.",
+      "virtud": "Emotivo; la gente reacciona rápido.",
+      "que_se_necesita": "Una video-reacción (ojalá tendencia) y un contexto local.",
+      "tiempo": "Rápido",
+      "origen": "PDF 035 · Reels/Meme"
+    },
+    {
+      "clave": "reel-dibujado",
+      "nombre": "Reel dibujado",
+      "que_es": "Reel donde se ve a mano el trazo: el ilustrador dibujando una etiqueta o un diagrama del proceso cervecero en papel.",
+      "virtud": "El sesgo de ver dibujar retiene; es fácil de hacer.",
+      "que_se_necesita": "Un mensaje simple y el material del ilustrador (con permiso).",
+      "tiempo": "Rápido",
+      "origen": "PDF 035 · Reels dibujado inspiraciones (adaptada)"
+    },
+    {
+      "clave": "reel-muestra",
+      "nombre": "Reel de muestra",
+      "que_es": "Extracto de un video con mensaje: entrevista de prensa a los fundadores o el video viral propio de TikTok, recortado con contexto.",
+      "virtud": "Si el video original ya tuvo vistas, aumenta la probabilidad de que vuelva a tenerlas.",
+      "que_se_necesita": "Un video poderoso propio o con permiso y un contexto.",
+      "tiempo": "Medio",
+      "origen": "PDF 035 · Reels de muestra"
+    },
+    {
+      "clave": "pantallazo-celular",
+      "nombre": "Pantallazo de celular",
+      "que_es": "Captura de pantalla del celular con algo útil o real: la ficha de Google, el Pasaporte, el menú QR.",
+      "virtud": "Se siente cotidiano y real; genera tracción.",
+      "que_se_necesita": "Una pantalla de interés (app, nota, ficha), sin datos personales.",
+      "tiempo": "Ultra rápido",
+      "origen": "PDF 035 · Pantallazo celular"
+    },
+    {
+      "clave": "ficha-barril",
+      "nombre": "Ficha de barril",
+      "que_es": "Carrusel de 5–7 láminas: portada con la etiqueta, estilo y ABV, notas, historia del nombre, maridaje sugerido y leyenda.",
+      "virtud": "Formato base de producto; el carrusel rinde 3.4× sobre la foto.",
+      "que_se_necesita": "Ficha técnica validada por el cervecero, foto de etiqueta o barril sin manos y maridaje.",
+      "tiempo": "Medio",
+      "origen": "Propia (plan 08 §5)"
+    },
+    {
+      "clave": "tarjeta-maridaje",
+      "nombre": "Maridaje",
+      "que_es": "Carrusel: cerveza + platillo, por qué funcionan juntos, detalle del platillo y leyenda.",
+      "virtud": "Une los dos productos estrella y se guarda para la siguiente visita.",
+      "que_se_necesita": "Pareja oficial o validada, foto del platillo y del barril sin personas bebiendo.",
+      "tiempo": "Medio",
+      "origen": "Propia (serie «Cisne Negro te sugiere…», IG 2026-01-20)"
+    },
+    {
+      "clave": "agenda-evento",
+      "nombre": "Agenda / evento",
+      "que_es": "Imagen o carrusel con datos duros: qué, cuándo, dónde y con quién; versión story y aviso de Canal.",
+      "virtud": "Eventos y collabs son el motor (×2.0; collab ×2.7).",
+      "que_se_necesita": "Fecha, hora, aliado confirmado y su aceptación como coautor.",
+      "tiempo": "Rápido",
+      "origen": "Propia (plan 08 §5)"
+    },
+    {
+      "clave": "recap-evento",
+      "nombre": "Recap de evento",
+      "que_es": "Carrusel posterior al evento: el lugar, el equipo y los aliados, sin personas bebiendo ni vasos en mano.",
+      "virtud": "Prueba social y coautoría con los aliados.",
+      "que_se_necesita": "Fotos del evento seleccionadas con el checklist COFEPRIS y permiso de quien aparezca.",
+      "tiempo": "Medio",
+      "origen": "Propia (plan 08 §5)"
+    },
+    {
+      "clave": "resena-voz-alta",
+      "nombre": "Reseña en voz alta",
+      "que_es": "Pantallazo de celular con una reseña real de Google (sin nombre ni foto del autor) y en la segunda lámina la respuesta del Cisne.",
+      "virtud": "Prueba social real y empuja a responder el 100% de las reseñas.",
+      "que_se_necesita": "La reseña textual y la respuesta ya publicada en Google.",
+      "tiempo": "Ultra rápido",
+      "origen": "PDF 035 · Pantallazo celular (adaptada)"
+    },
+    {
+      "clave": "ranking-pasaporte",
+      "nombre": "Ranking del Pasaporte",
+      "que_es": "Captura del ranking mensual del Pasaporte con alias (solo de quien lo permitió) y el premio del mes.",
+      "virtud": "Comunidad: el contenido que mejor funciona (×1.5) y alimenta las altas al Pasaporte.",
+      "que_se_necesita": "Ranking del panel, permisos de alias y premio confirmado (nunca alcohol a volumen).",
+      "tiempo": "Ultra rápido",
+      "origen": "Propia (04-gamificación)"
+    },
+    {
+      "clave": "reel-proceso",
+      "nombre": "Reel de proceso",
+      "que_es": "Reel corto (15–30 s) del oficio: molienda, cocción, dry hop, fermentadores, cocina. Manos trabajando, nunca bebiendo.",
+      "virtud": "Detrás de cámaras natural del lunes de producción; contenido propio difícil de copiar.",
+      "que_se_necesita": "Grabación por lotes el lunes (día cerrado) y staff 25+.",
+      "tiempo": "Medio",
+      "origen": "Propia (plan 08 §5)"
+    },
+    {
+      "clave": "stories-en-vivo",
+      "nombre": "Stories del día",
+      "que_es": "Secuencia de stories: cuenta regresiva, encuesta, detrás de barra o del montaje del lugar antes de abrir.",
+      "virtud": "Mantiene el sábado sin feed (rinde ×0.79) y empuja los eventos.",
+      "que_se_necesita": "Teléfono, stickers de encuesta y cuenta regresiva; sin personas bebiendo.",
+      "tiempo": "Ultra rápido",
+      "origen": "Propia (plan 08 §6.1)"
+    }
+  ],
+  "pilares": [
+    {
+      "clave": "barril",
+      "nombre": "El Barril",
+      "color": "#F5A524",
+      "objetivo_pct": 30,
+      "descripcion": "Oficio y producto: la cerveza hecha en Pachuca, sus fichas validadas, el lunes de producción y la historia de cada nombre."
+    },
+    {
+      "clave": "mesa",
+      "nombre": "La Mesa",
+      "color": "#FB7185",
+      "objetivo_pct": 25,
+      "descripcion": "Cocina y maridaje: los platillos, las parejas oficiales y #CervezaParaTodos (opciones sin alcohol y sin carne)."
+    },
+    {
+      "clave": "parvada",
+      "nombre": "La Parvada",
+      "color": "#38BDF8",
+      "objetivo_pct": 20,
+      "descripcion": "Comunidad: reseñas reales, Pasaporte, mascotas y el equipo de la barra; hecho para compartirse por DM."
+    },
+    {
+      "clave": "agenda",
+      "nombre": "La Agenda",
+      "color": "#A78BFA",
+      "objetivo_pct": 25,
+      "descripcion": "Eventos, aliados y Pachuca: agenda con datos (qué, cuándo, con quién), temporada, ciudad y lanzamientos."
+    }
+  ],
+  "topicos": [
+    {
+      "clave": "barril-semana",
+      "pilar": "barril",
+      "nombre": "Barril de la semana"
+    },
+    {
+      "clave": "historias-nombres",
+      "pilar": "barril",
+      "nombre": "Historias de nombres"
+    },
+    {
+      "clave": "detras-tanque",
+      "pilar": "barril",
+      "nombre": "Detrás del tanque"
+    },
+    {
+      "clave": "escuela-cisne",
+      "pilar": "barril",
+      "nombre": "Escuela Cisne"
+    },
+    {
+      "clave": "maridaje",
+      "pilar": "mesa",
+      "nombre": "Maridaje"
+    },
+    {
+      "clave": "platillo-estrella",
+      "pilar": "mesa",
+      "nombre": "Platillo estrella"
+    },
+    {
+      "clave": "cocina-abierta",
+      "pilar": "mesa",
+      "nombre": "Cocina abierta"
+    },
+    {
+      "clave": "para-todos",
+      "pilar": "mesa",
+      "nombre": "Para todos"
+    },
+    {
+      "clave": "voz-cliente",
+      "pilar": "parvada",
+      "nombre": "Voz del cliente"
+    },
+    {
+      "clave": "pasaporte",
+      "pilar": "parvada",
+      "nombre": "Pasaporte"
+    },
+    {
+      "clave": "pet-friendly",
+      "pilar": "parvada",
+      "nombre": "Pet friendly"
+    },
+    {
+      "clave": "la-barra",
+      "pilar": "parvada",
+      "nombre": "La barra"
+    },
+    {
+      "clave": "eventos-collabs",
+      "pilar": "agenda",
+      "nombre": "Eventos y collabs"
+    },
+    {
+      "clave": "temporada",
+      "pilar": "agenda",
+      "nombre": "Temporada"
+    },
+    {
+      "clave": "pachuca",
+      "pilar": "agenda",
+      "nombre": "Pachuca"
+    },
+    {
+      "clave": "lanzamientos",
+      "pilar": "agenda",
+      "nombre": "Lanzamientos"
+    }
+  ],
+  "secciones": [
+    {
+      "clave": "barril-de-la-semana",
+      "topico": "barril-semana",
+      "nombre": "Barril de la semana",
+      "descripcion": "Ficha del barril con estilo, notas, historia y maridaje sugerido, solo con datos validados por el cervecero. También sale como aviso del Canal de WhatsApp.",
+      "periodicidad": "Semanal (martes 12–14 h)",
+      "formato": "ig-carrusel",
+      "plantilla": "ficha-barril",
+      "tiempo_produccion_min": 60,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": true,
+      "temas": [
+        "Barrilete = papalote: la Hazy IPA que trae la etiqueta llena de ellos",
+        "¡Alarma!: cítrica, resinosa y con un amargor difícil de encubrir",
+        "Agua Puerca: la Imperial Stout de 8.9% cuyo nombre salió de una plática en la barra",
+        "¿A poco sí pa'?: piña, mango, papaya, melón y 62 IBU",
+        "Henry IX: la única de la barra que se sirve en 14 oz",
+        "Guamaica: guayaba y jamaica en una sour de 4%",
+        "Está de vuelta: el regreso de un clásico de la casa a las líneas",
+        "Recién conectada: lo que entra a la pared esta semana",
+        "De la línea al growler: qué estilos caben en 1.89 L esta semana",
+        "También en lata: los barriles que se pueden llevar a casa",
+        "Henry IX: la única de la barra que se sirve en 14 oz (estilo por validar)"
+      ]
+    },
+    {
+      "clave": "cuentalo-en-el-cisne",
+      "topico": "historias-nombres",
+      "nombre": "¡Cuéntalo en el Cisne!",
+      "descripcion": "La historia detrás de cada nombre, contada con la etiqueta oculta que se revela al final. Se excluyen por COFEPRIS los nombres cuya historia es de futbol o de fiesta (Matador Hdz, Karnaval) salvo visto bueno legal.",
+      "periodicidad": "Semanal (miércoles, TikTok + Trial Reel)",
+      "formato": "ig-reel",
+      "plantilla": "volteo-etiqueta",
+      "tiempo_produccion_min": 90,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": true,
+      "temas": [
+        "¡Alarma!: la etiqueta con antecedentes (y cuernos)",
+        "¿A poco sí, pa'?: la frase que le decimos a quien jura que las stouts no son lo suyo",
+        "Barrilete Cósmico: un papalote y una cita de Eduardo Sacheri",
+        "Agua Puerca: el nombre que bautizó una plática de clientes",
+        "Mil Risas: otra etiqueta que nació en la barra",
+        "Carabela: la Tropical Stout que zarpó con ilustración de @gypsy.branding",
+        "Joyas Ayala: de dónde salió el nombre de nuestra American Lager",
+        "Ejercicio #1: la Milkshake Hazy IPA de solo 100 vasos",
+        "Henry IX: ¿por qué lleva corona?",
+        "¿Por qué «Cisne Negro»? El origen del nombre contado por los fundadores"
+      ]
+    },
+    {
+      "clave": "lunes-de-produccion",
+      "topico": "detras-tanque",
+      "nombre": "Lunes de producción",
+      "descripcion": "El lunes el taproom cierra porque es día de cocción: detrás de cámaras natural del oficio (molienda, cocción, fermentadores, limpieza, sustentabilidad).",
+      "periodicidad": "Semanal (lunes 17 h; grabación por lotes de 2 semanas)",
+      "formato": "ig-reel",
+      "plantilla": "reel-proceso",
+      "tiempo_produccion_min": 60,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": true,
+      "temas": [
+        "¿Lunes cerrado? Cerrado para ustedes, abierto para el tanque",
+        "Todo empieza en un costal: la cebada malteada",
+        "Lo primero que ves al entrar al Cisne: los fermentadores",
+        "¿A dónde va el bagazo? A la granja, como alimento",
+        "Cinco litros de agua por cada litro de cerveza: cómo la cuidamos",
+        "Dry hop: el momento en que entra el lúpulo",
+        "Lavar, lavar y volver a lavar: la parte del oficio que nadie presume",
+        "Kits caseros y tutoriales: así arrancó el Cisne en pandemia",
+        "Del tanque a la línea: cómo se conecta un barril",
+        "La levadura trabaja y nosotros esperamos: cuánto tarda una cerveza",
+        "¿A dónde va el bagazo? El grano usado se dona como alimento para animales de granja"
+      ]
+    },
+    {
+      "clave": "si-te-gusta",
+      "topico": "escuela-cisne",
+      "nombre": "Si te gusta… tu barril es…",
+      "descripcion": "Guía rápida de gustos: de un sabor o un platillo al barril o la pareja oficial que le corresponde. Se renombró desde «Si te gusta… pide…» para no usar imperativos de consumo.",
+      "periodicidad": "Semanal en prueba (miércoles 18 y 25 de noviembre; R3 en diciembre)",
+      "formato": "tiktok-slideshow",
+      "plantilla": "si-haz",
+      "tiempo_produccion_min": 45,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": false,
+      "temas": [
+        "Si te gusta lo cítrico, tu barril es ¡Alarma!",
+        "Si te gusta lo tropical, tu barril es ¿A poco sí pa'?",
+        "Si te gusta lo oscuro, tu barril es Agua Puerca",
+        "Si te gusta la jamaica, tu barril es Guamaica",
+        "Si te gusta la toronja, tu barril es Barrilete Cósmico",
+        "Si te gusta la Tlayuda de Picaña, su pareja oficial es Agua Puerca",
+        "Si te gustan las Palomitas de Coliflor, su pareja oficial es ¿A poco sí pa'?",
+        "Si no te decides: el Vuelo del Cisne, cuatro de 4 oz para comparar",
+        "Si vienes en lunes: estamos cerrados porque es día de producción",
+        "IPA, Red IPA y Hazy IPA: la diferencia en tres láminas",
+        "Por fruta: una fruta por lámina y el barril que la trae (R3 en diciembre)"
+      ]
+    },
+    {
+      "clave": "maridaje-del-finde",
+      "topico": "maridaje",
+      "nombre": "Maridaje del finde",
+      "descripcion": "Las parejas oficiales de la serie «Cisne Negro te sugiere…» y, después, propuestas validadas por los cerveceros.",
+      "periodicidad": "Semanal (jueves 15–18 h)",
+      "formato": "ig-carrusel",
+      "plantilla": "tarjeta-maridaje",
+      "tiempo_produccion_min": 60,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": true,
+      "temas": [
+        "Agua Puerca + Tlayuda de Picaña Adobada: la pareja oficial que no se separa",
+        "¿A poco sí pa'? + Palomitas de Coliflor: tropical contra picante de arándano",
+        "Kiwi Plis + Taco de Pescado con Capa: ligera contra crujiente",
+        "Boca Negra + Sándwich de Suadero: la pareja oficial más de barrio",
+        "Tropkiller + Camarones Piedra: tinta de calamar y sriracha",
+        "¡Alarma! + Hamburguesa De Costilla de Res: lo tatemado y el amargor",
+        "Guamaica + Aguachile de New York: ácido con ácido",
+        "Barrilete Cósmico + Hamburguesa De Manchego Frito",
+        "Henry IX + Camarones Piedra",
+        "Postre y barril: la Dona con Maple y Tocino frente a una stout",
+        "¡Alarma! + Hamburguesa De Costilla de Res: lo tatemado contra el amargor (propuesta, por validar)"
+      ]
+    },
+    {
+      "clave": "el-plato-que-manda",
+      "topico": "platillo-estrella",
+      "nombre": "El plato que manda",
+      "descripcion": "Un platillo protagonista por pieza: qué lleva, cómo se arma y qué dicen las reseñas. Base de las publicaciones de comida en Google Business Profile.",
+      "periodicidad": "Quincenal (reel o publicación en GBP)",
+      "formato": "ig-reel",
+      "plantilla": "reel-proceso",
+      "tiempo_produccion_min": 60,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": false,
+      "temas": [
+        "Ceviche de Atún: «El ceviche es fenomenal», dice Google",
+        "La hamburguesa Cisne, capa por capa",
+        "Tlayuda de Picaña Adobada: picaña, frijoles, quesillo y aguacate",
+        "Dona con maple y tocino: el postre que sale en las reseñas",
+        "Camarones Piedra: por qué salen negros (tinta de calamar)",
+        "Philly Special: nuestra versión del cheesesteak",
+        "Aguachile de New York: vinagreta de soya, aguacate y chile verde",
+        "Pastel Helado de Campechanas con cajeta y nuez",
+        "Papas Cisne Negro bañadas en salsa de queso",
+        "Uno para comer solo, otro para picar y otro para compartir",
+        "Ceviche de Atún: «El ceviche es fenomenal» (reseña de Google)"
+      ]
+    },
+    {
+      "clave": "a-puerta-abierta",
+      "topico": "cocina-abierta",
+      "nombre": "A puerta abierta",
+      "descripcion": "Detrás de cámaras de la cocina: preparación, técnica y quién la hace.",
+      "periodicidad": "Quincenal (reel)",
+      "formato": "ig-reel",
+      "plantilla": "reel-proceso",
+      "tiempo_produccion_min": 60,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": false,
+      "temas": [
+        "Así se capean las Palomitas de Coliflor",
+        "La parrilla del CN en hora pico",
+        "Cebolla caramelizada con cerveza: el detalle de la De Suadero",
+        "Tinta de calamar: el capeado negro de los Camarones Piedra",
+        "Antes de abrir: la cocina del Cisne a las 3 de la tarde",
+        "Del comal a la mesa: armado de la Tlayuda",
+        "Las salsas de la casa que mencionan las reseñas",
+        "Aderezo de macha verde: en qué platillos aparece",
+        "Noche de Pizzas: cuando la cocina se la presta a Pasado de Masa",
+        "Un servicio en la cocina del Cisne en 30 segundos"
+      ]
+    },
+    {
+      "clave": "cerveza-para-todos",
+      "topico": "para-todos",
+      "nombre": "#CervezaParaTodos",
+      "descripcion": "Sin pretensiones: opciones sin alcohol y sin carne, glosario de barra y estilos explicados sin esnobismo.",
+      "periodicidad": "Quincenal (carrusel o publicación en GBP)",
+      "formato": "ig-carrusel",
+      "plantilla": "yo-antes-yo-ahora",
+      "tiempo_produccion_min": 45,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": false,
+      "temas": [
+        "Sin alcohol en el Cisne: naranjada, limonada, agua mineral y café de prensa",
+        "Sin carne: Palomitas de Coliflor y Chips de Camote",
+        "Cuatro perfiles, cero pretensiones: lupulada, oscura, ácida y ligera",
+        "¿Qué es el IBU y por qué no debe asustarte?",
+        "Glosario de barra: chela, cheve, pinta y 4 oz",
+        "Lata, barril o growler: tres formas de llevarse el Cisne",
+        "Aquí no juzgamos, nomás servimos: las preguntas de barra que todos tienen",
+        "Antes / Ahora: cómo cambió la carta del Cisne desde 2023",
+        "Opciones vegetarianas: lo que hay y lo que nos han pedido en reseñas",
+        "Vuelo del Cisne: cuatro de 4 oz para comparar estilos"
+      ]
+    },
+    {
+      "clave": "resena-en-voz-alta",
+      "topico": "voz-cliente",
+      "nombre": "Reseña en voz alta",
+      "descripcion": "Captura de una reseña real de Google (sin nombre ni foto del autor) más la respuesta del Cisne, que se publica primero en Google.",
+      "periodicidad": "Semanal (domingo 13 h)",
+      "formato": "ig-imagen",
+      "plantilla": "resena-voz-alta",
+      "tiempo_produccion_min": 30,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": true,
+      "temas": [
+        "«Parada obligada en Pachuca, si o si.»",
+        "«el personal se toma el tiempo de explicar cada una de ellos; eso se agradece demasiado»",
+        "«casi cada semana puedes encontrar algo nuevo»",
+        "«te venden las garrafitas con su deliciosa cerveza»",
+        "«El Cisne Negro es de esos lugares a los que da gusto volver.»",
+        "«El ceviche es fenomenal»",
+        "«Concepto original, excelente atención de los propietarios y comida muy rica.»",
+        "«Me encantó es un concepto diferente en Pachuca»",
+        "«su carta es corta pero concisa se agradece cuando los lugares se especializan»",
+        "«Si pusieran el precio de cada una, mucho ayudaría»: una crítica y lo que cambiamos",
+        "«Casi cada semana puedes encontrar algo nuevo» (validar cuántos barriles hay hoy)"
+      ]
+    },
+    {
+      "clave": "ranking-del-pasaporte",
+      "topico": "pasaporte",
+      "nombre": "Ranking del Pasaporte",
+      "descripcion": "El ranking mensual del Pasaporte con alias (solo de quien aceptó aparecer) y el premio del mes; nunca premios por volumen de alcohol.",
+      "periodicidad": "Mensual (último domingo)",
+      "formato": "ig-imagen",
+      "plantilla": "ranking-pasaporte",
+      "tiempo_produccion_min": 30,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": false,
+      "temas": [
+        "Ranking de noviembre: los socios con más visitas",
+        "Cómo se suman visitas en el Pasaporte (y por qué con el código del día)",
+        "Cómo funciona el Pasaporte Cisne en 3 láminas",
+        "Socio del mes: el alias que más se repitió en la barra",
+        "Niveles del Pasaporte: de Polluelo a Cisne Real",
+        "Ranking semanal contra mensual: dónde ver tu lugar",
+        "Racha de 3 semanas: quién la logró",
+        "Premio del mes: playera, tarro o growler",
+        "Bautiza una cerveza: el nombre ganador",
+        "Insignias de evento: la pluma del Año III"
+      ]
+    },
+    {
+      "clave": "perrhijos-del-cisne",
+      "topico": "pet-friendly",
+      "nombre": "Perrhijos del Cisne",
+      "descripcion": "Mascotas en el Cisne (con permiso de sus humanos): hecho para compartirse por DM. Nunca junto a vasos servidos.",
+      "periodicidad": "Quincenal (foto, reel o publicación en GBP)",
+      "formato": "ig-imagen",
+      "plantilla": "pantallazo-celular",
+      "tiempo_produccion_min": 30,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": false,
+      "temas": [
+        "Perrhijo del mes en la terraza",
+        "Reglas pet friendly del Cisne en 4 láminas",
+        "Los clientes de cuatro patas que ya son de la casa",
+        "Etiqueta a tu compa que nunca sale sin su perro",
+        "Border collie, salchicha o criollo: ¿quién domina la terraza?",
+        "Agua para ellos primero: el plato que sale antes que la carta",
+        "La galería de la Parvada: sus perros en el Cisne",
+        "¿Quién llegó primero, el perro o el dueño?",
+        "Mascotas bienvenidas: lo que hay que saber antes de venir",
+        "Retratos de terraza: un perro, una historia",
+        "Ofrenda de los perrhijos (Día de Muertos)"
+      ]
+    },
+    {
+      "clave": "quien-te-sirve",
+      "topico": "la-barra",
+      "nombre": "Quién te sirve",
+      "descripcion": "El equipo (staff mayor de 25 años) y los fundadores, con su barril favorito; nunca bebiendo en cuadro.",
+      "periodicidad": "Mensual (reel de presentación)",
+      "formato": "ig-reel",
+      "plantilla": "reel-muestra",
+      "tiempo_produccion_min": 60,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": false,
+      "temas": [
+        "Enrique y Raúl Carrasco: dos hermanos, kits caseros y una pandemia",
+        "«No inventamos nada, innovamos con lo que no existía aquí» — Enrique",
+        "«Cisne Negro solo crecerá si se mantiene auténtico, local y fiel a su esencia» — Raúl",
+        "Quién te explica la tap list sin prisa",
+        "Su barril favorito en una palabra: el equipo responde",
+        "Un día detrás de la barra: de la apertura al cierre",
+        "La cocina del Cisne: quién está detrás de la tlayuda",
+        "¿Qué es lo que más te preguntan en la barra?",
+        "Del Tec al tanque: la ingeniería detrás del Cisne",
+        "Nuevo en el equipo: la bienvenida del mes"
+      ]
+    },
+    {
+      "clave": "agenda-cisne",
+      "topico": "eventos-collabs",
+      "nombre": "Agenda Cisne",
+      "descripcion": "Eventos con datos (qué, cuándo, dónde, con quién) y coautoría del aliado; recap después. Ya tiene evidencia histórica (×2.0): vigente por confirmar.",
+      "periodicidad": "Semanal (viernes: stories + Canal; feed cuando hay evento)",
+      "formato": "ig-imagen",
+      "plantilla": "agenda-evento",
+      "tiempo_produccion_min": 45,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": true,
+      "temas": [
+        "Halloween en el Cisne: concurso de disfraces",
+        "Año III: guarda la fecha",
+        "Año III: programa y aliados",
+        "Así quedó el Año III",
+        "Noche de Velas y Pizza con Pasado de Masa",
+        "Pop up en el Cisne: cocina invitada de @mamonfoodlab",
+        "Cocina invitada: chef @elvalerioavila",
+        "Cervecería invitada en @masiosare_tragosmexas",
+        "Oktoberfest en La Jabonera: dónde estuvo el Cisne",
+        "Agenda del finde: horario y qué hay en el Cisne"
+      ]
+    },
+    {
+      "clave": "efemerides-cisne",
+      "topico": "temporada",
+      "nombre": "Efemérides",
+      "descripcion": "Fechas de temporada sin asociar la cerveza a celebraciones cívicas o religiosas (COFEPRIS); toda pieza de temporada pasa por revisión legal.",
+      "periodicidad": "Por fecha (según calendario)",
+      "formato": "ig-carrusel",
+      "plantilla": "agenda-evento",
+      "tiempo_produccion_min": 60,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": false,
+      "temas": [
+        "Ofrenda a las etiquetas que se fueron (con visto bueno legal)",
+        "Temporada de calabaza: el barril con disfraz",
+        "De «Próximamente» a Año III: la historia del Cisne en fotos",
+        "Fin de año: los barriles que marcaron 2026",
+        "Día Internacional de la Cerveza: tres cosas que hacemos distinto",
+        "Llega el frío a la Bella Airosa: temporada de oscuras",
+        "Día del Padre: la mesa para compartir",
+        "Día Internacional del Perro en el Cisne",
+        "Un año del menú QR y el Pasaporte",
+        "Cuenta regresiva de fin de año: horario de diciembre",
+        "Día Internacional de la Stout (primer jueves de noviembre)",
+        "Halloween: semana de cuenta regresiva (sin la palabra Halloween junto a la cerveza)"
+      ]
+    },
+    {
+      "clave": "pachuca-tiene-lo-suyo",
+      "topico": "pachuca",
+      "nombre": "Pachuca tiene lo suyo",
+      "descripcion": "La ciudad como contexto: cómo llegar, prensa local, el viento, los pastes y la escena cervecera de Hidalgo (memes y noticias).",
+      "periodicidad": "Quincenal (meme, reel o noticia)",
+      "formato": "ig-reel",
+      "plantilla": "meme-reel",
+      "tiempo_produccion_min": 45,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": false,
+      "temas": [
+        "Cómo llegar al Cisne: Rafael Vega Sánchez 110, Col. Periodistas",
+        "Dónde estacionarse cerca del Cisne",
+        "El viento de la Bella Airosa: por qué siempre traes chamarra",
+        "La Silla Rota nos puso en el mapa cervecero de Hidalgo",
+        "Criterio Hidalgo: el primer taproom con microcervecería de Pachuca",
+        "Cervecerías de Hidalgo que admiramos: Real del Monte, Zempoala y Zimapán",
+        "Coffee Park Allende: donde también sirven Karnaval",
+        "Cuando alguien de fuera dice que Pachuca solo tiene pastes",
+        "Qué hacer en Pachuca un martes en la tarde (abrimos a las 16 h)",
+        "Plan de domingo en Pachuca: abrimos de 14 a 19 h"
+      ]
+    },
+    {
+      "clave": "edicion-limitada",
+      "topico": "lanzamientos",
+      "nombre": "Edición limitada",
+      "descripcion": "Lanzamientos y regresos: teaser en reel y aviso primero en el Canal de WhatsApp.",
+      "periodicidad": "Por lanzamiento",
+      "formato": "ig-reel",
+      "plantilla": "reel-muestra",
+      "tiempo_produccion_min": 60,
+      "estado_prueba": "no_empezada",
+      "estado_seccion": null,
+      "en_piloto": false,
+      "temas": [
+        "Ejercicio #1: 100 vasos de Milkshake Hazy IPA con Lucky Charms",
+        "Algo se está fermentando: teaser del siguiente barril",
+        "Vuelve Agua Puerca, ahora también en lata",
+        "Latas invitadas: las de Great Divide que llegaron en 2024",
+        "Guamaica y Cuatro Palos: cómo llegó a nuestras líneas",
+        "Barril sorpresa: el aviso sale primero en el Canal de WhatsApp",
+        "Bautiza una cerveza: el siguiente barril lo nombra la Parvada",
+        "Growler de 1.89 L: qué estilos se pueden llenar esta semana",
+        "La oscura de temporada para el frío",
+        "Lo que sale del Cisne en lata"
+      ]
+    }
+  ],
+  "aliados": [
+    {
+      "clave": "amordeveranostd",
+      "nombre": "@amordeveranostd",
+      "tipo": "Ilustrador",
+      "nota": "Ilustró las etiquetas de ¡Alarma! (IG 2026-09-22) y Matador Hdz (IG 2025-10-17); expositor del circuito en Masiosare (IG 2025-11-03)."
+    },
+    {
+      "clave": "rick_agridulce",
+      "nombre": "@rick_agridulce",
+      "tipo": "Ilustrador",
+      "nota": "Ilustración de ¿A poco sí pa'? con video de cómo se hizo (IG 2025-02-26)."
+    },
+    {
+      "clave": "gypsy.branding",
+      "nombre": "@gypsy.branding",
+      "tipo": "Ilustradora",
+      "nota": "Renée; ilustró Carabela (Tropical Stout, IG 2024-06-14) y acompaña al Cisne desde el inicio."
+    },
+    {
+      "clave": "masiosare_tragosmexas",
+      "nombre": "@masiosare_tragosmexas",
+      "tipo": "Bar / sede de eventos",
+      "nota": "Sede del circuito de exposiciones donde el Cisne fue cervecería invitada (IG 2025-11-03)."
+    },
+    {
+      "clave": "elvalerioavila",
+      "nombre": "@elvalerioavila",
+      "tipo": "Chef",
+      "nota": "Kitchen takeover en el Cisne (IG 2024-11-11), segundo mejor post histórico (201)."
+    },
+    {
+      "clave": "pasado-de-masa",
+      "nombre": "Pasado de Masa (@gabyig y @josegaja)",
+      "tipo": "Cocina invitada (pizza)",
+      "nota": "Noche de Velas y Pizza en el Cisne, 18 de septiembre de 2026 (IG 2026-09-07 y 2026-09-19)."
+    },
+    {
+      "clave": "la-jabonera",
+      "nombre": "La Jabonera (@l.a.jabonera)",
+      "tipo": "Sede de eventos",
+      "nota": "Oktoberfest La Jabonera 2026 (3 y 4 de octubre; mejor post histórico, 802) y ALTTAR (nov 2025)."
+    },
+    {
+      "clave": "coffeeparkcentro",
+      "nombre": "@coffeeparkcentro",
+      "tipo": "Cafetería / punto de venta",
+      "nota": "Colab de Oktoberfest con pretzels (IG 2024-09-27); sirve Karnaval en su sucursal Allende."
+    },
+    {
+      "clave": "pachucarecords",
+      "nombre": "@pachucarecords",
+      "tipo": "Tienda de discos / vinyl set",
+      "nota": "Vinyl set en Masiosare (nov 2025) y en la Noche de Velas (sep 2026)."
+    },
+    {
+      "clave": "mamonfoodlab",
+      "nombre": "@mamonfoodlab",
+      "tipo": "Cocina invitada (pop up)",
+      "nota": "Pop up de hamburguesas en el Cisne, 26 de octubre de 2024 (IG 2024-10-17)."
+    }
+  ],
+  "campanas": [
+    {
+      "clave": "halloween-2026",
+      "nombre": "Halloween 2026",
+      "inicio": "2026-10-24",
+      "fin": "2026-10-31",
+      "objetivo": "Semana de cuenta regresiva (24 al 31 de octubre) hacia el sábado 31: concurso de disfraces si el cliente lo confirma, etiquetas «disfrazadas», barril con calabaza y guiños de temporada en comida y mascotas. La palabra Halloween nunca va en la misma frase que la cerveza.",
+      "por_confirmar": true,
+      "nota": "En 2024 hubo Halloween el jueves 31 con concurso de disfraces y premio sorpresa (IG 2024-10-25)."
+    },
+    {
+      "clave": "dia-de-muertos-2026",
+      "nombre": "Día de Muertos 2026",
+      "inicio": "2026-10-30",
+      "fin": "2026-11-02",
+      "objetivo": "Ofrenda de los perrhijos en la terraza (sin cerveza; las fotos se reciben del 30 de octubre al 1 de noviembre) y, solo con visto bueno legal, la ofrenda a las etiquetas que se fueron. El Lunes de producción del 2 de noviembre no se relaciona con la festividad.",
+      "por_confirmar": true,
+      "nota": "La ofrenda de mascotas depende de que el cliente la acepte. La de etiquetas pasa por la consulta legal COFEPRIS antes de aprobarse."
+    },
+    {
+      "clave": "dia-de-la-stout-2026",
+      "nombre": "Día Internacional de la Stout",
+      "inicio": "2026-11-05",
+      "fin": "2026-11-05",
+      "objetivo": "Efeméride cervecera del primer jueves de noviembre: el Maridaje del finde se dedica a Agua Puerca (Imperial Stout) con su pareja oficial, la Tlayuda de Picaña Adobada.",
+      "por_confirmar": false,
+      "nota": "Es una fecha del gremio cervecero, no una celebración cívica ni religiosa. Aun así, la mención va en su propia frase y se confirma con la consulta legal."
+    },
+    {
+      "clave": "buen-fin-2026",
+      "nombre": "Buen Fin 2026 (por confirmar)",
+      "inicio": "2026-11-13",
+      "fin": "2026-11-16",
+      "objetivo": "Solo si hay una promoción de comida (o de growler que cumpla COFEPRIS); nada de «barra libre».",
+      "por_confirmar": true,
+      "nota": "Fechas oficiales del Buen Fin 2026 por confirmar; las de esta campaña son tentativas e incluyen el puente del lunes 16 (feriado)."
+    },
+    {
+      "clave": "aniversario-iii-2026",
+      "nombre": "Aniversario Año III",
+      "inicio": "2026-11-06",
+      "fin": "2026-11-23",
+      "objetivo": "Guarda la fecha, programa con aliados en coautoría, stories del día y recap del tercer aniversario.",
+      "por_confirmar": true,
+      "nota": "Fecha por confirmar. Las piezas suponen el sábado 21 de noviembre (el 1er aniversario se agradeció el 25-nov-2024 y el Año II se publicó el 23-nov-2025); si cambia, se mueven agenda, stories y recap."
+    }
+  ],
+  "atributos": [
+    {
+      "clave": "gancho",
+      "entidad": "pieza",
+      "nombre": "Tipo de gancho",
+      "tipo": "lista",
+      "opciones": [
+        "Pregunta",
+        "Dato",
+        "Humor",
+        "Revelación",
+        "Reseña real",
+        "Agenda"
+      ],
+      "filtrable": true,
+      "columna": true
+    },
+    {
+      "clave": "cerveza_destacada",
+      "entidad": "pieza",
+      "nombre": "Cerveza destacada",
+      "tipo": "cerveza",
+      "opciones": null,
+      "filtrable": true,
+      "columna": true
+    },
+    {
+      "clave": "personas_en_cuadro",
+      "entidad": "pieza",
+      "nombre": "Personas en cuadro",
+      "tipo": "lista",
+      "opciones": [
+        "Ninguna",
+        "Staff 25+ sin consumo",
+        "Fundadores sin consumo",
+        "Clientes 25+ sin consumo (con permiso)",
+        "Mascotas"
+      ],
+      "filtrable": true,
+      "columna": true
+    },
+    {
+      "clave": "requiere_grabacion",
+      "entidad": "pieza",
+      "nombre": "Requiere grabación",
+      "tipo": "booleano",
+      "opciones": null,
+      "filtrable": true,
+      "columna": true
+    },
+    {
+      "clave": "con_coautor",
+      "entidad": "pieza",
+      "nombre": "Con coautor (collab)",
+      "tipo": "booleano",
+      "opciones": null,
+      "filtrable": true,
+      "columna": true
+    },
+    {
+      "clave": "objetivo_pauta",
+      "entidad": "pieza",
+      "nombre": "Objetivo de pauta",
+      "tipo": "lista",
+      "opciones": [
+        "Sin pauta",
+        "Alcance",
+        "Visita"
+      ],
+      "filtrable": true,
+      "columna": false
+    },
+    {
+      "clave": "presupuesto_pauta",
+      "entidad": "pieza",
+      "nombre": "Presupuesto de pauta (MXN)",
+      "tipo": "numero",
+      "opciones": null,
+      "filtrable": false,
+      "columna": false
+    },
+    {
+      "clave": "locacion",
+      "entidad": "pieza",
+      "nombre": "Locación",
+      "tipo": "lista",
+      "opciones": [
+        "Barra",
+        "Sala de producción",
+        "Cocina",
+        "Terraza",
+        "Fachada / calle",
+        "Diseño (sin locación)",
+        "Locación de aliado"
+      ],
+      "filtrable": true,
+      "columna": true
+    },
+    {
+      "clave": "habla_de_cerveza",
+      "entidad": "pieza",
+      "nombre": "Habla de cerveza (lleva leyenda)",
+      "tipo": "booleano",
+      "opciones": null,
+      "filtrable": true,
+      "columna": true
+    }
+  ],
+  "piezas": [
+    {
+      "clave": "2026-10-24-halloween-arranque",
+      "campana": "halloween-2026",
+      "estado": "borrador",
+      "prueba": null,
+      "aliado": null,
+      "por_validar": [
+        "Que el cliente confirme Halloween 2026 el sábado 31 de octubre y el concurso de disfraces"
+      ],
+      "titulo": "Faltan 7 noches: arranca la semana de Halloween",
+      "seccion": "agenda-cisne",
+      "plantilla": "stories-en-vivo",
+      "fecha": "2026-10-24",
+      "hora": "17:00",
+      "objetivo": "comunidad",
+      "brief": "Solo stories (sábado sin feed). Arranque del piloto: sticker de cuenta regresiva a «Halloween en el Cisne · sáb 31», foto de la pluma del Cisne con una calabaza sobre la barra (sin vasos ni latas abiertas) y encuesta «¿Vienes disfrazado?» (Obvio / Ya veremos). Aviso en el Canal de WhatsApp con la fecha. Mañana domingo sale el teaser de las etiquetas disfrazadas. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Faltan 7 noches para Halloween en el Cisne. 🎃\nLas etiquetas ya están escogiendo disfraz: mañana les enseñamos quién se disfrazó de qué.\n\nEVITE EL EXCESO.",
+      "atributos": {
+        "gancho": "Pregunta",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-story",
+          "copy": "Faltan 7 noches para Halloween en el Cisne 🎃 ¿Vienes disfrazado? EVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-10-24",
+          "hora": "17:00"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🎃 Sábado 31 de octubre: Halloween en el Cisne. Faltan 7 noches; detalles del concurso de disfraces el viernes 30. Rafael Vega Sánchez 110, Col. Periodistas.",
+          "hashtags": [],
+          "fecha": "2026-10-24",
+          "hora": "13:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-10-25-resena-r1",
+      "titulo": "Reseña en voz alta: «Parada obligada en Pachuca»",
+      "seccion": "resena-en-voz-alta",
+      "plantilla": "resena-voz-alta",
+      "campana": null,
+      "fecha": "2026-10-25",
+      "hora": "13:00",
+      "estado": "borrador",
+      "prueba": "R1",
+      "objetivo": "comunidad",
+      "brief": "Imagen tipo pantallazo de celular (plantilla Reseña en voz alta): la reseña de 5★ del 3-oct-2026 tal cual, sin nombre ni foto del autor; en la segunda versión (story) la respuesta del Cisne ya publicada en Google. Respuesta sugerida para Google: «¡Gracias por la visita! Que la cocina y la barra se lleven bien es justo lo que buscamos. Aquí está su parada cuando vuelvan a Pachuca. — Equipo Cisne Negro». COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Reseña en voz alta 📱\n«Pocas veces en taprooms, la comida y la bebidas están tan espectacularmente equilibradas. Parada obligada en Pachuca, si o si.» — ★★★★★ en Google, octubre de 2026.\nQue la cocina y la barra se lleven bien es justo lo que buscamos cada semana.\nNuestra respuesta ya está en Google. ¿Nos cuentas la tuya? El enlace está en la bio.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Publicar primero en Google la respuesta del dueño a esta reseña (hoy 0 de 69 respondidas)",
+        "Captura de la reseña sin nombre ni foto del autor"
+      ],
+      "atributos": {
+        "gancho": "Reseña real",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-imagen",
+          "copy": "Reseña en voz alta 📱\n«Pocas veces en taprooms, la comida y la bebidas están tan espectacularmente equilibradas. Parada obligada en Pachuca, si o si.» — ★★★★★ en Google, octubre de 2026.\nQue la cocina y la barra se lleven bien es justo lo que buscamos cada semana.\nNuestra respuesta ya está en Google. ¿Nos cuentas la tuya? El enlace está en la bio.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#quehacerenpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-25",
+          "hora": "13:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "«Parada obligada en Pachuca, si o si.» Gracias por la reseña de 5★: que la cocina y la barra se lleven bien es justo lo que buscamos. ¿Ya nos contaste la tuya en Google?\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-25",
+          "hora": "13:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-texto",
+          "copy": "La reseña que nos tiene contentos esta semana: «Parada obligada en Pachuca, si o si.» ¿Cuál es su parada obligada en Pachuca, además del Cisne?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-10-25",
+          "hora": "13:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-10-25-agenda-r1",
+      "titulo": "Halloween: las etiquetas ya escogieron disfraz",
+      "seccion": "agenda-cisne",
+      "plantilla": "agenda-evento",
+      "campana": "halloween-2026",
+      "fecha": "2026-10-25",
+      "hora": "19:00",
+      "estado": "borrador",
+      "prueba": "R1",
+      "objetivo": "comunidad",
+      "brief": "Teaser en carrusel de 5 láminas: latas y etiquetas de la casa fotografiadas sobre la barra con accesorios de papel (antifaz, sombrero de bruja, calabaza), sin alterar el arte de los ilustradores y sin personas. Última lámina: «Sábado 31 · concurso de disfraces · detalles el viernes 30» + leyenda. Story con encuesta «¿quién se disfrazó de qué?». No anunciar DJ ni música en la misma frase que la cerveza. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Las etiquetas ya escogieron disfraz. 🎃\nEl sábado 31 de octubre es Halloween en el Cisne y este año queremos ver sus disfraces: estamos armando un concurso con premio para el mejor.\nHorario y reglas, el viernes 30 en este perfil y en nuestro Canal de WhatsApp.\nMientras, adivina: ¿quién se disfrazó de qué? Respuestas en comentarios. 👻\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Que el cliente confirme Halloween 2026 el sábado 31 de octubre y el concurso de disfraces (en 2024 fue el jueves 31 con premio sorpresa)",
+        "Premio del concurso sin alcohol (playera, vaso vacío o comida)"
+      ],
+      "atributos": {
+        "gancho": "Pregunta",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Las etiquetas ya escogieron disfraz. 🎃\nEl sábado 31 de octubre es Halloween en el Cisne y este año queremos ver sus disfraces: estamos armando un concurso con premio para el mejor.\nHorario y reglas, el viernes 30 en este perfil y en nuestro Canal de WhatsApp.\nMientras, adivina: ¿quién se disfrazó de qué? Respuestas en comentarios. 👻\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#halloweenpachuca",
+            "#quehacerenpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-25",
+          "hora": "19:00"
+        },
+        {
+          "canal": "ig",
+          "formato": "ig-story",
+          "copy": "Las etiquetas ya escogieron disfraz 🎃 Sábado 31 · concurso de disfraces · detalles el viernes 30 · EVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-10-25",
+          "hora": "19:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "Las etiquetas ya escogieron disfraz. 🎃 El sábado 31 de octubre es Halloween en el Cisne, con concurso de disfraces y premio para el mejor. Horario y reglas, el viernes 30.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-25",
+          "hora": "19:00"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🎃 Sábado 31 de octubre: Halloween en el Cisne con concurso de disfraces. Horario y reglas, el viernes 30 por aquí. EVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-10-25",
+          "hora": "13:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-10-26-produccion-r1",
+      "titulo": "Lunes de producción: cerrado para ustedes, abierto para el tanque",
+      "seccion": "lunes-de-produccion",
+      "plantilla": "reel-proceso",
+      "campana": null,
+      "fecha": "2026-10-26",
+      "hora": "17:00",
+      "estado": "borrador",
+      "prueba": "R1",
+      "objetivo": "alcance",
+      "brief": "Reel de 20–30 s en la sala de producción durante la cocción: toma 1, el horario de la puerta con «Lunes cerrado»; corte a molienda, vapor de la olla y fermentadores. Texto en pantalla: «¿Lunes cerrado?». Grabar en lote las tomas de los lunes 26 de octubre y 2 de noviembre. Lunes tarde es la franja con mejor índice histórico (×2.6, muestra chica). COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "¿Lunes cerrado? Cerrado para ustedes, abierto para el tanque. 🪶\nLos lunes no abrimos porque es día de producción: molienda, cocción y fermentadores trabajando para la tap list de la semana.\nAsí se hace lo que sale de nuestras líneas en Col. Periodistas.\nDe martes a domingo, la barra; los lunes, el oficio.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Estilo que se cocina ese lunes antes de nombrarlo en pantalla",
+        "Permiso para grabar en la sala de producción y quién aparece (staff 25+)"
+      ],
+      "atributos": {
+        "gancho": "Revelación",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Staff 25+ sin consumo",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Sala de producción",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-reel",
+          "copy": "¿Lunes cerrado? Cerrado para ustedes, abierto para el tanque. 🪶\nLos lunes no abrimos porque es día de producción: molienda, cocción y fermentadores trabajando para la tap list de la semana.\nAsí se hace lo que sale de nuestras líneas en Col. Periodistas.\nDe martes a domingo, la barra; los lunes, el oficio.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#lunesdeproduccion",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-26",
+          "hora": "17:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-reel",
+          "copy": "Los lunes el Cisne no abre: es día de producción. Molienda, cocción y fermentadores para la tap list de la semana; de martes a domingo les contamos qué salió del tanque.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-26",
+          "hora": "17:00"
+        },
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-video",
+          "copy": "Así se ve un lunes en una microcervecería de Pachuca: cerrado al público, abierto para el tanque. Cerveza artesanal hecha en Pachuca, Hidalgo, por Cervecería Cisne Negro; taproom en Col. Periodistas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#quehacerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachucahidalgo"
+          ],
+          "fecha": "2026-10-26",
+          "hora": "17:00"
+        },
+        {
+          "canal": "yt",
+          "formato": "yt-short",
+          "copy": "Así se ve un lunes en una microcervecería de Pachuca: cerrado al público, abierto para el tanque. Cerveza artesanal hecha en Pachuca, Hidalgo, por Cervecería Cisne Negro; taproom en Col. Periodistas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca"
+          ],
+          "fecha": "2026-10-26",
+          "hora": "17:00",
+          "titulo": "Lunes de producción en una microcervecería de Pachuca | Cisne Negro · EVITE EL EXCESO."
+        }
+      ]
+    },
+    {
+      "clave": "2026-10-27-barril-r1",
+      "titulo": "Barril de la semana: ¡Alarma! posa con calabaza",
+      "seccion": "barril-de-la-semana",
+      "plantilla": "ficha-barril",
+      "campana": "halloween-2026",
+      "fecha": "2026-10-27",
+      "hora": "12:30",
+      "estado": "borrador",
+      "prueba": "R1",
+      "objetivo": "visita",
+      "brief": "Carrusel de 6 láminas: portada con el barril o la lata de ¡Alarma! junto a una calabaza (guiño de temporada, sin personas); Red IPA · 7%; notas oficiales (IG 2026-09-22); la etiqueta de @amordeveranostd; maridaje sugerido; leyenda + horario. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Barril de la semana: ¡Alarma! 🚨🎃\nRed IPA · 7% ABV. Cítrica, resinosa y con un amargor difícil de encubrir.\nEsta semana posa junto a una calabaza porque así va la temporada.\nVa con: Hamburguesa De Costilla de Res o Tlayuda de Picaña Adobada.\nFicha completa en las láminas.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Confirmar que ¡Alarma! está en la tap list esa semana",
+        "Maridaje sugerido de ¡Alarma! (propuesta del menú, no oficial): validar con el cervecero",
+        "Permiso de @amordeveranostd para usar la ilustración en video, TikTok y YouTube"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": "alarma",
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": "amordeveranostd",
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Barril de la semana: ¡Alarma! 🚨🎃\nRed IPA · 7% ABV. Cítrica, resinosa y con un amargor difícil de encubrir.\nEsta semana posa junto a una calabaza porque así va la temporada.\nVa con: Hamburguesa De Costilla de Res o Tlayuda de Picaña Adobada.\nFicha completa en las láminas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#barrildelasemana",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-27",
+          "hora": "12:30"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Barril de la semana: ¡Alarma!, Red IPA de 7%. Cítrica, resinosa y con un amargor difícil de encubrir; esta semana posa con calabaza.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-27",
+          "hora": "12:30"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "La calabaza vino de visita y ¡Alarma! no la soltó en toda la sesión de fotos 🎃 Red IPA de 7%, cítrica y resinosa: es el barril de la semana.\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-10-27",
+          "hora": "12:30"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🚨 Barril de la semana: ¡Alarma!, Red IPA de 7%. Cítrica, resinosa y con un amargor difícil de encubrir. Ficha en IG @cisnenegro.mx. EVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-10-27",
+          "hora": "12:45"
+        }
+      ]
+    },
+    {
+      "clave": "2026-10-28-cuentalo-r1",
+      "titulo": "¡Cuéntalo en el Cisne!: ¿A poco sí, pa'?",
+      "seccion": "cuentalo-en-el-cisne",
+      "plantilla": "volteo-etiqueta",
+      "campana": "halloween-2026",
+      "fecha": "2026-10-28",
+      "hora": "17:00",
+      "estado": "borrador",
+      "prueba": "R1",
+      "objetivo": "alcance",
+      "brief": "Reel de volteo de etiqueta: la lata o etiqueta de ¿A poco sí pa'? tapada; texto «¿Quién dijo que no le gustaba la cerveza?»; se cuenta el origen de la frase (IG 2025-04-30) y se revela la ilustración de @rick_agridulce. Semana de Halloween: el gancho de miedo («Les tengo miedo a las stouts») va en su propia frase, separado del nombre de la cerveza. Invitar a @rick_agridulce como coautor. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "«Les tengo miedo a las stouts.» 👻\n¿A poco sí, pa'?\nAsí le decimos a quien jura que un estilo le da miedo. Aquí no juzgamos, nomás servimos.\n¿A poco sí pa'? es nuestra American IPA: intensa y aromática, con piña, mango, papaya, melón y un ligero toque resinoso.\nIlustración: @rick_agridulce.\n¿Quién de tus compas necesita escuchar esta frase? Etiquétalo.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Permiso de @rick_agridulce para usar la ilustración y el video de cómo se hizo",
+        "Confirmar que ¿A poco sí pa'? está en la tap list esa semana",
+        "Trial Reels disponibles para la cuenta (mínimo de seguidores por verificar)"
+      ],
+      "atributos": {
+        "gancho": "Humor",
+        "cerveza_destacada": "a-poco-si-pa",
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": true,
+        "con_coautor": true,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": "rick_agridulce",
+      "variantes": [
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-video",
+          "copy": "¿A poco sí, pa'? La frase que le decimos a quien jura que les tiene miedo a las stouts. Historia de la etiqueta de nuestra American IPA, hecha en Pachuca. Cerveza artesanal en Pachuca, Hidalgo: Cervecería Cisne Negro.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#quehacerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachucahidalgo",
+            "#cuentaloenelcisne"
+          ],
+          "fecha": "2026-10-28",
+          "hora": "17:00"
+        },
+        {
+          "canal": "ig",
+          "formato": "ig-reel",
+          "copy": "«Les tengo miedo a las stouts.» 👻\n¿A poco sí, pa'?\nAsí le decimos a quien jura que un estilo le da miedo. Aquí no juzgamos, nomás servimos.\n¿A poco sí pa'? es nuestra American IPA: intensa y aromática, con piña, mango, papaya, melón y un ligero toque resinoso.\nIlustración: @rick_agridulce.\n¿Quién de tus compas necesita escuchar esta frase? Etiquétalo.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-28",
+          "hora": "17:00"
+        },
+        {
+          "canal": "yt",
+          "formato": "yt-short",
+          "copy": "¿A poco sí, pa'? La frase que le decimos a quien jura que les tiene miedo a las stouts. Historia de la etiqueta de nuestra American IPA, hecha en Pachuca. Cerveza artesanal en Pachuca, Hidalgo: Cervecería Cisne Negro.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca"
+          ],
+          "fecha": "2026-10-28",
+          "hora": "17:00",
+          "titulo": "¿A poco sí, pa'?: la historia de una etiqueta de Pachuca · EVITE EL EXCESO."
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-texto",
+          "copy": "Frase que se dice mucho en nuestra barra: «¿A poco sí, pa'?». Se usa cuando alguien jura que las stouts no son lo suyo. También es el nombre de nuestra American IPA. ¿A quién se la dirían?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-10-28",
+          "hora": "18:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-10-29-gbp-halloween",
+      "campana": "halloween-2026",
+      "estado": "borrador",
+      "prueba": null,
+      "aliado": null,
+      "por_validar": [
+        "Que el cliente confirme Halloween 2026 el sábado 31 de octubre y el concurso de disfraces",
+        "Hora del concurso y premio sin alcohol",
+        "Política de Google para publicaciones de alcohol en GBP (por verificar): mantener las publicaciones de GBP sin cerveza"
+      ],
+      "titulo": "GBP: Halloween en Cisne Negro (evento)",
+      "seccion": "agenda-cisne",
+      "plantilla": "agenda-evento",
+      "fecha": "2026-10-29",
+      "hora": "12:00",
+      "objetivo": "visita",
+      "brief": "Publicación de GBP tipo evento para el sábado 31, con foto real de la terraza o la fachada decorada (sin vasos, barriles ni latas). Esa semana subir también 5–10 fotos reales a la ficha, incluida la decoración de temporada. Sustituye en este jueves al GBP del Ceviche de Atún, que pasa al banco de temas. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Halloween en Cisne Negro: sábado 31 de octubre, con concurso de disfraces [por confirmar: hora y premio] y cocina abierta con la carta de siempre. Mascotas bienvenidas, también disfrazadas. 🐶🎃 Toca «Cómo llegar» para la ruta a Rafael Vega Sánchez 110, Col. Periodistas, Pachuca. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+      "atributos": {
+        "gancho": "Agenda",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Fachada / calle",
+        "habla_de_cerveza": false
+      },
+      "variantes": [
+        {
+          "canal": "gbp",
+          "formato": "gbp-publicacion",
+          "copy": "Halloween en Cisne Negro: sábado 31 de octubre, con concurso de disfraces [por confirmar: hora y premio] y cocina abierta con la carta de siempre. Mascotas bienvenidas, también disfrazadas. 🐶🎃 Toca «Cómo llegar» para la ruta a Rafael Vega Sánchez 110, Col. Periodistas, Pachuca. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+          "hashtags": [],
+          "fecha": "2026-10-29",
+          "hora": "12:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-10-29-maridaje-r1",
+      "titulo": "Maridaje del finde: Tropkiller + Camarones Piedra",
+      "seccion": "maridaje-del-finde",
+      "plantilla": "tarjeta-maridaje",
+      "campana": "halloween-2026",
+      "fecha": "2026-10-29",
+      "hora": "16:00",
+      "estado": "borrador",
+      "prueba": "R1",
+      "objetivo": "visita",
+      "brief": "Carrusel con la pareja oficial (IG 2026-01-20); la ficha de Tropkiller entra solo validada. Semana de Halloween: el guiño va en los camarones, nunca en la cerveza. Si la ficha de Tropkiller no queda validada a tiempo, se publica la pareja sin la lámina de ficha. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Maridaje del finde: Tropkiller + Camarones Piedra. 🦐\nPareja oficial de «Cisne Negro te sugiere…».\nLos camarones llegan capeados con tinta de calamar y aderezo de sriracha: por eso salen negros.\nSon los únicos de la carta que no necesitan disfraz esta semana. 🎃\nLa ficha de Tropkiller va en la segunda lámina.\nGuárdalo para la próxima ronda de entradas.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Confirmar que Tropkiller está en la tap list esa semana",
+        "Estilo y ABV de Tropkiller"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Maridaje del finde: Tropkiller + Camarones Piedra. 🦐\nPareja oficial de «Cisne Negro te sugiere…».\nLos camarones llegan capeados con tinta de calamar y aderezo de sriracha: por eso salen negros.\nSon los únicos de la carta que no necesitan disfraz esta semana. 🎃\nLa ficha de Tropkiller va en la segunda lámina.\nGuárdalo para la próxima ronda de entradas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#maridaje",
+            "#comerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-29",
+          "hora": "16:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Maridaje del finde: Tropkiller + Camarones Piedra (capeados con tinta de calamar y sriracha), pareja oficial de «Cisne Negro te sugiere…».\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-29",
+          "hora": "16:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "¿Por qué nuestros camarones salen negros? Tinta de calamar en el capeado. Su pareja oficial es Tropkiller. ¿Se animarían?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-10-29",
+          "hora": "16:00"
+        },
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-slideshow",
+          "copy": "Camarones piedra con tinta de calamar + Tropkiller: maridaje oficial en Cervecería Cisne Negro. Dónde comer en Pachuca: Col. Periodistas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#dondecomerenpachuca",
+            "#quehacerenpachuca",
+            "#pachucahidalgo"
+          ],
+          "fecha": "2026-10-29",
+          "hora": "16:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-10-30-agenda-r2",
+      "titulo": "Halloween en el Cisne: datos del sábado 31",
+      "seccion": "agenda-cisne",
+      "plantilla": "agenda-evento",
+      "campana": "halloween-2026",
+      "fecha": "2026-10-30",
+      "hora": "19:00",
+      "estado": "borrador",
+      "prueba": "R2",
+      "objetivo": "visita",
+      "brief": "Imagen de agenda con datos duros (qué, cuándo, dónde) sobre un cartel con calabazas y la pluma del Cisne; sin vasos, barriles ni personas. Story con cuenta regresiva y aviso de Canal. Va como imagen (R1 fue carrusel): si R1 no llega a la interacción ideal, el cambio de formato ya cumple la regla del método; si R1 sí cumplió, puede volver a carrusel a la misma hora. Incluye la convocatoria a la ofrenda de los perrhijos (Día de Muertos, sin cerveza). COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Halloween en el Cisne 🎃\n📅 Sábado 31 de octubre\n🕗 Concurso de disfraces: [por confirmar: hora]\n🏆 Premio al mejor disfraz: [por confirmar]\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca\nCocina abierta con la carta de siempre. 👻\nY del viernes 30 al domingo 1, la terraza tiene ofrenda para los perrhijos: trae la foto de tu mascota. 🐾",
+      "por_validar": [
+        "Que el cliente confirme Halloween 2026 el sábado 31 de octubre y el concurso de disfraces (en 2024 fue el jueves 31 con premio sorpresa)",
+        "Hora del concurso de disfraces",
+        "Premio del concurso sin alcohol (playera, vaso vacío o comida)",
+        "Que el cliente acepte la ofrenda de mascotas en la terraza del 30 de octubre al 1 de noviembre"
+      ],
+      "atributos": {
+        "gancho": "Agenda",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-imagen",
+          "copy": "Halloween en el Cisne 🎃\n📅 Sábado 31 de octubre\n🕗 Concurso de disfraces: [por confirmar: hora]\n🏆 Premio al mejor disfraz: [por confirmar]\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca\nCocina abierta con la carta de siempre. 👻\nY del viernes 30 al domingo 1, la terraza tiene ofrenda para los perrhijos: trae la foto de tu mascota. 🐾",
+          "hashtags": [
+            "#halloweenpachuca",
+            "#quehacerenpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-30",
+          "hora": "19:00"
+        },
+        {
+          "canal": "ig",
+          "formato": "ig-story",
+          "copy": "Mañana: Halloween en el Cisne 🎃 Concurso de disfraces [por confirmar: hora] · Rafael Vega Sánchez 110",
+          "hashtags": [],
+          "fecha": "2026-10-30",
+          "hora": "19:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "Halloween en el Cisne: sábado 31 de octubre, concurso de disfraces a las [por confirmar: hora] con premio para el mejor. Cocina abierta con la carta de siempre.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\nY del viernes 30 al domingo 1, la terraza tiene ofrenda para los perrhijos: trae la foto de tu mascota. 🐾",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-10-30",
+          "hora": "19:00"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🎃 Mañana sábado 31: Halloween en el Cisne. Concurso de disfraces a las [por confirmar: hora]. Rafael Vega Sánchez 110, Col. Periodistas. Y ya está la ofrenda de los perrhijos en la terraza: trae la foto de tu mascota. 🐾",
+          "hashtags": [],
+          "fecha": "2026-10-30",
+          "hora": "13:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-10-31-halloween-stories",
+      "titulo": "Stories de Halloween: etiquetas disfrazadas y cuenta regresiva",
+      "seccion": "agenda-cisne",
+      "plantilla": "stories-en-vivo",
+      "campana": "halloween-2026",
+      "fecha": "2026-10-31",
+      "hora": "17:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "comunidad",
+      "brief": "Solo stories (sábado sin feed): montaje del lugar antes de abrir, latas con accesorios de papel, encuesta «¿qué disfraz gana?» y cuenta regresiva al concurso. Nada de clientes bebiendo; si se reposta a clientes disfrazados, solo con permiso, mayores de 25 y sin vaso en mano. Una story recuerda la ofrenda de los perrhijos en la terraza (fotos hasta el domingo 1). COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Hoy es Halloween en el Cisne 🎃 Concurso de disfraces [por confirmar: hora] · Rafael Vega Sánchez 110.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Hora del concurso de disfraces",
+        "Permiso y edad (25+) de cualquier cliente que se reposte"
+      ],
+      "atributos": {
+        "gancho": "Agenda",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-story",
+          "copy": "Hoy es Halloween en el Cisne 🎃 Concurso de disfraces [por confirmar: hora] · Rafael Vega Sánchez 110. EVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-10-31",
+          "hora": "17:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-01-perrhijos-ofrenda",
+      "campana": "dia-de-muertos-2026",
+      "estado": "borrador",
+      "prueba": null,
+      "aliado": null,
+      "por_validar": [
+        "Que el cliente acepte la ofrenda de mascotas en la terraza del 30 de octubre al 1 de noviembre",
+        "Permiso de cada humano para publicar la foto y el nombre de su mascota",
+        "Quién arma la ofrenda y con qué presupuesto (cempasúchil, papel picado, veladoras LED)",
+        "Política de Google para publicaciones de alcohol en GBP (por verificar): mantener las publicaciones de GBP sin cerveza"
+      ],
+      "titulo": "Perrhijos del Cisne: la ofrenda de la terraza",
+      "seccion": "perrhijos-del-cisne",
+      "plantilla": "recap-evento",
+      "fecha": "2026-11-01",
+      "hora": "13:00",
+      "objetivo": "comunidad",
+      "brief": "Carrusel de 6 láminas: la ofrenda armada en la terraza (papel picado, cempasúchil, veladoras LED, plato de agua y croquetas) con las fotos de mascotas que la comunidad dejó del viernes 30 al domingo 1; una lámina por historia (nombre de la mascota y una frase de su humano, con permiso). Sin vasos, latas ni barriles en cuadro y sin personas identificables. La convocatoria sale en la agenda del viernes 30 y en las stories del sábado 31. Es la pieza de Día de Muertos sin cerveza: no depende de la consulta legal de la ofrenda de etiquetas. Ocupa el domingo de Reseña en voz alta (la R2 pasa al domingo 8). También sale en GBP. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "En la terraza del Cisne pusimos una ofrenda para quienes nos acompañaron en cuatro patas. 🐾🕯️\nEstas son las fotos que nos dejaron este fin de semana: [por confirmar: nombres de las mascotas, con permiso de sus humanos].\nGracias por compartirlos con nosotros. Si el tuyo está aquí, etiquétanos en tu story.",
+      "atributos": {
+        "gancho": "Revelación",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Mascotas",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Terraza",
+        "habla_de_cerveza": false
+      },
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "En la terraza del Cisne pusimos una ofrenda para quienes nos acompañaron en cuatro patas. 🐾🕯️\nEstas son las fotos que nos dejaron este fin de semana: [por confirmar: nombres de las mascotas, con permiso de sus humanos].\nGracias por compartirlos con nosotros. Si el tuyo está aquí, etiquétanos en tu story.",
+          "hashtags": [
+            "#perrhijosdelcisne",
+            "#petfriendlypachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-01",
+          "hora": "13:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "En la terraza del Cisne pusimos una ofrenda para quienes nos acompañaron en cuatro patas. 🐾🕯️\nEstas son las fotos que nos dejaron este fin de semana: [por confirmar: nombres de las mascotas, con permiso de sus humanos].\nGracias por compartirlos con nosotros. Si el tuyo está aquí, etiquétanos en tu story.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-01",
+          "hora": "13:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "Este fin de semana la terraza del Cisne tuvo ofrenda para los perrhijos que ya no están. 🐾🕯️",
+          "hashtags": [],
+          "fecha": "2026-11-01",
+          "hora": "13:00"
+        },
+        {
+          "canal": "gbp",
+          "formato": "gbp-publicacion",
+          "copy": "Este fin de semana la terraza de Cisne Negro tiene ofrenda para las mascotas de nuestra comunidad. 🐾 Mascotas bienvenidas todo el año. Toca «Cómo llegar» para la ruta a Rafael Vega Sánchez 110, Col. Periodistas, Pachuca. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+          "hashtags": [],
+          "fecha": "2026-11-01",
+          "hora": "12:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-01-ofrenda-etiquetas",
+      "titulo": "Ofrenda a las etiquetas que se fueron (sujeta a visto bueno legal)",
+      "seccion": "efemerides-cisne",
+      "plantilla": "agenda-evento",
+      "campana": "dia-de-muertos-2026",
+      "fecha": "2026-11-01",
+      "hora": "19:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "comunidad",
+      "brief": "Carrusel de 6 láminas: foto de una ofrenda (papel picado, cempasúchil, veladoras) con las etiquetas impresas de cervezas que ya no están en las líneas; una lámina por etiqueta con la historia de su nombre; última lámina con leyenda. Sin vasos servidos, sin personas y sin el texto «Día de Muertos» junto a la cerveza. Si la consulta legal no lo aprueba: publicar el mismo carrusel como «Las que se fueron», sin elementos de ofrenda. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Hay etiquetas que ya no están en las líneas, pero aquí nadie las olvida. 🕯️\nEn las láminas: Mil Risas, Carabela, Joyas Ayala y Ejercicio #1, con la historia de cada nombre.\nMil Risas nació de una plática de clientes en la barra.\nCarabela, nuestra Tropical Stout, zarpó con ilustración de @gypsy.branding.\nEjercicio #1 fue de 100 vasos y ya.\n¿Cuál les gustaría volver a ver en la pared? Votos en comentarios.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "NOTA LEGAL: una ofrenda con etiquetas de cerveza puede leerse como asociar el producto a una celebración religiosa (COFEPRIS, Reglamento art. 34); publicar solo con visto bueno de la consulta legal",
+        "Cuáles cervezas están retiradas (Mil Risas, Carabela, Joyas Ayala, Ejercicio #1)",
+        "Permiso de uso del arte de etiqueta de cada ilustrador (incluido @gypsy.branding)"
+      ],
+      "atributos": {
+        "gancho": "Pregunta",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": "gypsy.branding",
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Hay etiquetas que ya no están en las líneas, pero aquí nadie las olvida. 🕯️\nEn las láminas: Mil Risas, Carabela, Joyas Ayala y Ejercicio #1, con la historia de cada nombre.\nMil Risas nació de una plática de clientes en la barra.\nCarabela, nuestra Tropical Stout, zarpó con ilustración de @gypsy.branding.\nEjercicio #1 fue de 100 vasos y ya.\n¿Cuál les gustaría volver a ver en la pared? Votos en comentarios.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-01",
+          "hora": "19:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Hay etiquetas que ya no están en las líneas, pero aquí nadie las olvida: Mil Risas, Carabela, Joyas Ayala y Ejercicio #1, con la historia de cada nombre. ¿Cuál les gustaría volver a ver?\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-01",
+          "hora": "19:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-02-produccion-r2",
+      "titulo": "Lunes de producción: todo empieza en un costal",
+      "seccion": "lunes-de-produccion",
+      "plantilla": "reel-proceso",
+      "campana": null,
+      "fecha": "2026-11-02",
+      "hora": "17:00",
+      "estado": "borrador",
+      "prueba": "R2",
+      "objetivo": "alcance",
+      "brief": "Reel de 20 s: costal de malta → molino → olla. Texto en pantalla: «El componente principal de una cerveza» (IG 2025-11-13). Plan B del método: si R1 no llegó a 32 de interacción, cambiar la hora a 13:00 o pasar a plantilla «reel dibujado» (diagrama del proceso a mano). Es lunes 2 de noviembre: cocción normal; no se relaciona con Día de Muertos en texto ni en imagen. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Todo empieza en un costal. 🌾\nEl componente principal de una cerveza es la cebada malteada.\nLos lunes, día de producción, la molemos para arrancar la cocción de la semana.\nEn el reel: del costal al molino y del molino a la olla.\nDato de barra: el color de una cerveza depende sobre todo de qué tan tostada está la malta.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Que la molienda se haga en sitio y qué malta se muestra"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Staff 25+ sin consumo",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Sala de producción",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-reel",
+          "copy": "Todo empieza en un costal. 🌾\nEl componente principal de una cerveza es la cebada malteada.\nLos lunes, día de producción, la molemos para arrancar la cocción de la semana.\nEn el reel: del costal al molino y del molino a la olla.\nDato de barra: el color de una cerveza depende sobre todo de qué tan tostada está la malta.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#lunesdeproduccion",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-02",
+          "hora": "17:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-reel",
+          "copy": "Todo empieza en un costal de cebada malteada: los lunes la molemos para arrancar la cocción de la semana.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-02",
+          "hora": "17:00"
+        },
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-video",
+          "copy": "Del costal a la olla: así empieza una cerveza artesanal en Pachuca. Lunes de producción en Cervecería Cisne Negro, microcervecería y taproom en Col. Periodistas, Pachuca, Hidalgo.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#quehacerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachucahidalgo"
+          ],
+          "fecha": "2026-11-02",
+          "hora": "17:00"
+        },
+        {
+          "canal": "yt",
+          "formato": "yt-short",
+          "copy": "Del costal a la olla: así empieza una cerveza artesanal en Pachuca. Lunes de producción en Cervecería Cisne Negro, microcervecería y taproom en Col. Periodistas, Pachuca, Hidalgo.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca"
+          ],
+          "fecha": "2026-11-02",
+          "hora": "17:00",
+          "titulo": "Del costal a la olla: cebada malteada en una microcervecería de Pachuca · EVITE EL EXCESO."
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-03-barril-r2",
+      "titulo": "Barril de la semana: Barrilete Cósmico, la Hazy IPA de los papalotes",
+      "seccion": "barril-de-la-semana",
+      "plantilla": "ficha-barril",
+      "campana": null,
+      "fecha": "2026-11-03",
+      "hora": "12:30",
+      "estado": "borrador",
+      "prueba": "R2",
+      "objetivo": "visita",
+      "brief": "Carrusel de 6 láminas (ficha de barril): 1) etiqueta de Barrilete Cósmico sobre la barra, sin manos; 2) Hazy IPA · 6.1% ABV; 3) notas oficiales (toronja, lima, naranja, mango, piña; IG 2024-05-20); 4) «barrilete = papalote» con el arte de la etiqueta; 5) maridaje sugerido; 6) leyenda + horario. Martes 12–14 h es la franja con mejor índice (×1.33). Plan B si R1 no cumplió: publicar a las 13:30 o cambiar la portada a la lata. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Barril de la semana: Barrilete Cósmico. 🪁\nHazy IPA · 6.1% ABV. Turbia y jugosa: toronja, lima y naranja, con fruta tropical como mango y piña.\n«Barrilete» es papalote, y por eso su etiqueta va llena de ellos.\nVa con: Hamburguesa De Manchego Frito o Tartar de Cecina.\nFicha completa en las láminas; guárdala para tu próxima visita.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Confirmar que Barrilete Cósmico está en la tap list esa semana",
+        "Maridaje sugerido de Barrilete Cósmico (propuesta del menú, no oficial): validar con el cervecero"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": "barrilete-cosmico",
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Barril de la semana: Barrilete Cósmico. 🪁\nHazy IPA · 6.1% ABV. Turbia y jugosa: toronja, lima y naranja, con fruta tropical como mango y piña.\n«Barrilete» es papalote, y por eso su etiqueta va llena de ellos.\nVa con: Hamburguesa De Manchego Frito o Tartar de Cecina.\nFicha completa en las láminas; guárdala para tu próxima visita.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#barrildelasemana",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-03",
+          "hora": "12:30"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Barril de la semana: Barrilete Cósmico, Hazy IPA de 6.1%. Toronja, lima y naranja con fruta tropical; la etiqueta va llena de papalotes porque «barrilete» es papalote.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-03",
+          "hora": "12:30"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "Barrilete, papalote o cometa: ¿cómo le dicen ustedes? 🪁 Nosotros le pusimos Barrilete Cósmico a una Hazy IPA de 6.1% y le llenamos la etiqueta de papalotes. Esta semana está en barril.\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-03",
+          "hora": "12:30"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🪶 Barril de la semana: Barrilete Cósmico, Hazy IPA de 6.1%. Toronja, lima, naranja y fruta tropical. Ficha completa en IG @cisnenegro.mx. EVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-03",
+          "hora": "12:45"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-04-cuentalo-r2",
+      "titulo": "¡Cuéntalo en el Cisne!: ¡Alarma! y la denuncia anónima",
+      "seccion": "cuentalo-en-el-cisne",
+      "plantilla": "volteo-etiqueta",
+      "campana": null,
+      "fecha": "2026-11-04",
+      "hora": "17:00",
+      "estado": "borrador",
+      "prueba": "R2",
+      "objetivo": "alcance",
+      "brief": "Reel de volteo de etiqueta (adaptación del volteo de libro del PDF 035): 0–2 s la etiqueta de ¡Alarma! tapada sobre la barra con el texto «Esta etiqueta tiene antecedentes»; 2–20 s se narra la historia (texto del post de IG 2026-09-22); 20–25 s se voltea y se revela la ilustración de @amordeveranostd. Sale como TikTok y como Trial Reel en IG (para no seguidores). Crédito del ilustrador en frase aparte, sin la cerveza. Invitar a @amordeveranostd como coautor. Plan B si R1 no cumplió: cambiar a plantilla «reel dibujado» o publicar a las 13:00. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Llegaron por una denuncia anónima. Se quedaron por motivos personales. 🚨\nDos uniformados, un par de cuernos y un radio que pregunta si hay novedades.\n—Negativo, central. Todo en orden.\nAsí es la etiqueta de ¡Alarma!, nuestra Red IPA de 7%: cítrica, resinosa y con un amargor difícil de encubrir.\nIlustración: @amordeveranostd.\nCualquier parecido con la autoridad es pura coincidencia.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Permiso de @amordeveranostd para usar la ilustración en video, TikTok y YouTube",
+        "Confirmar que ¡Alarma! está en la tap list esa semana",
+        "Trial Reels disponibles para la cuenta (mínimo de seguidores por verificar)"
+      ],
+      "atributos": {
+        "gancho": "Revelación",
+        "cerveza_destacada": "alarma",
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": true,
+        "con_coautor": true,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": "amordeveranostd",
+      "variantes": [
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-video",
+          "copy": "Esta etiqueta tiene antecedentes 🚨 La historia detrás de ¡Alarma!, Red IPA de 7% hecha en Pachuca por Cervecería Cisne Negro. Cerveza artesanal en Pachuca, Hidalgo; taproom en Col. Periodistas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#quehacerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachucahidalgo",
+            "#cuentaloenelcisne"
+          ],
+          "fecha": "2026-11-04",
+          "hora": "17:00"
+        },
+        {
+          "canal": "ig",
+          "formato": "ig-reel",
+          "copy": "Llegaron por una denuncia anónima. Se quedaron por motivos personales. 🚨\nDos uniformados, un par de cuernos y un radio que pregunta si hay novedades.\n—Negativo, central. Todo en orden.\nAsí es la etiqueta de ¡Alarma!, nuestra Red IPA de 7%: cítrica, resinosa y con un amargor difícil de encubrir.\nIlustración: @amordeveranostd.\nCualquier parecido con la autoridad es pura coincidencia.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-04",
+          "hora": "17:00"
+        },
+        {
+          "canal": "yt",
+          "formato": "yt-short",
+          "copy": "Esta etiqueta tiene antecedentes 🚨 La historia detrás de ¡Alarma!, Red IPA de 7% hecha en Pachuca por Cervecería Cisne Negro. Cerveza artesanal en Pachuca, Hidalgo; taproom en Col. Periodistas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca"
+          ],
+          "fecha": "2026-11-04",
+          "hora": "17:00",
+          "titulo": "La etiqueta con antecedentes: ¡Alarma!, Red IPA hecha en Pachuca · EVITE EL EXCESO."
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-texto",
+          "copy": "Pregunta seria: si una etiqueta tiene dos uniformados con cuernos, ¿es denuncia o es confesión? 🚨 Así es la etiqueta de ¡Alarma!, nuestra Red IPA de 7%. Ilustración: @amordeveranostd.\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-04",
+          "hora": "18:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-05-gbp-hamburguesas",
+      "titulo": "GBP: las seis hamburguesas y sándwiches de la carta",
+      "seccion": "el-plato-que-manda",
+      "plantilla": "pantallazo-celular",
+      "campana": null,
+      "fecha": "2026-11-05",
+      "hora": "12:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "visita",
+      "brief": "Publicación de GBP con foto real de la hamburguesa Cisne, sin vasos en cuadro. Subir 5–10 fotos reales de la semana. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Seis hamburguesas y sándwiches en la carta de Cisne Negro: De Suadero, Philly Special, De Res, Cisne, De Costilla de Res y De Manchego Frito. La Cisne lleva res, manchego, champiñones salteados, pepino, guacamole y hojas. Consulta precios en el menú de nuestro sitio y toca «Cómo llegar» para la ruta a Rafael Vega Sánchez 110, Col. Periodistas, Pachuca. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+      "por_validar": [
+        "Carta de hamburguesas vigente",
+        "Política de Google para publicaciones de alcohol en GBP (por verificar): mantener las publicaciones de GBP sin cerveza"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Cocina",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "gbp",
+          "formato": "gbp-publicacion",
+          "copy": "Seis hamburguesas y sándwiches en la carta de Cisne Negro: De Suadero, Philly Special, De Res, Cisne, De Costilla de Res y De Manchego Frito. La Cisne lleva res, manchego, champiñones salteados, pepino, guacamole y hojas. Consulta precios en el menú de nuestro sitio y toca «Cómo llegar» para la ruta a Rafael Vega Sánchez 110, Col. Periodistas, Pachuca. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+          "hashtags": [],
+          "fecha": "2026-11-05",
+          "hora": "12:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-05-maridaje-r2",
+      "titulo": "Maridaje del finde en el Día Internacional de la Stout: Agua Puerca + Tlayuda de Picaña Adobada",
+      "seccion": "maridaje-del-finde",
+      "plantilla": "tarjeta-maridaje",
+      "campana": "dia-de-la-stout-2026",
+      "fecha": "2026-11-05",
+      "hora": "16:00",
+      "estado": "borrador",
+      "prueba": "R2",
+      "objetivo": "visita",
+      "brief": "Carrusel de 5 láminas: 1) la pareja en mesa, sin manos; 2) Agua Puerca, Imperial Stout 8.9%; 3) la tlayuda y sus ingredientes; 4) por qué funcionan juntas; 5) leyenda + «pareja oficial de Cisne Negro te sugiere… (IG 2026-01-20)». Jueves 15–18 h (×1.25). Para TikTok, las mismas fotos como slideshow. Jueves 5 de noviembre, Día Internacional de la Stout (primer jueves de noviembre): la efeméride va en la primera frase y sola. Plan B si R1 no cumplió: publicar a las 17:00 o cambiar la portada a foto del platillo. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Hoy es el Día Internacional de la Stout. 🖤\nEl maridaje del finde es Agua Puerca + Tlayuda de Picaña Adobada.\nPareja oficial de la serie «Cisne Negro te sugiere…».\nAgua Puerca es nuestra Imperial Stout de 8.9%: oscura y densa.\nLa tlayuda lleva picaña adobada, frijoles, quesillo, aguacate, cebolla morada y cilantro.\nLo tostado de la stout contra el adobo y el quesillo: por eso se llevan tan bien.\nGuárdalo y etiqueta a tu compa de la tlayuda.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Confirmar que Agua Puerca está en la tap list esa semana",
+        "Explicación del maridaje (tostado contra adobo): validar con el cervecero",
+        "Consulta legal: mención del Día Internacional de la Stout junto a la marca"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": "agua-puerca",
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Hoy es el Día Internacional de la Stout. 🖤\nEl maridaje del finde es Agua Puerca + Tlayuda de Picaña Adobada.\nPareja oficial de la serie «Cisne Negro te sugiere…».\nAgua Puerca es nuestra Imperial Stout de 8.9%: oscura y densa.\nLa tlayuda lleva picaña adobada, frijoles, quesillo, aguacate, cebolla morada y cilantro.\nLo tostado de la stout contra el adobo y el quesillo: por eso se llevan tan bien.\nGuárdalo y etiqueta a tu compa de la tlayuda.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#maridaje",
+            "#comerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-05",
+          "hora": "16:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Hoy es el Día Internacional de la Stout. 🖤\nMaridaje del finde: Agua Puerca (Imperial Stout, 8.9%) + Tlayuda de Picaña Adobada, pareja oficial de «Cisne Negro te sugiere…».\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-05",
+          "hora": "16:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "Hoy es el Día Internacional de la Stout. 🖤\nAgua Puerca + Tlayuda de Picaña Adobada. Una Imperial Stout de 8.9% contra adobo, frijoles y quesillo. ¿Equipo tlayuda entera o equipo «la compartimos»?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-05",
+          "hora": "16:00"
+        },
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-slideshow",
+          "copy": "Hoy es el Día Internacional de la Stout. 🖤\nMaridaje en Pachuca: Imperial Stout + tlayuda de picaña adobada. Dónde comer en Pachuca con cerveza artesanal: Cervecería Cisne Negro, Col. Periodistas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#dondecomerenpachuca",
+            "#quehacerenpachuca",
+            "#pachucahidalgo"
+          ],
+          "fecha": "2026-11-05",
+          "hora": "16:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-06-agenda-r3",
+      "titulo": "Año III: guarda la fecha",
+      "seccion": "agenda-cisne",
+      "plantilla": "agenda-evento",
+      "campana": "aniversario-iii-2026",
+      "fecha": "2026-11-06",
+      "hora": "19:00",
+      "estado": "borrador",
+      "prueba": "R3",
+      "objetivo": "comunidad",
+      "brief": "Imagen de agenda: «Año III» con la pluma del Cisne y la fecha (cuando se confirme); sin vasos ni barriles. Story con sticker de recordatorio y aviso de Canal. Plan B si R2 no cumplió: cambiar la hora a 13:00 y probar carrusel (portada + 2 fotos del Año II). COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Año III. 🪶\nEl Cisne cumple tres años en Col. Periodistas y lo vamos a festejar en casa.\n📅 [por confirmar: fecha]\n📍 Rafael Vega Sánchez 110, Pachuca\nAliados, horario y programa: aquí y en nuestro Canal de WhatsApp en cuanto estén confirmados.\nGracias por estos tres años de mesa, barra y plática. ¡Cuéntalo en el Cisne!",
+      "por_validar": [
+        "Fecha del Aniversario Año III (las piezas suponen el sábado 21 de noviembre)"
+      ],
+      "atributos": {
+        "gancho": "Agenda",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-imagen",
+          "copy": "Año III. 🪶\nEl Cisne cumple tres años en Col. Periodistas y lo vamos a festejar en casa.\n📅 [por confirmar: fecha]\n📍 Rafael Vega Sánchez 110, Pachuca\nAliados, horario y programa: aquí y en nuestro Canal de WhatsApp en cuanto estén confirmados.\nGracias por estos tres años de mesa, barra y plática. ¡Cuéntalo en el Cisne!",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#quehacerenpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-06",
+          "hora": "19:00"
+        },
+        {
+          "canal": "ig",
+          "formato": "ig-story",
+          "copy": "Año III del Cisne 🪶 [por confirmar: fecha] · Activa el recordatorio",
+          "hashtags": [],
+          "fecha": "2026-11-06",
+          "hora": "19:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "Año III: el Cisne cumple tres años en Col. Periodistas. Fecha [por confirmar]; programa y aliados muy pronto.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-06",
+          "hora": "19:00"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🪶 Guarda la fecha: Año III del Cisne, [por confirmar: fecha]. Programa y aliados muy pronto por aquí.",
+          "hashtags": [],
+          "fecha": "2026-11-06",
+          "hora": "13:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-08-resena-r2",
+      "titulo": "Reseña en voz alta: «el personal se toma el tiempo de explicar»",
+      "seccion": "resena-en-voz-alta",
+      "plantilla": "resena-voz-alta",
+      "campana": null,
+      "fecha": "2026-11-08",
+      "hora": "13:00",
+      "estado": "borrador",
+      "prueba": "R2",
+      "objetivo": "comunidad",
+      "brief": "Pantallazo de celular con la reseña de 5★ del 25-mar-2025 (fragmento textual, sin nombre ni foto del autor) y la respuesta del Cisne en story. Respuesta sugerida para Google: «¡Gracias! En la barra no hay preguntas tontas: explicar cada estilo es parte del oficio. Los esperamos con la tap list de la semana. — Equipo Cisne Negro». COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Reseña en voz alta 📱\n«…sus cervezas artesanales son de muchos estilos diferentes, y el personal se toma el tiempo de explicar cada una de ellos; eso se agradece demasiado.» — ★★★★★ en Google.\nEn la barra no hay preguntas tontas: si no sabes qué estilo va contigo, te lo explicamos sin prisa.\nNuestra respuesta ya está en Google.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Publicar primero en Google la respuesta del dueño a esta reseña (hoy 0 de 69 respondidas)",
+        "Captura de la reseña sin nombre ni foto del autor"
+      ],
+      "atributos": {
+        "gancho": "Reseña real",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-imagen",
+          "copy": "Reseña en voz alta 📱\n«…sus cervezas artesanales son de muchos estilos diferentes, y el personal se toma el tiempo de explicar cada una de ellos; eso se agradece demasiado.» — ★★★★★ en Google.\nEn la barra no hay preguntas tontas: si no sabes qué estilo va contigo, te lo explicamos sin prisa.\nNuestra respuesta ya está en Google.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#quehacerenpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-08",
+          "hora": "13:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "«…el personal se toma el tiempo de explicar cada una de ellos; eso se agradece demasiado.» Gracias por la reseña: en la barra no hay preguntas tontas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-08",
+          "hora": "13:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-texto",
+          "copy": "¿Cuál es la pregunta que les da pena hacer en una barra de cerveza artesanal? Una reseña nos dijo que aquí se toman el tiempo de explicar cada estilo, así que adelante: pregunten.\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-08",
+          "hora": "13:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-09-produccion-r3",
+      "titulo": "Lunes de producción: lo primero que ves al entrar son los fermentadores",
+      "seccion": "lunes-de-produccion",
+      "plantilla": "reel-proceso",
+      "campana": null,
+      "fecha": "2026-11-09",
+      "hora": "17:00",
+      "estado": "borrador",
+      "prueba": "R3",
+      "objetivo": "alcance",
+      "brief": "Reel de 25 s: entrada al Cisne con cámara al hombro → fermentadores (IG 2025-11-28: «el lugar más importante de nuestra cervecería»). Ese mismo lunes se graba el reel de «Quién te sirve» (el 16 es feriado). Plan B si R2 no cumplió: cambiar formato a carrusel de 4 fotos. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Lo primero que ves al entrar al Cisne no es la barra: son los fermentadores. 🛢️\nAhí pasa la parte lenta del oficio: la levadura trabaja mientras nosotros esperamos.\nEste lunes de producción les enseñamos qué hay dentro y cuánto tarda en estar lista una cerveza.\n¿Qué quieren ver el próximo lunes? Los leemos.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Tiempo real de fermentación del lote que se muestre"
+      ],
+      "atributos": {
+        "gancho": "Revelación",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Staff 25+ sin consumo",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Sala de producción",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-reel",
+          "copy": "Lo primero que ves al entrar al Cisne no es la barra: son los fermentadores. 🛢️\nAhí pasa la parte lenta del oficio: la levadura trabaja mientras nosotros esperamos.\nEste lunes de producción les enseñamos qué hay dentro y cuánto tarda en estar lista una cerveza.\n¿Qué quieren ver el próximo lunes? Los leemos.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#lunesdeproduccion",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-09",
+          "hora": "17:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-reel",
+          "copy": "Lo primero que ves al entrar al Cisne son los fermentadores: ahí pasa la parte lenta del oficio.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-09",
+          "hora": "17:00"
+        },
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-video",
+          "copy": "¿Qué hay dentro de un fermentador? Lunes de producción en una microcervecería de Pachuca: Cervecería Cisne Negro, Col. Periodistas, Pachuca, Hidalgo.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#quehacerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachucahidalgo"
+          ],
+          "fecha": "2026-11-09",
+          "hora": "17:00"
+        },
+        {
+          "canal": "yt",
+          "formato": "yt-short",
+          "copy": "¿Qué hay dentro de un fermentador? Lunes de producción en una microcervecería de Pachuca: Cervecería Cisne Negro, Col. Periodistas, Pachuca, Hidalgo.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca"
+          ],
+          "fecha": "2026-11-09",
+          "hora": "17:00",
+          "titulo": "Qué hay dentro de un fermentador | Microcervecería en Pachuca · EVITE EL EXCESO."
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-10-barril-r3",
+      "titulo": "Barril de la semana: ¿A poco sí pa'?",
+      "seccion": "barril-de-la-semana",
+      "plantilla": "ficha-barril",
+      "campana": null,
+      "fecha": "2026-11-10",
+      "hora": "12:30",
+      "estado": "borrador",
+      "prueba": "R3",
+      "objetivo": "visita",
+      "brief": "Carrusel de 6 láminas con las notas oficiales (IG 2025-04-30) y 62 IBU; el ABV solo entra cuando el cliente confirme 6.8% o 6.9%. Plan B si R2 no cumplió: publicar a las 13:30 o cambiar la portada a la lata. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Barril de la semana: ¿A poco sí pa'? 🙂‍↕️\nAmerican IPA de 62 IBU. Notas oficiales: intensa y aromática, de perfil tropical y cítrico, con piña, mango, papaya, melón y un ligero toque resinoso.\nVa con: Palomitas de Coliflor (pareja oficial) o Hamburguesa De Suadero.\nFicha completa en las láminas.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Confirmar que ¿A poco sí pa'? está en la tap list esa semana",
+        "ABV de ¿A poco sí pa'?: 6.8% (IG) o 6.9% (menú)",
+        "Maridaje ¿A poco sí pa'? + Hamburguesa De Suadero (propuesta, no oficial): validar con el cervecero",
+        "Permiso de @rick_agridulce para usar la ilustración y el video de cómo se hizo"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": "a-poco-si-pa",
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": "rick_agridulce",
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Barril de la semana: ¿A poco sí pa'? 🙂‍↕️\nAmerican IPA de 62 IBU. Notas oficiales: intensa y aromática, de perfil tropical y cítrico, con piña, mango, papaya, melón y un ligero toque resinoso.\nVa con: Palomitas de Coliflor (pareja oficial) o Hamburguesa De Suadero.\nFicha completa en las láminas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#barrildelasemana",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-10",
+          "hora": "12:30"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Barril de la semana: ¿A poco sí pa'?, American IPA de 62 IBU con piña, mango, papaya, melón y un toque resinoso.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-10",
+          "hora": "12:30"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "62 IBU y aun así huele a piña y mango. ¿A poco sí pa'? es el barril de esta semana. ¿Ustedes cuentan los IBU o se van por el aroma?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-10",
+          "hora": "12:30"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🙂‍↕️ Barril de la semana: ¿A poco sí pa'?, American IPA de 62 IBU. Piña, mango, papaya y melón. Ficha en IG @cisnenegro.mx. EVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-10",
+          "hora": "12:45"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-11-cuentalo-r3",
+      "titulo": "¡Cuéntalo en el Cisne!: Barrilete Cósmico y la cita de Sacheri",
+      "seccion": "cuentalo-en-el-cisne",
+      "plantilla": "volteo-etiqueta",
+      "campana": null,
+      "fecha": "2026-11-11",
+      "hora": "17:00",
+      "estado": "borrador",
+      "prueba": "R3",
+      "objetivo": "alcance",
+      "brief": "Reel de volteo de etiqueta: la etiqueta de Barrilete Cósmico tapada; en pantalla la cita de Eduardo Sacheri con la que se presentó (IG 2024-05-20); se revela la etiqueta con papalotes. No mencionar ni sugerir futbol en texto, audio o comentarios fijados. Plan B si R2 no cumplió: publicar a las 13:00 o pasar a carrusel. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "«Porque la vida es así, a veces se combina para alumbrar momentos como ése…» — Eduardo Sacheri. 🪁\nCon esa cita presentamos Barrilete Cósmico, nuestra Hazy IPA.\n«Barrilete» es papalote, y por eso la etiqueta va llena de ellos.\nY ustedes, ¿cómo le dicen: papalote, barrilete o cometa?\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Confirmar que Barrilete Cósmico está en la tap list esa semana",
+        "Origen del nombre Barrilete Cósmico: la referencia original parece futbolera (por inferencia); confirmar con el cliente qué historia contar y con legal que no asocie la cerveza con deporte",
+        "Ilustrador de la etiqueta de Barrilete Cósmico y su permiso",
+        "Trial Reels disponibles para la cuenta (mínimo de seguidores por verificar)"
+      ],
+      "atributos": {
+        "gancho": "Revelación",
+        "cerveza_destacada": "barrilete-cosmico",
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-video",
+          "copy": "Papalote, barrilete o cometa: la historia de la etiqueta de Barrilete Cósmico, Hazy IPA hecha en Pachuca. Cerveza artesanal en Pachuca, Hidalgo: Cervecería Cisne Negro.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#quehacerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachucahidalgo",
+            "#cuentaloenelcisne"
+          ],
+          "fecha": "2026-11-11",
+          "hora": "17:00"
+        },
+        {
+          "canal": "ig",
+          "formato": "ig-reel",
+          "copy": "«Porque la vida es así, a veces se combina para alumbrar momentos como ése…» — Eduardo Sacheri. 🪁\nCon esa cita presentamos Barrilete Cósmico, nuestra Hazy IPA.\n«Barrilete» es papalote, y por eso la etiqueta va llena de ellos.\nY ustedes, ¿cómo le dicen: papalote, barrilete o cometa?\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-11",
+          "hora": "17:00"
+        },
+        {
+          "canal": "yt",
+          "formato": "yt-short",
+          "copy": "Papalote, barrilete o cometa: la historia de la etiqueta de Barrilete Cósmico, Hazy IPA hecha en Pachuca. Cerveza artesanal en Pachuca, Hidalgo: Cervecería Cisne Negro.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca"
+          ],
+          "fecha": "2026-11-11",
+          "hora": "17:00",
+          "titulo": "Barrilete Cósmico: la etiqueta llena de papalotes | Pachuca · EVITE EL EXCESO."
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-texto",
+          "copy": "Debate serio de miércoles: ¿papalote, barrilete o cometa? Nosotros elegimos «barrilete» para nuestra Hazy IPA y le llenamos la etiqueta de papalotes. 🪁\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-11",
+          "hora": "18:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-12-gbp-sin-alcohol",
+      "titulo": "GBP: para quien no toma alcohol",
+      "seccion": "cerveza-para-todos",
+      "plantilla": "pantallazo-celular",
+      "campana": null,
+      "fecha": "2026-11-12",
+      "hora": "12:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "visita",
+      "brief": "Publicación de GBP con foto de naranjada, limonada y café de prensa más las Palomitas de Coliflor. Sin cerveza en cuadro. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "¿Vienes con alguien que no toma alcohol? En Cisne Negro hay naranjada y limonada naturales o minerales, agua mineral, refrescos y café de prensa francesa, además de entradas sin carne como las Palomitas de Coliflor con picante de arándano o los Chips de Camote con aderezo de ajo rostizado. Consulta el menú completo en nuestro sitio y toca «Cómo llegar» para la ruta a Col. Periodistas, Pachuca. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+      "por_validar": [
+        "Bebidas sin alcohol vigentes",
+        "Política de Google para publicaciones de alcohol en GBP (por verificar): mantener las publicaciones de GBP sin cerveza"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Cocina",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "gbp",
+          "formato": "gbp-publicacion",
+          "copy": "¿Vienes con alguien que no toma alcohol? En Cisne Negro hay naranjada y limonada naturales o minerales, agua mineral, refrescos y café de prensa francesa, además de entradas sin carne como las Palomitas de Coliflor con picante de arándano o los Chips de Camote con aderezo de ajo rostizado. Consulta el menú completo en nuestro sitio y toca «Cómo llegar» para la ruta a Col. Periodistas, Pachuca. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+          "hashtags": [],
+          "fecha": "2026-11-12",
+          "hora": "12:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-12-maridaje-r3",
+      "titulo": "Maridaje del finde: Kiwi Plis + Taco de Pescado con Capa",
+      "seccion": "maridaje-del-finde",
+      "plantilla": "tarjeta-maridaje",
+      "campana": null,
+      "fecha": "2026-11-12",
+      "hora": "16:00",
+      "estado": "borrador",
+      "prueba": "R3",
+      "objetivo": "visita",
+      "brief": "Carrusel de 5 láminas con la tercera pareja oficial validada («Cisne Negro te sugiere…», IG 2026-01-20). Si Kiwi Plis no está en barril, sustituir por la pareja oficial disponible (Boca Negra + Sándwich de Suadero o ¿A poco sí pa'? + Palomitas de Coliflor) y ajustar el copy. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Maridaje del finde: Kiwi Plis + Taco de Pescado con Capa. 🐟\nPareja oficial de «Cisne Negro te sugiere…».\nKiwi Plis es nuestra New Zealand Pils; el taco lleva pescado capeado, col, pico de gallo y aderezo de macha verde.\nUna cerveza ligera y limpia junto a un capeado crujiente: pareja de las que no fallan.\nGuárdalo y etiqueta a tu compa de los tacos.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Confirmar que Kiwi Plis está en la tap list esa semana",
+        "Perfil de Kiwi Plis (ligera y limpia es el perfil del estilo): validar con el cervecero"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Maridaje del finde: Kiwi Plis + Taco de Pescado con Capa. 🐟\nPareja oficial de «Cisne Negro te sugiere…».\nKiwi Plis es nuestra New Zealand Pils; el taco lleva pescado capeado, col, pico de gallo y aderezo de macha verde.\nUna cerveza ligera y limpia junto a un capeado crujiente: pareja de las que no fallan.\nGuárdalo y etiqueta a tu compa de los tacos.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#maridaje",
+            "#comerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-12",
+          "hora": "16:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Maridaje del finde: Kiwi Plis (New Zealand Pils) + Taco de Pescado con Capa, pareja oficial de «Cisne Negro te sugiere…».\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-12",
+          "hora": "16:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "Taco de pescado capeado con macha verde + Kiwi Plis, nuestra New Zealand Pils. ¿El taco de pescado es de playa o también de Pachuca?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-12",
+          "hora": "16:00"
+        },
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-slideshow",
+          "copy": "Taco de pescado capeado + New Zealand Pils: maridaje oficial en Cervecería Cisne Negro. Dónde comer en Pachuca: Col. Periodistas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#dondecomerenpachuca",
+            "#quehacerenpachuca",
+            "#pachucahidalgo"
+          ],
+          "fecha": "2026-11-12",
+          "hora": "16:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-13-buen-fin",
+      "titulo": "Buen Fin en el Cisne (por confirmar)",
+      "seccion": "agenda-cisne",
+      "plantilla": "agenda-evento",
+      "campana": "buen-fin-2026",
+      "fecha": "2026-11-13",
+      "hora": "12:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "visita",
+      "brief": "Solo si el cliente confirma una promoción de comida (o de llenado de growler revisada contra COFEPRIS: sin «barra libre», sin premiar volumen). Imagen de la promo con el platillo; story y publicación de GBP tipo oferta. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Buen Fin en el Cisne: [por confirmar: promoción de comida]. Vigencia: [por confirmar: fechas del Buen Fin 2026]. Aplica en Rafael Vega Sánchez 110, Col. Periodistas, Pachuca. Consulta el menú en nuestro sitio.",
+      "por_validar": [
+        "Si habrá promoción de Buen Fin y cuál (comida)",
+        "Fechas oficiales del Buen Fin 2026",
+        "Si la promoción fuera de growler: revisión COFEPRIS y agregar leyenda",
+        "Política de Google para publicaciones de alcohol en GBP (por verificar): mantener las publicaciones de GBP sin cerveza",
+        "Si el Cisne abre el lunes 16 (feriado): avisarlo aquí sin mencionar la Revolución"
+      ],
+      "atributos": {
+        "gancho": "Agenda",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-story",
+          "copy": "Buen Fin en el Cisne: [por confirmar: promoción] · [por confirmar: fechas]",
+          "hashtags": [],
+          "fecha": "2026-11-13",
+          "hora": "12:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "Buen Fin en el Cisne: [por confirmar: promoción de comida], vigente [por confirmar: fechas].\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-13",
+          "hora": "12:00"
+        },
+        {
+          "canal": "gbp",
+          "formato": "gbp-publicacion",
+          "copy": "Buen Fin en Cisne Negro: [por confirmar: promoción de comida], vigente [por confirmar: fechas]. Consulta el menú en nuestro sitio y toca «Cómo llegar» para la ruta a Rafael Vega Sánchez 110, Col. Periodistas, Pachuca. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+          "hashtags": [],
+          "fecha": "2026-11-13",
+          "hora": "12:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-13-agenda",
+      "titulo": "Año III: el programa se está armando",
+      "seccion": "agenda-cisne",
+      "plantilla": "agenda-evento",
+      "campana": "aniversario-iii-2026",
+      "fecha": "2026-11-13",
+      "hora": "19:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "comunidad",
+      "brief": "Stories con cuenta regresiva y aviso de Canal; publicación en Facebook. Sin feed en IG esta vez (la sección ya está vigente por confirmar). COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Faltan [por confirmar] días para el Año III del Cisne. 🪶\nYa estamos armando el programa con aliados de la casa: [por confirmar: nombres y horarios].\nLo que sí podemos adelantar: cocina abierta con la carta de siempre.\nDetalles completos el viernes 20, aquí y en el Canal de WhatsApp.",
+      "por_validar": [
+        "Fecha del Aniversario Año III (las piezas suponen el sábado 21 de noviembre)",
+        "Aliados del Aniversario Año III y su aceptación como coautores"
+      ],
+      "atributos": {
+        "gancho": "Agenda",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-story",
+          "copy": "Año III del Cisne 🪶 Faltan [por confirmar] días · Programa completo el viernes 20",
+          "hashtags": [],
+          "fecha": "2026-11-13",
+          "hora": "19:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "Faltan [por confirmar] días para el Año III del Cisne. 🪶\nYa estamos armando el programa con aliados de la casa: [por confirmar: nombres y horarios].\nLo que sí podemos adelantar: cocina abierta con la carta de siempre.\nDetalles completos el viernes 20, aquí y en el Canal de WhatsApp.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-13",
+          "hora": "19:00"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🪶 Año III del Cisne: faltan [por confirmar] días. El programa completo sale el viernes 20 por aquí.",
+          "hashtags": [],
+          "fecha": "2026-11-13",
+          "hora": "13:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-15-resena-r3",
+      "titulo": "Reseña en voz alta: «te venden las garrafitas»",
+      "seccion": "resena-en-voz-alta",
+      "plantilla": "resena-voz-alta",
+      "campana": null,
+      "fecha": "2026-11-15",
+      "hora": "13:00",
+      "estado": "borrador",
+      "prueba": "R3",
+      "objetivo": "comunidad",
+      "brief": "Pantallazo de celular con la reseña de 5★ del 22-jul-2025 (textual, sin autor) y la respuesta en story. Plan B si R2 no cumplió: cambiar a carrusel con dos reseñas. Cae en el fin de semana del Buen Fin: no ligar la reseña a ninguna promoción. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Reseña en voz alta 📱\n«La cerveza de barril deliciosa no es comercial, la comida rica y poco común, el servicio muy bueno, lo recomiendo ampliamente, te venden las garrafitas con su deliciosa cerveza.» — ★★★★★ en Google.\nLas «garrafitas» son nuestros growlers de 1.89 L: el precio del llenado depende del estilo que esté en barril.\nNuestra respuesta ya está en Google.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Publicar primero en Google la respuesta del dueño a esta reseña (hoy 0 de 69 respondidas)",
+        "Captura de la reseña sin nombre ni foto del autor",
+        "Growler de 1.89 L vigente y su precio (en oct-2024 el envase costaba $260)"
+      ],
+      "atributos": {
+        "gancho": "Reseña real",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-imagen",
+          "copy": "Reseña en voz alta 📱\n«La cerveza de barril deliciosa no es comercial, la comida rica y poco común, el servicio muy bueno, lo recomiendo ampliamente, te venden las garrafitas con su deliciosa cerveza.» — ★★★★★ en Google.\nLas «garrafitas» son nuestros growlers de 1.89 L: el precio del llenado depende del estilo que esté en barril.\nNuestra respuesta ya está en Google.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#quehacerenpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-15",
+          "hora": "13:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "«…te venden las garrafitas con su deliciosa cerveza.» Gracias por la reseña. Las garrafitas son nuestros growlers de 1.89 L; el llenado depende del estilo en barril.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-15",
+          "hora": "13:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-texto",
+          "copy": "Una reseña les dice «garrafitas» a nuestros growlers de 1.89 L y ya no podemos decirles de otra forma. ¿Growler, garrafita o «el envase»?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-15",
+          "hora": "13:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-16-quien-te-sirve",
+      "titulo": "Quién te sirve: el equipo detrás del Año III",
+      "seccion": "quien-te-sirve",
+      "plantilla": "reel-muestra",
+      "campana": "aniversario-iii-2026",
+      "fecha": "2026-11-16",
+      "hora": "17:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "comunidad",
+      "brief": "Reel de presentación grabado en el lote del lunes 9 (el 16 es feriado): fundadores y equipo, cada quien con su nombre y su barril favorito dicho a cámara, todos mayores de 25 y sin vasos. Pieza única antes del aniversario; su prueba R1–R3 queda para diciembre. Esa semana Lunes de producción descansa. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Antes del Año III, les presentamos a quien está del otro lado de la barra. 🪶\nEmpezamos por los fundadores, Enrique y Raúl Carrasco: dos hermanos que arrancaron en pandemia con kits caseros y tutoriales.\nDespués, el equipo: [por confirmar: nombres y puestos], cada quien con su barril favorito.\nSi alguna vez te explicaron la tap list sin prisa, ya sabes a quién agradecerle. Etiquétalo.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Nombres, puestos y permiso de imagen del equipo (todos mayores de 25)",
+        "Que el reel se grabe el lunes 9 por el feriado del 16"
+      ],
+      "atributos": {
+        "gancho": "Revelación",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Fundadores sin consumo",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-reel",
+          "copy": "Antes del Año III, les presentamos a quien está del otro lado de la barra. 🪶\nEmpezamos por los fundadores, Enrique y Raúl Carrasco: dos hermanos que arrancaron en pandemia con kits caseros y tutoriales.\nDespués, el equipo: [por confirmar: nombres y puestos], cada quien con su barril favorito.\nSi alguna vez te explicaron la tap list sin prisa, ya sabes a quién agradecerle. Etiquétalo.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#quehacerenpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-16",
+          "hora": "17:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-reel",
+          "copy": "Antes del Año III, les presentamos a quien está del otro lado de la barra: los fundadores, Enrique y Raúl Carrasco, y el equipo del Cisne, cada quien con su barril favorito.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-16",
+          "hora": "17:00"
+        },
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-video",
+          "copy": "Quién te atiende en una microcervecería de Pachuca: los fundadores y el equipo de Cervecería Cisne Negro, Col. Periodistas, Pachuca, Hidalgo.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#quehacerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachucahidalgo"
+          ],
+          "fecha": "2026-11-16",
+          "hora": "17:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-17-barril",
+      "titulo": "Barril de la semana: Agua Puerca",
+      "seccion": "barril-de-la-semana",
+      "plantilla": "ficha-barril",
+      "campana": null,
+      "fecha": "2026-11-17",
+      "hora": "12:30",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "visita",
+      "brief": "Carrusel de 6 láminas: barril o lata de Agua Puerca sin manos; Imperial Stout · 8.9%; el nombre que salió de una plática en la barra; también en lata para llevar (IG 2026-03-04); maridaje (tlayuda = oficial; dona = propuesta); leyenda. Semana del puente y del Buen Fin: en el aviso del Canal la lámina de la lata para llevar va primero. Sección vigente por confirmar. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Barril de la semana: Agua Puerca. 🖤\nImperial Stout · 8.9% ABV. Oscura y densa.\nSu nombre salió de una plática en la barra del Cisne: así nacen algunas de nuestras etiquetas.\nTambién la hay en lata para llevar.\nVa con: Tlayuda de Picaña Adobada (pareja oficial) o Dona Glaseada con Maple y Tocino.\nFicha completa en las láminas.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Confirmar que Agua Puerca está en la tap list esa semana",
+        "Agua Puerca en lata disponible esa semana",
+        "Notas de cata de Agua Puerca (las del menú describen el estilo, no son oficiales)",
+        "Maridaje Agua Puerca + Dona (propuesta, no oficial): validar con el cervecero"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": "agua-puerca",
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Barril de la semana: Agua Puerca. 🖤\nImperial Stout · 8.9% ABV. Oscura y densa.\nSu nombre salió de una plática en la barra del Cisne: así nacen algunas de nuestras etiquetas.\nTambién la hay en lata para llevar.\nVa con: Tlayuda de Picaña Adobada (pareja oficial) o Dona Glaseada con Maple y Tocino.\nFicha completa en las láminas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#barrildelasemana",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-17",
+          "hora": "12:30"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Barril de la semana: Agua Puerca, Imperial Stout de 8.9%. Su nombre salió de una plática en la barra; también la hay en lata para llevar.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-17",
+          "hora": "12:30"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "Agua Puerca: Imperial Stout de 8.9% cuyo nombre salió de una plática en nuestra barra. ¿Qué nombre le habrían puesto ustedes a una stout así de oscura?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-17",
+          "hora": "12:30"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🖤 Barril de la semana: Agua Puerca, Imperial Stout de 8.9%. También en lata para llevar. Ficha en IG @cisnenegro.mx. EVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-17",
+          "hora": "12:45"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-18-si-te-gusta-r1",
+      "titulo": "Si te gusta… tu barril es…: por perfil",
+      "seccion": "si-te-gusta",
+      "plantilla": "si-haz",
+      "campana": null,
+      "fecha": "2026-11-18",
+      "hora": "17:00",
+      "estado": "borrador",
+      "prueba": "R1",
+      "objetivo": "alcance",
+      "brief": "Slideshow de TikTok y carrusel de IG (plantilla Si…/Haz adaptada): a la izquierda el gusto, a la derecha el barril con su foto de etiqueta; última lámina con el Vuelo del Cisne y la leyenda. Sección nueva en prueba (R1). Usar solo los barriles confirmados en la tap list. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Si te gusta lo cítrico 🍊 → ¡Alarma! (Red IPA, 7%): cítrica y resinosa.\nSi te gusta lo tropical 🥭 → ¿A poco sí pa'? (American IPA): piña, mango y papaya.\nSi te gusta lo jugoso → Barrilete Cósmico (Hazy IPA, 6.1%): toronja, lima y naranja.\nSi te gusta lo oscuro ☕ → Agua Puerca (Imperial Stout, 8.9%).\nSi no te decides → Vuelo del Cisne: cuatro de 4 oz para comparar.\nGuárdalo para la próxima vez que te quedes viendo la pared de barriles.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Tap list de la semana (solo incluir barriles disponibles)"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-slideshow",
+          "copy": "Si te gusta lo cítrico, lo tropical, lo jugoso o lo oscuro: esta es tu cerveza artesanal en Pachuca. Guía rápida de estilos de Cervecería Cisne Negro, taproom en Col. Periodistas, Pachuca, Hidalgo.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#quehacerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachucahidalgo"
+          ],
+          "fecha": "2026-11-18",
+          "hora": "17:00"
+        },
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Si te gusta lo cítrico 🍊 → ¡Alarma! (Red IPA, 7%): cítrica y resinosa.\nSi te gusta lo tropical 🥭 → ¿A poco sí pa'? (American IPA): piña, mango y papaya.\nSi te gusta lo jugoso → Barrilete Cósmico (Hazy IPA, 6.1%): toronja, lima y naranja.\nSi te gusta lo oscuro ☕ → Agua Puerca (Imperial Stout, 8.9%).\nSi no te decides → Vuelo del Cisne: cuatro de 4 oz para comparar.\nGuárdalo para la próxima vez que te quedes viendo la pared de barriles.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#cervezaparatodos",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-18",
+          "hora": "17:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-texto",
+          "copy": "Guía exprés: cítrico → ¡Alarma!; tropical → ¿A poco sí pa'?; jugoso → Barrilete Cósmico; oscuro → Agua Puerca. ¿Y si no te decides? Vuelo del Cisne, cuatro de 4 oz. ¿Cuál es su perfil?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-18",
+          "hora": "18:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-19-gbp-aniversario",
+      "titulo": "GBP: Año III de Cisne Negro",
+      "seccion": "agenda-cisne",
+      "plantilla": "agenda-evento",
+      "campana": "aniversario-iii-2026",
+      "fecha": "2026-11-19",
+      "hora": "12:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "visita",
+      "brief": "Publicación de GBP tipo evento con la imagen de «Año III» (sin vasos ni barriles) y fotos reales del lugar. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Cisne Negro cumple tres años en Col. Periodistas. Año III: [por confirmar: fecha y horario], con cocina abierta y aliados invitados [por confirmar]. Toca «Cómo llegar» para la ruta a Rafael Vega Sánchez 110, Pachuca, y consulta el menú en nuestro sitio. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+      "por_validar": [
+        "Fecha del Aniversario Año III (las piezas suponen el sábado 21 de noviembre)",
+        "Aliados del Aniversario Año III y su aceptación como coautores",
+        "Política de Google para publicaciones de alcohol en GBP (por verificar): mantener las publicaciones de GBP sin cerveza"
+      ],
+      "atributos": {
+        "gancho": "Agenda",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Fachada / calle",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "gbp",
+          "formato": "gbp-publicacion",
+          "copy": "Cisne Negro cumple tres años en Col. Periodistas. Año III: [por confirmar: fecha y horario], con cocina abierta y aliados invitados [por confirmar]. Toca «Cómo llegar» para la ruta a Rafael Vega Sánchez 110, Pachuca, y consulta el menú en nuestro sitio. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+          "hashtags": [],
+          "fecha": "2026-11-19",
+          "hora": "12:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-19-maridaje",
+      "titulo": "Maridaje del finde: ¿A poco sí pa'? + Palomitas de Coliflor",
+      "seccion": "maridaje-del-finde",
+      "plantilla": "tarjeta-maridaje",
+      "campana": null,
+      "fecha": "2026-11-19",
+      "hora": "16:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "visita",
+      "brief": "Carrusel de 5 láminas: la pareja en mesa sin manos; la IPA con sus notas oficiales; las palomitas capeadas con picante de arándano; por qué funcionan; leyenda. Slideshow para TikTok con las mismas fotos. Semana del Año III: sección vigente por confirmar. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Maridaje del finde: ¿A poco sí pa'? + Palomitas de Coliflor. 🥦\nOtra pareja oficial de «Cisne Negro te sugiere…».\nLa IPA trae piña, mango y un toque resinoso; las palomitas llegan capeadas con picante de arándano.\nLo tropical de la IPA contra el picante dulce: así se acompañan.\nY sí, son de coliflor: una entrada sin carne. Guárdalo para tu próxima mesa.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Confirmar que ¿A poco sí pa'? está en la tap list esa semana",
+        "Explicación del maridaje (tropical contra picante dulce): validar con el cervecero"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": "a-poco-si-pa",
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Maridaje del finde: ¿A poco sí pa'? + Palomitas de Coliflor. 🥦\nOtra pareja oficial de «Cisne Negro te sugiere…».\nLa IPA trae piña, mango y un toque resinoso; las palomitas llegan capeadas con picante de arándano.\nLo tropical de la IPA contra el picante dulce: así se acompañan.\nY sí, son de coliflor: una entrada sin carne. Guárdalo para tu próxima mesa.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#maridaje",
+            "#comerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-19",
+          "hora": "16:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Maridaje del finde: ¿A poco sí pa'? (American IPA) + Palomitas de Coliflor con picante de arándano, pareja oficial de «Cisne Negro te sugiere…».\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-19",
+          "hora": "16:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "Palomitas… de coliflor. Capeadas, con picante de arándano y pareja oficial de ¿A poco sí pa'?, nuestra American IPA. ¿Sí o no a la coliflor de botana?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-19",
+          "hora": "16:00"
+        },
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-slideshow",
+          "copy": "Palomitas de coliflor con picante de arándano + American IPA: maridaje oficial en Cervecería Cisne Negro. Dónde comer en Pachuca: Col. Periodistas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#dondecomerenpachuca",
+            "#quehacerenpachuca",
+            "#pachucahidalgo"
+          ],
+          "fecha": "2026-11-19",
+          "hora": "16:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-20-agenda",
+      "titulo": "Año III: ya hay programa",
+      "seccion": "agenda-cisne",
+      "plantilla": "agenda-evento",
+      "campana": "aniversario-iii-2026",
+      "fecha": "2026-11-20",
+      "hora": "19:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "visita",
+      "brief": "Imagen de agenda en coautoría con los aliados confirmados (collab ×2.7): qué, cuándo, dónde y con quién; sin vasos, barriles ni personas bebiendo. No mencionar el 20 de noviembre ni la Revolución (celebración cívica). Story y aviso de Canal. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Año III del Cisne: ya hay programa. 🪶\n📅 [por confirmar: fecha y horario]\n🤝 Con: [por confirmar: aliados]\n🍽️ Cocina abierta con la carta de siempre\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca\nPet friendly, como siempre. 🐶",
+      "por_validar": [
+        "Fecha del Aniversario Año III (las piezas suponen el sábado 21 de noviembre)",
+        "Aliados del Aniversario Año III y su aceptación como coautores"
+      ],
+      "atributos": {
+        "gancho": "Agenda",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": true,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-imagen",
+          "copy": "Año III del Cisne: ya hay programa. 🪶\n📅 [por confirmar: fecha y horario]\n🤝 Con: [por confirmar: aliados]\n🍽️ Cocina abierta con la carta de siempre\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca\nPet friendly, como siempre. 🐶",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#quehacerenpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-20",
+          "hora": "19:00"
+        },
+        {
+          "canal": "ig",
+          "formato": "ig-story",
+          "copy": "Año III del Cisne 🪶 [por confirmar: fecha y hora] · Con [por confirmar: aliados] · Rafael Vega Sánchez 110",
+          "hashtags": [],
+          "fecha": "2026-11-20",
+          "hora": "19:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "Año III del Cisne: [por confirmar: fecha y horario], con [por confirmar: aliados]. Cocina abierta con la carta de siempre y pet friendly, como siempre.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-20",
+          "hora": "19:00"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🪶 Año III del Cisne: [por confirmar: fecha y hora], con [por confirmar: aliados]. Rafael Vega Sánchez 110, Col. Periodistas.",
+          "hashtags": [],
+          "fecha": "2026-11-20",
+          "hora": "13:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-21-aniversario-stories",
+      "titulo": "Stories del Año III",
+      "seccion": "agenda-cisne",
+      "plantilla": "stories-en-vivo",
+      "campana": "aniversario-iii-2026",
+      "fecha": "2026-11-21",
+      "hora": "15:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "comunidad",
+      "brief": "Solo stories (sábado sin feed): montaje del lugar vacío antes de abrir, el equipo acomodando (25+, sin vasos), cuenta regresiva y repost de aliados. Ningún cliente bebiendo; repost de clientes solo con permiso, 25+ y sin vaso en mano. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Hoy es el Año III del Cisne 🪶 Rafael Vega Sánchez 110 · [por confirmar: horario]",
+      "por_validar": [
+        "Fecha del Aniversario Año III (las piezas suponen el sábado 21 de noviembre)",
+        "Permiso y edad (25+) de cualquier cliente que se reposte"
+      ],
+      "atributos": {
+        "gancho": "Agenda",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Staff 25+ sin consumo",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-story",
+          "copy": "Hoy es el Año III del Cisne 🪶 Rafael Vega Sánchez 110 · [por confirmar: horario]",
+          "hashtags": [],
+          "fecha": "2026-11-21",
+          "hora": "15:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-22-resena",
+      "titulo": "Reseña en voz alta: «de esos lugares a los que da gusto volver»",
+      "seccion": "resena-en-voz-alta",
+      "plantilla": "resena-voz-alta",
+      "campana": "aniversario-iii-2026",
+      "fecha": "2026-11-22",
+      "hora": "13:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "comunidad",
+      "brief": "Pantallazo de celular con la reseña de 5★ del 8-dic-2025 (fragmento textual, sin autor) y la respuesta en story. Cierra la semana del aniversario. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Reseña en voz alta 📱\n«El Cisne Negro es de esos lugares a los que da gusto volver.» — ★★★★★ en Google, diciembre de 2025.\nTres años después, no se nos ocurre mejor resumen del Año III.\nNuestra respuesta ya está en Google. ¿Nos cuentas la tuya? El enlace está en la bio.",
+      "por_validar": [
+        "Publicar primero en Google la respuesta del dueño a esta reseña (hoy 0 de 69 respondidas)",
+        "Captura de la reseña sin nombre ni foto del autor"
+      ],
+      "atributos": {
+        "gancho": "Reseña real",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-imagen",
+          "copy": "Reseña en voz alta 📱\n«El Cisne Negro es de esos lugares a los que da gusto volver.» — ★★★★★ en Google, diciembre de 2025.\nTres años después, no se nos ocurre mejor resumen del Año III.\nNuestra respuesta ya está en Google. ¿Nos cuentas la tuya? El enlace está en la bio.",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#quehacerenpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-22",
+          "hora": "13:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "«El Cisne Negro es de esos lugares a los que da gusto volver.» Tres años después, no se nos ocurre mejor resumen. Gracias por la reseña.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-22",
+          "hora": "13:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-texto",
+          "copy": "«El Cisne Negro es de esos lugares a los que da gusto volver.» Leer esto la semana del Año III pega distinto. ¿Cuál es su lugar de regreso en Pachuca?",
+          "hashtags": [],
+          "fecha": "2026-11-22",
+          "hora": "13:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-23-recap-aniversario",
+      "titulo": "Así quedó el Año III",
+      "seccion": "agenda-cisne",
+      "plantilla": "recap-evento",
+      "campana": "aniversario-iii-2026",
+      "fecha": "2026-11-23",
+      "hora": "17:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "comunidad",
+      "brief": "Carrusel de recap (8–10 láminas): el lugar antes de abrir, el equipo (25+, sin vasos) y los aliados, en coautoría con ellos. Fotos filtradas con el checklist COFEPRIS: nadie bebiendo, sin vasos en mano, sin clientes identificables sin permiso. Ocupa el lugar del Lunes de producción esta semana. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Así quedó el Año III. 🪶\nGracias a [por confirmar: aliados] y a todos los que llegaron a Col. Periodistas.\nEn las láminas: el lugar antes de abrir, el equipo y los aliados que lo hicieron posible.\nTres años de ¡Cuéntalo en el Cisne!: vamos por el cuarto.",
+      "por_validar": [
+        "Fecha del Aniversario Año III (las piezas suponen el sábado 21 de noviembre)",
+        "Aliados del Aniversario Año III y su aceptación como coautores",
+        "Permisos de imagen de quien aparezca en el recap (25+)"
+      ],
+      "atributos": {
+        "gancho": "Agenda",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Staff 25+ sin consumo",
+        "requiere_grabacion": true,
+        "con_coautor": true,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Así quedó el Año III. 🪶\nGracias a [por confirmar: aliados] y a todos los que llegaron a Col. Periodistas.\nEn las láminas: el lugar antes de abrir, el equipo y los aliados que lo hicieron posible.\nTres años de ¡Cuéntalo en el Cisne!: vamos por el cuarto.",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#quehacerenpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-23",
+          "hora": "17:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Así quedó el Año III: el lugar, el equipo y los aliados [por confirmar] que lo hicieron posible. Gracias a todos los que llegaron a Col. Periodistas.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-23",
+          "hora": "17:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "Tres años de Cisne Negro en Col. Periodistas. Gracias a [por confirmar: aliados] y a cada quien que llegó. Vamos por el cuarto. 🪶",
+          "hashtags": [],
+          "fecha": "2026-11-23",
+          "hora": "17:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-24-barril",
+      "titulo": "Barril de la semana: Guamaica",
+      "seccion": "barril-de-la-semana",
+      "plantilla": "ficha-barril",
+      "campana": null,
+      "fecha": "2026-11-24",
+      "hora": "12:30",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "visita",
+      "brief": "Carrusel de 5 láminas: Guamaica con su crédito de Cuatro Palos tal como aparece en el menú; sour de guayaba y jamaica, 4.0%; maridajes sugeridos; leyenda. No decir «nuestra» hasta confirmar si es propia, colaboración o invitada. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Barril de la semana: Guamaica. 🌺\nSour de guayaba y jamaica · 4.0% ABV, de Cuatro Palos.\nÁcida y frutal: la guayaba por delante y la jamaica al final.\nVa con: Aguachile de New York, Ceviche de Atún o Palomitas de Coliflor.\nFicha completa en las láminas.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Confirmar que Guamaica está en la tap list esa semana",
+        "Guamaica: propia, colaboración o invitada de Cuatro Palos",
+        "Maridajes sugeridos de Guamaica (propuesta del menú, no oficial): validar con el cervecero"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": "guamaica",
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Barril de la semana: Guamaica. 🌺\nSour de guayaba y jamaica · 4.0% ABV, de Cuatro Palos.\nÁcida y frutal: la guayaba por delante y la jamaica al final.\nVa con: Aguachile de New York, Ceviche de Atún o Palomitas de Coliflor.\nFicha completa en las láminas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#barrildelasemana",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-24",
+          "hora": "12:30"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Barril de la semana: Guamaica, sour de guayaba y jamaica de 4.0%, de Cuatro Palos.\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-24",
+          "hora": "12:30"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "Guayaba + jamaica en una sour de 4%: Guamaica, de Cuatro Palos, está en barril esta semana. ¿Agua de jamaica de la infancia o ni de chiste?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-24",
+          "hora": "12:30"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🌺 Barril de la semana: Guamaica, sour de guayaba y jamaica de 4.0%, de Cuatro Palos. Ficha en IG @cisnenegro.mx. EVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-24",
+          "hora": "12:45"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-25-si-te-gusta-r2",
+      "titulo": "Si te gusta… tu barril es…: las cinco parejas oficiales",
+      "seccion": "si-te-gusta",
+      "plantilla": "si-haz",
+      "campana": null,
+      "fecha": "2026-11-25",
+      "hora": "17:00",
+      "estado": "borrador",
+      "prueba": "R2",
+      "objetivo": "alcance",
+      "brief": "Slideshow de TikTok y carrusel de IG con las cinco parejas oficiales de «Cisne Negro te sugiere…» (IG 2026-01-20), del platillo al barril. Plan B si R1 no cumplió: cambiar la hora a 13:00 y la portada a foto de platillo. Mostrar solo las parejas con barril disponible. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Si te gusta la Tlayuda de Picaña → Agua Puerca.\nSi te gustan las Palomitas de Coliflor → ¿A poco sí pa'?\nSi te gusta el Taco de Pescado → Kiwi Plis.\nSi te gusta el Sándwich de Suadero → Boca Negra.\nSi te gustan los Camarones Piedra → Tropkiller.\nCinco parejas oficiales de «Cisne Negro te sugiere…». Guárdalo antes de ver la carta.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Tap list de la semana (solo incluir barriles disponibles)",
+        "Confirmar que Kiwi Plis está en la tap list esa semana",
+        "Confirmar que Boca Negra está en la tap list esa semana",
+        "Confirmar que Tropkiller está en la tap list esa semana"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-slideshow",
+          "copy": "Del platillo a la cerveza: las cinco parejas oficiales de Cervecería Cisne Negro. Dónde comer en Pachuca con cerveza artesanal: Col. Periodistas, Pachuca, Hidalgo.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#dondecomerenpachuca",
+            "#quehacerenpachuca",
+            "#pachucahidalgo"
+          ],
+          "fecha": "2026-11-25",
+          "hora": "17:00"
+        },
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Si te gusta la Tlayuda de Picaña → Agua Puerca.\nSi te gustan las Palomitas de Coliflor → ¿A poco sí pa'?\nSi te gusta el Taco de Pescado → Kiwi Plis.\nSi te gusta el Sándwich de Suadero → Boca Negra.\nSi te gustan los Camarones Piedra → Tropkiller.\nCinco parejas oficiales de «Cisne Negro te sugiere…». Guárdalo antes de ver la carta.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#maridaje",
+            "#comerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-25",
+          "hora": "17:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-texto",
+          "copy": "Tlayuda → Agua Puerca. Palomitas de coliflor → ¿A poco sí pa'? Taco de pescado → Kiwi Plis. Suadero → Boca Negra. Camarones piedra → Tropkiller. ¿Cuál es su pareja de cabecera?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-25",
+          "hora": "18:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-26-gbp-postres",
+      "titulo": "GBP: los dos postres de la carta",
+      "seccion": "el-plato-que-manda",
+      "plantilla": "pantallazo-celular",
+      "campana": null,
+      "fecha": "2026-11-26",
+      "hora": "12:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "visita",
+      "brief": "Publicación de GBP con foto real de la Dona Glaseada con Maple y Tocino y del Pastel Helado de Campechanas, sin vasos en cuadro. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Los dos postres de Cisne Negro: Dona Glaseada con Maple y Tocino, con helado de cookies & cream, y Pastel Helado de Campechanas, con helado de vainilla, cajeta y nuez. Consulta precios en el menú de nuestro sitio y toca «Cómo llegar» para la ruta a Rafael Vega Sánchez 110, Col. Periodistas, Pachuca. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+      "por_validar": [
+        "Postres vigentes",
+        "Política de Google para publicaciones de alcohol en GBP (por verificar): mantener las publicaciones de GBP sin cerveza"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": true,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Cocina",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "gbp",
+          "formato": "gbp-publicacion",
+          "copy": "Los dos postres de Cisne Negro: Dona Glaseada con Maple y Tocino, con helado de cookies & cream, y Pastel Helado de Campechanas, con helado de vainilla, cajeta y nuez. Consulta precios en el menú de nuestro sitio y toca «Cómo llegar» para la ruta a Rafael Vega Sánchez 110, Col. Periodistas, Pachuca. Horario: martes a jueves 16–22 h, viernes y sábado 16–23:30 h, domingo 14–19 h; lunes cerrado por producción.",
+          "hashtags": [],
+          "fecha": "2026-11-26",
+          "hora": "12:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-26-maridaje",
+      "titulo": "Maridaje del finde: Boca Negra + Sándwich de Suadero",
+      "seccion": "maridaje-del-finde",
+      "plantilla": "tarjeta-maridaje",
+      "campana": null,
+      "fecha": "2026-11-26",
+      "hora": "16:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "visita",
+      "brief": "Carrusel con la pareja oficial (IG 2026-01-20). La ficha de Boca Negra (estilo y ABV) entra solo validada. Sección vigente por confirmar. COFEPRIS: nadie bebiendo ni con el vaso en la mano; si aparece staff, mayor de 25 y sin consumo; sin imperativos de consumo; la cerveza no va en la misma frase que fiesta, éxito, música, arte o deporte; leyenda «EVITE EL EXCESO» al pie del texto y en la última lámina o toma.",
+      "copy_base": "Maridaje del finde: Boca Negra + Sándwich de Suadero. 🥪\nPareja oficial de «Cisne Negro te sugiere…».\nEl suadero llega con mozzarella, cebolla caramelizada con cerveza, aguacate, pepinillos y arúgula.\nLa ficha de Boca Negra va en la segunda lámina.\nGuárdalo y etiqueta a quien siempre se queda con el último bocado.\n\nEVITE EL EXCESO.",
+      "por_validar": [
+        "Confirmar que Boca Negra está en la tap list esa semana",
+        "Estilo y ABV de Boca Negra",
+        "Nombre del platillo: la serie oficial dice «Sándwich de suadero» y el menú «De Suadero» (hamburguesa)"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Barra",
+        "habla_de_cerveza": true
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-carrusel",
+          "copy": "Maridaje del finde: Boca Negra + Sándwich de Suadero. 🥪\nPareja oficial de «Cisne Negro te sugiere…».\nEl suadero llega con mozzarella, cebolla caramelizada con cerveza, aguacate, pepinillos y arúgula.\nLa ficha de Boca Negra va en la segunda lámina.\nGuárdalo y etiqueta a quien siempre se queda con el último bocado.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#maridaje",
+            "#comerenpachuca",
+            "#cervezaartesanalpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-26",
+          "hora": "16:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-album",
+          "copy": "Maridaje del finde: Boca Negra + Sándwich de Suadero, pareja oficial de «Cisne Negro te sugiere…».\n📍 Rafael Vega Sánchez 110, Col. Periodistas, Pachuca · Mar–jue 16–22 h · Vie–sáb 16–23:30 h · Dom 14–19 h · Lunes cerrado por producción.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-26",
+          "hora": "16:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-imagen",
+          "copy": "Suadero con cebolla caramelizada con cerveza, aguacate y pepinillos. Su pareja oficial es Boca Negra. ¿El suadero es de taco o también de sándwich?\n\nEVITE EL EXCESO.",
+          "hashtags": [],
+          "fecha": "2026-11-26",
+          "hora": "16:00"
+        },
+        {
+          "canal": "tiktok",
+          "formato": "tiktok-slideshow",
+          "copy": "Sándwich de suadero + Boca Negra: maridaje oficial en Cervecería Cisne Negro. Dónde comer en Pachuca: Col. Periodistas.\n\nEVITE EL EXCESO.",
+          "hashtags": [
+            "#pachuca",
+            "#dondecomerenpachuca",
+            "#quehacerenpachuca",
+            "#pachucahidalgo"
+          ],
+          "fecha": "2026-11-26",
+          "hora": "16:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-27-agenda",
+      "titulo": "Agenda del finde y lo que viene en diciembre",
+      "seccion": "agenda-cisne",
+      "plantilla": "agenda-evento",
+      "campana": null,
+      "fecha": "2026-11-27",
+      "hora": "19:00",
+      "estado": "borrador",
+      "prueba": null,
+      "objetivo": "visita",
+      "brief": "Stories con horario del fin de semana y adelanto del ranking del domingo; aviso de Canal; publicación en Facebook. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Este fin de semana en el Cisne: viernes y sábado de 16 a 23:30 h, domingo de 14 a 19 h. 🪶\nEl domingo publicamos el Ranking del Pasaporte de noviembre.\nY diciembre ya viene: [por confirmar: eventos de diciembre].",
+      "por_validar": [
+        "Eventos de diciembre"
+      ],
+      "atributos": {
+        "gancho": "Agenda",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-story",
+          "copy": "Este finde: vie y sáb 16–23:30 h · dom 14–19 h 🪶 El domingo, Ranking del Pasaporte",
+          "hashtags": [],
+          "fecha": "2026-11-27",
+          "hora": "19:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "Este fin de semana en el Cisne: viernes y sábado de 16 a 23:30 h, domingo de 14 a 19 h. 🪶\nEl domingo publicamos el Ranking del Pasaporte de noviembre.\nY diciembre ya viene: [por confirmar: eventos de diciembre].",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-27",
+          "hora": "19:00"
+        },
+        {
+          "canal": "wa",
+          "formato": "wa-aviso",
+          "copy": "🪶 Este finde: vie y sáb 16–23:30 h, dom 14–19 h. El domingo sale el Ranking del Pasaporte de noviembre.",
+          "hashtags": [],
+          "fecha": "2026-11-27",
+          "hora": "13:00"
+        }
+      ]
+    },
+    {
+      "clave": "2026-11-29-ranking-r1",
+      "titulo": "Ranking del Pasaporte: noviembre",
+      "seccion": "ranking-del-pasaporte",
+      "plantilla": "ranking-pasaporte",
+      "campana": null,
+      "fecha": "2026-11-29",
+      "hora": "13:00",
+      "estado": "borrador",
+      "prueba": "R1",
+      "objetivo": "comunidad",
+      "brief": "Imagen tipo pantallazo del ranking mensual del panel (alias solo de quien aceptó aparecer) y el premio del mes. Sección nueva en prueba (R1); por ser mensual, R2 y R3 caen en diciembre y enero. Se acompaña del reporte mensual del piloto. COFEPRIS: pieza sin cerveza en texto ni en cuadro (sin vasos, barriles ni latas); si se cuela alguna, agregar leyenda y aplicar el checklist completo.",
+      "copy_base": "Ranking del Pasaporte · noviembre 🪶\nEstos son los socios con más visitas del mes: [por confirmar: top 3 con alias, solo de quien aceptó aparecer].\nLas visitas se suman con el código del día que te da el equipo.\n¿Todavía no tienes tu Pasaporte? Se saca desde el QR del menú. Premio del mes: [por confirmar].",
+      "por_validar": [
+        "Top 3 del ranking de noviembre y permiso de alias",
+        "Premio del mes (playera, tarro o growler; nunca alcohol a volumen)",
+        "Si para entonces el Pasaporte cuenta plumas (G1), cambiar «visitas» por «plumas»"
+      ],
+      "atributos": {
+        "gancho": "Dato",
+        "cerveza_destacada": null,
+        "personas_en_cuadro": "Ninguna",
+        "requiere_grabacion": false,
+        "con_coautor": false,
+        "objetivo_pauta": "Sin pauta",
+        "presupuesto_pauta": 0,
+        "locacion": "Diseño (sin locación)",
+        "habla_de_cerveza": false
+      },
+      "aliado": null,
+      "variantes": [
+        {
+          "canal": "ig",
+          "formato": "ig-imagen",
+          "copy": "Ranking del Pasaporte · noviembre 🪶\nEstos son los socios con más visitas del mes: [por confirmar: top 3 con alias, solo de quien aceptó aparecer].\nLas visitas se suman con el código del día que te da el equipo.\n¿Todavía no tienes tu Pasaporte? Se saca desde el QR del menú. Premio del mes: [por confirmar].",
+          "hashtags": [
+            "#cuentaloenelcisne",
+            "#quehacerenpachuca",
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-29",
+          "hora": "13:00"
+        },
+        {
+          "canal": "fb",
+          "formato": "fb-post",
+          "copy": "Ranking del Pasaporte · noviembre 🪶\nEstos son los socios con más visitas del mes: [por confirmar: top 3 con alias, solo de quien aceptó aparecer].\nLas visitas se suman con el código del día que te da el equipo.\n¿Todavía no tienes tu Pasaporte? Se saca desde el QR del menú. Premio del mes: [por confirmar].",
+          "hashtags": [
+            "#pachuca",
+            "#cisnenegro"
+          ],
+          "fecha": "2026-11-29",
+          "hora": "13:00"
+        },
+        {
+          "canal": "threads",
+          "formato": "threads-texto",
+          "copy": "Ranking del Pasaporte de noviembre: ya tenemos top 3 [por confirmar: alias]. ¿Alguien de aquí va en la tabla?",
+          "hashtags": [],
+          "fecha": "2026-11-29",
+          "hora": "13:00"
+        }
+      ]
+    }
+  ]
+}

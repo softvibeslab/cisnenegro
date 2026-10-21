@@ -1,0 +1,57 @@
+/* The entrance keeps its identity; the bar takes its ink and paper from each illustration. */
+:root{--tinta:#0e0d0b;--carbon:#191714;--hueso:#f3ede2;--neon:#f2c97d;--pico:#ff5a1f;--gris:#b9b0a1;--line:#4b4133;--display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;--body:Manrope,system-ui,sans-serif;--mono:"JetBrains Mono",monospace;--pad:clamp(22px,5vw,86px)}
+*,:before,:after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--tinta);color:var(--hueso);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}a{color:inherit}button,input{font:inherit}img{display:block;max-width:100%}h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-family:var(--display);font-weight:900;line-height:.95;text-transform:uppercase}a,button,input{touch-action:manipulation}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--neon);outline-offset:6px}a:hover{text-decoration-thickness:2px}[hidden]{display:none!important}.skip{position:fixed;top:10px;left:10px;z-index:100;padding:12px;background:var(--pico);color:var(--tinta);transform:translateY(-160%)}.skip:focus{transform:none}
+.topbar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:14px var(--pad);background:rgba(14,13,11,.96);border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:900 26px/1 var(--display);letter-spacing:.04em}.brand img{height:44px;width:44px;border-radius:50%}.brand small{display:block;font:500 8px/2 var(--mono);letter-spacing:.12em}.topbar nav{display:flex;align-items:center;gap:26px;font-size:13px;font-weight:700}.topbar nav a{min-height:44px;display:flex;align-items:center;gap:18px;text-decoration:none}.topbar .menu-link{border:1px solid var(--neon);border-radius:100px;padding:0 22px;color:var(--neon)}
+.scene{position:relative;isolation:isolate;overflow:clip}.entrance{min-height:min(850px,calc(100svh - 73px));padding:90px var(--pad) 110px;display:flex;align-items:center;background:var(--carbon)}.facade{position:absolute;inset:0 0 0 35%;z-index:-3;transform:translateY(var(--shift,0px)) scale(1.04)}.facade img{width:100%;height:100%;object-fit:cover;object-position:50% 47%}.facade figcaption{position:absolute;right:5%;bottom:8%;font:500 10px var(--mono);background:var(--tinta);padding:8px 12px;color:var(--hueso)}.entrance-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#0e0d0bf5 4%,#0e0d0bdd 28%,#0e0d0b44 55%,#0e0d0b05 100%),linear-gradient(0deg,#0e0d0b 0%,transparent 35%)}.hero-copy{max-width:900px}.eyebrow{font:500 11px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.14em;color:var(--neon)}h1{font-size:clamp(76px,10.5vw,166px);letter-spacing:-.025em;margin:26px 0;color:var(--hueso)}h1 span{color:var(--neon);text-shadow:0 0 18px #f2c97d35}.intro{font-size:clamp(17px,1.7vw,23px);line-height:1.45}.explore{display:inline-flex;align-items:center;justify-content:space-between;gap:50px;border-radius:99px;padding:17px 24px;margin-top:30px;background:var(--pico);color:var(--tinta);font-size:14px;font-weight:800;text-decoration:none;min-height:56px}.explore span{font-size:23px}.door-note{position:absolute;bottom:30px;left:var(--pad);display:flex;gap:25px;font:500 10px/1.7 var(--mono);letter-spacing:.04em;text-transform:uppercase}.door-note span:first-child{color:var(--neon)}.scene-index{position:absolute;right:var(--pad);bottom:30px;font:500 10px var(--mono);color:var(--gris)}
+
+/* Six pigments per label. Tokens govern the entire scene, not just the selected button. */
+.bar{
+  --paper:#fbf8e3;--ink:#17150f;--accent:#eb4b60;--wash:#cdc34e;--muted:#514c35;--edge:#17150f;
+  --title-tilt:-3deg;--frame-radius:6px;--title-font:var(--display);
+  padding:60px var(--pad) 65px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr);gap:35px 6%;align-items:start;
+  background-color:var(--wash);color:var(--ink);border-top:8px solid var(--edge);
+  background-image:radial-gradient(color-mix(in srgb,var(--muted) 18%,transparent) .45px,transparent .7px);background-size:9px 9px;
+}
+.bar[data-beer="agua-puerca"]{
+  --paper:#f5efdf;--ink:#f5efdf;--accent:#ddb78b;--wash:#26170f;--muted:#dcc4ac;--edge:#825639;
+  --title-tilt:1deg;--frame-radius:3% 1% 2% 1%;--title-font:"Bradley Hand","Segoe Print","Comic Sans MS",cursive;
+}
+.bar-heading{grid-column:1/-1;display:grid;grid-template-columns:1.2fr .8fr;column-gap:6%;align-items:end;padding-bottom:25px;border-bottom:3px double var(--ink)}
+.bar-heading .eyebrow{grid-column:1/-1;margin-bottom:18px;color:var(--ink)}
+.bar-heading h2{font-size:clamp(58px,6.4vw,98px);letter-spacing:-.02em}
+.bar-heading h2 span{color:var(--ink);background:var(--accent);padding:0 .08em;box-decoration-break:clone}
+.bar[data-beer="agua-puerca"] .bar-heading h2 span{color:var(--wash)}
+.bar-heading>p:last-child{max-width:28ch;margin-bottom:10px;font-size:17px}
+.bar-art{min-width:0;position:relative}
+.art-frame{padding:8px;background:var(--paper);border:4px solid var(--edge);border-radius:var(--frame-radius);box-shadow:9px 9px 0 var(--edge);overflow:hidden}
+.art-frame img{width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+.bar-art figcaption{margin-top:20px;color:var(--muted);font:500 10px/1.7 var(--mono)}
+.beer-console{position:relative;min-width:0;padding:10px 0 0}
+fieldset{margin:0 0 35px;border:0;padding:0;min-width:0}
+legend{font:500 12px/1.6 var(--mono);margin-bottom:14px}
+.choices{display:flex;gap:10px;flex-wrap:wrap}
+.choice{position:relative;cursor:pointer;display:flex;align-items:center;gap:8px;padding:12px 16px;border:2px solid var(--ink);border-radius:var(--frame-radius);font-size:13px;min-height:48px}
+.choice:has(input:checked){background:var(--accent);color:#17150f;border-color:var(--accent);font-weight:800;box-shadow:3px 3px 0 var(--edge)}
+.choice input{margin:0;width:16px;height:16px;accent-color:#17150f}
+.bar :is(a,button,input):focus-visible{outline:3px solid var(--ink);outline-offset:5px}
+.beer-meta{font:500 11px/1.8 var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.beer-name{font-family:var(--title-font);font-size:clamp(42px,5.8vw,86px);margin:23px 0 28px;overflow-wrap:anywhere;transform:rotate(var(--title-tilt));transform-origin:left center;line-height:1.04}
+.bar[data-beer="alarma"] .beer-name{background:var(--accent);border:3px solid var(--ink);padding:8px 12px;box-shadow:5px 5px 0 var(--ink)}
+.bar[data-beer="agua-puerca"] .beer-name{font-size:clamp(40px,4.8vw,70px);font-weight:700;text-transform:none;border-bottom:3px solid var(--accent);border-radius:0 0 40% 6%;padding-bottom:18px}
+.beer-notes{font-size:15px;max-width:36ch;min-height:72px}
+.prices{list-style:none;padding:18px 0;margin:22px 0 0;display:flex;gap:30px;border-top:2px solid var(--edge);border-bottom:2px solid var(--edge)}
+.prices li{display:flex;flex-direction:column;font:500 11px/1.8 var(--mono);color:var(--muted)}
+.prices b{font-size:20px;font-weight:500;color:var(--ink)}
+.full-menu{display:flex;justify-content:space-between;align-items:center;min-height:55px;margin-top:10px;font-weight:800;font-size:13px}
+.fine{font-size:11px;color:var(--muted);line-height:1.7;margin-top:10px;max-width:52ch}
+#load-status{font-size:14px;margin-bottom:15px}
+#retry{border:2px solid var(--ink);background:transparent;color:var(--ink);padding:12px 18px;min-height:44px;cursor:pointer}
+footer{display:flex;justify-content:space-between;gap:24px;align-items:center;padding:28px var(--pad);border-top:1px solid var(--line);font-size:11px}footer p{text-align:center}footer span{color:var(--gris)}footer a{padding:12px 0;min-height:44px}
+@media(min-width:1600px){.entrance{min-height:880px}.bar{padding-left:max(var(--pad),calc((100vw - 1440px)/2));padding-right:max(var(--pad),calc((100vw - 1440px)/2))}}
+@media(max-width:760px){
+  html{scroll-padding-top:86px}.topbar{padding:10px 18px;gap:10px}.brand{font-size:18px;gap:7px}.brand img{width:35px;height:35px}.brand small{display:none}.topbar nav{gap:12px;font-size:11px}.topbar nav a{gap:5px}.topbar .menu-link{padding:0 12px}.entrance{min-height:820px;padding:345px var(--pad) 98px;align-items:flex-end}.facade{inset:0 0 30% 0;transform:none}.facade img{object-position:50% 20%}.facade figcaption{top:14px;bottom:auto;right:15px;font-size:8px}.entrance-shade{background:linear-gradient(0deg,#0e0d0b 12%,#0e0d0bf2 35%,#0e0d0b33 68%,#0e0d0b11)}h1{font-size:clamp(66px,15.5vw,110px);margin:20px 0}.hero-copy .eyebrow{font-size:9px}.intro{font-size:17px}.explore{margin-top:24px;padding:13px 20px;gap:55px}.door-note{flex-direction:column;gap:3px;bottom:25px;font-size:8px}.scene-index{font-size:8px;bottom:25px}
+  .bar{grid-template-columns:minmax(0,1fr);gap:25px;padding:42px var(--pad) 45px}.bar-heading{display:block}.bar-heading h2{font-size:64px}.bar-heading>p:last-child{margin-top:20px;font-size:15px;max-width:30ch}.bar-heading .eyebrow{font-size:9px}.art-frame{padding:4px;box-shadow:6px 6px 0 var(--edge)}.bar-art figcaption{font-size:9px}.beer-console{padding:0}.beer-notes{min-height:0}.beer-name{font-size:56px}.bar[data-beer="agua-puerca"] .beer-name{font-size:44px}footer{flex-wrap:wrap;justify-content:space-between;padding:20px var(--pad);gap:12px}footer p{order:3;width:100%;text-align:left}
+}
+@media(max-width:359px){.brand span{font-size:16px}.brand img{width:28px;height:28px}.topbar{padding-inline:10px}.topbar nav{gap:8px;font-size:10px}.topbar .menu-link{padding-inline:10px}.entrance{padding-top:300px;min-height:780px}.choice{padding:12px;font-size:12px}h1{font-size:65px}.bar-heading h2{font-size:58px}.prices{gap:20px}.prices b{font-size:18px}}
+@media(prefers-reduced-motion:reduce),(pointer:coarse){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.facade{transform:none!important}}
+@media(forced-colors:active){.choice:has(input:checked){outline:2px solid Highlight}.explore,.menu-link{border:1px solid ButtonText}.art-frame{box-shadow:none}}

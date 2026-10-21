@@ -1,0 +1,10 @@
+[Unit]
+Description=Respaldo diario de Cisne independiente a las 03:55 CDMX
+
+[Timer]
+OnCalendar=*-*-* 03:55:00 America/Mexico_City
+AccuracySec=1min
+Unit=cisne-independent-backup.service
+
+[Install]
+WantedBy=timers.target
