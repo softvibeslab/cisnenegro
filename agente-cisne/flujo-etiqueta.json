@@ -1,0 +1,82 @@
+{
+  "name": "cisne-etiqueta-a-menu",
+  "pattern": "sequential",
+  "steps": [
+    {
+      "id": "referencia",
+      "actor": "usuario",
+      "output": {
+        "reference_media_id": "imagen original en MediaHub",
+        "collection": "barril|latas",
+        "product_id": "ID estable"
+      },
+      "next": "datos"
+    },
+    {
+      "id": "datos",
+      "actor": "agente",
+      "action": "leer catálogo; completar datos confirmados mediante CRUD del borrador",
+      "output": {
+        "version": "entero vigente",
+        "producto": "campos verificados, etiqueta preservada"
+      },
+      "next": "generacion"
+    },
+    {
+      "id": "generacion",
+      "actor": "servicio-imagen",
+      "action": "generar a partir de etiqueta original y referencia editorial",
+      "output": {
+        "job_id": "UUID",
+        "status": "queued|running|ready|failed",
+        "media_id": "derivado privado si ready"
+      },
+      "next": "revision"
+    },
+    {
+      "id": "revision",
+      "actor": "usuario",
+      "action": "verificar identidad, nombre, estilo y ABV; elegir usar imagen",
+      "output": {
+        "decision": "usar|descartar",
+        "version": "versión vigente"
+      },
+      "next": "borrador"
+    },
+    {
+      "id": "borrador",
+      "actor": "CMS",
+      "action": "actualizar solo img por ID con control de versión",
+      "output": {
+        "version": "nueva versión",
+        "preview_url": "/cms/preview/menu/"
+      },
+      "next": "publicacion"
+    },
+    {
+      "id": "publicacion",
+      "actor": "propietario",
+      "action": "publicar explícitamente con el control existente del CMS",
+      "output": {
+        "published_version": "revisión publicada"
+      },
+      "next": null
+    }
+  ],
+  "retry": {
+    "max_attempts": 1,
+    "automatic_paid_retries": false,
+    "conflict": "no reintentar escritura; recargar y revisar",
+    "image_failure": "reintento explícito genera otro registro"
+  },
+  "limits": {
+    "chat_steps": 3,
+    "mutations_per_message": 3,
+    "chat_requests_per_user_per_10_minutes": 20,
+    "image_jobs_per_user_per_hour": 6,
+    "concurrent_images": 2,
+    "provider_chat_timeout_seconds": 55,
+    "provider_image_timeout_seconds": 180
+  },
+  "implementation": "Un agente con herramientas deterministas; no son seis agentes independientes."
+}

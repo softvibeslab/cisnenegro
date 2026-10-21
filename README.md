@@ -12,6 +12,7 @@ cd cisnenegro/hosting-independiente
 - [Skills y ecosistema de desarrollo](ecosistema/README.md), con fuentes y guías de instalación.
 - [Paquete descargable del ecosistema](paquetes/cisnenegro-skills-ecosistema-20261021.zip).
 - [Manual público](manual-usuario/README.md), HTML y PDF sin credenciales.
+- [Agente Cisne: chat CMS, CRUD e imágenes desde etiquetas; perfil Hermes/Telegram](agente-cisne/README.md) — implementación local en preparación para activación.
 - [Últimos ajustes publicados](hosting-independiente/docs/actualizacion-menu-2026-10-17.md): imagen de Colchita, Wi-Fi/Pasaporte ocultos y pedido sin QR.
 
 La semilla del menú de la aplicación vigente refleja el catálogo público de la revisión 8. Las imágenes de MediaHub que utiliza se incluyen como archivos estáticos para una instalación nueva. No se copian cuentas, contraseñas ni bases operativas; el arranque local crea sus propios accesos. El resto de esta página conserva la bitácora histórica del proyecto.

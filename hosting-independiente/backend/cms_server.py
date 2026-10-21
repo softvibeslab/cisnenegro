@@ -341,7 +341,7 @@ def create_app(config=None):
 
     @app.get('/cms/<name>')
     def static_cms(name):
-        if name not in ('cms.css', 'cms.js'): return fail('No encontrado.', 404)
+        if name not in ('cms.css', 'cms.js', 'agent.css', 'agent.js'): return fail('No encontrado.', 404)
         return send_from_directory(site / 'cms', name)
 
     @app.get('/cms/auth/owner')
@@ -635,6 +635,10 @@ def create_app(config=None):
         def dev_assets(filename): return send_from_directory(site / 'assets', filename)
 
     app.extensions['cms_db'] = db
+    from agent_content import register_agent_content
+    register_agent_content(app, db, body, audit, now, encoded)
+    from agent_runtime import register_agent_runtime
+    register_agent_runtime(app, db, body, audit, now, encoded)
     return app
 
 
