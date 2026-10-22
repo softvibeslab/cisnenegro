@@ -1,0 +1,16 @@
+# Uso: docker compose -f compose.yaml -f compose.hermes.yaml up -d app
+# Crear primero el servicio host cisne-hermes y su directorio run (0750,
+# propietario cisneagent, grupo 10001). Solo el socket entra al contenedor;
+# el perfil, su autenticación y la instalación Hermes permanecen en el host.
+services:
+  app:
+    environment:
+      CISNE_AGENT_PROVIDER: hermes
+      CISNE_HERMES_SOCKET: /run/cisne-hermes/bridge.sock
+    volumes:
+      - type: bind
+        source: /srv/cisne/hermes/run
+        target: /run/cisne-hermes
+        read_only: true
+        bind:
+          create_host_path: false

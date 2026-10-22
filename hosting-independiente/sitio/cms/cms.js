@@ -12,7 +12,7 @@
   const uid = prefix => prefix + '-' + (globalThis.crypto?.randomUUID ? crypto.randomUUID().slice(0, 12) : Date.now().toString(36) + Math.random().toString(36).slice(2, 6));
   const paths = {home:'M3 10 12 3l9 7M5 9v12h5v-7h4v7h5V9',edit:'m15 5 4 4M4 20l4-1L20 7a2.8 2.8 0 0 0-4-4L4 15z',menu:'M4 3h16v18H4zM8 7h8M8 11h8M8 15h5',media:'M3 4h18v16H3zM3 15l5-5 5 5 3-3 5 5M15 8h.01',event:'M4 5h16v16H4zM7 3v4M17 3v4M4 10h16M8 14h2M14 14h2',settings:'M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2',history:'M3 11a9 9 0 1 1 2 7M3 4v7h7M12 7v5l3 2',users:'M8 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M2 21v-3a6 6 0 0 1 12 0v3M16 4a4 4 0 0 1 0 8M17 15a5 5 0 0 1 5 5v1',club:'M4 4h16v17H4zM8 8h8M8 12h5M14 17l2 2 4-4',upload:'M12 16V3M7 8l5-5 5 5M3 15v6h18v-6',plus:'M12 4v16M4 12h16',video:'M4 4h16v16H4zM10 8l6 4-6 4z',arrow:'M5 12h14M14 7l5 5-5 5',check:'m4 12 5 5L20 6'};
   const icon = name => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${paths[name] || paths.menu}"></path></svg>`;
-  const modules = [{id:'agente',label:'Agente Cisne',icon:'club'},{id:'inicio',label:'Inicio',icon:'home'},{id:'editor',label:'Editor visual',icon:'edit'},{id:'menu',label:'Menú y cervezas',icon:'menu'},{id:'media',label:'MediaHub',icon:'media'},{id:'eventos',label:'Eventos y galería',icon:'event'},{id:'negocio',label:'Datos del negocio',icon:'settings'},{id:'publicaciones',label:'Publicaciones',icon:'history'},{id:'usuarios',label:'Usuarios',icon:'users',owner:true}];
+  const modules = [{id:'inicio',label:'Inicio',icon:'home'},{id:'editor',label:'Editor visual',icon:'edit'},{id:'menu',label:'Menú y cervezas',icon:'menu'},{id:'media',label:'MediaHub',icon:'media'},{id:'eventos',label:'Eventos y galería',icon:'event'},{id:'negocio',label:'Datos del negocio',icon:'settings'},{id:'publicaciones',label:'Publicaciones',icon:'history'},{id:'usuarios',label:'Usuarios',icon:'users',owner:true}];
   const state = {user:null, csrf:'', document:null, baseline:null, publicBaseline:null, version:null, published:null, schema:[], summary:{}, dirty:false, busy:false, agentBusy:false, route:'inicio', menuTab:'barril', contentTab:'events', media:{q:'',category:'',kind:'',page:1,archived:false}, mediaCache:new Map(), uploads:[], uploading:false, uploadEpoch:0, uploadController:null, viewToken:0, interrupted:null};
   const owner = () => state.user?.role === 'owner';
   function getPath(obj, key) { return key.split('.').reduce((v, k) => v == null ? undefined : v[k], obj); }
@@ -39,7 +39,7 @@
     $('#save-draft').disabled = !state.document || state.busy || !state.dirty;
     $('#publish').hidden = !owner(); $('#publish').disabled = !state.document || state.busy;
   }
-  function changed() { state.dirty = json(state.document) !== json(state.baseline); status(); }
+  function changed() { state.dirty = json(state.document) !== json(state.baseline); status(); window.CisneAgent?.refresh(); }
   async function api(path, options = {}) {
     const init = {credentials:'same-origin', ...options, headers:{Accept:'application/json', ...(options.headers || {})}};
     if (init.body && !(init.body instanceof FormData)) { init.headers['Content-Type'] = 'application/json'; init.body = JSON.stringify(init.body); }
@@ -56,7 +56,7 @@
     return data;
   }
   function stopUploads() { state.uploadEpoch++; state.uploadController?.abort(); state.uploads.forEach(job=>{if(['queued','uploading'].includes(job.status)){job.status='error';job.error='Carga interrumpida. Vuelve a intentarlo.';}}); }
-  function showLogin(error = '') { window.CisneAgent?.reset(); stopUploads(); $$('dialog[open]').forEach(el=>el.close()); $('#boot').hidden = true; $('#app').hidden = true; $('#login-screen').hidden = false; $('#login-error').textContent = error; $('#login-error').hidden = !error; }
+  function showLogin(error = '') { closeAgent(false); window.CisneAgent?.reset(); stopUploads(); $$('dialog[open]').forEach(el=>el.close()); $('#boot').hidden = true; $('#app').hidden = true; $('#login-screen').hidden = false; $('#login-error').textContent = error; $('#login-error').hidden = !error; }
   async function loadState(keepLocal = false) {
     const data = await api('/state'); state.document = data.document; state.baseline = clone(data.document); state.publicBaseline = data.published_document || null; state.version = data.version; state.published = data.published_version; state.schema = (data.schema || []).map(friendlyField); state.summary = data.summary || {}; state.user = data.user || state.user; state.dirty = false;
     if (keepLocal && state.interrupted?.user === state.user.id && state.interrupted.dirty) {
@@ -110,19 +110,32 @@
   function empty(title,description='') { return `<div class="empty"><h3>${esc(title)}</h3><p>${esc(description)}</p></div>`; }
   function setView(html) { $('#workspace').innerHTML = html; }
   async function route() {
-    if (!state.document) return; const name = location.hash.slice(1).split('?')[0] || 'inicio'; state.route = modules.some(m => m.id === name && (!m.owner || owner())) ? name : 'inicio'; state.viewToken++;
-    if (state.agentBusy && state.route !== 'agente') { location.hash='agente'; state.route='agente'; return; }
-    window.CisneAgent?.unmount();
+    if (!state.document) return;
+    const name = location.hash.slice(1).split('?')[0] || 'inicio', requestedAgent = name === 'agente';
+    const target = requestedAgent ? state.route : name;
+    state.route = modules.some(m => m.id === target && (!m.owner || owner())) ? target : 'inicio'; state.viewToken++;
+    if (requestedAgent) history.replaceState(null, '', location.pathname + location.search + '#' + state.route);
     $$('.nav-item[data-nav]').forEach(a => { if (a.dataset.nav === state.route) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
     $('#breadcrumb').textContent = modules.find(m => m.id === state.route).label; closeSidebar();
     try {
-      const views = {agente:renderAgent,inicio:renderHome,editor:renderEditor,menu:renderMenu,media:renderMedia,eventos:renderEvents,negocio:renderBusiness,publicaciones:renderRevisions,usuarios:renderUsers}; await views[state.route]();
+      const views = {inicio:renderHome,editor:renderEditor,menu:renderMenu,media:renderMedia,eventos:renderEvents,negocio:renderBusiness,publicaciones:renderRevisions,usuarios:renderUsers}; await views[state.route]();
+      window.CisneAgent?.refresh();
+      if (requestedAgent) openAgent();
     } catch (e) { setView(pageHeading('No pudimos cargar esta sección',e.message,'<button class="button secondary" data-action="retry-view">Volver a intentar</button>')); }
   }
-  function renderAgent() {
-    if (!window.CisneAgent) throw new Error('No se pudo cargar el agente. Recarga el panel.');
-    setView(pageHeading('Agente Cisne','Ideas, contenido y nuevas cervezas. Trabajamos sobre tu borrador.', '<a class="button secondary small" href="/cms/preview/menu/" target="_blank" rel="noopener">Vista previa del menú ↗</a>') + '<div id="agent-workspace"></div>');
-    return window.CisneAgent.mount($('#agent-workspace'), {
+  let agentOpener = null;
+  function closeAgent(restoreFocus = true) {
+    const popup = $('#agent-popup');
+    if (!popup.open) return;
+    popup.close(); window.CisneAgent?.unmount(); $('#agent-launcher').setAttribute('aria-expanded','false');
+    if (restoreFocus && agentOpener?.isConnected) agentOpener.focus({preventScroll:true});
+  }
+  function openAgent() {
+    if (!state.document || $('#app').hidden || $('#agent-popup').open) return;
+    if (!window.CisneAgent) { toast('No se pudo cargar el agente. Recarga el panel.', true); return; }
+    agentOpener = document.activeElement?.closest('#app') ? document.activeElement : $('#agent-launcher');
+    closeSidebar(); $('#agent-popup').showModal(); $('#agent-launcher').setAttribute('aria-expanded','true');
+    window.CisneAgent.mount($('#agent-workspace'), {
       api, mediaPicker, toast,
       snapshot: () => ({version:state.version, dirty:state.dirty, busy:state.busy, menu:clone(state.document?.menu || {})}),
       save: saveDraft,
@@ -133,12 +146,23 @@
       run: async task => {
         if (state.busy) throw new Error('Espera a que termine la operación actual.');
         if (state.dirty) throw new Error('Guarda primero los cambios del CMS para trabajar con el agente.');
-        state.agentBusy=true; state.busy=true; $('#main-nav').inert=true; $('#logout').disabled=true; status();
+        state.agentBusy=true; state.busy=true; $('#sidebar').inert=true; $('.workspace-shell').inert=true; $('#logout').disabled=true; $('#agent-launcher').classList.add('is-working'); status();
         try { return await task(); }
-        finally { state.agentBusy=false; state.busy=false; $('#main-nav').inert=false; $('#logout').disabled=false; status(); }
+        finally { state.agentBusy=false; state.busy=false; $('#sidebar').inert=false; $('.workspace-shell').inert=false; $('#logout').disabled=false; $('#agent-launcher').classList.remove('is-working'); status(); }
       }
     });
+    $('#agent-close').focus({preventScroll:true});
   }
+  $('#agent-launcher').addEventListener('click', openAgent);
+  $('#agent-close').addEventListener('click', () => closeAgent());
+  $('#agent-popup').addEventListener('cancel', event => { event.preventDefault(); closeAgent(); });
+  $('#agent-popup').addEventListener('keydown', event => {
+    if (event.key !== 'Tab') return;
+    const focusable = $$('button, a[href], input, select, textarea, summary, [tabindex]', $('#agent-popup')).filter(el => !el.disabled && el.tabIndex >= 0 && el.getClientRects().length);
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+  });
   function productCount() { const m = state.document.menu || {}; return ['barril','latas','sin_alcohol'].reduce((n,k) => n + (m[k]?.length || 0),0) + (m.comida || []).reduce((n,c) => n + (c.items?.length || 0),0); }
   function renderHome() {
     const s = state.summary; const quick = [{id:'editor',icon:'edit',title:'Dale vida a la portada',desc:'Textos, imágenes y el video del hero'},{id:'menu',icon:'menu',title:'Pon al día la carta',desc:'Precios, disponibilidad y maridajes'},{id:'media',icon:'media',title:'Encuentra la siguiente historia',desc:'Fotos y videos de tu cervecería'}];

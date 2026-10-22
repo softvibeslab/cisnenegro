@@ -2,6 +2,7 @@
 !requirements.lock
 !backend/
 !backend/*.py
+!backend/agent_knowledge.md
 !sitio/
 !sitio/**
 !scripts/

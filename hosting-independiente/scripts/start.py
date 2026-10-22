@@ -32,9 +32,12 @@ def bind_host(production):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--production', action='store_true')
+    parser.add_argument('--hermes', action='store_true', help='Conecta el chat al perfil local Hermes cisne-negro.')
     parser.add_argument('--port', type=int, default=int(os.environ.get('PORT', '8088')))
     parser.add_argument('--data-dir', type=Path)
     args = parser.parse_args()
+    if args.hermes:
+        os.environ['CISNE_AGENT_PROVIDER'] = 'hermes'
     production = args.production
     try:
         bind = bind_host(production)

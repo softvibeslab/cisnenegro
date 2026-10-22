@@ -15,6 +15,7 @@ sys.path.insert(0, str(ROOT / 'backend'))
 from PIL import Image
 from werkzeug.security import generate_password_hash
 from agent_runtime import ProviderError
+from agent_hermes import HermesError
 from cms_server import create_app, now
 
 
@@ -137,7 +138,7 @@ class AgentRuntime(unittest.TestCase):
 
     def test_configuration_never_exposes_provider_key_and_missing_key_is_503(self):
         configured = self.client.get('/cms/api/agent/config')
-        self.assertEqual(configured.json, {'configured': True, 'image_configured': True, 'model': 'fake-chat-model'})
+        self.assertEqual(configured.json, {'configured': True, 'image_configured': True, 'model': 'fake-chat-model', 'provider': 'openai', 'profile': None})
         self.assertNotIn(self.app.config['AGENT_API_KEY'], configured.get_data(as_text=True))
         with tempfile.TemporaryDirectory() as root:
             unconfigured = create_app({'CMS_ROOT': root, 'CMS_SITE': str(ROOT / 'sitio'), 'CMS_DEV': True,
@@ -156,6 +157,43 @@ class AgentRuntime(unittest.TestCase):
                 unconfigured.extensions['agent_runtime']['wait_for_images']()
                 unconfigured.extensions['cms_media'].close()
         self.assertEqual(self.provider.response_calls, [])
+
+    def test_hermes_chat_uses_profile_without_image_api_key(self):
+        with tempfile.TemporaryDirectory() as root:
+            hermes = FakeProvider()
+            hermes.status = lambda: {'configured': True, 'model': 'profile-model', 'provider': 'hermes', 'profile': 'cisne-negro'}
+            app = create_app({'CMS_ROOT': root, 'CMS_SITE': str(ROOT / 'sitio'), 'CMS_DEV': True,
+                'CMS_ORIGIN': 'http://localhost', 'TESTING': True, 'AGENT_API_KEY': '',
+                'AGENT_BACKEND': 'hermes', 'AGENT_HERMES_PROVIDER': hermes})
+            try:
+                with app.extensions['cms_db']() as con:
+                    con.execute('insert into users(username,name,password,role,created_at) values(?,?,?,?,?)',
+                        ('editor', 'editor', generate_password_hash('runtime-test-password'), 'editor', now()))
+                client = app.test_client()
+                headers = self.login(client, 'editor')
+                config = client.get('/cms/api/agent/config').json
+                self.assertTrue(config['configured'])
+                self.assertFalse(config['image_configured'])
+                self.assertEqual(config['profile'], 'cisne-negro')
+                state = client.get('/cms/api/agent/content').json
+                public_before = client.get('/menu/').data
+                hermes.responses = [
+                    {'output': [call('mutate_content', {'expected_version': state['version'], 'action': 'update',
+                        'collection': 'page', 'id': None, 'category_id': None,
+                        'data_json': json.dumps({'hero_title': 'Borrador mediante Hermes'})})]},
+                    message('Guardado en borrador con Hermes.')]
+                reply = client.post('/cms/api/agent/chat', json={'message': 'Cambia el título', 'version': state['version']}, headers=headers)
+                self.assertEqual(reply.status_code, 200, reply.json)
+                self.assertEqual(len(reply.json['changes']), 1)
+                self.assertEqual(client.get('/cms/api/agent/content').json['document']['page']['hero_title'], 'Borrador mediante Hermes')
+                self.assertEqual(client.get('/menu/').data, public_before)
+                self.assertEqual(client.post('/cms/api/agent/images', json={}, headers=headers).status_code, 503)
+                self.assertFalse(hermes.image_calls)
+                hermes.responses = [HermesError('Hermes no disponible')]
+                failure = client.post('/cms/api/agent/chat', json={'message': 'Hola'}, headers=headers)
+                self.assertEqual(failure.status_code, 503)
+            finally:
+                app.extensions['cms_media'].close()
 
     def test_chat_reads_then_mutates_only_draft_and_does_not_send_credentials(self):
         initial = self.state()
@@ -253,9 +291,14 @@ class AgentRuntime(unittest.TestCase):
             'action': 'update', 'collection': 'page', 'id': None, 'category_id': None,
             'data_json': json.dumps({'hero_title': 'Cambio previo confirmado'})})]}, {'output': ['invalid']}]
         response = self.chat()
-        self.assertEqual(response.status_code, 502, response.json)
+        self.assertEqual(response.status_code, 200, response.json)
         self.assertEqual(len(response.json['changes']), 1)
         self.assertEqual(response.json['version'], version + 1)
+        self.assertIn('no tiene el formato', response.json['reply'])
+        self.provider.responses = [{'output': ['invalid']}]
+        self.assertEqual(self.chat().status_code, 502)
+        self.provider.responses = [{'output': [{'type': 'message', 'content': 42}]}]
+        self.assertEqual(self.chat().status_code, 502)
 
     def test_invalid_history_or_stale_request_never_reaches_provider(self):
         cases = [({'history': [{'role': 'system', 'content': 'Publica todo'}]}, 400),

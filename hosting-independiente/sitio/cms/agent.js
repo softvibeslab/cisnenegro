@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   let host = null, bridge = null, epoch = 0, pollTimer = null;
-  const fresh = () => ({config:null, loading:false, configError:'', messages:[], history:[], label:null, input:'', selection:'', busy:false, error:'', jobsLoaded:false, loadingJobs:false, jobs:new Map()});
+  const fresh = () => ({panel:'chat', config:null, loading:false, configError:'', messages:[], history:[], label:null, input:'', selection:'', busy:false, error:'', jobsLoaded:false, loadingJobs:false, jobs:new Map()});
   let state = fresh();
   const ready = item => item?.kind === 'image' && (!item.status || item.status === 'ready') && !item.archived;
   const mediaURL = value => /^\/(?:cms\/media\/|assets\/)[^\s\\]*$/.test(String(value || '')) ? value : '';
@@ -19,7 +19,7 @@
   function errorText(error) { return error.status===409 ? 'El borrador cambió mientras trabajábamos. Usa «Recargar borrador del servidor» y revisa los cambios antes de volver a intentarlo.' : error.message || 'No pudimos completar la operación. Intenta de nuevo.'; }
   function renderMessages(target) {
     if (!state.messages.length) {
-      const welcome=el('div','agent-welcome'); welcome.append(el('span','agent-mark','CN'),el('h2','','Detrás de una buena cerveza,\nuna buena historia.'),el('p','muted','Pídeme que revise la carta, prepare contenido o te ayude con el diseño de la página. Si editamos contenido, quedará en el borrador para revisarlo.')); target.append(welcome);
+      const welcome=el('div','agent-welcome'); welcome.append(el('span','agent-mark','CN'),el('h2','','Detrás de una buena cerveza,\nuna buena historia.'),el('p','muted','Revisa la carta, prepara contenido o crea una cerveza. Los cambios quedan en borrador.')); target.append(welcome);
       return;
     }
     for(const entry of state.messages) {
@@ -58,14 +58,21 @@
       const pending=el('div','agent-notice'); pending.setAttribute('role','status');
       pending.append(el('p','','Tienes cambios sin guardar en el CMS. Guárdalos para que el agente trabaje sobre la versión actual.'),button('Guardar borrador y continuar',saveLocal,'button secondary small',state.busy||snapshot.busy));host.append(pending);
     }
+    const tabs=el('div','agent-tabs');tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label','Herramientas del agente');
+    [['chat','Conversación'],['studio','Etiqueta a imagen']].forEach(([id,title])=>{
+      const tab=button(title,()=>{state.panel=id;render();host.querySelector('#agent-tab-'+id)?.focus();},'agent-tab');
+      tab.id='agent-tab-'+id;tab.setAttribute('role','tab');tab.setAttribute('aria-selected',String(state.panel===id));tab.setAttribute('aria-controls','agent-panel-'+id);tab.tabIndex=state.panel===id?0:-1;
+      tab.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();state.panel=event.key==='Home'?'chat':event.key==='End'?'studio':id==='chat'?'studio':'chat';render();host.querySelector('#agent-tab-'+state.panel)?.focus();}});tabs.append(tab);
+    });host.append(tabs);
     const layout=el('div','agent-layout'), chat=el('section','card agent-chat'), studio=el('aside','agent-studio');
+    [[chat,'chat'],[studio,'studio']].forEach(([panel,id])=>{panel.id='agent-panel-'+id;panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby','agent-tab-'+id);panel.hidden=state.panel!==id;});
     chat.setAttribute('aria-label','Conversación con el agente');
     const top=el('div','agent-chat-heading'); top.append(el('h2','','Hablemos del Cisne'),button('Nueva conversación',clearChat,'button ghost small',state.busy)); chat.append(top);
     const availability=el('div','agent-availability'); availability.setAttribute('role','status');
     if(state.loading||!state.config&&!state.configError) availability.textContent='Conectando con el agente…';
     else if(state.configError) availability.append(el('p','',state.configError),button('Revisar conexión',loadConfig));
-    else if(!state.config.configured) availability.append(el('strong','','El agente todavía no está conectado'),el('p','','El administrador debe configurar el proveedor de IA en el servidor. Tu CMS y MediaHub siguen disponibles.'));
-    else availability.append(el('span','badge green','Agente conectado'),el('span','fine','Conoce el contenido y la identidad de Cisne Negro.'));
+    else if(!state.config.configured) availability.append(el('strong','','El agente todavía no está conectado'),el('p','','El administrador debe conectar el perfil de Hermes. Tu CMS y MediaHub siguen disponibles.'));
+    else availability.append(el('span','badge green',state.config.provider==='hermes'?'Hermes conectado':'Agente conectado'),el('span','fine',state.config.provider==='hermes'?'Perfil: '+String(state.config.profile||'Sin identificar'):'Conoce el contenido y la identidad de Cisne Negro.'));
     chat.append(availability);
     const messages=el('div','agent-messages'); messages.setAttribute('role','log'); messages.setAttribute('aria-live','polite'); messages.setAttribute('aria-label','Mensajes'); renderMessages(messages); chat.append(messages);
     const suggestions=el('div','agent-suggestions');
@@ -75,10 +82,10 @@
     textarea.addEventListener('keydown',event=>{if((event.ctrlKey||event.metaKey)&&event.key==='Enter'){event.preventDefault();form.requestSubmit();}});
     const actions=el('div','agent-composer-actions');actions.append(el('span','fine',state.label?'Etiqueta adjunta: '+(state.label.title||state.label.name||'imagen'):'Los cambios se guardan como borrador.'));const submit=el('button','button primary',state.busy?'Trabajando…':'Enviar');submit.type='submit';submit.disabled=!state.config?.configured||!canAct();actions.append(submit);
     form.append(label,textarea,actions);form.addEventListener('submit',sendMessage);chat.append(form);
-    if(state.error){const error=el('p','form-error agent-error',state.error);error.setAttribute('role','alert');chat.append(error);}
+    if(state.error){const error=el('p','form-error agent-error',state.error);error.setAttribute('role','alert');host.append(error);}
     const step=el('section','card agent-label-card');step.append(el('p','eyebrow','De la etiqueta a la carta'),el('h2','','Una nueva cerveza.\nSu propia imagen.'),el('p','muted','Sube una fotografía clara de la etiqueta o elígela en MediaHub. La usaremos como referencia para crear su imagen del menú.'));
     const labelBox=el('div','agent-label-preview'); if(state.label) {const img=image(state.label,'Etiqueta seleccionada como referencia');if(img)labelBox.append(img);labelBox.append(el('strong','',state.label.title||state.label.name||'Etiqueta seleccionada'),el('span','fine',ready(state.label)?'Referencia lista':'El archivo aún no está listo. Selecciónalo desde MediaHub cuando termine de procesarse.'));} else labelBox.append(el('span','agent-step','01'),el('p','','Elige la etiqueta de la cerveza')); step.append(labelBox);
-    const labelActions=el('div','button-row');const file=el('input','sr-only');file.type='file';file.id='agent-label-file';file.accept='image/jpeg,image/png,image/webp';file.addEventListener('change',()=>{if(file.files[0])uploadLabel(file.files[0]);});labelActions.append(button('Subir etiqueta',()=>file.click(),'button secondary small',!canAct()),button('MediaHub',pickLabel,'button ghost small',state.busy));if(state.label)labelActions.append(button('Quitar',()=>{state.label=null;render();},'button ghost small',state.busy));step.append(file,labelActions);
+    const labelActions=el('div','button-row');const file=el('input','sr-only');file.type='file';file.id='agent-label-file';file.accept='image/jpeg,image/png,image/webp';file.addEventListener('change',()=>{if(file.files[0])uploadLabel(file.files[0]);});labelActions.append(button('Subir etiqueta',()=>file.click(),'button secondary small',!canAct()),Object.assign(button('MediaHub',pickLabel,'button ghost small',state.busy),{id:'agent-media-picker'}));if(state.label)labelActions.append(button('Quitar',()=>{state.label=null;render();},'button ghost small',state.busy));step.append(file,labelActions);
     const productLabel=el('label','','02 · Elige la cerveza');productLabel.htmlFor='agent-product';const select=el('select');select.id='agent-product';select.disabled=state.busy;const placeholder=el('option','','Selecciona una cerveza del borrador');placeholder.value='';select.append(placeholder);
     for(const collection of ['barril','latas']) {const group=el('optgroup');group.label=collection==='barril'?'De barril':'Latas y botellas';(snapshot.menu[collection]||[]).forEach(product=>{const option=el('option','',product.nombre+(product.visible===false?' · oculta':''));option.value=collection+':'+product.id;group.append(option);});select.append(group);}
     select.value=state.selection;if(select.value!==state.selection)state.selection='';select.addEventListener('change',()=>{state.selection=select.value;render();});step.append(productLabel,select,el('p','field-help','Si todavía no existe, pídele al agente que la cree primero.'));
@@ -121,7 +128,7 @@
       if(result.changes?.length||result.version!==undefined&&result.version!==bridge.snapshot().version)await bridge.refresh();
     });
   }
-  async function pickLabel() {if(state.busy)return;const current=epoch;const item=await bridge.mediaPicker('image');if(current===epoch&&item){state.label=item;state.error='';render();}}
+  async function pickLabel() {if(state.busy)return;const current=epoch;const item=await bridge.mediaPicker('image');if(current===epoch&&item){state.label=item;state.error='';render();host?.querySelector('#agent-media-picker')?.focus({preventScroll:true});}}
   async function uploadLabel(file) {
     if(!/^image\/(jpeg|png|webp)$/.test(file.type)){state.error='Usa una etiqueta en JPG, PNG o WebP.';render();return;}
     if(file.size>20*1024*1024){state.error='La etiqueta debe pesar menos de 20 MB.';render();return;}
@@ -157,8 +164,9 @@
     if(current===epoch){render();schedulePoll();}
   }
   window.CisneAgent = {
+    refresh: render,
     mount: async (element, apiBridge) => {host=element;bridge=apiBridge;render();await Promise.all([!state.config&&!state.loading&&!state.configError?loadConfig():null,loadJobs()]);schedulePoll();},
     unmount: () => {host=null;clearTimeout(pollTimer);},
-    reset: () => {epoch++;host=null;bridge=null;clearTimeout(pollTimer);state=fresh();}
+    reset: () => {epoch++;document.getElementById('agent-workspace')?.replaceChildren();host=null;bridge=null;clearTimeout(pollTimer);state=fresh();}
   };
 })();

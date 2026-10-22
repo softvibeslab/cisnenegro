@@ -1,14 +1,16 @@
 # Agente Cisne · CMS y Hermes / Telegram
 
-Implementación local del asistente de Cisne Negro: conocimiento del negocio, diseño y desarrollo, CRUD editorial y generación de imágenes del menú a partir de etiquetas. El chat se abre en **`/cms/#agente`** con una cuenta del CMS. El perfil Hermes se llama **`cisne-negro`**.
+Asistente de Cisne Negro: conocimiento del negocio, diseño y desarrollo, CRUD editorial y flujo de imágenes del menú a partir de etiquetas. Se abre con el **botón flotante Agente Cisne** desde cualquier sección autenticada del CMS. El enlace **`/cms/#agente`** también abre la ventana. El chat se conecta al perfil Hermes **`cisne-negro`**.
 
 ## Estado de esta entrega
 
-- Chat integrado en el CMS, herramientas CRUD, trabajos de imagen y cliente Hermes implementados y probados localmente.
-- Perfil Hermes creado en el entorno de trabajo, con proveedor/modelo propios configurados y prueba real de identidad completada. No se copiaron memorias, bots ni datos de otros clientes.
-- El chat web y las imágenes requieren `OPENAI_API_KEY` en el servidor. La suscripción/autenticación de Hermes no sustituye esa clave de API.
+- **Perfil del usuario identificado:** `cisnenegro` en `169.58.107.205`. Es distinto del perfil `cisne-negro` actualmente conectado al CMS. Su conexión está preparada en código, pendiente de acceso SSH, autenticación de modelo y ensayo en ese servidor. Ver [pasos y distinción de perfiles](hermes/CONEXION-PERFIL-REMOTO.md).
+- **Desplegado el 21 de octubre de 2026:** popup y chat Hermes disponibles en [https://cisne.softvibes.art/cms/](https://cisne.softvibes.art/cms/). Cerrar la ventana conserva conversación, mensaje pendiente y etiqueta hasta salir de la sesión o recargar la página.
+- Perfil `cisne-negro` configurado en producción con `gpt-6-astra`. Una consulta real usó `read_content`; el borrador 5 y la publicación 8 permanecieron intactos. No se copiaron memorias, bots ni datos de otros clientes.
+- El chat web utiliza el modelo, la autenticación y la identidad del perfil Hermes. Las imágenes requieren `OPENAI_API_KEY` en el servidor; la autenticación de Hermes no sustituye esa clave para generar imágenes.
 - Telegram requiere un bot dedicado, sus operadores permitidos y una cuenta CMS editorial. El gateway todavía no está iniciado.
-- Esta entrega no está desplegada en producción ni publicada como una actualización de GitHub. Las pruebas de generación usan un proveedor simulado; todavía no se ha generado una imagen real mediante esta nueva API.
+- La generación de imágenes está desactivada hasta configurar su API; sus pruebas usan un proveedor simulado. El código del agente está en la rama `feat/agente-cisne-cms-hermes`; `main` no incorpora todavía esta integración.
+- `cisnenegro.mx` presenta una incidencia DNS (`SERVFAIL`); el temporal tiene HTTPS válido y sirve la misma aplicación. El servidor responde con el dominio canónico al conectar directamente con SNI. Hace falta reconciliar dominio y zona con Hostinger; no se cambiaron DNS en este despliegue. Ver [registro operativo](../hosting-independiente/docs/agente-cisne-despliegue-2026-10-21.md).
 
 ## Qué puede hacer
 
@@ -27,9 +29,9 @@ El chat del CMS no ejecuta comandos de servidor ni modifica código. La publicac
 
 ```mermaid
 flowchart LR
-    CMS[Chat privado del CMS] --> Tools[Operaciones editoriales]
+    CMS[Chat emergente del CMS] --> Hermes
     Telegram[Telegram autorizado] --> Hermes[Perfil Hermes: cisne-negro]
-    Hermes --> Tools
+    Hermes --> Tools[Operaciones editoriales]
     Tools --> Draft[Borrador y control de versión]
     Label[Etiqueta original] --> Media[MediaHub privado]
     Media --> Image[Generación de imagen]
@@ -43,11 +45,16 @@ La implementación usa un agente con herramientas, no una cadena de agentes inde
 
 ## Probar en local
 
-Desde `hosting-independiente/`, ejecutar `./iniciar-local.sh` y abrir `http://127.0.0.1:8088/cms/#agente`. Los accesos locales quedan en la carpeta de datos indicada al iniciar. Sin clave de IA aparece un estado explícito de conexión pendiente; el resto del CMS sigue disponible.
+Desde `hosting-independiente/`, ejecutar `./iniciar-local.sh --hermes` y abrir `http://127.0.0.1:8088/cms/`. Los accesos locales quedan en la carpeta de datos indicada al iniciar. Pulsa **Agente Cisne** abajo a la derecha. La pestaña **Conversación** usa Hermes; **Etiqueta a imagen** reúne la referencia, la cerveza y los resultados. Escape o × cierran la ventana; el foco vuelve al botón.
+
+En local, el conector usa por defecto `~/.hermes/hermes-agent/venv/bin/python3` y `~/.hermes/profiles/cisne-negro/`. Las variables `CISNE_HERMES_ROOT` y `CISNE_HERMES_PROFILE_DIR` permiten configurar rutas propias; no se aceptan desde el navegador. El perfil debe llamarse `cisne-negro`. Si no está disponible, el CMS conserva su funcionamiento y muestra conexión pendiente.
+
+En producción, el CMS en Docker se conecta mediante `CISNE_HERMES_SOCKET=/run/cisne-hermes/bridge.sock` al servicio privado del host `cisne-hermes`. Solo el directorio del socket se monta en el contenedor, en modo de solo lectura; el perfil y su autenticación permanecen en el host. El [override Compose](../hosting-independiente/deploy/compose.hermes.yaml) está instalado como `deploy/compose.override.yaml` para que lo utilicen también los comandos operativos existentes.
 
 Configurar fuera del repositorio, en el entorno que arranca el servidor:
 
 ```dotenv
+CISNE_AGENT_PROVIDER=hermes
 OPENAI_API_KEY=
 CISNE_AGENT_MODEL=gpt-6-astra
 CISNE_IMAGE_MODEL=gpt-image-2.5-sunburst
@@ -55,7 +62,9 @@ CISNE_IMAGE_MODEL=gpt-image-2.5-sunburst
 
 La plantilla `.env.example` no se carga automáticamente al iniciar con Python. En Docker Compose se usa el archivo privado de variables definido por el despliegue. Reiniciar la aplicación después de cambiar las variables. Nunca poner claves en JavaScript, mensajes, capturas o Git.
 
-El proveedor web utiliza Responses API con herramientas y la API de edición de imágenes. Modelos configurables; la cuenta debe tener acceso a los modelos seleccionados. Las solicitudes de imagen llevan la etiqueta y una referencia editorial de Colchita, cuando está disponible. No se envían cookies, cuentas del CMS ni datos de socios al modelo.
+El conector ejecuta una ronda del modelo mediante `AIAgent` de Hermes y devuelve las llamadas al CMS. Solo el CMS ejecuta las tres herramientas editoriales permitidas con la cuenta que inició sesión. No inicia el gateway, no da acceso a terminal, no carga memorias ni conversaciones de Telegram y no comparte sesiones entre editores. La identidad `SOUL.md` y el modelo pertenecen al perfil; las reglas del canal CMS restringen sus capacidades. El puente usa APIs internas de Hermes: debe verificarse de nuevo al actualizarlo.
+
+Las imágenes utilizan la API de edición de imágenes. Las solicitudes llevan la etiqueta y una referencia editorial de Colchita, cuando está disponible. No se envían cookies, cuentas del CMS ni datos de socios al modelo. La alternativa directa al chat es `CISNE_AGENT_PROVIDER=openai`, con `OPENAI_API_KEY` y `CISNE_AGENT_MODEL`.
 
 ## Flujo de una cerveza nueva
 
@@ -73,7 +82,7 @@ En Telegram, Hermes descarga el resultado de forma autenticada en su directorio 
 
 Las rutas del agente reutilizan sesión, CSRF, origen y roles del CMS. No existe un acceso público del agente ni un token administrativo incrustado. Cada escritura valida el documento y compara la versión; un conflicto devuelve 409 y exige releer. La generación no asigna imágenes ni publica automáticamente.
 
-Límites iniciales: 20 consultas por cuenta en diez minutos; tres rondas del modelo y tres cambios por consulta; seis trabajos de imagen por cuenta por hora y dos simultáneos. El chat conserva un historial acotado en memoria del navegador, que se borra al cerrar sesión. Los trabajos y su procedencia persisten en la base del CMS; las imágenes, en MediaHub.
+Límites iniciales: 20 consultas por cuenta en diez minutos; tres rondas del modelo y tres cambios por consulta; dos procesos Hermes simultáneos y 65 segundos por ronda; seis trabajos de imagen por cuenta por hora y dos simultáneos. El chat conserva un historial acotado en memoria del navegador, que se borra al cerrar sesión. Los trabajos y su procedencia persisten en la base del CMS; las imágenes, en MediaHub.
 
 Una petición de imagen repetida con la misma cerveza, etiqueta, versión y modelo reutiliza el trabajo existente. Los trabajos interrumpidos se muestran como fallidos después de diez minutos; no se reenvían automáticamente al proveedor. El reintento es explícito y puede tener coste del proveedor. Se conserva el intento anterior.
 

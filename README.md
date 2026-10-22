@@ -12,7 +12,7 @@ cd cisnenegro/hosting-independiente
 - [Skills y ecosistema de desarrollo](ecosistema/README.md), con fuentes y guías de instalación.
 - [Paquete descargable del ecosistema](paquetes/cisnenegro-skills-ecosistema-20261021.zip).
 - [Manual público](manual-usuario/README.md), HTML y PDF sin credenciales.
-- [Agente Cisne: chat CMS, CRUD e imágenes desde etiquetas; perfil Hermes/Telegram](agente-cisne/README.md) — implementación local en preparación para activación.
+- [Agente Cisne: chat CMS, CRUD e imágenes desde etiquetas; perfil Hermes/Telegram](agente-cisne/README.md) — popup desplegado y conectado a Hermes en [el CMS temporal](https://cisne.softvibes.art/cms/); imágenes y Telegram pendientes. Código disponible en la rama `feat/agente-cisne-cms-hermes`. El perfil del usuario `cisnenegro` en `169.58.107.205` todavía no está conectado; ver [pasos de conexión](agente-cisne/hermes/CONEXION-PERFIL-REMOTO.md).
 - [Últimos ajustes publicados](hosting-independiente/docs/actualizacion-menu-2026-10-17.md): imagen de Colchita, Wi-Fi/Pasaporte ocultos y pedido sin QR.
 
 La semilla del menú de la aplicación vigente refleja el catálogo público de la revisión 8. Las imágenes de MediaHub que utiliza se incluyen como archivos estáticos para una instalación nueva. No se copian cuentas, contraseñas ni bases operativas; el arranque local crea sus propios accesos. El resto de esta página conserva la bitácora histórica del proyecto.
@@ -24,6 +24,8 @@ Proyecto de marca y presencia digital: investigación, análisis, landing, menú
 **https://cisne.softvibes.art/** sirve la copia v2 integrada al CMS, con menú/Pasaporte, MediaHub, Administración y Equipo. Aplicación, datos y respaldo separados en el VPS `31.220.63.211`, según autorización del usuario. Ver [despliegue, accesos y cambio al dominio definitivo](hosting-independiente/DESPLIEGUE.md). Usar esta nueva instancia para los próximos cambios; no sincroniza sus datos con la instalación anterior. El dominio final espera DNS y tiene activación HTTPS automatizada.
 
 **17 de octubre:** dominio principal **https://cisnenegro.mx/** publicado con HTTPS y redirección de `www` al dominio sin prefijo. Se guardaron los dos registros A en Squarespace hacia `31.220.63.211`, TTL 300; las cuatro autoridades confirman el cambio y el correo permanece intacto. Acceso al CMS, administración y rutas públicas comprobados. Algunas cachés aún muestran el sitio anterior durante la propagación. El temporal sigue sirviendo esta misma instalación.
+
+**21 de octubre:** Agente Cisne publicado con perfil Hermes `cisne-negro` y consulta real verificada, sin cambios editoriales. Usar temporalmente **https://cisne.softvibes.art/cms/**: `cisnenegro.mx` devuelve `SERVFAIL` por un problema de delegación/zona DNS tras el cambio de registrador; la aplicación y su HTTPS responden al conectar directamente al servidor. No se modificaron DNS durante este despliegue. Ver [registro, respaldo y reversión](hosting-independiente/docs/agente-cisne-despliegue-2026-10-21.md).
 
 ## Estado (2026-10-08) — publicado en https://cisnenegro.softvibes.art
 

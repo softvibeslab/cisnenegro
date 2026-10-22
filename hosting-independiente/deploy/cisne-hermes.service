@@ -1,0 +1,32 @@
+[Unit]
+Description=Puente privado del perfil Hermes Cisne Negro
+After=network-online.target
+Wants=network-online.target
+ConditionPathExists=/srv/cisne/hermes/profiles/cisne-negro/config.yaml
+
+[Service]
+Type=simple
+User=cisneagent
+Group=10001
+WorkingDirectory=/srv/cisne/hermes
+Environment=HOME=/srv/cisne/hermes
+Environment=CISNE_HERMES_ROOT=/usr/local/lib/hermes-agent
+Environment=CISNE_HERMES_PROFILE_DIR=/srv/cisne/hermes/profiles/cisne-negro
+Environment=CISNE_HERMES_SOCKET=/srv/cisne/hermes/run/bridge.sock
+ExecStart=/usr/local/lib/hermes-agent/venv/bin/python3 /srv/cisne/hermes/backend/hermes_socket_bridge.py
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=75
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/cisne/hermes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+LockPersonality=true
+
+[Install]
+WantedBy=multi-user.target

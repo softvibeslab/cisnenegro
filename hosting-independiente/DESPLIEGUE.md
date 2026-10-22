@@ -2,6 +2,8 @@
 
 Publicado el 10 de octubre de 2026 en el servidor autorizado `31.220.63.211`.
 
+**Estado actual — 21 de octubre de 2026:** Agente Cisne desplegado y conectado al perfil Hermes `cisne-negro`, con consulta real de contenido verificada y sin cambios editoriales. Acceso disponible: **https://cisne.softvibes.art/cms/**. El dominio canónico `cisnenegro.mx` devuelve `SERVFAIL` por una incidencia de delegación/zona DNS; la aplicación y su TLS responden al conectar directamente al servidor con SNI. Se necesita reconciliar dominio y zona con Hostinger antes de ajustar DNS. Este despliegue no modificó registros DNS. Ver [instalación del agente, respaldos, pruebas y reversión](docs/agente-cisne-despliegue-2026-10-21.md). Las notas del 10 y 17 de octubre que siguen son el historial previo.
+
 **Actualización del 17 de octubre:** publicado en `https://cisnenegro.mx/`, con `www` redirigiendo al dominio principal. El usuario completó la verificación de Squarespace; se sustituyeron los dos registros web por A hacia `31.220.63.211`, TTL 300. Los cuatro servidores autoritativos confirman el cambio. El certificado HTTPS está emitido y las rutas y accesos fueron verificados. Algunas cachés recursivas y el navegador local todavía muestran el sitio anterior mientras caduca su TTL previo de cuatro horas.
 
 | Pantalla | Dirección |
@@ -65,4 +67,4 @@ La adaptación configura `CMS_ORIGIN=https://cisnenegro.mx` y `PUBLIC_INDEX_HOST
 
 Reversión del cambio de dominio: configuración y fuentes previas en `/var/backups/cisne-domain-20261017/`, e imagen `cisne-independent:before-apex-20261017`. Instantánea de los DNS originales en `../PRIVADO/hosting-independiente/dns-before-20261017.json`. Se deben conservar Google Workspace, sus verificaciones, `mytaps` y `_domainconnect` al sustituir únicamente los dos registros web.
 
-Estado al cierre: **dominio definitivo y HTTPS activos; propagación de cachés todavía parcial**. No hace falta volver a modificar DNS. La instantánea posterior de verificación está en `../PRIVADO/hosting-independiente/dns-after-20261017.json`.
+Estado al cierre del **17 de octubre**: dominio definitivo y HTTPS activos; propagación de cachés todavía parcial. En ese momento no hacía falta volver a modificar DNS. La instantánea posterior de verificación está en `../PRIVADO/hosting-independiente/dns-after-20261017.json`. La incidencia y el despliegue posteriores del 21 de octubre se documentan al inicio de este archivo.
